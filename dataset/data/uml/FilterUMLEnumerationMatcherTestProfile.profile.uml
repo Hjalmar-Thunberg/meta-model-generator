@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_k25SYKt9EeSbj-YWe2va_Q" name="profile" metaclassReference="_sgcdsKt9EeSbj-YWe2va_Q">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5R_dkat9EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_CsgQMat-EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_CsgQMKt-EeSbj-YWe2va_Q/1" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CsgQMqt-EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/4.1.0/UML" references="_5SAEoKt9EeSbj-YWe2va_Q"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Csg3Qat-EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Csg3Qqt-EeSbj-YWe2va_Q" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Csg3Q6t-EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Csg3RKt-EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Csg3Rat-EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Csg3Rqt-EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_CsgQM6t-EeSbj-YWe2va_Q" name="Priority">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CsgQNKt-EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oY7OsKt9EeSbj-YWe2va_Q"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_CsgQNat-EeSbj-YWe2va_Q" name="Hight"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_CsgQNqt-EeSbj-YWe2va_Q" name="Medium" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_CsgQN6t-EeSbj-YWe2va_Q" name="Low" value="2"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_CsgQOKt-EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CsgQOat-EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pdxW4Kt9EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_CsgQOqt-EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_CsgQPKt-EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1" eType="_5SAEoat9EeSbj-YWe2va_Q"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_5SAEoKt9EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_5R_dkKt9EeSbj-YWe2va_Q/0" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5SArsKt9EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5SArsat9EeSbj-YWe2va_Q" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5SArsqt9EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5SArs6t9EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5SArtKt9EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5SArtat9EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_5SAEoat9EeSbj-YWe2va_Q" name="Priority">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5SAEoqt9EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oY7OsKt9EeSbj-YWe2va_Q"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_5SAEo6t9EeSbj-YWe2va_Q" name="Hight"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_5SAEpKt9EeSbj-YWe2va_Q" name="Medium" value="1"/>
+        <eLiterals xmi:type="ecore:EEnumLiteral" xmi:id="_5SAEpat9EeSbj-YWe2va_Q" name="Low" value="2"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_5SAEpqt9EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5SAEp6t9EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pdxW4Kt9EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_5SAEqKt9EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_5SAEqqt9EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1" eType="_5SAEoat9EeSbj-YWe2va_Q"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_sgcdsKt9EeSbj-YWe2va_Q" alias="Element">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_oY7OsKt9EeSbj-YWe2va_Q" name="Priority">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zvuH0Kt9EeSbj-YWe2va_Q" name="Hight"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0oOdIKt9EeSbj-YWe2va_Q" name="Medium"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2JgCoKt9EeSbj-YWe2va_Q" name="Low"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_pdxW4Kt9EeSbj-YWe2va_Q" name="Task">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tmaAMKt9EeSbj-YWe2va_Q" name="base_Element" association="_tmanQKt9EeSbj-YWe2va_Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uYNQkKt9EeSbj-YWe2va_Q" name="priority" type="_oY7OsKt9EeSbj-YWe2va_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_tmanQKt9EeSbj-YWe2va_Q" name="E_Task_Element1" memberEnd="_tmanQat9EeSbj-YWe2va_Q _tmaAMKt9EeSbj-YWe2va_Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_tmanQat9EeSbj-YWe2va_Q" name="extension_Task" type="_pdxW4Kt9EeSbj-YWe2va_Q" aggregation="composite" association="_tmanQKt9EeSbj-YWe2va_Q"/>
+  </packagedElement>
+</uml:Profile>

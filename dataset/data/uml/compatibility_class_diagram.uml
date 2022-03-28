@@ -1,0 +1,14 @@
+
+abstract class CompatibilityReport {
+    many2one author : User, required
+    int punctuation : required, (0..5)
+}
+
+
+CompatibilityReport <|-- ModuleServerBranchCompatibility
+class ModuleServerBranchCompatibility {
+    many2one server_branch : ServerBranch, required
+    many2one module_branch : ModuleBranch, required
+}
+
+

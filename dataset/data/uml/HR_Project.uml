@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="efd2392f-8b9f-42ec-8ccc-2ec9e9a8f422"
+  name="HR_Project" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="9540e1ae-9a0c-4912-b3cd-20a800aaaecf"
+        name="VDV"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f6ad7625-8a09-4d3e-9b4b-c4bce33449d6"
+            isDerived="false"
+            sourceEndRoleName="VDV"
+            targetEndRoleName="Insert Client"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d7f41bcb-6f06-45e4-aeab-6749a9269b04"
+              LastKnownName="Create Person"
+              LastKnownLocation="HR_Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c4b3300-e029-4020-8a2b-691f95266b3e"
+                  name="VDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ade4c10-9713-4542-b016-83c1621cb41d"
+                  name="Insert Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b06dd8a-747d-411b-85aa-fad7bc13b0c2"
+            isDerived="false"
+            sourceEndRoleName="VDV"
+            targetEndRoleName="Delete Client"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f70091d4-b95c-41c9-a57d-d559573f3410"
+              LastKnownName="Delete Person"
+              LastKnownLocation="HR_Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ac2b116-c951-4552-8792-e3256825bb8a"
+                  name="VDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fadd1c4b-f23a-4dd4-97a3-0374bc914f60"
+                  name="Delete Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0da416a4-aa8e-44f9-b55a-8870074d4551"
+            isDerived="false"
+            sourceEndRoleName="VDV"
+            targetEndRoleName="Update Client"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="47a9672b-9a7e-4243-ac51-c4de2bb96b48"
+              LastKnownName="Update Peron"
+              LastKnownLocation="HR_Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77f4c61d-c7cb-4905-b03c-16b8e029afa1"
+                  name="VDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b6b4bc3-b254-4c7d-9b3e-acd8a2ea3347"
+                  name="Update Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="56b1c99b-bb7d-43fc-adef-5ec52022bafd"
+            isDerived="false"
+            sourceEndRoleName="VDV"
+            targetEndRoleName="Search Person"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a1173ebf-509b-4ab5-9686-7dac3ffcd001"
+              LastKnownName="Search Person"
+              LastKnownLocation="HR_Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75a850ea-afff-453e-bd8f-15de79a95338"
+                  name="VDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9774ddd5-8986-45cb-9fd3-f4324a49e248"
+                  name="Search Person"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="581591c0-179a-462b-b56c-ebef77cbb258"
+            isDerived="false"
+            sourceEndRoleName="VDV"
+            targetEndRoleName="Insert Person"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4e713f7e-d51c-48fa-aef1-347f87900322"
+              LastKnownName="Insert Person"
+              LastKnownLocation="HR_Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8cf32c0a-d042-4b17-a70f-639b550690b2"
+                  name="VDV"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6588be0-5125-415d-9f46-0886f9dc5734"
+                  name="Insert Person"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7f41bcb-6f06-45e4-aeab-6749a9269b04"
+        name="Create Person"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f70091d4-b95c-41c9-a57d-d559573f3410"
+        name="Delete Person"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47a9672b-9a7e-4243-ac51-c4de2bb96b48"
+        name="Update Peron"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a1173ebf-509b-4ab5-9686-7dac3ffcd001"
+        name="Search Person"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4e713f7e-d51c-48fa-aef1-347f87900322"
+        name="Insert Person"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6d4af1f8-e066-417e-84fc-1973052aa605"
+        name="Person"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="09bffe11-8573-4562-b7b5-23170efd6349"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7f48fae2-f8d2-45a2-8227-770f27840df9"
+              LastKnownName="HRObject"
+              LastKnownLocation="HR_Project.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="6f668437-0f21-46c1-98a9-5577c5793b9f"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="db7b7a37-572e-4989-a6c0-affe14cae1ef"
+            name="LastName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="76dc5004-6db8-4a5a-a9d3-7afdbe20cde2"
+            name="FirstName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="edaf4c75-80c8-4c7a-9db9-06d28b3d8d36"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bdf09ffc-d5a0-4600-928b-dcace1c5e91d"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a6175665-494a-49f0-96a3-3c1fb7750dc5"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3b41e273-8b20-4c45-b14e-733a0a7652b2"
+            name="Search"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="683ed430-bc63-4776-a3a0-4442fa3ef978"
+            name="Insert"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5818e468-2256-40b3-a0c5-9fed00d5d2b0"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="426e20b3-b941-4169-bcc6-c0a19e450787"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7f48fae2-f8d2-45a2-8227-770f27840df9"
+              LastKnownName="HRObject"
+              LastKnownLocation="HR_Project.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="78aa416e-c33d-42b8-bca2-f214d83ecc82"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="95a524c2-1d72-4a46-8942-81b25c27df71"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6d4af1f8-e066-417e-84fc-1973052aa605"
+              LastKnownName="Person"
+              LastKnownLocation="HR_Project.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b8be241b-cc92-444b-8285-4f43b51bdd57"
+        name="Supplier"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="cd9f6adb-b71a-4e89-8f72-a51092e2ba3a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7f48fae2-f8d2-45a2-8227-770f27840df9"
+              LastKnownName="HRObject"
+              LastKnownLocation="HR_Project.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a5f79ccf-1ad1-4a9a-a295-129ff42914a8"
+        name="Contact"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="44a99f0f-fff4-4adb-af32-54c4d6efe5c2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7f48fae2-f8d2-45a2-8227-770f27840df9"
+              LastKnownName="HRObject"
+              LastKnownLocation="HR_Project.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7f48fae2-f8d2-45a2-8227-770f27840df9"
+        name="HRObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

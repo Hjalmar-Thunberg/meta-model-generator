@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SNfkYP4pEeSWkpIORzCK6w" name="sync-test">
+  <packageImport xmi:id="_Smmn8P4pEeSWkpIORzCK6w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dtT2oP4pEeSWkpIORzCK6w" name="Class1">
+    <ownedAttribute xmi:id="_jKaYgP4pEeSWkpIORzCK6w" name="class2" type="_e3FiIP4pEeSWkpIORzCK6w" association="_jKWHEP4pEeSWkpIORzCK6w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e3FiIP4pEeSWkpIORzCK6w" name="Class2"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jKWHEP4pEeSWkpIORzCK6w" name="A_class2_class1" memberEnd="_jKaYgP4pEeSWkpIORzCK6w _jKaYgf4pEeSWkpIORzCK6w">
+    <eAnnotations xmi:id="_jKZKYP4pEeSWkpIORzCK6w" source="org.eclipse.papyrus">
+      <details xmi:id="_jKZxcP4pEeSWkpIORzCK6w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_jKaYgf4pEeSWkpIORzCK6w" name="class1" type="_dtT2oP4pEeSWkpIORzCK6w" association="_jKWHEP4pEeSWkpIORzCK6w"/>
+  </packagedElement>
+</uml:Model>

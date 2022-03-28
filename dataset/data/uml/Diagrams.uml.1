@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="5c407168-d898-4740-8518-8f66971621f4"
+  name="Diagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="3825eec4-9d32-4d9f-b965-d3e9ad89d85d">
+      <body>Входная точка денежных средств для банковской системы. Упрощение обусловлено типом проекта(приложение для образовательных целей).</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="941cb042-856b-48ab-9320-80b0d8c91882"
+          LastKnownName="Пополнить счет"
+          LastKnownLocation="Diagrams.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+        name="Базовая функциональность"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="76e15856-e872-460f-84dd-bee7e8982437"
+        name="Администратор"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="06247fbe-58cc-4916-9fd2-a5eb5ab16748"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Открыть панель администрирования"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52d83dd6-5429-4a31-a090-c8560462e2dc"
+              LastKnownName="Открыть панель администрирования"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4043ca43-d124-4c62-b863-2b9d5f958e22"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10ebea26-2080-4976-bf8d-2f5694e1d20b"
+                  name="Открыть панель администрирования"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="81e7cbff-bca7-468b-a43d-e302709d102e"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Войти в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bc83dfbb-ecd3-4e22-b9df-7bf0aa692bc1"
+              LastKnownName="Войти в систему"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a9dfbd3-2fe7-4731-af9b-4fc364aa24a1"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="73738fb8-cf66-4a39-a81e-17eb2f3e5b9b"
+                  name="Войти в систему"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cb9bbc71-d619-4333-a8c8-cdeb4c0bcd40"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Выйти из системы"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a17da001-223c-49d6-8ed6-42c089704a03"
+              LastKnownName="Выйти из системы"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4966dd42-0f65-46e1-8f64-eed3f478c3e7"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b2dbc92-1244-4532-8ea2-35fbdc878f10"
+                  name="Выйти из системы"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f3817ba8-d62d-47a2-b5a0-15f07bb8f608"
+        name="Клиент"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="88b1d62c-aff1-4cc8-bfc7-66d37eb68bc7"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Войти в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bc83dfbb-ecd3-4e22-b9df-7bf0aa692bc1"
+              LastKnownName="Войти в систему"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8528b9d-223a-4d62-9d7d-a06a5146fdb1"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="998a2319-81c2-4bce-a127-7d2bfc1d0893"
+                  name="Войти в систему"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7ce4a7e6-7ba0-4ddc-9142-29205b55c963"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Выйти из системы"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a17da001-223c-49d6-8ed6-42c089704a03"
+              LastKnownName="Выйти из системы"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90987e78-eaf7-48f8-9536-ae5a70de98e0"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3387573-ff5b-470b-98ca-c400e1d889b7"
+                  name="Выйти из системы"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c043c6a1-44c3-4899-81ba-d7c9a941f16e"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Выполнить операцию с денежными средствами"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b787cdd5-4464-4e0c-a006-88e06ec639e9"
+              LastKnownName="Выполнить операцию с денежными средствами"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="072ebf8f-f050-4b10-8504-043bb591b899"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d67f2c8c-e951-460a-b2fe-e42aba0b8008"
+                  name="Выполнить операцию с денежными средствами"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="86b0491b-1797-47db-bcdf-099547bc8ec0"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Открыть панель управления счетом"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43649938-df97-4fe2-a137-4475c87db4c4"
+              LastKnownName="Открыть панель управления счетом"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2bff656d-8d8c-4d56-8aea-148bb370b357"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="612ad5a9-5245-4c6b-a40d-2993364ab684"
+                  name="Открыть панель управления счетом"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0dcfea4d-5185-43ee-8e1e-75619ee4eb60"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Просмотреть курсы валют"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="335aa547-af8a-4616-b96e-1d65769b1e12"
+              LastKnownName="Просмотреть курсы валют"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87f0f210-c0fd-4159-8d8b-89c97198d28d"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ec71716-abd6-4d82-ae99-e60f8620cfbe"
+                  name="Просмотреть курсы валют"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bc83dfbb-ecd3-4e22-b9df-7bf0aa692bc1"
+        name="Войти в систему"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52d83dd6-5429-4a31-a090-c8560462e2dc"
+        name="Открыть панель администрирования"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="dfe42896-c520-438d-861a-b6ed0d33c05c">
+            <useCaseMoniker
+              Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608"
+              LastKnownName="Авторизация"
+              LastKnownLocation="Diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43649938-df97-4fe2-a137-4475c87db4c4"
+        name="Открыть панель управления счетом"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="160db1f2-e2b8-4149-8a95-3fad3a82bb49">
+            <useCaseMoniker
+              Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608"
+              LastKnownName="Авторизация"
+              LastKnownLocation="Diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a17da001-223c-49d6-8ed6-42c089704a03"
+        name="Выйти из системы"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="335aa547-af8a-4616-b96e-1d65769b1e12"
+        name="Просмотреть курсы валют"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="694cf5d0-65e6-43f4-8878-f7c723568948">
+            <useCaseMoniker
+              Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608"
+              LastKnownName="Авторизация"
+              LastKnownLocation="Diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b787cdd5-4464-4e0c-a006-88e06ec639e9"
+        name="Выполнить операцию с денежными средствами"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3f106b9d-a191-4c6e-b7f5-246811233b53">
+            <useCaseMoniker
+              Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608"
+              LastKnownName="Авторизация"
+              LastKnownLocation="Diagrams.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8508f1c9-a5b4-4fad-a4d9-6e358c3ba608"
+        name="Авторизация"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="018ba122-3577-4ecb-a8e9-14bb9ffb86e3"
+            LastKnownName="Базовая функциональность"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8d42de6c-bbba-4fa1-9e73-c938fe7dc028"
+        name="Панель управления счетом"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a56902f2-0d3a-4e6d-a6fa-3399aa95c36c"
+        name="Клиент"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cdd50b94-153c-4de8-b330-412acbb2263d"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Заблокировать карту"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1188867f-24d6-4e67-a2df-e5a7d89b6040"
+              LastKnownName="Заблокировать карту"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e2615ce-c5db-43ae-bdff-58d4a1fe8806"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a182d55-c48d-467a-9f68-dac394e2b622"
+                  name="Заблокировать карту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9324addf-84bc-4cff-9e05-54397c8ec7b7"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Разблокировать карту"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="828bbd61-5642-4574-8eb8-2ba066af11e8"
+              LastKnownName="Разблокировать карту"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="537797a9-f7a2-4ad7-9466-f77def8d5417"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a69179e2-b6a0-4c49-bfaf-3c8a6d31fab4"
+                  name="Разблокировать карту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="544ba841-dc1f-4743-bc1c-eebcaec6be0b"
+        name="Авторизация"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1188867f-24d6-4e67-a2df-e5a7d89b6040"
+        name="Заблокировать карту"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d42de6c-bbba-4fa1-9e73-c938fe7dc028"
+            LastKnownName="Панель управления счетом"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="828bbd61-5642-4574-8eb8-2ba066af11e8"
+        name="Разблокировать карту"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d42de6c-bbba-4fa1-9e73-c938fe7dc028"
+            LastKnownName="Панель управления счетом"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+        name="Операции с денежными средствами"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="93a1cbb4-c931-4a7b-9723-f3aac4c16e7a"
+        name="Клиент"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a31583fa-326e-4943-a450-f7386673ede8"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Платеж"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c8382bd3-faa7-4937-b202-ceaf58893dc7"
+              LastKnownName="Платеж"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42d64154-42d5-45c3-93d8-93a43e86790d"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2af252f-22fe-4a72-9372-7b700634e4b5"
+                  name="Платеж"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0969a81f-e7b9-43f9-a16a-7a8706c2f193"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Перевод"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="02f21beb-7dbd-4df5-b20a-73716e2eb393"
+              LastKnownName="Перевод"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e7cd368-c784-4e4c-9322-91dc81f75661"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4284597-2397-484c-b15c-d8b56c5c6c62"
+                  name="Перевод"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7c68b973-8241-44a5-82e9-ae2631eb1db0"
+            isDerived="false"
+            sourceEndRoleName="Клиент"
+            targetEndRoleName="Просмотреть историю"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6cc6df43-7a3b-4a38-a4fc-8c633f428798"
+              LastKnownName="Просмотреть историю"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c5cfd78-26cd-4670-9d93-00aa30ea0132"
+                  name="Клиент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="465e1b27-b4d7-4050-a946-396ca7ec3371"
+                  name="Просмотреть историю"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4773a366-62b8-4464-acc3-12f6b8527d21"
+        name="Менеджер операций"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a6c68a8d-896d-4c61-be32-e24902ac778c"
+            isDerived="false"
+            sourceEndRoleName="Менеджер операций"
+            targetEndRoleName="Конвертация валюты"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ff2d4a1b-9876-4059-8c23-b0305592eef7"
+              LastKnownName="Конвертация валюты"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19f5a564-b47f-4433-a2d8-4039a78c841e"
+                  name="Менеджер операций"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57ea85c5-606b-4bca-8469-4247115706ee"
+                  name="Конвертация валюты"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8819a400-50f6-49e8-a914-65f14255d2de"
+            isDerived="false"
+            sourceEndRoleName="Менеджер операций"
+            targetEndRoleName="Пополнение счета"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d61424fc-f41f-4ad1-8f04-29f5d8533e17"
+              LastKnownName="Пополнение счета"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85f8f883-8e64-453d-acc1-9092439e7aaa"
+                  name="Менеджер операций"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a448cc5-3754-4532-a5cc-9d0e235a3ad4"
+                  name="Пополнение счета"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4dbc3d10-579f-45b2-a083-0d4dac034dc4"
+            isDerived="false"
+            sourceEndRoleName="Менеджер операций"
+            targetEndRoleName="Снятие средств"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e14a46a-f1aa-4f52-83fa-13e3c1eae77c"
+              LastKnownName="Снятие средств"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ad549be-ef0e-44fd-a551-f2b81cc7e267"
+                  name="Менеджер операций"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60e521c4-f661-4014-a8fb-efb76abd8bfa"
+                  name="Снятие средств"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d33522e-f20c-4024-b8d1-a5ecfa5676d3"
+        name="Операция со средствами"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2095a3d2-af53-4c35-ae33-c3e3a22b62bb"
+            isDerived="false"
+            sourceEndRoleName="Операция со средствами"
+            targetEndRoleName="Менеджер операций"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="4773a366-62b8-4464-acc3-12f6b8527d21"
+              LastKnownName="Менеджер операций"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="120ad13b-cf63-44e7-8cc6-2c00617ea036"
+                  name="Операция со средствами"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc3dbfe5-3a51-4f94-8b06-e789196e16ef"
+                  name="Менеджер операций"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c8382bd3-faa7-4937-b202-ceaf58893dc7"
+        name="Платеж"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9ff95bc6-a7e9-4961-960c-882e6979306a">
+            <useCaseMoniker
+              Id="7d33522e-f20c-4024-b8d1-a5ecfa5676d3"
+              LastKnownName="Операция со средствами"
+              LastKnownLocation="Diagrams.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="02f21beb-7dbd-4df5-b20a-73716e2eb393"
+        name="Перевод"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="91eb5ed1-7876-4464-8a94-ea9192bb6c47">
+            <useCaseMoniker
+              Id="7d33522e-f20c-4024-b8d1-a5ecfa5676d3"
+              LastKnownName="Операция со средствами"
+              LastKnownLocation="Diagrams.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6cc6df43-7a3b-4a38-a4fc-8c633f428798"
+        name="Просмотреть историю"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ff2d4a1b-9876-4059-8c23-b0305592eef7"
+        name="Конвертация валюты"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e14a46a-f1aa-4f52-83fa-13e3c1eae77c"
+        name="Снятие средств"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d61424fc-f41f-4ad1-8f04-29f5d8533e17"
+        name="Пополнение счета"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="77ee80c2-b598-4e2c-81b6-e4951d4580fe"
+            LastKnownName="Операции с денежными средствами"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="cc834bfe-4c1f-4a1a-a458-ba22dca95836"
+        name="Панель администрирования"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c2fb34f2-2205-4677-960c-9653a2a03fc7"
+        name="Администратор"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="efb64ec3-cfad-464e-921e-e8b94f6320d4"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Создать счет"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e0dd1315-a3d5-4a20-9ae8-64e1c93f1684"
+              LastKnownName="Создать счет"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aea07c2b-f040-4f8e-8745-86fc19894591"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1687de2-e616-438c-adf1-ed0778fc4d77"
+                  name="Создать счет"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="34c62a80-86bf-4d53-800c-375bfa13542d"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Удалить счет"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3d28a9f8-5c03-4d2e-b9b6-d797f9935967"
+              LastKnownName="Удалить счет"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faf6d7b9-2131-42ca-b88c-20e9b8ee1e4c"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0837d001-58a6-4a03-8c8c-b4432c4c9ccc"
+                  name="Удалить счет"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d8c48cb5-bb22-405b-83e8-08fa6812ef5d"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Пополнить счет"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="941cb042-856b-48ab-9320-80b0d8c91882"
+              LastKnownName="Пополнить счет"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60c0c62b-b975-4261-89cc-b82f120b59b8"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd942cb0-3066-4176-9cd7-a690689f615f"
+                  name="Пополнить счет"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e0dd1315-a3d5-4a20-9ae8-64e1c93f1684"
+        name="Создать счет"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cc834bfe-4c1f-4a1a-a458-ba22dca95836"
+            LastKnownName="Панель администрирования"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3d28a9f8-5c03-4d2e-b9b6-d797f9935967"
+        name="Удалить счет"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cc834bfe-4c1f-4a1a-a458-ba22dca95836"
+            LastKnownName="Панель администрирования"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="941cb042-856b-48ab-9320-80b0d8c91882"
+        name="Пополнить счет"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="cc834bfe-4c1f-4a1a-a458-ba22dca95836"
+            LastKnownName="Панель администрирования"
+            LastKnownLocation="Diagrams.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

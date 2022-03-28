@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_TRutUO16EeSWKJSOvcFimA" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_TSOckO16EeSWKJSOvcFimA" name="ElementImportResolution" visibility="public">
+      <elementImport xmi:id="_TSOc6e16EeSWKJSOvcFimA" visibility="private">
+        <alias xsi:nil="true"/>
+        <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </elementImport>
+      <elementImport xmi:id="_TSOc6-16EeSWKJSOvcFimA" visibility="private">
+        <alias xsi:nil="true"/>
+        <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </elementImport>
+      <elementImport xmi:id="_TSOc6u16EeSWKJSOvcFimA" visibility="private">
+        <alias xsi:nil="true"/>
+        <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </elementImport>
+      <ownedAttribute xmi:id="_TSOcke16EeSWKJSOvcFimA" name="ElementImportResolution$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcku16EeSWKJSOvcFimA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOck-16EeSWKJSOvcFimA" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_TSOclO16EeSWKJSOvcFimA" name="ElementImportResolution$initialization$1" visibility="protected" specification="_TSOc0e16EeSWKJSOvcFimA" node="_TSOcle16EeSWKJSOvcFimA _TSOcme16EeSWKJSOvcFimA _TSOcm-16EeSWKJSOvcFimA _TSOcqu16EeSWKJSOvcFimA _TSOcsu16EeSWKJSOvcFimA _TSOcuu16EeSWKJSOvcFimA _TSOcv-16EeSWKJSOvcFimA _TSOcy-16EeSWKJSOvcFimA _TSOczO16EeSWKJSOvcFimA" group="_TSOcm-16EeSWKJSOvcFimA">
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcmu16EeSWKJSOvcFimA" target="_TSOcme16EeSWKJSOvcFimA" source="_TSOclu16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcqO16EeSWKJSOvcFimA" target="_TSOcou16EeSWKJSOvcFimA" source="_TSOcme16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcse16EeSWKJSOvcFimA" target="_TSOcq-16EeSWKJSOvcFimA" source="_TSOcme16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcue16EeSWKJSOvcFimA" target="_TSOcs-16EeSWKJSOvcFimA" source="_TSOcru16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcye16EeSWKJSOvcFimA" target="_TSOcwO16EeSWKJSOvcFimA" source="_TSOctu16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcyu16EeSWKJSOvcFimA" target="_TSOcw-16EeSWKJSOvcFimA" source="_TSOcvO16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOczu16EeSWKJSOvcFimA" target="_TSOczO16EeSWKJSOvcFimA" source="_TSOcxu16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcz-16EeSWKJSOvcFimA" target="_TSOcm-16EeSWKJSOvcFimA" source="_TSOczO16EeSWKJSOvcFimA">
+          <guard xmi:type="uml:LiteralBoolean" xmi:id="_TSOc0O16EeSWKJSOvcFimA" name="true" value="true"/>
+        </edge>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcze16EeSWKJSOvcFimA" target="_TSOczO16EeSWKJSOvcFimA" source="_TSOcy-16EeSWKJSOvcFimA"/>
+        <structuredNode xmi:id="_TSOcm-16EeSWKJSOvcFimA" name="Initialization" incoming="_TSOcz-16EeSWKJSOvcFimA">
+          <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOcqe16EeSWKJSOvcFimA" target="_TSOcpe16EeSWKJSOvcFimA" source="_TSOcnu16EeSWKJSOvcFimA"/>
+          <node xmi:type="uml:ValueSpecificationAction" xmi:id="_TSOcnO16EeSWKJSOvcFimA" name="Value(true)">
+            <result xmi:id="_TSOcnu16EeSWKJSOvcFimA" name="Value(true).result" outgoing="_TSOcqe16EeSWKJSOvcFimA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcn-16EeSWKJSOvcFimA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcoO16EeSWKJSOvcFimA" value="1"/>
+            </result>
+            <value xmi:type="uml:LiteralBoolean" xmi:id="_TSOcne16EeSWKJSOvcFimA" value="true"/>
+          </node>
+          <node xmi:type="uml:AddStructuralFeatureValueAction" xmi:id="_TSOcoe16EeSWKJSOvcFimA" name="Write(ElementImportResolution$initializationFlag$1)" structuralFeature="_TSOcke16EeSWKJSOvcFimA" isReplaceAll="true">
+            <object xmi:id="_TSOcou16EeSWKJSOvcFimA" name="Write(ElementImportResolution$initializationFlag$1).object" incoming="_TSOcqO16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOco-16EeSWKJSOvcFimA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcpO16EeSWKJSOvcFimA" value="1"/>
+            </object>
+            <value xmi:id="_TSOcpe16EeSWKJSOvcFimA" name="Write(ElementImportResolution$initializationFlag$1).value" incoming="_TSOcqe16EeSWKJSOvcFimA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcpu16EeSWKJSOvcFimA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcp-16EeSWKJSOvcFimA" value="1"/>
+            </value>
+          </node>
+        </structuredNode>
+        <node xmi:type="uml:ReadSelfAction" xmi:id="_TSOcle16EeSWKJSOvcFimA" name="ReadSelf">
+          <result xmi:id="_TSOclu16EeSWKJSOvcFimA" name="ReadSelf.result" outgoing="_TSOcmu16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcl-16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcmO16EeSWKJSOvcFimA" value="1"/>
+          </result>
+        </node>
+        <node xmi:type="uml:ForkNode" xmi:id="_TSOcme16EeSWKJSOvcFimA" name="Fork(ReadSelf.result)" incoming="_TSOcmu16EeSWKJSOvcFimA" outgoing="_TSOcqO16EeSWKJSOvcFimA _TSOcse16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:ReadStructuralFeatureAction" xmi:id="_TSOcqu16EeSWKJSOvcFimA" name="Read(ElementImportResolution$initializationFlag$1)" structuralFeature="_TSOcke16EeSWKJSOvcFimA">
+          <object xmi:id="_TSOcq-16EeSWKJSOvcFimA" name="Read(ElementImportResolution$initializationFlag$1).object" incoming="_TSOcse16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcrO16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcre16EeSWKJSOvcFimA" value="1"/>
+          </object>
+          <result xmi:id="_TSOcru16EeSWKJSOvcFimA" name="Read(ElementImportResolution$initializationFlag$1).result" outgoing="_TSOcue16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcr-16EeSWKJSOvcFimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcsO16EeSWKJSOvcFimA" value="1"/>
+          </result>
+        </node>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_TSOcsu16EeSWKJSOvcFimA" name="Call(Size)">
+          <argument xmi:id="_TSOcs-16EeSWKJSOvcFimA" name="Call(Size).argument" incoming="_TSOcue16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOctO16EeSWKJSOvcFimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcte16EeSWKJSOvcFimA" value="*"/>
+          </argument>
+          <result xmi:id="_TSOctu16EeSWKJSOvcFimA" name="Call(Size).result" outgoing="_TSOcye16EeSWKJSOvcFimA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOct-16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcuO16EeSWKJSOvcFimA" value="1"/>
+          </result>
+          <behavior xmi:type="uml:Activity" href="pathmap://PAPYRUS_ALF_LIBRARY/Alf.library.uml#Alf-Library-PrimitiveBehaviors-SequenceFunctions-Size"/>
+        </node>
+        <node xmi:type="uml:ValueSpecificationAction" xmi:id="_TSOcuu16EeSWKJSOvcFimA" name="Value(0)">
+          <result xmi:id="_TSOcvO16EeSWKJSOvcFimA" name="Value(0).result" outgoing="_TSOcyu16EeSWKJSOvcFimA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcve16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcvu16EeSWKJSOvcFimA" value="1"/>
+          </result>
+          <value xmi:type="uml:LiteralInteger" xmi:id="_TSOcu-16EeSWKJSOvcFimA"/>
+        </node>
+        <node xmi:type="uml:TestIdentityAction" xmi:id="_TSOcv-16EeSWKJSOvcFimA" name="Test(Size==0)">
+          <first xmi:id="_TSOcwO16EeSWKJSOvcFimA" name="Test(Size==0).first" incoming="_TSOcye16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcwe16EeSWKJSOvcFimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcwu16EeSWKJSOvcFimA" value="1"/>
+          </first>
+          <result xmi:id="_TSOcxu16EeSWKJSOvcFimA" name="Test(Size==0).result" outgoing="_TSOczu16EeSWKJSOvcFimA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcx-16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcyO16EeSWKJSOvcFimA" value="1"/>
+          </result>
+          <second xmi:id="_TSOcw-16EeSWKJSOvcFimA" name="Test(Size==0).second" incoming="_TSOcyu16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOcxO16EeSWKJSOvcFimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOcxe16EeSWKJSOvcFimA" value="1"/>
+          </second>
+        </node>
+        <node xmi:type="uml:InitialNode" xmi:id="_TSOcy-16EeSWKJSOvcFimA" name="InitialNode" outgoing="_TSOcze16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_TSOczO16EeSWKJSOvcFimA" name="Decision(Test(ElementImportResolution$initializationFlag$1))" incoming="_TSOcze16EeSWKJSOvcFimA _TSOczu16EeSWKJSOvcFimA" outgoing="_TSOcz-16EeSWKJSOvcFimA" decisionInputFlow="_TSOczu16EeSWKJSOvcFimA"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_TSOc0u16EeSWKJSOvcFimA" name="ElementImportResolution$method$1" specification="_TSOc1u16EeSWKJSOvcFimA" node="_TSOc2u16EeSWKJSOvcFimA _TSOc2-16EeSWKJSOvcFimA _TSOc3-16EeSWKJSOvcFimA _TSOc4u16EeSWKJSOvcFimA">
+        <ownedParameter xmi:id="_TSOc0-16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOc1O16EeSWKJSOvcFimA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOc1e16EeSWKJSOvcFimA" value="1"/>
+        </ownedParameter>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOc4O16EeSWKJSOvcFimA" target="_TSOc3-16EeSWKJSOvcFimA" source="_TSOc3O16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOc4e16EeSWKJSOvcFimA" target="_TSOc2u16EeSWKJSOvcFimA" source="_TSOc3-16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_TSOc5u16EeSWKJSOvcFimA" target="_TSOc4-16EeSWKJSOvcFimA" source="_TSOc3-16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_TSOc2u16EeSWKJSOvcFimA" name="Return" incoming="_TSOc4e16EeSWKJSOvcFimA" parameter="_TSOc0-16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:ReadSelfAction" xmi:id="_TSOc2-16EeSWKJSOvcFimA" name="ReadSelf">
+          <result xmi:id="_TSOc3O16EeSWKJSOvcFimA" name="ReadSelf.result" outgoing="_TSOc4O16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOc3e16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOc3u16EeSWKJSOvcFimA" value="1"/>
+          </result>
+        </node>
+        <node xmi:type="uml:ForkNode" xmi:id="_TSOc3-16EeSWKJSOvcFimA" name="Fork(ReadSelf.result)" incoming="_TSOc4O16EeSWKJSOvcFimA" outgoing="_TSOc4e16EeSWKJSOvcFimA _TSOc5u16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:CallOperationAction" xmi:id="_TSOc4u16EeSWKJSOvcFimA" name="Call(ElementImportResolution$initialization$1)">
+          <target xmi:id="_TSOc4-16EeSWKJSOvcFimA" name="Call(ElementImportResolution$initialization$1).target" incoming="_TSOc5u16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOc5O16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOc5e16EeSWKJSOvcFimA" value="1"/>
+          </target>
+        </node>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_TSOc5-16EeSWKJSOvcFimA" name="destroy$method$1" specification="_TSOc6O16EeSWKJSOvcFimA"/>
+      <ownedOperation xmi:id="_TSOc0e16EeSWKJSOvcFimA" name="ElementImportResolution$initialization$1" visibility="protected" method="_TSOclO16EeSWKJSOvcFimA"/>
+      <ownedOperation xmi:id="_TSOc1u16EeSWKJSOvcFimA" name="ElementImportResolution" method="_TSOc0u16EeSWKJSOvcFimA">
+        <ownedParameter xmi:id="_TSOc1-16EeSWKJSOvcFimA" type="_TSOckO16EeSWKJSOvcFimA" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TSOc2O16EeSWKJSOvcFimA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TSOc2e16EeSWKJSOvcFimA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_TSOc6O16EeSWKJSOvcFimA" name="destroy" method="_TSOc5-16EeSWKJSOvcFimA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_TRutUe16EeSWKJSOvcFimA">
+      <eAnnotations xmi:id="_TRutUu16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_TRutU-16EeSWKJSOvcFimA">
+      <eAnnotations xmi:id="_TRutVO16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_TSOc7O16EeSWKJSOvcFimA" base_BehavioralFeature="_TSOc1u16EeSWKJSOvcFimA"/>
+  <standard:Destroy xmi:id="_TSOc7e16EeSWKJSOvcFimA" base_BehavioralFeature="_TSOc6O16EeSWKJSOvcFimA"/>
+</xmi:XMI>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:profile="http:///schemas/profile/_HkkPkKqzEeSuF9HUlMCIQw/2" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/profile/_HkkPkKqzEeSuF9HUlMCIQw/2 ProfileWithStrereotype.profile.uml#_HkkPkaqzEeSuF9HUlMCIQw">
+  <uml:Model xmi:id="_Cl39cKqyEeSuF9HUlMCIQw" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Dr38MKqyEeSuF9HUlMCIQw" name="theFirst"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JL-HsKqyEeSuF9HUlMCIQw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gWScwKqzEeSuF9HUlMCIQw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gWScwaqzEeSuF9HUlMCIQw" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gWScwqqzEeSuF9HUlMCIQw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gWScw6qzEeSuF9HUlMCIQw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gWScxKqzEeSuF9HUlMCIQw" key="Date" value="2015-02-02"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gWScxaqzEeSuF9HUlMCIQw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JNg_0KqyEeSuF9HUlMCIQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="ProfileWithStrereotype.profile.uml#_HkkPkaqzEeSuF9HUlMCIQw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="ProfileWithStrereotype.profile.uml#_NgFdsKqxEeSuF9HUlMCIQw"/>
+    </profileApplication>
+  </uml:Model>
+  <profile:First xmi:id="_KcMZcKqyEeSuF9HUlMCIQw" base_Class="_Dr38MKqyEeSuF9HUlMCIQw" parentProperty="child" childProperty="2.3"/>
+</xmi:XMI>

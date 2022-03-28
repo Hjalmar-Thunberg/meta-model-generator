@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_0" name="assistant" URI="http://www.eclipse.org/Papyrus/2014/diagram/assistant">
+    <eAnnotations xmi:id="_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <eAnnotations xmi:id="_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-_serviceprovider" source="serviceprovider" references="IOperation IProviderChangeListener IProvider-listener IProvider-provides IProvider-addProviderChangeListener IProvider-removeProviderChangeListener IProvider A_observed_listener-observed A_observed_listener"/>
+      <eAnnotations xmi:id="_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML-_assistantapi" source="assistantapi" references="IAdaptable ElementType ModelingAssistantProvider IModelingAssistantProvider-getTypes IModelingAssistantProvider-getRelTypesOnSource IModelingAssistantProvider-getRelTypesOnTarget IModelingAssistantProvider-getRelTypesOnSourceAndTarget IModelingAssistantProvider-getRelTypesForSREOnTarget IModelingAssistantProvider-getRelTypesForSREOnSource IModelingAssistantProvider-getTypesForSource IModelingAssistantProvider-getTypesForTarget IModelingAssistantProvider-selectExistingElementForSource IModelingAssistantProvider-selectExistingElementForTarget IModelingAssistantProvider-getTypesForPopupBar IModelingAssistantProvider"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_ownedComment.0" annotatedElement="AssistedElementTypeFilter">
+      <body>Matches element types referenced as assisted by this model</body>
+    </ownedComment>
+    <packageImport xmi:id="_packageImport.0">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_packageImport.1">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="ConnectionAssistant" name="ConnectionAssistant">
+      <generalization xmi:id="ConnectionAssistant-_generalization.0" general="Assistant"/>
+      <ownedAttribute xmi:id="ConnectionAssistant-sourceFilter" name="sourceFilter" association="A_sourceConnectionAssistant_sourceFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ConnectionAssistant-sourceFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ConnectionAssistant-sourceFilter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ConnectionAssistant-ownedSourceFilter" name="ownedSourceFilter" aggregation="composite" subsettedProperty="ConnectionAssistant-sourceFilter" association="A_owningSourceConnectionAssistant_ownedSourceFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ConnectionAssistant-ownedSourceFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ConnectionAssistant-ownedSourceFilter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ConnectionAssistant-targetFilter" name="targetFilter" association="A_targetConnectionAssistant_targetFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ConnectionAssistant-targetFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ConnectionAssistant-targetFilter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ConnectionAssistant-ownedTargetFilter" name="ownedTargetFilter" aggregation="composite" subsettedProperty="ConnectionAssistant-targetFilter" association="A_owningTargetConnectionAssistant_ownedTargetFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ConnectionAssistant-ownedTargetFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ConnectionAssistant-ownedTargetFilter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ConnectionAssistant-owningProvider" name="owningProvider" type="ModelingAssistantProvider" subsettedProperty="Assistant-provider" association="A_owningProvider_connectionAssistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ConnectionAssistant-owningProvider-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ConnectionAssistant-owningProvider-_upperValue" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="Assistant" name="Assistant" isAbstract="true">
+      <ownedAttribute xmi:id="Assistant-elementTypeID" name="elementTypeID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="Assistant-elementType" name="elementType" visibility="public" type="ElementType" isUnique="false" isReadOnly="true" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Assistant-elementType-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Assistant-elementType-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="Assistant-provider" name="provider" type="ModelingAssistantProvider" isReadOnly="true" isDerived="true" isDerivedUnion="true" association="A_provider_assistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Assistant-provider-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Assistant-provider-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="Assistant-getElementType" name="getElementType" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="Assistant-getElementType-_ownedParameter.0" type="ElementType" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_provider_assistant" name="A_provider_assistant" visibility="private" memberEnd="Assistant-provider ModelingAssistantProvider-assistant"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="PopupAssistant" name="PopupAssistant">
+      <generalization xmi:id="PopupAssistant-_generalization.0" general="Assistant"/>
+      <ownedAttribute xmi:id="PopupAssistant-filter" name="filter" association="A_popupAssistant_filter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="PopupAssistant-filter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="PopupAssistant-filter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="PopupAssistant-ownedFilter" name="ownedFilter" aggregation="composite" subsettedProperty="PopupAssistant-filter" association="A_owningPopupAssistant_ownedFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="PopupAssistant-ownedFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="PopupAssistant-ownedFilter-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="PopupAssistant-owningProvider" name="owningProvider" type="ModelingAssistantProvider" subsettedProperty="Assistant-provider" association="A_owningProvider_popupAssistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="PopupAssistant-owningProvider-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="PopupAssistant-owningProvider-_upperValue" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="ElementTypeFilter" name="ElementTypeFilter">
+      <ownedAttribute xmi:id="ElementTypeFilter-elementTypeID" name="elementTypeID">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ElementTypeFilter-elementType" name="elementType" visibility="public" type="ElementType" isUnique="false" isReadOnly="true" isDerived="true">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ElementTypeFilter-elementType-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ElementTypeFilter-elementType-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ElementTypeFilter-provider" name="provider" type="ModelingAssistantProvider" isReadOnly="true" isDerived="true" association="A_elementTypeFilter_provider">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ElementTypeFilter-provider-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ElementTypeFilter-provider-_upperValue" value="1"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="ElementTypeFilter-_interfaceRealization.0" client="ElementTypeFilter">
+        <supplier xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <contract href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="ElementTypeFilter-getElementType" name="getElementType" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ElementTypeFilter-getElementType-_ownedParameter.0" type="ElementType" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="ElementTypeFilter-getProvider" name="getProvider" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ElementTypeFilter-getProvider-_ownedParameter.0" type="ModelingAssistantProvider" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_popupAssistant_filter" name="A_popupAssistant_filter" visibility="private" memberEnd="A_popupAssistant_filter-popupAssistant PopupAssistant-filter">
+      <ownedEnd xmi:id="A_popupAssistant_filter-popupAssistant" name="popupAssistant" type="PopupAssistant" association="A_popupAssistant_filter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_popupAssistant_filter-popupAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_popupAssistant_filter-popupAssistant-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningProvider_ownedFilter" name="A_owningProvider_ownedFilter" visibility="private" memberEnd="A_owningProvider_ownedFilter-owningProvider ModelingAssistantProvider-ownedFilter">
+      <ownedEnd xmi:id="A_owningProvider_ownedFilter-owningProvider" name="owningProvider" type="ModelingAssistantProvider" association="A_owningProvider_ownedFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_owningProvider_ownedFilter-owningProvider-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_owningProvider_ownedFilter-owningProvider-_upperValue" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningPopupAssistant_ownedFilter" name="A_owningPopupAssistant_ownedFilter" visibility="private" memberEnd="A_owningPopupAssistant_ownedFilter-owningPopupAssistant PopupAssistant-ownedFilter">
+      <ownedEnd xmi:id="A_owningPopupAssistant_ownedFilter-owningPopupAssistant" name="owningPopupAssistant" type="PopupAssistant" subsettedProperty="A_popupAssistant_filter-popupAssistant" association="A_owningPopupAssistant_ownedFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_owningPopupAssistant_ownedFilter-owningPopupAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_owningPopupAssistant_ownedFilter-owningPopupAssistant-_upperValue" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_sourceConnectionAssistant_sourceFilter" name="A_sourceConnectionAssistant_sourceFilter" visibility="private" memberEnd="A_sourceConnectionAssistant_sourceFilter-sourceConnectionAssistant ConnectionAssistant-sourceFilter">
+      <ownedEnd xmi:id="A_sourceConnectionAssistant_sourceFilter-sourceConnectionAssistant" name="sourceConnectionAssistant" type="ConnectionAssistant" association="A_sourceConnectionAssistant_sourceFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_sourceConnectionAssistant_sourceFilter-sourceConnectionAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_sourceConnectionAssistant_sourceFilter-sourceConnectionAssistant-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningSourceConnectionAssistant_ownedSourceFilter" name="A_owningSourceConnectionAssistant_ownedSourceFilter" visibility="private" memberEnd="A_owningSourceConnectionAssistant_ownedSourceFilter-owningSourceConnectionAssistant ConnectionAssistant-ownedSourceFilter">
+      <ownedEnd xmi:id="A_owningSourceConnectionAssistant_ownedSourceFilter-owningSourceConnectionAssistant" name="owningSourceConnectionAssistant" type="ConnectionAssistant" subsettedProperty="A_sourceConnectionAssistant_sourceFilter-sourceConnectionAssistant" association="A_owningSourceConnectionAssistant_ownedSourceFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_owningSourceConnectionAssistant_ownedSourceFilter-owningSourceConnectionAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_owningSourceConnectionAssistant_ownedSourceFilter-owningSourceConnectionAssistant-_upperValue" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_targetConnectionAssistant_targetFilter" name="A_targetConnectionAssistant_targetFilter" visibility="private" memberEnd="A_targetConnectionAssistant_targetFilter-targetConnectionAssistant ConnectionAssistant-targetFilter">
+      <ownedEnd xmi:id="A_targetConnectionAssistant_targetFilter-targetConnectionAssistant" name="targetConnectionAssistant" type="ConnectionAssistant" association="A_targetConnectionAssistant_targetFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_targetConnectionAssistant_targetFilter-targetConnectionAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_targetConnectionAssistant_targetFilter-targetConnectionAssistant-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningTargetConnectionAssistant_ownedTargetFilter" name="A_owningTargetConnectionAssistant_ownedTargetFilter" visibility="private" memberEnd="A_owningTargetConnectionAssistant_ownedTargetFilter-owningTargetConnectionAssistant ConnectionAssistant-ownedTargetFilter">
+      <ownedEnd xmi:id="A_owningTargetConnectionAssistant_ownedTargetFilter-owningTargetConnectionAssistant" name="owningTargetConnectionAssistant" type="ConnectionAssistant" subsettedProperty="A_targetConnectionAssistant_targetFilter-targetConnectionAssistant" association="A_owningTargetConnectionAssistant_ownedTargetFilter">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_owningTargetConnectionAssistant_ownedTargetFilter-owningTargetConnectionAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_owningTargetConnectionAssistant_ownedTargetFilter-owningTargetConnectionAssistant-_upperValue" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningProvider_popupAssistant" name="A_owningProvider_popupAssistant" visibility="private" memberEnd="PopupAssistant-owningProvider ModelingAssistantProvider-popupAssistant"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_owningProvider_connectionAssistant" name="A_owningProvider_connectionAssistant" visibility="private" memberEnd="ConnectionAssistant-owningProvider ModelingAssistantProvider-connectionAssistant"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="ClientContext" name="ClientContext"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_elementTypeFilter_provider" name="A_elementTypeFilter_provider" visibility="private" memberEnd="A_elementTypeFilter_provider-elementTypeFilter ElementTypeFilter-provider">
+      <ownedEnd xmi:id="A_elementTypeFilter_provider-elementTypeFilter" name="elementTypeFilter" type="ElementTypeFilter" association="A_elementTypeFilter_provider">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_elementTypeFilter_provider-elementTypeFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_elementTypeFilter_provider-elementTypeFilter-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="AssistedElementTypeFilter" name="AssistedElementTypeFilter">
+      <ownedAttribute xmi:id="AssistedElementTypeFilter-provider" name="provider" type="ModelingAssistantProvider" isReadOnly="true" isDerived="true" association="A_assistedElementTypeFilter_provider">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="AssistedElementTypeFilter-provider-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="AssistedElementTypeFilter-provider-_upperValue" value="1"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="AssistedElementTypeFilter-_interfaceRealization.0" client="AssistedElementTypeFilter">
+        <supplier xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <contract href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="AssistedElementTypeFilter-getProvider" name="getProvider" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="AssistedElementTypeFilter-getProvider-_ownedParameter.0" type="ModelingAssistantProvider" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_assistedElementTypeFilter_provider" name="A_assistedElementTypeFilter_provider" visibility="private" memberEnd="A_assistedElementTypeFilter_provider-assistedElementTypeFilter AssistedElementTypeFilter-provider">
+      <ownedEnd xmi:id="A_assistedElementTypeFilter_provider-assistedElementTypeFilter" name="assistedElementTypeFilter" type="AssistedElementTypeFilter" association="A_assistedElementTypeFilter_provider">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_assistedElementTypeFilter_provider-assistedElementTypeFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_assistedElementTypeFilter_provider-assistedElementTypeFilter-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="IOperation" name="IOperation"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="IProviderChangeListener" name="IProviderChangeListener"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="IProvider" name="IProvider" visibility="private">
+      <ownedAttribute xmi:id="IProvider-listener" name="listener" visibility="protected" type="IProviderChangeListener" association="A_observed_listener">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IProvider-listener-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IProvider-listener-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="IProvider-provides" name="provides">
+        <ownedParameter xmi:id="IProvider-provides-operation" name="operation" type="IOperation" effect="read"/>
+        <ownedParameter xmi:id="IProvider-provides-_ownedParameter.1" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IProvider-addProviderChangeListener" name="addProviderChangeListener">
+        <ownedParameter xmi:id="IProvider-addProviderChangeListener-listener" name="listener" type="IProviderChangeListener"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="IProvider-removeProviderChangeListener" name="removeProviderChangeListener">
+        <ownedParameter xmi:id="IProvider-removeProviderChangeListener-listener" name="listener" type="IProviderChangeListener"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="A_observed_listener" name="A_observed_listener" visibility="private" memberEnd="A_observed_listener-observed IProvider-listener">
+      <ownedEnd xmi:id="A_observed_listener-observed" name="observed" visibility="protected" type="IProvider" association="A_observed_listener">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_observed_listener-observed-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_observed_listener-observed-_upperValue" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="IAdaptable" name="IAdaptable"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="ElementType" name="ElementType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="ModelingAssistantProvider" name="ModelingAssistantProvider">
+      <ownedAttribute xmi:id="ModelingAssistantProvider-name" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-name-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-name-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-assistant" name="assistant" type="Assistant" aggregation="shared" isDerived="true" isDerivedUnion="true" association="A_provider_assistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-assistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-assistant-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-ownedFilter" name="ownedFilter" aggregation="composite" association="A_owningProvider_ownedFilter">
+        <type xmi:type="uml:Interface" href="../../org.eclipse.papyrus.infra.filters/model/filters.uml#_ftlkkHBIEeSbg_BqWNBy6A"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-ownedFilter-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-ownedFilter-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-popupAssistant" name="popupAssistant" type="PopupAssistant" aggregation="composite" subsettedProperty="ModelingAssistantProvider-assistant" association="A_owningProvider_popupAssistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-popupAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-popupAssistant-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-connectionAssistant" name="connectionAssistant" type="ConnectionAssistant" aggregation="composite" subsettedProperty="ModelingAssistantProvider-assistant" association="A_owningProvider_connectionAssistant">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-connectionAssistant-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-connectionAssistant-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-elementType" name="elementType" visibility="public" type="ElementType" isUnique="false" isReadOnly="true" isDerived="true">
+        <ownedComment xmi:id="ModelingAssistantProvider-elementType-_ownedComment.0" annotatedElement="ModelingAssistantProvider-elementType">
+          <body>The element types supported by the provider.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-elementType-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-elementType-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-elementTypeID" name="elementTypeID">
+        <ownedComment xmi:id="ModelingAssistantProvider-elementTypeID-_ownedComment.0" annotatedElement="ModelingAssistantProvider-elementTypeID">
+          <body>The identifiers of element types supported by the provider.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-elementTypeID-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-elementTypeID-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-clientContext" name="clientContext" visibility="public" type="ClientContext" isUnique="false" isReadOnly="true" isDerived="true">
+        <ownedComment xmi:id="ModelingAssistantProvider-clientContext-_ownedComment.0" annotatedElement="ModelingAssistantProvider-clientContext">
+          <body>The element types supported by the provider.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-clientContext-_lowerValue" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-clientContext-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-clientContextID" name="clientContextID">
+        <ownedComment xmi:id="ModelingAssistantProvider-clientContextID-_ownedComment.0" annotatedElement="ModelingAssistantProvider-clientContextID">
+          <body>The identifiers of element types supported by the provider.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-clientContextID-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-clientContextID-_upperValue" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-excludedElementType" name="excludedElementType" visibility="public" type="ElementType" isUnique="false" isReadOnly="true" isDerived="true">
+        <ownedComment xmi:id="ModelingAssistantProvider-excludedElementType-_ownedComment.0" annotatedElement="ModelingAssistantProvider-excludedElementType">
+          <body>Element types that the provider will never return as popup or connection assistants.
+This implies that inferred element types specializing any of these excluded types also will not be provided as assistants.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-excludedElementType-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-excludedElementType-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-excludedElementTypeID" name="excludedElementTypeID">
+        <ownedComment xmi:id="ModelingAssistantProvider-excludedElementTypeID-_ownedComment.0" annotatedElement="ModelingAssistantProvider-excludedElementTypeID">
+          <body>Identifiers of element types that the provider will never return as popup or connection assistants.
+This implies that inferred element types specializing any of these excluded types also will not be provided as assistants.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-excludedElementTypeID-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-excludedElementTypeID-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-relationshipType" name="relationshipType" visibility="public" type="ElementType" isUnique="false" isReadOnly="true" isDerived="true" subsettedProperty="ModelingAssistantProvider-elementType">
+        <ownedComment xmi:id="ModelingAssistantProvider-relationshipType-_ownedComment.0" annotatedElement="ModelingAssistantProvider-relationshipType">
+          <body>The element types supported by the provider.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-relationshipType-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-relationshipType-_upperValue" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="ModelingAssistantProvider-relationshipTypeID" name="relationshipTypeID" subsettedProperty="ModelingAssistantProvider-elementTypeID">
+        <ownedComment xmi:id="ModelingAssistantProvider-relationshipTypeID-_ownedComment.0" annotatedElement="ModelingAssistantProvider-relationshipTypeID">
+          <body>The identifiers of element types supported by the provider.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-relationshipTypeID-_lowerValue"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-relationshipTypeID-_upperValue" value="*"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="ModelingAssistantProvider-_interfaceRealization.0" client="ModelingAssistantProvider" supplier="IProvider IModelingAssistantProvider" contract="IModelingAssistantProvider"/>
+      <ownedOperation xmi:id="ModelingAssistantProvider-getElementTypes" name="getElementTypes" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ModelingAssistantProvider-getElementTypes-_ownedParameter.0" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-getElementTypes-_ownedParameter.0-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-getElementTypes-_ownedParameter.0-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="ModelingAssistantProvider-getClientContext" name="getClientContext" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ModelingAssistantProvider-getClientContext-_ownedParameter.0" type="ClientContext" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-getClientContext-_ownedParameter.0-_lowerValue" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-getClientContext-_ownedParameter.0-_upperValue" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="ModelingAssistantProvider-getElementType" name="getElementType">
+        <ownedParameter xmi:id="ModelingAssistantProvider-getElementType-id" name="id" effect="read">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="ModelingAssistantProvider-getElementType-_ownedParameter.1" type="ElementType" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="ModelingAssistantProvider-getExcludedElementTypes" name="getExcludedElementTypes" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ModelingAssistantProvider-getExcludedElementTypes-_ownedParameter.0" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-getExcludedElementTypes-_ownedParameter.0-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-getExcludedElementTypes-_ownedParameter.0-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="ModelingAssistantProvider-getRelationshipTypes" name="getRelationshipTypes" visibility="protected" isQuery="true">
+        <ownedParameter xmi:id="ModelingAssistantProvider-getRelationshipTypes-_ownedParameter.0" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="ModelingAssistantProvider-getRelationshipTypes-_ownedParameter.0-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="ModelingAssistantProvider-getRelationshipTypes-_ownedParameter.0-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="ModelingAssistantProvider-isRelationshipType" name="isRelationshipType">
+        <ownedParameter xmi:id="ModelingAssistantProvider-isRelationshipType-elementType" name="elementType" type="ElementType" effect="read"/>
+        <ownedParameter xmi:id="ModelingAssistantProvider-isRelationshipType-_ownedParameter.1" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="IModelingAssistantProvider" name="IModelingAssistantProvider" visibility="private">
+      <generalization xmi:id="IModelingAssistantProvider-_generalization.0" general="IProvider"/>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getTypes" name="getTypes">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypes-hint" name="hint" effect="read">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypes-data" name="data" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypes-_ownedParameter.2" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getTypes-_ownedParameter.2-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getTypes-_ownedParameter.2-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getRelTypesOnSource" name="getRelTypesOnSource">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnSource-source" name="source" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnSource-_ownedParameter.1" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getRelTypesOnSource-_ownedParameter.1-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getRelTypesOnSource-_ownedParameter.1-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getRelTypesOnTarget" name="getRelTypesOnTarget">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnTarget-target" name="target" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnTarget-_ownedParameter.1" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getRelTypesOnTarget-_ownedParameter.1-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getRelTypesOnTarget-_ownedParameter.1-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget" name="getRelTypesOnSourceAndTarget">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget-source" name="source" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget-target" name="target" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget-_ownedParameter.2" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget-_ownedParameter.2-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getRelTypesOnSourceAndTarget-_ownedParameter.2-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getRelTypesForSREOnTarget" name="getRelTypesForSREOnTarget">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesForSREOnTarget-target" name="target" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesForSREOnTarget-_ownedParameter.1" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getRelTypesForSREOnTarget-_ownedParameter.1-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getRelTypesForSREOnTarget-_ownedParameter.1-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getRelTypesForSREOnSource" name="getRelTypesForSREOnSource">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesForSREOnSource-source" name="source" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getRelTypesForSREOnSource-_ownedParameter.1" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getRelTypesForSREOnSource-_ownedParameter.1-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getRelTypesForSREOnSource-_ownedParameter.1-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getTypesForSource" name="getTypesForSource">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForSource-target" name="target" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForSource-relationshipType" name="relationshipType" type="ElementType" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForSource-_ownedParameter.2" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getTypesForSource-_ownedParameter.2-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getTypesForSource-_ownedParameter.2-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getTypesForTarget" name="getTypesForTarget">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForTarget-source" name="source" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForTarget-relationshipType" name="relationshipType" type="ElementType" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForTarget-_ownedParameter.2" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getTypesForTarget-_ownedParameter.2-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getTypesForTarget-_ownedParameter.2-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-selectExistingElementForSource" name="selectExistingElementForSource">
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForSource-target" name="target" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForSource-relationshipType" name="relationshipType" type="ElementType" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForSource-_ownedParameter.2" direction="return">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-selectExistingElementForSource-_ownedParameter.2-_lowerValue"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-selectExistingElementForTarget" name="selectExistingElementForTarget">
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForTarget-source" name="source" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForTarget-relationshipType" name="relationshipType" type="ElementType" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-selectExistingElementForTarget-_ownedParameter.2" direction="return">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-selectExistingElementForTarget-_ownedParameter.2-_lowerValue"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="IModelingAssistantProvider-getTypesForPopupBar" name="getTypesForPopupBar">
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForPopupBar-host" name="host" type="IAdaptable" effect="read"/>
+        <ownedParameter xmi:id="IModelingAssistantProvider-getTypesForPopupBar-_ownedParameter.1" type="ElementType" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="IModelingAssistantProvider-getTypesForPopupBar-_ownedParameter.1-_lowerValue"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="IModelingAssistantProvider-getTypesForPopupBar-_ownedParameter.1-_upperValue" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_profileApplication.0">
+      <eAnnotations xmi:id="_profileApplication.0-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_profileApplication.1">
+      <eAnnotations xmi:id="_profileApplication.1-_http2F2Fwww.eclipse.org2Fuml22F2.0.02FUML" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_PaPB0G9LEeSumdlFUM6GVw" base_Package="_0" basePackage="org.eclipse.papyrus.infra.gmfdiag"/>
+  <Ecore:EDataType xmi:id="_5v4zQG9gEeSumdlFUM6GVw" instanceClassName="org.eclipse.gmf.runtime.emf.type.core.IElementType" base_PrimitiveType="ElementType"/>
+  <Ecore:EAttribute xmi:id="_PGZL4G9jEeSumdlFUM6GVw" base_Property="Assistant-elementType"/>
+  <Ecore:EOperation xmi:id="_eszgEG9jEeSumdlFUM6GVw" base_Operation="Assistant-getElementType" visibility="None"/>
+  <Ecore:EOperation xmi:id="_j26NcG9jEeSumdlFUM6GVw" base_Operation="ElementTypeFilter-getElementType" visibility="None"/>
+  <Ecore:EAttribute xmi:id="_4LTRcHAYEeSI-6xi41tPrg" base_Property="ModelingAssistantProvider-elementType"/>
+  <Ecore:EOperation xmi:id="_4-dMsnAYEeSI-6xi41tPrg" base_Operation="ModelingAssistantProvider-getElementTypes" visibility="None"/>
+  <Ecore:EAttribute xmi:id="_YkyzEHGfEeSvWqyzhafqGg" base_Property="ModelingAssistantProvider-clientContext"/>
+  <Ecore:EDataType xmi:id="_jQSFYHGfEeSvWqyzhafqGg" instanceClassName="org.eclipse.gmf.runtime.emf.type.core.IClientContext" base_PrimitiveType="ClientContext"/>
+  <Ecore:EOperation xmi:id="_wTSBonGfEeSvWqyzhafqGg" base_Operation="ModelingAssistantProvider-getClientContext" visibility="None"/>
+  <Ecore:EOperation xmi:id="_oRTggHGlEeSvWqyzhafqGg" base_Operation="ElementTypeFilter-getProvider" visibility="None"/>
+  <Ecore:EOperation xmi:id="_yacP0IFgEeS8o9c9-aDIuQ" base_Operation="AssistedElementTypeFilter-getProvider" visibility="None"/>
+  <Ecore:EAttribute xmi:id="_alaK8Ku-EeSfB7MLtP_t1w" base_Property="ModelingAssistantProvider-excludedElementType"/>
+  <Ecore:EOperation xmi:id="_6xnMsKu-EeSfB7MLtP_t1w" base_Operation="ModelingAssistantProvider-getExcludedElementTypes" visibility="None"/>
+  <Ecore:EAttribute xmi:id="_yIL4oLIoEeSNj7xRtN2nYQ" base_Property="ModelingAssistantProvider-relationshipType"/>
+  <Ecore:EOperation xmi:id="_yIVCkLIoEeSNj7xRtN2nYQ" base_Operation="ModelingAssistantProvider-getRelationshipTypes" visibility="None"/>
+  <Ecore:EDataType xmi:id="_5kuGMLIpEeSNj7xRtN2nYQ" instanceClassName="org.eclipse.gmf.runtime.common.core.service.IOperation" base_PrimitiveType="IOperation"/>
+  <Ecore:EDataType xmi:id="_5kuGMbIpEeSNj7xRtN2nYQ" instanceClassName="org.eclipse.gmf.runtime.common.core.service.IProviderChangeListener" base_PrimitiveType="IProviderChangeListener"/>
+  <Ecore:EClass xmi:id="_5kutQLIpEeSNj7xRtN2nYQ" instanceClassName="org.eclipse.gmf.runtime.common.core.service.IProvider" base_Interface="IProvider"/>
+  <Ecore:EReference xmi:id="_5kutQbIpEeSNj7xRtN2nYQ" isTransient="true" visibility="None" base_Property="IProvider-listener"/>
+  <Ecore:EDataType xmi:id="_5k0z4LIpEeSNj7xRtN2nYQ" instanceClassName="org.eclipse.core.runtime.IAdaptable" base_PrimitiveType="IAdaptable"/>
+  <Ecore:EClass xmi:id="_5k0z4bIpEeSNj7xRtN2nYQ" instanceClassName="org.eclipse.gmf.runtime.emf.ui.services.modelingassistant.IModelingAssistantProvider" base_Interface="IModelingAssistantProvider"/>
+  <standard:Metamodel xmi:id="_7pIN8LIpEeSNj7xRtN2nYQ" base_Model="_0"/>
+  <standard:Metaclass xmi:id="_7pKDILIpEeSNj7xRtN2nYQ" base_Class="ConnectionAssistant"/>
+  <standard:Metaclass xmi:id="_7pLRQLIpEeSNj7xRtN2nYQ" base_Class="Assistant"/>
+  <standard:Metaclass xmi:id="_7pMfYLIpEeSNj7xRtN2nYQ" base_Class="PopupAssistant"/>
+  <standard:Metaclass xmi:id="_7pNtgLIpEeSNj7xRtN2nYQ" base_Class="ElementTypeFilter"/>
+  <standard:Metaclass xmi:id="_7pQJwLIpEeSNj7xRtN2nYQ" base_Class="AssistedElementTypeFilter"/>
+  <standard:Metaclass xmi:id="_7pR-8LIpEeSNj7xRtN2nYQ" base_Class="ModelingAssistantProvider"/>
+</xmi:XMI>

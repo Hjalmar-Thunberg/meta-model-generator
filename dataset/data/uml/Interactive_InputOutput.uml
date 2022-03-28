@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_8CxvcIKGEeSFEt9m3bH63A" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1Sjo0LeMEeS_zZpc9I-Bsg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUS_ALF_LIBRARY/Alf.library.uml#Alf"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_A6bMYLekEeSkqaPlhCzRxg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8WWLsIKGEeSFEt9m3bH63A" name="Interactive_InputOutput" classifierBehavior="_8WWL1YKGEeSFEt9m3bH63A" isActive="true">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_8WWL1oKGEeSFEt9m3bH63A" alias="" visibility="private">
+        <importedElement xmi:type="uml:Package" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#BasicInputOutput"/>
+      </elementImport>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8WWLxoKGEeSFEt9m3bH63A" name="Interactive_InputOutput$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLx4KGEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLyIKGEeSFEt9m3bH63A" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8WWLyYKGEeSFEt9m3bH63A" name="Interactive_InputOutput$initialization$1" visibility="protected" specification="_8WWLyoKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL2oKGEeSFEt9m3bH63A" annotatedElement="_8WWLyYKGEeSFEt9m3bH63A">
+          <body>activity 'Interactive_InputOutput$initialization$1'(){
+  if (this.'Interactive_InputOutput$initializationFlag$1' == null) {
+    this.'Interactive_InputOutput$initializationFlag$1' = true;
+  }
+}
+</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8WWLy4KGEeSFEt9m3bH63A" name="Interactive_InputOutput$method$1" specification="_8WWLz4KGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL2YKGEeSFEt9m3bH63A" annotatedElement="_8WWLy4KGEeSFEt9m3bH63A">
+          <body>activity 'Interactive_InputOutput$method$1'(): Interactive_InputOutput {
+	this.'Interactive_InputOutput$initialization$1'();
+	return this;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLzIKGEeSFEt9m3bH63A" type="_8WWLsIKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLzYKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLzoKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8WWL04KGEeSFEt9m3bH63A" name="destroy$method$1" specification="_8WWL1IKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL3IKGEeSFEt9m3bH63A" annotatedElement="_8WWL04KGEeSFEt9m3bH63A">
+          <body>activity 'destroy$method$1'() { }</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_8WWL1YKGEeSFEt9m3bH63A" name="Interactive_InputOutput$behavior$1" visibility="private">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL24KGEeSFEt9m3bH63A" annotatedElement="_8WWL1YKGEeSFEt9m3bH63A">
+          <body>activity 'Interactive_InputOutput$behavior$1'() { WriteLine(&quot;Enter two characters.&quot;);
+A(char1, char2, s1, s2);
+Output().write(&quot;char1=&quot;);
+Output().write(char1);
+Output().write(&quot; status1=&quot; + s1.description);
+Output().writeNewLine();
+Output().write(&quot;char2=&quot;);
+Output().write(char2);
+Output().write(&quot; status2=&quot; + s2.description);
+Output().writeNewLine();
+}</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8WWLyoKGEeSFEt9m3bH63A" name="Interactive_InputOutput$initialization$1" visibility="protected" method="_8WWLyYKGEeSFEt9m3bH63A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8WWLz4KGEeSFEt9m3bH63A" name="Interactive_InputOutput" method="_8WWLy4KGEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWL0IKGEeSFEt9m3bH63A" type="_8WWLsIKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWL0YKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWL0oKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8WWL1IKGEeSFEt9m3bH63A" name="destroy" method="_8WWL04KGEeSFEt9m3bH63A"/>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_8WWLsYKGEeSFEt9m3bH63A" name="Input" visibility="package">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL3YKGEeSFEt9m3bH63A" annotatedElement="_8WWLsYKGEeSFEt9m3bH63A">
+          <body>activity Input(): StandardInputChannel { return StandardInputChannel.allInstances ()[1];
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLsoKGEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:Class" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#BasicInputOutput-StandardInputChannel"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLs4KGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLtIKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_8WWLtYKGEeSFEt9m3bH63A" name="Output" visibility="package">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL2IKGEeSFEt9m3bH63A" annotatedElement="_8WWLtYKGEeSFEt9m3bH63A">
+          <body>activity Output(): StandardOutputChannel { return StandardOutputChannel.allInstances ()[1];
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLtoKGEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:Class" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#BasicInputOutput-StandardOutputChannel"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLt4KGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLuIKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_8WWLuYKGEeSFEt9m3bH63A" name="A" visibility="package">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8WWL14KGEeSFEt9m3bH63A" annotatedElement="_8WWLuYKGEeSFEt9m3bH63A">
+          <body>activity A(out x: any[0..1], out y: any[0..1], out status1: Status[0..1], out status2: Status[0..1]) { Input().read(x, status1);
+Input().read(y, status2);
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLuoKGEeSFEt9m3bH63A" name="x" direction="out">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLu4KGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLvIKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLvYKGEeSFEt9m3bH63A" name="y" direction="out">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLvoKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLv4KGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLwIKGEeSFEt9m3bH63A" name="status1" direction="out">
+          <type xmi:type="uml:DataType" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#Common-Status"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLwYKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLwoKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8WWLw4KGEeSFEt9m3bH63A" name="status2" direction="out">
+          <type xmi:type="uml:DataType" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#Common-Status"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8WWLxIKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8WWLxYKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8CxvcYKGEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8CxvcoKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jvsPBbeMEeS_zZpc9I-Bsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvs2ELeMEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL3oKGEeSFEt9m3bH63A" base_Comment="_8WWL24KGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL34KGEeSFEt9m3bH63A" base_Comment="_8WWL2YKGEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Destroy xmi:id="_8WWL4IKGEeSFEt9m3bH63A" base_BehavioralFeature="_8WWL1IKGEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL4YKGEeSFEt9m3bH63A" base_Comment="_8WWL2IKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL4oKGEeSFEt9m3bH63A" base_Comment="_8WWL14KGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL44KGEeSFEt9m3bH63A" base_Comment="_8WWL2oKGEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Create xmi:id="_8WWL5IKGEeSFEt9m3bH63A" base_BehavioralFeature="_8WWLz4KGEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL5YKGEeSFEt9m3bH63A" base_Comment="_8WWL3YKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_8WWL5oKGEeSFEt9m3bH63A" base_Comment="_8WWL3IKGEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

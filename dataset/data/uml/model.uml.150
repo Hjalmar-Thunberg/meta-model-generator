@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:test="http:///schemas/test/_kpp4gOhCEeSqZs7o0maBIQ/0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/test/_kpp4gOhCEeSqZs7o0maBIQ/0 test.profile.uml#_kpqfkOhCEeSqZs7o0maBIQ">
+  <uml:Model xmi:id="_pF72kOhCEeSqZs7o0maBIQ" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_pF72kehCEeSqZs7o0maBIQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qBaAUOhCEeSqZs7o0maBIQ" name="Bean1"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sekmUOhCEeSqZs7o0maBIQ" name="Bean2"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_tak7kOhCEeSqZs7o0maBIQ" client="_qBaAUOhCEeSqZs7o0maBIQ" supplier="_sekmUOhCEeSqZs7o0maBIQ"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_yzzDAOhCEeSqZs7o0maBIQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yz0RIOhCEeSqZs7o0maBIQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yz0RIehCEeSqZs7o0maBIQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yz0RIuhCEeSqZs7o0maBIQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yz0RI-hCEeSqZs7o0maBIQ" key="Copyright" value="Copyright (c) 2015 Christian W. Damus and others.&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License 2.0&#xA;which accompanies this distribution, and is available at&#xA;https://www.eclipse.org/legal/epl-2.0/&#xA;&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Christian W. Damus - Initial API and implementation"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yz0RJOhCEeSqZs7o0maBIQ" key="Date" value="2015-04-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yz0RJehCEeSqZs7o0maBIQ" key="Author" value="Christian W. Damus"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yzzqEOhCEeSqZs7o0maBIQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="test.profile.uml#_kpqfkOhCEeSqZs7o0maBIQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="test.profile.uml#_0wU2kOhBEeSqZs7o0maBIQ"/>
+    </profileApplication>
+  </uml:Model>
+  <test:Bean xmi:id="_0wwe8OhCEeSqZs7o0maBIQ" base_Classifier="_qBaAUOhCEeSqZs7o0maBIQ"/>
+  <test:Bean xmi:id="_1laPAOhCEeSqZs7o0maBIQ" base_Classifier="_sekmUOhCEeSqZs7o0maBIQ"/>
+  <test:Proxy xmi:id="_2diJ0OhCEeSqZs7o0maBIQ" base_Dependency="_tak7kOhCEeSqZs7o0maBIQ"/>
+</xmi:XMI>

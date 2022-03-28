@@ -1,0 +1,2624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="75f5cb4e-ed53-4e92-855e-82390244055e"
+  name="SkynetTDSModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d7e40a57-d59b-45a3-9e43-93cce2d0c356"
+        name="Program"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c5855776-9047-4a35-8048-7b1446d444c4"
+            isDerived="false"
+            sourceEndRoleName="Program"
+            targetEndRoleName="Form"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5099c64d-0111-4474-9849-8116367a4d62"
+              LastKnownName="Form"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2dbb146-ded5-4cd4-9fdf-71d2295447a6"
+                  name="Program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3016e8f-b966-4e67-88fb-e466bcd124dd"
+                  name="Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5099c64d-0111-4474-9849-8116367a4d62"
+        name="Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1d03ebc6-c147-4891-a494-9cd5ca1d5e19"
+            isDerived="false"
+            sourceEndRoleName="Form"
+            targetEndRoleName="IEventController"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="c4d90815-c3d8-4557-b36e-663aefe9709b"
+              LastKnownName="IEventController"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16ab540e-51b3-437b-acda-21849dfca6bc"
+                  name="Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31802090-15ce-4576-9362-619d1e0e1151"
+                  name="IEventController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9704fc5a-ec0c-4211-bccd-273460918a11"
+            isDerived="false"
+            sourceEndRoleName="Form"
+            targetEndRoleName="IEventControllerCreator"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="c70dc2cf-b257-4482-8620-1914845c920d"
+              LastKnownName="IEventControllerCreator"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a0e5d07-f86c-44ca-958d-b6c88afc3b0c"
+                  name="Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d114933a-3a91-4d48-895d-60304254bdeb"
+                  name="IEventControllerCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="90fbe970-8eac-4c88-ba0e-00a8a7852893"
+            isDerived="false"
+            sourceEndRoleName="Form"
+            targetEndRoleName="IVisionDevice"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f1e2a44e-58f4-42b7-a0fc-94ab71c79c2c"
+              LastKnownName="IVisionDevice"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2e15f82-2976-45b5-8f27-320600ed22aa"
+                  name="Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9199dc9f-bbdd-41e0-8452-a3ae459a2d63"
+                  name="IVisionDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="69053d59-599d-4cba-bf0e-8e7ed7438694"
+        name="ConcreteEventCreator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7dc32332-588e-4747-8c06-58b0c7e135fe">
+            <interfaceMoniker
+              Id="c70dc2cf-b257-4482-8620-1914845c920d"
+              LastKnownName="IEventControllerCreator"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="e8c28bc1-31cf-40f4-884f-202c99954f76"
+            isDerived="false"
+            sourceEndRoleName="ConcreteEventCreator"
+            targetEndRoleName="FriendFoeController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="187bd641-d8b4-41e3-88df-b2aa1d183ba3"
+              LastKnownName="FriendFoeController"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba62e05f-e89a-438e-b3fd-4b195d749b02"
+                  name="ConcreteEventCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f846ed8d-ff8f-4df3-abb2-93bb963fcc0f"
+                  name="FriendFoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fb96ad98-57bc-49d3-804c-e5ee49aed625"
+            isDerived="false"
+            sourceEndRoleName="ConcreteEventCreator"
+            targetEndRoleName="FoeController"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="df3ac6cd-4f00-4b1d-98b0-5b37c15a73d9"
+              LastKnownName="FoeController"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff486aae-0965-4471-9842-9c033de4dcc7"
+                  name="ConcreteEventCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9be6f206-3e53-4dca-b6bc-686ea8506adb"
+                  name="FoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="187bd641-d8b4-41e3-88df-b2aa1d183ba3"
+        name="FriendFoeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="5e76835e-cfc0-40af-b529-f3aeff559e9a">
+            <interfaceMoniker
+              Id="c4d90815-c3d8-4557-b36e-663aefe9709b"
+              LastKnownName="IEventController"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="e3d1fede-9382-44e3-bca0-b52829df8556"
+            isDerived="false"
+            sourceEndRoleName="FriendFoeController"
+            targetEndRoleName="IImageProcess"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="6dd4f644-902d-47ea-abb0-5676225393a6"
+              LastKnownName="IImageProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="24347575-d022-421f-8bf5-f634fe3b4a2f"
+                  name="FriendFoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="79d979ef-a043-45c4-b1f9-518ada293d46"
+                  name="IImageProcess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0515ad7c-8d15-4618-8298-7fc921551709"
+            isDerived="false"
+            sourceEndRoleName="FriendFoeController"
+            targetEndRoleName="IImageProcessCreator"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="67f974fb-9ccd-4683-95e0-1cbd566b4e35"
+              LastKnownName="IImageProcessCreator"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9a0133b-97e5-44c0-8970-bc66fce4bb6d"
+                  name="FriendFoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="abb92af1-7009-42db-bd02-1da24bd1189f"
+                  name="IImageProcessCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="370e64bf-5c03-41cc-bf35-56a0f58ebdf1"
+            isDerived="false"
+            sourceEndRoleName="FriendFoeController"
+            targetEndRoleName="ILauncherController"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f3b3e2dc-398a-46b3-9662-9d35ec25aeea"
+              LastKnownName="ILauncher"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4d2439e7-bf0a-4fc3-9cb4-7a4cfbd56225"
+                  name="FriendFoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fd0201c-de8f-4a58-a878-e27f7afd0b21"
+                  name="ILauncherController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="db14c618-846b-49da-aef7-32f3dbc61f3f"
+            isDerived="false"
+            sourceEndRoleName="FriendFoeController"
+            targetEndRoleName="IVisionDevice"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f1e2a44e-58f4-42b7-a0fc-94ab71c79c2c"
+              LastKnownName="IVisionDevice"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12564b8f-ef10-4291-815b-b81ceb347c42"
+                  name="FriendFoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd85877f-7a3c-4e0c-b353-6dcc8bbf6f90"
+                  name="IVisionDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c70dc2cf-b257-4482-8620-1914845c920d"
+        name="IEventControllerCreator"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c4d90815-c3d8-4557-b36e-663aefe9709b"
+        name="IEventController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6dd4f644-902d-47ea-abb0-5676225393a6"
+        name="IImageProcessor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5312ce4e-3696-48c4-986f-8a4b70aea9ad"
+        name="ImageProcessCreator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="062197ca-e968-4f2c-8e36-b95a1215c594">
+            <interfaceMoniker
+              Id="67f974fb-9ccd-4683-95e0-1cbd566b4e35"
+              LastKnownName="IImageProcessCreator"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="062618dd-1b65-4d9c-a504-4249afd3b995"
+            isDerived="false"
+            sourceEndRoleName="ImageProcessCreator"
+            targetEndRoleName="FriendFoe"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9f0c27f5-328f-4a07-918d-dc73c046033f"
+              LastKnownName="FriendFoeProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18e3658a-5698-42e3-8748-1172bc2a44e8"
+                  name="ImageProcessCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4c11888-499c-4799-aebc-4491e4adad47"
+                  name="FriendFoe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1ddcedef-89c9-411f-bb11-2af35c8f12ea"
+            isDerived="false"
+            sourceEndRoleName="ImageProcessCreator"
+            targetEndRoleName="Foe"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1837f995-4811-43fc-b3d3-654341542d10"
+              LastKnownName="FoeProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="115554ac-b6e1-488b-9b2c-f4d1d8825ac6"
+                  name="ImageProcessCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db6b6c43-7b47-4fe3-a260-4156806037ff"
+                  name="Foe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="67f974fb-9ccd-4683-95e0-1cbd566b4e35"
+        name="IImageProcessCreator"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9f0c27f5-328f-4a07-918d-dc73c046033f"
+        name="FriendFoeProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8618d078-8b6f-4728-aa4d-e8c88bb2072f">
+            <interfaceMoniker
+              Id="6dd4f644-902d-47ea-abb0-5676225393a6"
+              LastKnownName="IImageProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1837f995-4811-43fc-b3d3-654341542d10"
+        name="FoeProcessor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="dfa97c2e-2093-43db-8ab0-f8b83949e803">
+            <interfaceMoniker
+              Id="6dd4f644-902d-47ea-abb0-5676225393a6"
+              LastKnownName="IImageProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7746f297-6c29-4232-8b8d-531bd9ceee5f"
+        name="Target"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f3b3e2dc-398a-46b3-9662-9d35ec25aeea"
+        name="ILauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a2fa01c0-ac79-48e7-9455-0a415a2603e3"
+        name="LauncherController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c4b99372-db2e-42bd-a0b3-a7831c9b8976">
+            <interfaceMoniker
+              Id="f3b3e2dc-398a-46b3-9662-9d35ec25aeea"
+              LastKnownName="ILauncher"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="368a736c-926a-4a28-bfc4-4b23860ca21a"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="323b5bf0-1374-497f-9f51-59e5b0b9cbdd"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Select Competition"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="068be89c-9873-401c-b06a-c5d81dd5d9b0"
+              LastKnownName="Select Competition"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="485bfd31-1c55-4eb7-b79d-a05392009cf8"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="92cd1901-342a-493a-a17b-d5c393b7db53"
+                  name="Select Competition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a6e45b8d-be25-43ca-bed3-0e851b0708ea"
+        name="Image System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="db512fd5-93ec-479c-ab1f-5599a6a4484f"
+            isDerived="false"
+            sourceEndRoleName="Image System"
+            targetEndRoleName="Process Image"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fe8cedc3-a94f-41be-8326-f4b5ed2964b6"
+              LastKnownName="Process Image"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d559345-fe09-4597-a459-c0f8f40c6d35"
+                  name="Image System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a72bbbe3-e0df-4de2-bf77-1dcf3e030c35"
+                  name="Process Image"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c0421ebc-a368-4907-8208-ba70de9d932b"
+        name="Missile System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1c1b4450-116d-46e4-9c9e-8b90fc7b5d37"
+            isDerived="false"
+            sourceEndRoleName="Missile System"
+            targetEndRoleName="Fire At Target"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ddd4c47d-4620-4643-aef4-12e6880d90a4"
+              LastKnownName="Fire At Target"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbbeb398-4502-4346-9776-06ce8045143d"
+                  name="Missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4280059-a60f-4e62-87ce-ce084808b1d8"
+                  name="Fire At Target"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7517cf3b-d3d7-41ff-9534-641bdf40e69d"
+        name="Moving Target"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c74ac59-ad73-49ff-a27b-2b5a3f1f4223"
+        name="Friend or Foe"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4044241a-77aa-4c70-b6cd-9e60367850ed">
+            <useCaseMoniker
+              Id="fe8cedc3-a94f-41be-8326-f4b5ed2964b6"
+              LastKnownName="Process Image"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b486ada-0d32-45c6-b8a0-303ce8ca5a81"
+        name="Depth Perception"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eaa8af92-4a44-46b9-82f3-744952bb7fd6"
+        name="Time Trial"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d5785052-a455-4457-b01c-9ab331c7814e">
+            <useCaseMoniker
+              Id="fe8cedc3-a94f-41be-8326-f4b5ed2964b6"
+              LastKnownName="Process Image"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="068be89c-9873-401c-b06a-c5d81dd5d9b0"
+        name="Select Competition"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="79e5f116-5c93-40af-962f-cc9ad6333ad5"
+            isDerived="false"
+            sourceEndRoleName="Select Competition"
+            targetEndRoleName="Time Trial"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eaa8af92-4a44-46b9-82f3-744952bb7fd6"
+              LastKnownName="Time Trial"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb5fe2e3-f8db-4ef4-87af-ebe1da7e17a0"
+                  name="Select Competition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9e5f3ef-52f2-44c3-848e-ee177a9561db"
+                  name="Time Trial"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c49706ad-3b8d-45f8-a968-6781e629bd29"
+            isDerived="false"
+            sourceEndRoleName="Select Competition"
+            targetEndRoleName="Foe only"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="190e21db-0f49-44df-9555-210486f22413"
+              LastKnownName="Foe only"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f118f1da-f20e-441a-bfc7-754b770004fb"
+                  name="Select Competition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="633c08fa-0fde-4c14-ac4e-d80df883c1e7"
+                  name="Foe only"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5eacc753-4262-4a4a-8bfc-e15591c83bc9"
+            isDerived="false"
+            sourceEndRoleName="Select Competition"
+            targetEndRoleName="Friend or Foe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8c74ac59-ad73-49ff-a27b-2b5a3f1f4223"
+              LastKnownName="Friend or Foe"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a671acf8-9796-4675-9832-51c2ae63e827"
+                  name="Select Competition"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="605bbcc9-4900-4c39-b73e-c11cee0b0ae0"
+                  name="Friend or Foe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <additions>
+          <include
+            Id="0a1cc9c2-3326-43c1-9574-7192f006c6e4">
+            <useCaseMoniker
+              Id="ff6a0fa9-3c06-4aaf-8d90-96be0d9204a6"
+              LastKnownName="Start Timer"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="190e21db-0f49-44df-9555-210486f22413"
+        name="Foe only"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="694be80b-fa9d-4d9a-8270-0febdee6928c">
+            <useCaseMoniker
+              Id="5b486ada-0d32-45c6-b8a0-303ce8ca5a81"
+              LastKnownName="Depth Perception"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </extend>
+          <extend
+            Id="548729d2-6069-4a53-9adf-6ce889c08b19">
+            <useCaseMoniker
+              Id="7517cf3b-d3d7-41ff-9534-641bdf40e69d"
+              LastKnownName="Moving Target"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="ead44d25-7dee-4fe8-b364-af8c9c07b911">
+            <useCaseMoniker
+              Id="fe8cedc3-a94f-41be-8326-f4b5ed2964b6"
+              LastKnownName="Process Image"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe8cedc3-a94f-41be-8326-f4b5ed2964b6"
+        name="Process Image"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="21639e08-19eb-4a68-9ada-8ef3698bf3a5">
+            <useCaseMoniker
+              Id="ddd4c47d-4620-4643-aef4-12e6880d90a4"
+              LastKnownName="Fire At Target"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ddd4c47d-4620-4643-aef4-12e6880d90a4"
+        name="Fire At Target"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9a9e5162-24fa-4a32-a906-34480981ed0d"
+        name="Capture Image"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="19bcafc7-640b-459f-92ac-c25a488f4527"
+        name="Missile System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0a9a24b5-6463-4ca9-b201-dfad7f903bed"
+            isDerived="false"
+            sourceEndRoleName="Missile System"
+            targetEndRoleName="Accept Coords"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4336f8c0-e3cd-41c8-bbab-55ca27dc02f7"
+              LastKnownName="Accept Coords"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49a0b295-0004-4ced-a48c-57f17e25f89b"
+                  name="Missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="34fc616a-1f38-45e8-ba4e-a700224e0029"
+                  name="Accept Coords"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="00dc3187-c890-4599-975a-61f7d0da001a"
+            isDerived="false"
+            sourceEndRoleName="Missile System"
+            targetEndRoleName="Move to Coords"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5a0fbaeb-a730-418e-80d1-e4f2fecb8545"
+              LastKnownName="Move to Coords"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67970052-6dff-4240-ac8e-fc7dc268790e"
+                  name="Missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dbaec0d4-a711-4e99-a99a-6f3c7c6e5ca8"
+                  name="Move to Coords"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e6b868fb-016c-4f5a-bab3-1c51a57c46bb"
+            isDerived="false"
+            sourceEndRoleName="Missile System"
+            targetEndRoleName="Fire Missile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f1e25c73-805c-4381-a40c-13216c12dece"
+              LastKnownName="Fire Missile"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0a9fee9-6d67-45f9-95e9-1fdcf322c245"
+                  name="Missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88ad51ea-7295-4060-b1f6-ced89a1f2536"
+                  name="Fire Missile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="06191d7d-28a4-450f-8c3b-b8ddeaa7ed9a"
+            isDerived="false"
+            sourceEndRoleName="Missile System"
+            targetEndRoleName="Send OK"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ce3e0ea-2238-4bea-b05c-47931f3de533"
+              LastKnownName="Send OK"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f4214cc-10ef-452a-89a6-d01b60e82a47"
+                  name="Missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c486e6c-ed39-4825-b6bc-72cbbd7fb56a"
+                  name="Send OK"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="381369c6-080a-45de-af36-3eb6c702025c"
+        name="Image System"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="441cecbc-5d1b-4e73-9d68-a585afad17e7"
+            isDerived="false"
+            sourceEndRoleName="Image System"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9a9e5162-24fa-4a32-a906-34480981ed0d"
+              LastKnownName="Capture Image"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16b6dcc8-76af-495d-8b32-d2a2819d6c51"
+                  name="Image System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91fe388c-06c1-493d-8296-d8dc53edd22c"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="edc02f8d-a708-4191-89e0-eb16b8eeece3"
+            isDerived="false"
+            sourceEndRoleName="Image System"
+            targetEndRoleName="Locate Targets"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c672123a-a10f-4047-9a01-8f37573a157f"
+              LastKnownName="Locate Targets"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="000eb682-391a-4ce3-b7a3-ad93c4e08d39"
+                  name="Image System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d3a0d51-586f-4d2a-ab2c-e0f80ffcf2e8"
+                  name="Locate Targets"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9d47ad74-ecec-4e89-9b24-6868d99d8356"
+            isDerived="false"
+            sourceEndRoleName="Image System"
+            targetEndRoleName="Wait for OK from missile System"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f8727e58-e777-470d-8fae-e80d43ec2aad"
+              LastKnownName="Wait for OK from missile System"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f73fcce5-edc0-4dfb-b3f3-5d83d406a467"
+                  name="Image System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a37f70c-c312-4186-8b51-8a94562a2ee1"
+                  name="Wait for OK from missile System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c672123a-a10f-4047-9a01-8f37573a157f"
+        name="Locate Targets"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="21713c83-f49e-4676-b5c9-c7e75315420a">
+            <useCaseMoniker
+              Id="8995e143-421f-4b42-89be-81a0e3b70871"
+              LastKnownName="Find Friend or Foe"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8995e143-421f-4b42-89be-81a0e3b70871"
+        name="Find Friend or Foe"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e2bcbd17-3197-434a-b9e2-e96fdaa4b4fa">
+            <useCaseMoniker
+              Id="9ac458ef-816a-4d6a-8bee-2191938c9162"
+              LastKnownName="Get Coords of Target"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+          <include
+            Id="f466bc54-e1d2-4fcd-b6a1-343727a7e63c">
+            <useCaseMoniker
+              Id="d818b5db-f366-4886-8cd7-37f78273e755"
+              LastKnownName="Mark Targets  on GUI"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9ac458ef-816a-4d6a-8bee-2191938c9162"
+        name="Get Coords of Target"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d258fea0-aa33-47e5-9b9a-7d32a2991482">
+            <useCaseMoniker
+              Id="f1b72243-e8f1-4596-a481-22a7901a6e49"
+              LastKnownName="Send coords to Missile System"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f8727e58-e777-470d-8fae-e80d43ec2aad"
+        name="Wait for OK from missile System"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1b72243-e8f1-4596-a481-22a7901a6e49"
+        name="Send coords to Missile System"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="48757144-aa91-428d-b11b-41242dfe9f5a">
+            <useCaseMoniker
+              Id="4336f8c0-e3cd-41c8-bbab-55ca27dc02f7"
+              LastKnownName="Accept Coords"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5a0fbaeb-a730-418e-80d1-e4f2fecb8545"
+        name="Move to Coords"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f1e25c73-805c-4381-a40c-13216c12dece"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4336f8c0-e3cd-41c8-bbab-55ca27dc02f7"
+        name="Accept Coords"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ce3e0ea-2238-4bea-b05c-47931f3de533"
+        name="Send OK"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ff6a0fa9-3c06-4aaf-8d90-96be0d9204a6"
+        name="Start Timer"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d818b5db-f366-4886-8cd7-37f78273e755"
+        name="Mark Targets  on GUI"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="759a6e28-acf0-4f23-a0ee-77d0ab56cf24"
+        name="GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="a1eb2040-cd9c-4883-ad7c-0c082c541b24"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="712727f8-f65e-480e-941b-dbd946982420">
+                <providedInterfaceMoniker
+                  Id="88c7896b-32fd-46eb-89d1-1c9bb022866f"
+                  LastKnownName="Port1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="acec692f-31b2-4852-99da-ea2dc75e1926"
+                LastKnownName="IVisionDevice"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="a4673f8c-9a9c-4264-ac92-98bf4936e92a"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="bf1b320b-04f6-4b7d-87a1-4bdf01a562f2">
+                <providedInterfaceMoniker
+                  Id="9685966b-cc42-45bb-a797-cbdc817af0e7"
+                  LastKnownName="Port1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="744992f7-15f5-41da-8902-0f440643e206"
+                LastKnownName="IEventController"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="48c30c82-606b-48ae-83bf-2223bcac67ea"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="85ed6faa-c13d-4211-aade-1f6786f8d4d4"
+        name="Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="b2ffa3f9-6fa5-4674-a303-6def6e42a2db"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="bbd2c497-e61b-46a8-b2f2-6db2cc55f1db">
+                <providedInterfaceMoniker
+                  Id="212ac7ee-9916-40c8-995c-433fda47caa5"
+                  LastKnownName="Port1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="39c44576-665b-4985-a2fe-58eb5e35d3a4"
+                LastKnownName="IProcessor"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="c0f68256-180d-472f-acda-da9a084b38de"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="5c627916-3bcc-4ba2-9577-c087c1db0dda">
+                <providedInterfaceMoniker
+                  Id="83ad5433-d90a-4148-b660-6b73e80c182f"
+                  LastKnownName="Port1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fed8daa9-9267-4096-a9cc-32beeae27c51"
+                LastKnownName="ILauncher"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="e14fc0e4-05cf-4463-b352-055e37b42c34"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="4e5fc6d2-e50e-4d3d-a817-931a021e01fc">
+                <providedInterfaceMoniker
+                  Id="88c7896b-32fd-46eb-89d1-1c9bb022866f"
+                  LastKnownName="Port1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="56089577-a404-4b7e-b0f9-27ab82edd386"
+                LastKnownName="IVisionDevice"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="9685966b-cc42-45bb-a797-cbdc817af0e7"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e705a075-0f9d-4015-9e84-2a64105cfc86"
+                LastKnownName="IEventController"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="38daa4dc-2517-4965-9b3f-04a831faf452"
+        name="Competition"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="39c44576-665b-4985-a2fe-58eb5e35d3a4"
+        name="IProcessor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fed8daa9-9267-4096-a9cc-32beeae27c51"
+        name="ILauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="fec3298e-de2a-4866-8d9c-976a5b78dff2"
+        name="Launcher Controller"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="38e721c7-50c2-49d1-9787-78a1d7322197">
+            <componentMoniker
+              Id="0a4b8b46-5370-4396-ac73-cf09a53102d8"
+              LastKnownName="Missile Launcher"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </dependency>
+          <dependency
+            Id="4fc927b9-0b2a-4ab2-86cf-4c74bd450f0d">
+            <componentMoniker
+              Id="6738d82e-4448-4e5b-832b-60c868b97393"
+              LastKnownName="Missile Launcher API"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="83ad5433-d90a-4148-b660-6b73e80c182f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0d9ae157-0ce1-449e-b2e6-94f80fbef36d"
+                LastKnownName="ILauncher"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="41aad48d-b262-4fba-9469-eefae43ded5f"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2df5a6c7-f3a7-4a39-a4f2-5e4e1d5e38a2"
+        name="Image Processor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c393b894-21bb-4c06-8895-550bc0af32be">
+            <componentMoniker
+              Id="3b4b29bc-7ae9-437f-ba99-ec882ce866ab"
+              LastKnownName="EMGU"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="212ac7ee-9916-40c8-995c-433fda47caa5"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3b262cf6-368a-4b37-9295-e4e3d43e42a0"
+                LastKnownName="IProcessor"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b2b3e56a-7717-4024-a589-e0fbae841988"
+        name="Fire Missile"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="62d15e07-9a5e-4e32-8185-35f3d1dea14b"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0a4b8b46-5370-4396-ac73-cf09a53102d8"
+        name="Missile Launcher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6d76ffc0-22c0-4f3d-be72-8830b7de72b1">
+            <componentMoniker
+              Id="6738d82e-4448-4e5b-832b-60c868b97393"
+              LastKnownName="Missile Launcher API"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e71428b8-5795-414b-9d10-782f76d993b1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="39879e21-3493-41f0-9052-a40ca39a706a"
+        name="Process Image"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="73adf511-b4a1-440a-97b9-bc054a01af91"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1155948b-1007-4223-ae9b-28dea8451fac"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="0546b0f5-c381-46de-8e9a-2474c2ee24f0"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2d038598-db6b-4162-b076-70f15a1256d6"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="5dde54ae-1f96-4f69-9099-d9635aa93a90"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7e2faacc-1099-4ec9-b6d0-7ecabbdfc490"
+                LastKnownName="Coord Conversion"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3b4b29bc-7ae9-437f-ba99-ec882ce866ab"
+        name="EMGU"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a79d3e3a-9090-485d-94c7-fd4c8f855fd9"
+        name="Get Image"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1155948b-1007-4223-ae9b-28dea8451fac"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d2e6c184-f61b-4b35-9f90-79221c483ee4"
+        name="MissileLauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6738d82e-4448-4e5b-832b-60c868b97393"
+        name="Missile Launcher API"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="59113c6b-02ed-4f82-a8b7-926c592b409e"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1d35e2e8-3ef7-4179-8538-f42d892d543f"
+        name="Get Coord"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2d038598-db6b-4162-b076-70f15a1256d6"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7e2faacc-1099-4ec9-b6d0-7ecabbdfc490"
+        name="Coord Conversion"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dfc9f65e-2eac-4913-8c0a-cbe5314c6149"
+        name="ImagetoRealworl Coord sys"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="29bc4c8f-17df-44d0-80e5-357d0a209e95"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="62ebff54-dc2e-4e68-8245-39fffcc9a269"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="62ebff54-dc2e-4e68-8245-39fffcc9a269"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="651d4416-ecf2-4164-9f90-77417738bfeb"
+        name="Skynet Sequence_Events"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="d0149198-e5b8-4050-982b-644370583057"
+            name="Lifeline1"
+            isActor="false"
+            lifelineDisplayName="Lifeline1" />
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="d1c481f5-a846-4289-8749-8d88e250ccf9"
+        name="SkynetSequence_creation"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="0e484019-9630-4d73-a59c-d08cb681ae78"
+            name="main"
+            isActor="false"
+            lifelineDisplayName="main" />
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="85088aee-28ec-45a9-a8b7-5b0530c909c4"
+        name="SkynetActivityDia"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <opaqueAction
+            Id="b82025e9-55f5-4b03-acce-3ba0c8ffa440"
+            name="Start UI"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ecab8e7d-ed12-40f2-b36a-56b0cd0b7aff"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="5f2ee9fa-4b5c-4fd6-8cff-c44696528a11"
+                  LastKnownName="Fork3"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="48fc536e-be4c-4e1e-ab9b-f5e8e0b7e43e"
+            name="Select Competition"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9d9f41ff-cd76-4cbb-8f5f-d0ec03df0038"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2f3b59d2-17b5-4a8e-b4d6-5ea532098204"
+                  LastKnownName="Start GUI Timer"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="e1ac97ca-ae57-4dec-a14f-44350f768838"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a4071629-ce3b-4022-9511-e63fd7b66135"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="817ee3de-0ad7-441c-8b93-c6b22f370862"
+                  LastKnownName="Capture Image"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="15ace392-ac48-418b-a2c9-69a01e206b28"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="e5d9d4e1-c66a-488e-9c23-564cc00897aa"
+                  LastKnownName="Update GUI"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="35ad4432-2274-46c3-ae8a-ee92a392f616"
+            name="Start WebCam"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="180d4dba-d511-4fb7-a1c0-bc1e5a2eceae"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab7037e6-ee90-4a60-876c-6a588bedda56"
+                  LastKnownName="Join1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2f3b59d2-17b5-4a8e-b4d6-5ea532098204"
+            name="Start GUI Timer"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4e01a658-b1fc-462b-b5cc-86074218e154"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="e1ac97ca-ae57-4dec-a14f-44350f768838"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="691c8246-09f5-45a4-bbfa-bfae79ccd7d1"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c3a52646-6440-408f-878b-6fc70b1cdf51"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b82025e9-55f5-4b03-acce-3ba0c8ffa440"
+                  LastKnownName="Start UI"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="817ee3de-0ad7-441c-8b93-c6b22f370862"
+            name="Capture Image"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="babd2777-8123-45f4-b7fb-888ed50ce6c9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="013ae602-76b5-4c3c-a041-301b7b1a99f3"
+                  LastKnownName="Locate Targets"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="013ae602-76b5-4c3c-a041-301b7b1a99f3"
+            name="Locate Targets"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e594e835-7182-46fd-96d4-cef5b1e4064d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5378e412-f625-4fb8-9f62-85e4e963fdd1"
+                  LastKnownName="Get Target Coords"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5378e412-f625-4fb8-9f62-85e4e963fdd1"
+            name="Get Target Coords"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d60d4cd4-73f6-45a7-a02f-8b46d5f66d86"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7690219d-1213-40c3-bf43-0bca46b21405"
+                  LastKnownName="Miss Launcher Move to Coords"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <sendSignalAction
+            Id="0bb15048-ba9d-4e72-9c32-a2ceeda990e9"
+            name="Send Missile Fired Event"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a7e2fc9c-0e7b-4483-9a12-9e957184da95"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="e5d9d4e1-c66a-488e-9c23-564cc00897aa"
+                  LastKnownName="Update GUI"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c0ccc7b2-8822-46bc-8c6e-c11a4d8ee222"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="247ac4c9-a260-4805-817b-f7caa47645c5"
+                  LastKnownName="Miss Launcher Move to Coords"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <opaqueAction
+            Id="7690219d-1213-40c3-bf43-0bca46b21405"
+            name="Miss Launcher Move to Coords"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a590885-0d7a-4e1f-82c5-d1d15e5ceb9a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="efb8914b-455c-4f46-9007-faf6335c71fc"
+                  LastKnownName="Fire Missile"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="f4d052d1-d59b-488d-b27f-c26b7a8b98b0"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="efb8914b-455c-4f46-9007-faf6335c71fc"
+            name="Fire Missile"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c8b6e3e2-96bf-45c9-a192-c55be1a1fcff"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7fa9962-432d-4ff0-85e4-23612173f047"
+                  LastKnownName="Decrement Missile Count"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="ab7037e6-ee90-4a60-876c-6a588bedda56"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bec22adb-1338-4f33-8745-1e0f1088e644"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f4d052d1-d59b-488d-b27f-c26b7a8b98b0"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <forkNode
+            Id="5f2ee9fa-4b5c-4fd6-8cff-c44696528a11"
+            name="Fork3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="aa2fe635-1fc5-4987-9321-35077289ed98"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35ad4432-2274-46c3-ae8a-ee92a392f616"
+                  LastKnownName="Start WebCam"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="39aeb492-49fe-4459-8935-7a2c5a8b53f6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="48fc536e-be4c-4e1e-ab9b-f5e8e0b7e43e"
+                  LastKnownName="Select Competition"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <acceptEventAction
+            Id="e5d9d4e1-c66a-488e-9c23-564cc00897aa"
+            name="Update GUI"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="69fa3e76-5ac1-4dbf-bf23-630d0b248017"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="ab7037e6-ee90-4a60-876c-6a588bedda56"
+                  LastKnownName="Join1"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction
+            Id="d7fa9962-432d-4ff0-85e4-23612173f047"
+            name="Decrement Missile Count"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81f1bb77-36c6-4de0-8efd-d9ed5624671a"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="0bb15048-ba9d-4e72-9c32-a2ceeda990e9"
+                  LastKnownName="Send Missile Fired Event"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <acceptEventAction
+            Id="247ac4c9-a260-4805-817b-f7caa47645c5"
+            name="Miss Launcher Move to Coords"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="59cceaaf-614d-456d-bae3-a6f67d52aa32"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="efb8914b-455c-4f46-9007-faf6335c71fc"
+                  LastKnownName="Fire Missile"
+                  LastKnownLocation="SkynetTDSModeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df3ac6cd-4f00-4b1d-98b0-5b37c15a73d9"
+        name="FoeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a7c881d4-34e6-4f36-a631-44ef82aeefaa">
+            <interfaceMoniker
+              Id="c4d90815-c3d8-4557-b36e-663aefe9709b"
+              LastKnownName="IEventController"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="3432c50f-4bd6-4b1d-b6e7-98d03bb2546d"
+            isDerived="false"
+            sourceEndRoleName="FoeController"
+            targetEndRoleName="ILauncher"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f3b3e2dc-398a-46b3-9662-9d35ec25aeea"
+              LastKnownName="ILauncher"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="68fab180-b797-4d5d-847f-5caaaaf72083"
+                  name="FoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11f6a52f-e7c5-49af-949f-a090983cc03d"
+                  name="ILauncher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a3eee99-9df7-45d4-9a7f-21cf38ecdad9"
+            isDerived="false"
+            sourceEndRoleName="FoeController"
+            targetEndRoleName="IImageProcessor"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="6dd4f644-902d-47ea-abb0-5676225393a6"
+              LastKnownName="IImageProcessor"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f89d0d7c-546e-480c-bcef-a6652a181dda"
+                  name="FoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43b970d7-b0cf-49a8-b4e8-756e276ea123"
+                  name="IImageProcessor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6955e782-42a5-45c6-a9b3-56185daa3f69"
+            isDerived="false"
+            sourceEndRoleName="FoeController"
+            targetEndRoleName="IVisionDevice"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f1e2a44e-58f4-42b7-a0fc-94ab71c79c2c"
+              LastKnownName="IVisionDevice"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="354702f5-3c86-4609-a94e-af8b26a61713"
+                  name="FoeController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84eb25cc-b0f0-4986-a20b-3448f1762731"
+                  name="IVisionDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="40fd2a18-d18b-4ca1-94e6-72fb2a00a057"
+        name="VisionDevice"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="95a671af-d674-41eb-903c-5a1a2c4de608">
+            <componentMoniker
+              Id="3b4b29bc-7ae9-437f-ba99-ec882ce866ab"
+              LastKnownName="EMGU"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="88c7896b-32fd-46eb-89d1-1c9bb022866f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="758abc41-3cbb-44c8-aee6-b6988df55f6c"
+                LastKnownName="IVisionDevice"
+                LastKnownLocation="SkynetTDSModeling.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="758abc41-3cbb-44c8-aee6-b6988df55f6c"
+        name="IVisionDevice"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="acec692f-31b2-4852-99da-ea2dc75e1926"
+        name="IVisionDevice"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="000f8fab-b492-42ff-83df-506a748bc2be"
+        name="Interface3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3b262cf6-368a-4b37-9295-e4e3d43e42a0"
+        name="IProcessor"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="56089577-a404-4b7e-b0f9-27ab82edd386"
+        name="IVisionDevice"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="744992f7-15f5-41da-8902-0f440643e206"
+        name="IEventController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e705a075-0f9d-4015-9e84-2a64105cfc86"
+        name="IEventController"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0d9ae157-0ce1-449e-b2e6-94f80fbef36d"
+        name="ILauncher"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f1e2a44e-58f4-42b7-a0fc-94ab71c79c2c"
+        name="IVisionDevice"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="116640e8-e3b0-43fd-bef2-470aa15c62cd"
+            isDerived="false"
+            sourceEndRoleName="IVisionDevice"
+            targetEndRoleName="VisionDevice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7e5d4930-4407-4363-b2b2-8102d601ef91"
+              LastKnownName="VisionDevice"
+              LastKnownLocation="SkynetTDSModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e21c87f6-df58-40c1-aa13-10fd2c4427a7"
+                  name="IVisionDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ba3aa9e-c2ac-49cd-9a7e-213275c84164"
+                  name="VisionDevice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7e5d4930-4407-4363-b2b2-8102d601ef91"
+        name="VisionDevice"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

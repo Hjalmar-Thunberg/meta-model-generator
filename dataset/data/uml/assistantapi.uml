@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_LcfdQG90EeSumdlFUM6GVw" name="assistantapi">
+    <packageImport xmi:id="_LcfdQW90EeSumdlFUM6GVw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_u9-80G-VEeSumdlFUM6GVw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#_0"/>
+    </packageImport>
+    <packageMerge xmi:id="_XZIY8G91EeSumdlFUM6GVw">
+      <mergedPackage xmi:type="uml:Model" href="serviceprovider.uml#_cdP6cG9yEeSumdlFUM6GVw"/>
+    </packageMerge>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_ssVGQG90EeSumdlFUM6GVw" name="IAdaptable"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1R7qIG90EeSumdlFUM6GVw" name="ElementType"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ukZ8AG-REeSumdlFUM6GVw" name="ModelingAssistantProvider">
+      <interfaceRealization xmi:id="_3Lu-MG-REeSumdlFUM6GVw" client="_ukZ8AG-REeSumdlFUM6GVw" contract="_j5OWQG-SEeSumdlFUM6GVw">
+        <supplier xmi:type="uml:Interface" href="serviceprovider.uml#_QTP-kG95EeSumdlFUM6GVw"/>
+        <supplier xmi:type="uml:Interface" href="#_j5OWQG-SEeSumdlFUM6GVw"/>
+        <supplier xmi:type="uml:Interface" href="#_j5OWQG-SEeSumdlFUM6GVw"/>
+        <supplier xmi:type="uml:Interface" href="#_j5OWQG-SEeSumdlFUM6GVw"/>
+      </interfaceRealization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_j5OWQG-SEeSumdlFUM6GVw" name="IModelingAssistantProvider">
+      <generalization xmi:id="_oALkkG-SEeSumdlFUM6GVw">
+        <general xmi:type="uml:Interface" href="serviceprovider.uml#_QTP-kG95EeSumdlFUM6GVw"/>
+      </generalization>
+      <ownedOperation xmi:id="_9-jcAG90EeSumdlFUM6GVw" name="getTypes">
+        <ownedParameter xmi:id="_CmhFoG91EeSumdlFUM6GVw" name="hint" effect="read">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_E7djwG91EeSumdlFUM6GVw" name="data" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_MUPIIG91EeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jbzj0G95EeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jb0K4G95EeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_xXLTsG-TEeSumdlFUM6GVw" name="getRelTypesOnSource">
+        <ownedParameter xmi:id="_xXLTsm-TEeSumdlFUM6GVw" name="source" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_xXLTs2-TEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xXLTtG-TEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xXLTtW-TEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_0yWaEG-TEeSumdlFUM6GVw" name="getRelTypesOnTarget">
+        <ownedParameter xmi:id="_0yWaEW-TEeSumdlFUM6GVw" name="target" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_0yWaEm-TEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0yWaE2-TEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0yWaFG-TEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_-UmzcG-TEeSumdlFUM6GVw" name="getRelTypesOnSourceAndTarget">
+        <ownedParameter xmi:id="_E4JY8G-UEeSumdlFUM6GVw" name="source" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_-UmzcW-TEeSumdlFUM6GVw" name="target" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_-Umzcm-TEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Umzc2-TEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-UmzdG-TEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IiT9kG-UEeSumdlFUM6GVw" name="getRelTypesForSREOnTarget">
+        <ownedParameter xmi:id="_IiT9kW-UEeSumdlFUM6GVw" name="target" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_IiT9km-UEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IiT9k2-UEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IiT9lG-UEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IiT9lW-UEeSumdlFUM6GVw" name="getRelTypesForSREOnSource">
+        <ownedParameter xmi:id="_IiT9lm-UEeSumdlFUM6GVw" name="source" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_IiT9l2-UEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IiT9mG-UEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IiT9mW-UEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_PBpYgG-UEeSumdlFUM6GVw" name="getTypesForSource">
+        <ownedParameter xmi:id="_PBpYgW-UEeSumdlFUM6GVw" name="target" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_WZAnoG-UEeSumdlFUM6GVw" name="relationshipType" type="_1R7qIG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_PBpYgm-UEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PBpYg2-UEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PBpYhG-UEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_YwFzwG-UEeSumdlFUM6GVw" name="getTypesForTarget">
+        <ownedParameter xmi:id="_YwFzwW-UEeSumdlFUM6GVw" name="source" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_YwFzwm-UEeSumdlFUM6GVw" name="relationshipType" type="_1R7qIG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_YwFzw2-UEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YwFzxG-UEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YwFzxW-UEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_7NgqMG-UEeSumdlFUM6GVw" name="selectExistingElementForSource">
+        <ownedParameter xmi:id="_7NgqMW-UEeSumdlFUM6GVw" name="target" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_7NhRQG-UEeSumdlFUM6GVw" name="relationshipType" type="_1R7qIG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_7NhRQW-UEeSumdlFUM6GVw" direction="return">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NhRQm-UEeSumdlFUM6GVw"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_7NhRRG-UEeSumdlFUM6GVw" name="selectExistingElementForTarget">
+        <ownedParameter xmi:id="_7NhRRW-UEeSumdlFUM6GVw" name="source" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_7NhRRm-UEeSumdlFUM6GVw" name="relationshipType" type="_1R7qIG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_FZVvkG-WEeSumdlFUM6GVw" direction="return">
+          <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EObject"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FZVvkW-WEeSumdlFUM6GVw"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_NctwIG-WEeSumdlFUM6GVw" name="getTypesForPopupBar">
+        <ownedParameter xmi:id="_NctwIm-WEeSumdlFUM6GVw" name="host" type="_ssVGQG90EeSumdlFUM6GVw" effect="read"/>
+        <ownedParameter xmi:id="_NctwI2-WEeSumdlFUM6GVw" type="_1R7qIG90EeSumdlFUM6GVw" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NctwJG-WEeSumdlFUM6GVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NctwJW-WEeSumdlFUM6GVw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_PPcKcG90EeSumdlFUM6GVw">
+      <eAnnotations xmi:id="_PPrbAG90EeSumdlFUM6GVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_QF4qQG90EeSumdlFUM6GVw">
+      <eAnnotations xmi:id="_QGE3gG90EeSumdlFUM6GVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:ModelLibrary xmi:id="_RLCUcG90EeSumdlFUM6GVw" base_Package="_LcfdQG90EeSumdlFUM6GVw"/>
+  <Ecore:EDataType xmi:id="_uCrOIG90EeSumdlFUM6GVw" instanceClassName="org.eclipse.core.runtime.IAdaptable" base_PrimitiveType="_ssVGQG90EeSumdlFUM6GVw"/>
+  <Ecore:EDataType xmi:id="_3IaDkG90EeSumdlFUM6GVw" instanceClassName="org.eclipse.gmf.runtime.emf.type.core.IElementType" base_PrimitiveType="_1R7qIG90EeSumdlFUM6GVw"/>
+  <Ecore:EClass xmi:id="_wBnrcG-SEeSumdlFUM6GVw" instanceClassName="org.eclipse.gmf.runtime.emf.ui.services.modelingassistant.IModelingAssistantProvider" base_Interface="_j5OWQG-SEeSumdlFUM6GVw"/>
+</xmi:XMI>

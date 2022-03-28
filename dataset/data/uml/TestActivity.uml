@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_e-UQQO16EeSWKJSOvcFimA" name="Model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_e-eoUO16EeSWKJSOvcFimA" name="TestActivity" visibility="public" node="_e-eoVO16EeSWKJSOvcFimA _e-eoVe16EeSWKJSOvcFimA" group="_e-eoVe16EeSWKJSOvcFimA">
+    <packageImport xmi:id="_e-eoZu16EeSWKJSOvcFimA" visibility="private">
+      <importedPackage href="pathmap://PAPYRUS_ALF_LIBRARY/Alf.library.uml#Alf-Library-BasicInputOutput"/>
+    </packageImport>
+    <ownedParameter xmi:id="_e-eoUe16EeSWKJSOvcFimA" direction="return">
+      <name xsi:nil="true"/>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-eoUu16EeSWKJSOvcFimA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-eoU-16EeSWKJSOvcFimA" value="1"/>
+    </ownedParameter>
+    <structuredNode xmi:id="_e-eoVe16EeSWKJSOvcFimA" name="Body(TestActivity)">
+      <node xmi:type="uml:StructuredActivityNode" xmi:id="_e-eoVu16EeSWKJSOvcFimA" name="1:Expression Statement">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_e-eoV-16EeSWKJSOvcFimA" target="_e-eoX-16EeSWKJSOvcFimA" source="_e-eoWe16EeSWKJSOvcFimA"/>
+        <edge xmi:type="uml:ObjectFlow" xmi:id="_e-eoWO16EeSWKJSOvcFimA" target="_e-eoYO16EeSWKJSOvcFimA" source="_e-eoW-16EeSWKJSOvcFimA"/>
+        <node xmi:type="uml:StructuredActivityNode" xmi:id="_e-eoWe16EeSWKJSOvcFimA" name="Tuple(Call('WriteLine'))" outgoing="_e-eoV-16EeSWKJSOvcFimA">
+          <node xmi:type="uml:ValueSpecificationAction" xmi:id="_e-eoWu16EeSWKJSOvcFimA" name="Value(&quot;Hello Test!&quot;)">
+            <result xmi:id="_e-eoW-16EeSWKJSOvcFimA" name="Value(&quot;Hello Test!&quot;).result" outgoing="_e-eoWO16EeSWKJSOvcFimA">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-eoXO16EeSWKJSOvcFimA" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-eoXe16EeSWKJSOvcFimA" value="1"/>
+            </result>
+            <value xmi:type="uml:LiteralString" xmi:id="_e-eoXu16EeSWKJSOvcFimA" name="&quot;Hello Test!&quot;" value="Hello Test!">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </value>
+          </node>
+        </node>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_e-eoX-16EeSWKJSOvcFimA" name="Call('WriteLine')" incoming="_e-eoV-16EeSWKJSOvcFimA">
+          <argument xmi:id="_e-eoYO16EeSWKJSOvcFimA" name="Call('WriteLine').argument('value')" incoming="_e-eoWO16EeSWKJSOvcFimA">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-eoYe16EeSWKJSOvcFimA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-eoYu16EeSWKJSOvcFimA" value="1"/>
+          </argument>
+          <result xmi:id="_e-eoY-16EeSWKJSOvcFimA" name="Call('WriteLine').result('errorStatus')">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-eoZO16EeSWKJSOvcFimA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e-eoZe16EeSWKJSOvcFimA" value="1"/>
+          </result>
+          <behavior xmi:type="uml:Activity" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#BasicInputOutput-WriteLine"/>
+        </node>
+      </node>
+    </structuredNode>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_e-eoVO16EeSWKJSOvcFimA" name="Return" parameter="_e-eoUe16EeSWKJSOvcFimA"/>
+  </packagedElement>
+  <profileApplication xmi:id="_e-UQQe16EeSWKJSOvcFimA">
+    <eAnnotations xmi:id="_e-UQQu16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_e-UQQ-16EeSWKJSOvcFimA">
+    <eAnnotations xmi:id="_e-UQRO16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

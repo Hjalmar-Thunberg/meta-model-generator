@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_guW3oL0AEeSZ7qIHfPXYkw" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_guW3ob0AEeSZ7qIHfPXYkw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i7KtcL0AEeSZ7qIHfPXYkw" name="Foo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rR0PUL0AEeSZ7qIHfPXYkw" name="isOK">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OtodIMHiEeSTWuBP4IruAw" name="blackbox" type="_paOGcMHgEeSTWuBP4IruAw" association="_OtkLsMHiEeSTWuBP4IruAw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_4PMrwL0AEeSZ7qIHfPXYkw" name="Nested"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_jbS_AL0AEeSZ7qIHfPXYkw" name="YesNo">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lc2AAL0AEeSZ7qIHfPXYkw" name="no"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nzE3kL0AEeSZ7qIHfPXYkw" name="yes"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ZGCwgL0CEeSZ7qIHfPXYkw" name="stuff">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_PeDBEMIcEeSbhqqLzaRcPg" importedElement="_jbS_AL0AEeSZ7qIHfPXYkw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cM07QL0CEeSZ7qIHfPXYkw" name="Packaged">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eyMGwMDuEeSmA6K_2O402g" name="age">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_eyOjAMDuEeSmA6K_2O402g" name="Nested"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_paOGcMHgEeSTWuBP4IruAw" name="BlackBox">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dpbuEMHiEeSTWuBP4IruAw" general="_dpMdgMHiEeSTWuBP4IruAw"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_s-WUgMHgEeSTWuBP4IruAw" name="output" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vci1QMHgEeSTWuBP4IruAw" name="nested" type="_rfD2kMHhEeSTWuBP4IruAw"/>
+    <ownedConnector xmi:type="uml:Connector" xmi:id="_6-pKAMHhEeSTWuBP4IruAw" name="delegateToBlueBox">
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_6-pxEMHhEeSTWuBP4IruAw" partWithPort="_vci1QMHgEeSTWuBP4IruAw" role="_wCatAMHhEeSTWuBP4IruAw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-pxEcHhEeSTWuBP4IruAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-pxEsHhEeSTWuBP4IruAw" value="1"/>
+      </end>
+      <end xmi:type="uml:ConnectorEnd" xmi:id="_6-pxE8HhEeSTWuBP4IruAw" role="_s-WUgMHgEeSTWuBP4IruAw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6-pxFMHhEeSTWuBP4IruAw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6-pxFcHhEeSTWuBP4IruAw" value="1"/>
+      </end>
+    </ownedConnector>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rfD2kMHhEeSTWuBP4IruAw" name="BlueBox">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_wCatAMHhEeSTWuBP4IruAw" name="output" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kRcucMHjEeSqf97Famh-Ww" name="nested" type="_paOGcMHgEeSTWuBP4IruAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_HxX1oMHiEeSTWuBP4IruAw" client="_i7KtcL0AEeSZ7qIHfPXYkw" supplier="_jbS_AL0AEeSZ7qIHfPXYkw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OtkLsMHiEeSTWuBP4IruAw" name="A_blackbox_foo" memberEnd="_OtodIMHiEeSTWuBP4IruAw _OtpEMMHiEeSTWuBP4IruAw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OtnPAMHiEeSTWuBP4IruAw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OtnPAcHiEeSTWuBP4IruAw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OtpEMMHiEeSTWuBP4IruAw" name="foo" type="_i7KtcL0AEeSZ7qIHfPXYkw" association="_OtkLsMHiEeSTWuBP4IruAw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dpMdgMHiEeSTWuBP4IruAw" name="Box"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ac_OsMddEeSfY4Ck7He7hQ" name="Date"/>
+</uml:Model>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Profile xmi:id="_7XA_UB6wEeKf5s7PWuyytw" name="TestProfile425483" metaclassReference="_Jl3qsB6xEeKf5s7PWuyytw">
+   <elementImport xmi:id="_Jl3qsB6xEeKf5s7PWuyytw">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_LSrx0B6xEeKf5s7PWuyytw" name="SomeStereotype">
+      <ownedAttribute xmi:id="_jJen0h6xEeKf5s7PWuyytw" name="base_Class" association="_jJen0B6xEeKf5s7PWuyytw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LSrx0B6xEeKf5s7PWuiegf" name="SomeMetaClass">
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_jJen0B6xEeKf5s7PWuyytw" name="Class_SomeStereotype" memberEnd="_jJen0R6xEeKf5s7PWuyytw _jJen0h6xEeKf5s7PWuyytw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_jJen0R6xEeKf5s7PWuyytw" name="extension_SomeStereotype" type="_LSrx0B6xEeKf5s7PWuyytw" aggregation="composite" association="_jJen0B6xEeKf5s7PWuyytw"/>
+    </packagedElement>
+  </uml:Profile>
+</xmi:XMI>

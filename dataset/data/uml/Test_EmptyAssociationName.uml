@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_U-RRoKiwEeSnxYSoNvE-fw" name="Model">
+  <packagedElement xmi:type="uml:Package" xmi:id="_V-Nu4Ki0EeSNMu29jvDdkA" name="Test_EmptyAssociationName">
+    <packagedElement xmi:type="uml:Association" xmi:id="_ewXhAKi0EeSNMu29jvDdkA" memberEnd="_f_m7UKi0EeSNMu29jvDdkA _mSHbMKi0EeSNMu29jvDdkA">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_f_m7UKi0EeSNMu29jvDdkA" name="First" type="_UFf1kKi7EeSNMu29jvDdkA" association="_ewXhAKi0EeSNMu29jvDdkA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mSHbMKi0EeSNMu29jvDdkA" name="Second" type="_Ws9AAKi7EeSNMu29jvDdkA" association="_ewXhAKi0EeSNMu29jvDdkA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UFf1kKi7EeSNMu29jvDdkA" name="A"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ws9AAKi7EeSNMu29jvDdkA" name="B"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U-RRoaiwEeSnxYSoNvE-fw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rSykEoKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U-RRo6iwEeSnxYSoNvE-fw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Eu1Q8LeKEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

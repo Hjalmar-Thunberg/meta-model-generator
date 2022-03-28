@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ZtEWYMK3EeSkv8vaizVybg" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ZtEWYcK3EeSkv8vaizVybg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dZNQ8MK3EeSkv8vaizVybg" name="Foo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XFcBQMLBEeSkv8vaizVybg" name="ok">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qkfmgMK3EeSkv8vaizVybg" name="bar" type="_iBhf4MK3EeSkv8vaizVybg" association="_qkgNkMK3EeSkv8vaizVybg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkfmgcK3EeSkv8vaizVybg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkfmgsK3EeSkv8vaizVybg" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_68S0AMK6EeSkv8vaizVybg" name="doIt"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_88g_UMK6EeSkv8vaizVybg" name="Nested"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iBhf4MK3EeSkv8vaizVybg" name="Bar">
+    <generalization xmi:type="uml:Generalization" xmi:id="_rYz_YMK3EeSkv8vaizVybg" general="_pmtIkMK3EeSkv8vaizVybg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_jhxKoMK3EeSkv8vaizVybg" name="YesNo">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wXsUMMK3EeSkv8vaizVybg" name="no"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vemJAMK3EeSkv8vaizVybg" name="yes"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_l5pA8MK3EeSkv8vaizVybg" name="types">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_sShOkMK3EeSkv8vaizVybg" alias="Foo" importedElement="_dZNQ8MK3EeSkv8vaizVybg"/>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_s2kW0MK3EeSkv8vaizVybg" alias="Bar" importedElement="_iBhf4MK3EeSkv8vaizVybg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AINmoMK4EeSkv8vaizVybg" name="SubFoo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_BxHeIMK4EeSkv8vaizVybg" general="_dZNQ8MK3EeSkv8vaizVybg"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MnwQgMK4EeSkv8vaizVybg" name="createdOn" type="_KR5MYMK4EeSkv8vaizVybg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_KR5MYMK4EeSkv8vaizVybg" name="Date"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_mS1QMNCxEeSgLrtEqH-xrA" client="_AINmoMK4EeSkv8vaizVybg" supplier="_KR5MYMK4EeSkv8vaizVybg"/>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_fSZ90ELVEeWmC5E_nIZ9vQ" name="Struct">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gMoxcELVEeWmC5E_nIZ9vQ" name="name" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_i7uN4ELVEeWmC5E_nIZ9vQ" name="age" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mHoJMELVEeWmC5E_nIZ9vQ" name="tag" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pmtIkMK3EeSkv8vaizVybg" name="Super"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qkgNkMK3EeSkv8vaizVybg" memberEnd="_qkgNkcK3EeSkv8vaizVybg _qkfmgMK3EeSkv8vaizVybg">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qkgNkcK3EeSkv8vaizVybg" name="foo" type="_dZNQ8MK3EeSkv8vaizVybg" association="_qkgNkMK3EeSkv8vaizVybg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkgNksK3EeSkv8vaizVybg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkgNk8K3EeSkv8vaizVybg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Y9sG4MLCEeSkv8vaizVybg" client="_pmtIkMK3EeSkv8vaizVybg" supplier="_jhxKoMK3EeSkv8vaizVybg"/>
+</uml:Model>

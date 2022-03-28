@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WcALkKt8EeSbj-YWe2va_Q" name="profile" metaclassReference="_bxBIcKt8EeSbj-YWe2va_Q">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i6Fc4Kt8EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_Fxh84at9EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_Fxh84Kt9EeSbj-YWe2va_Q/3" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FxkZIKt9EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxkZIat9EeSbj-YWe2va_Q" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxkZIqt9EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxkZI6t9EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxkZJKt9EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxkZJat9EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Fxh84qt9EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Fxh846t9EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_YggZ8Kt8EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Fxh85Kt9EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Fxh85qt9EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_wUM4oat8EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_wUM4oKt8EeSbj-YWe2va_Q/2" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wUNfsat8EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUNfsqt8EeSbj-YWe2va_Q" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUNfs6t8EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUNftKt8EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUNftat8EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wUNftqt8EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_wUM4oqt8EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wUM4o6t8EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_YggZ8Kt8EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_wUM4pKt8EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_wUM4pqt8EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_sQzUoKt8EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_sQytkKt8EeSbj-YWe2va_Q/1" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sQ0iwKt8EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQ1J0Kt8EeSbj-YWe2va_Q" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQ1J0at8EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQ1J0qt8EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQ1J06t8EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sQ1J1Kt8EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_sQzUoat8EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sQzUoqt8EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_YggZ8Kt8EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_sQzUo6t8EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_sQzUpat8EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_i6GrAKt8EeSbj-YWe2va_Q" name="profile" nsURI="http:///schemas/profile/_i6CZkKt8EeSbj-YWe2va_Q/0" nsPrefix="profile">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i6MKkKt8EeSbj-YWe2va_Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6MKkat8EeSbj-YWe2va_Q" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6MKkqt8EeSbj-YWe2va_Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6MKk6t8EeSbj-YWe2va_Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6MKlKt8EeSbj-YWe2va_Q" key="Date" value="2015-02-03"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i6MKlat8EeSbj-YWe2va_Q" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_i6GrAat8EeSbj-YWe2va_Q" name="Task">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i6GrAqt8EeSbj-YWe2va_Q" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_YggZ8Kt8EeSbj-YWe2va_Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_i6GrA6t8EeSbj-YWe2va_Q" name="base_Element" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Element"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_i6GrBat8EeSbj-YWe2va_Q" name="priority" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_bxBIcKt8EeSbj-YWe2va_Q" alias="Element">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_YggZ8Kt8EeSbj-YWe2va_Q" name="Task">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cSy_0Kt8EeSbj-YWe2va_Q" name="base_Element" association="_cS0N8Kt8EeSbj-YWe2va_Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Element"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dpKV0Kt8EeSbj-YWe2va_Q" name="priority">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_cS0N8Kt8EeSbj-YWe2va_Q" name="E_Task_Element1" memberEnd="_cS0N8at8EeSbj-YWe2va_Q _cSy_0Kt8EeSbj-YWe2va_Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_cS0N8at8EeSbj-YWe2va_Q" name="extension_Task" type="_YggZ8Kt8EeSbj-YWe2va_Q" aggregation="composite" association="_cS0N8Kt8EeSbj-YWe2va_Q"/>
+  </packagedElement>
+</uml:Profile>

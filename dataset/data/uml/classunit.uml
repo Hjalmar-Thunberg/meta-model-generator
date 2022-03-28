@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_q821ELPCEeSAs8yZUYG_uw" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_q821EbPCEeSAs8yZUYG_uw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-37m8LPDEeSSD9qlFZY_Xw" name="Package1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_CB_vMLPEEeSSD9qlFZY_Xw" name="Class1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="__ugpoLPDEeSSD9qlFZY_Xw" name="Package2">
+      <packagedElement xmi:type="uml:Class" href="Class1.uml#_Cio-ILPEEeSSD9qlFZY_Xw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_I_g68LPEEeSSD9qlFZY_Xw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I_3gQLPEEeSSD9qlFZY_Xw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Utility xmi:id="_N0OAELPEEeSSD9qlFZY_Xw" base_Class="_CB_vMLPEEeSSD9qlFZY_Xw"/>
+  <standard:Auxiliary xmi:id="_l3z78LPEEeSSD9qlFZY_Xw">
+    <base_Class xmi:type="uml:Class" href="Class1.uml#_Cio-ILPEEeSSD9qlFZY_Xw"/>
+  </standard:Auxiliary>
+  <standard:Auxiliary xmi:id="_ncVCsLPEEeSSD9qlFZY_Xw" base_Class="_CB_vMLPEEeSSD9qlFZY_Xw"/>
+</xmi:XMI>

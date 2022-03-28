@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_t3R8cPfqEeSe-Jm9AmlmIQ" name="editing-domain-test">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_udqnAPfqEeSe-Jm9AmlmIQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MWXqMPftEeSNlYtP5nHEcg" name="Class1" classifierBehavior="_fShrAPgVEeSNlYtP5nHEcg">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_fShrAPgVEeSNlYtP5nHEcg" name="activity" node="_yTCukPgVEeSNlYtP5nHEcg _zhSqYPgVEeSNlYtP5nHEcg _0SwjkPgVEeSNlYtP5nHEcg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3spQgPgVEeSNlYtP5nHEcg" name="a" target="_zhSqYPgVEeSNlYtP5nHEcg" source="_yTCukPgVEeSNlYtP5nHEcg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_7DPY4PgVEeSNlYtP5nHEcg" name="b" target="_0SwjkPgVEeSNlYtP5nHEcg" source="_zhSqYPgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_yTCukPgVEeSNlYtP5nHEcg" name="start" outgoing="_3spQgPgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_zhSqYPgVEeSNlYtP5nHEcg" name="do" incoming="_3spQgPgVEeSNlYtP5nHEcg" outgoing="_7DPY4PgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_0SwjkPgVEeSNlYtP5nHEcg" name="end" incoming="_7DPY4PgVEeSNlYtP5nHEcg"/>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M14QsPftEeSNlYtP5nHEcg" name="Class2" classifierBehavior="_jlsJUPgVEeSNlYtP5nHEcg">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NusIAPftEeSNlYtP5nHEcg" general="_MWXqMPftEeSNlYtP5nHEcg"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_jlsJUPgVEeSNlYtP5nHEcg" name="re-activity" redefinedClassifier="_fShrAPgVEeSNlYtP5nHEcg" redefinedBehavior="_fShrAPgVEeSNlYtP5nHEcg" node="_FJKgAPgWEeSNlYtP5nHEcg _GrIpEPgWEeSNlYtP5nHEcg _J5dmQPgWEeSNlYtP5nHEcg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_MxLaQPgWEeSNlYtP5nHEcg" name="re-a" target="_J5dmQPgWEeSNlYtP5nHEcg" source="_FJKgAPgWEeSNlYtP5nHEcg" redefinedEdge="_3spQgPgVEeSNlYtP5nHEcg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NgxEIPgWEeSNlYtP5nHEcg" name="re-b" target="_GrIpEPgWEeSNlYtP5nHEcg" source="_J5dmQPgWEeSNlYtP5nHEcg" redefinedEdge="_7DPY4PgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_FJKgAPgWEeSNlYtP5nHEcg" name="re-start" outgoing="_MxLaQPgWEeSNlYtP5nHEcg" redefinedNode="_yTCukPgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_GrIpEPgWEeSNlYtP5nHEcg" name="re-end" incoming="_NgxEIPgWEeSNlYtP5nHEcg" redefinedNode="_0SwjkPgVEeSNlYtP5nHEcg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_J5dmQPgWEeSNlYtP5nHEcg" name="re-do" incoming="_MxLaQPgWEeSNlYtP5nHEcg" outgoing="_NgxEIPgWEeSNlYtP5nHEcg" redefinedNode="_zhSqYPgVEeSNlYtP5nHEcg"/>
+    </ownedBehavior>
+  </packagedElement>
+</uml:Model>

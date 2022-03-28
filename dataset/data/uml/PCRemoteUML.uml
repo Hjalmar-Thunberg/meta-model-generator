@@ -1,0 +1,3423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7fd33284-ed25-444a-a95d-ce26d1d0f46c"
+  name="PCRemoteUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="616a9797-812a-47df-88de-f18656e073b4"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="dc849079-4eda-4162-bcc2-045e63997a86"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8a65723c-42a9-488a-800a-e8318f9cfa91"
+              LastKnownName="SlidingWindow"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="ac3a8d1e-1981-41cb-b6d2-d880d59d2d64"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="Tray"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c123367f-293f-4191-b5f8-7571374f5328"
+              LastKnownName="Tray"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="080ad075-4f0e-48e4-be1a-eeb1e5508ad9"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49669524-4803-4fde-9a29-b52bfdbad95a"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="97543284-383e-4b5c-8541-5494f6e26328"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="ClientsView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="44558f2b-21af-4ec0-9cdd-a3060cb98b9d"
+              LastKnownName="ClientsView"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e6afceb-02bf-4f27-b20f-825bd988daa4"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8427cb3d-6c0a-44f5-b3fa-1661fa2e204d"
+                  name="ClientsView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3c6740fa-3daa-453d-9661-a0ae53ee0fee"
+            name="layout"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dd78ecb8-9b79-4e1f-bb44-86798ab79071"
+                LastKnownName="QVBoxLaayout"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="90960bca-0ad0-4d89-8247-46c81a38048b"
+            name="showTrayIcon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9feb6454-5cc7-493a-a8e8-ff26d5c4cb17"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="213730ef-d2c5-4402-be0c-0a22646e7c37"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5fa835a-a1d1-4a88-8dbe-7994c8bd13a8"
+                      LastKnownName="QWidget*"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c811440e-81f1-492b-8cad-58afd9ce3144"
+            name="~MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a65723c-42a9-488a-800a-e8318f9cfa91"
+        name="SlidingWindow"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d334c925-1228-4b17-befa-0f9dec2dd56e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="631833c3-380e-4ed0-bd0e-4354fc75b2df"
+              LastKnownName="QWidget"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0c728cfc-a323-44fa-8312-42761f0a7e13"
+            name="animation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="99c4aee3-354e-4b0e-b7f2-83dc962ba02d"
+                LastKnownName="QPropertyAnimation"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dfddb8c7-3258-43c9-9f14-66f40e77a1f7"
+            name="getTaskbarData"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="61465161-3940-4d5b-8ece-39dae0866c35"
+            name="SlidingWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b029056-b3ae-40fd-bad0-96ea78cad2ba"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5fa835a-a1d1-4a88-8dbe-7994c8bd13a8"
+                      LastKnownName="QWidget*"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a84a122-6512-40a7-aae0-07e65c640442"
+            name="~SlidingWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bfd6c592-01a0-41e4-9a53-4b04e10df803"
+            name="init"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="51f249cc-0f51-46c6-9841-fd9795c5383c"
+            name="setVisible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="37984b81-fbc7-44a6-91a1-f4a4da9956c7"
+                  name="visible"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b6ea9c33-f354-4257-9c29-3a16df2631ed"
+                      LastKnownName="bool"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7e4892de-5f55-474c-9adc-1c1872585602"
+        name="MessageWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a65bcc60-be8d-43f0-ac7a-9f093b26d29d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8a65723c-42a9-488a-800a-e8318f9cfa91"
+              LastKnownName="SlidingWindow"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dacb7836-4eff-4995-9d9c-9ae6b4be45a0"
+            name="layout"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4c087293-8736-42f7-82d4-43af076364c6"
+                LastKnownName="QHBoxLayout*"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d67b8d4a-3c76-4bea-8728-25ce0f75b9e2"
+            name="label"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e2c0ab26-b3be-4c29-bc05-e4edfd4f4004"
+                LastKnownName="QLabel*"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="75ce8e24-d6c5-4724-bfe7-68fc4f073d61"
+            name="MessageWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d511353-7993-4ba0-93f5-801c5a3fb5c4"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5fa835a-a1d1-4a88-8dbe-7994c8bd13a8"
+                      LastKnownName="QWidget*"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6ef3fef4-8f1c-4945-b78c-403b2b6a372d"
+            name="~MessageWindow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b9c64154-0dd3-449c-83c5-f515639dd5dd"
+            name="ShowMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed0f41b1-e2b0-4420-aec2-e4417ead83f1"
+                  name="msg"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="93b52ed6-de60-43fa-a5c0-ee491bfdfe8a"
+                      LastKnownName="QString"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c56b8267-e9dc-4673-a9cc-5881ded1535a"
+            name="ShowAndroidClientAddedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="43305327-c268-433b-829f-00a3890b5709"
+            name="ShowWPClientAddedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="16497879-fd89-4122-92bc-18f5ea98367a"
+            name="ShowClientDisconnectedMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cfe00c86-a4cb-454d-b801-d9465c9b22b4"
+        name="AboutDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9337a6bb-ef1b-43c2-8b2e-e87091561029"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ed99b120-a32d-492d-addf-f47a8727a117"
+              LastKnownName="QDialog"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8afcdc18-504a-4011-af67-a9e1a1078211"
+        name="ConfigDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="637eb766-e7e4-4d68-bd72-deee2f56351d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ed99b120-a32d-492d-addf-f47a8727a117"
+              LastKnownName="QDialog"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ed99b120-a32d-492d-addf-f47a8727a117"
+        name="QDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="631833c3-380e-4ed0-bd0e-4354fc75b2df"
+        name="QWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c123367f-293f-4191-b5f8-7571374f5328"
+        name="Tray"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ad94c26f-e5ac-4795-a862-ec4fb38657dc"
+            isDerived="false"
+            sourceEndRoleName="Tray"
+            targetEndRoleName="QSystemTrayIcon"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="59394083-1d4c-411e-af64-92d3de5629c6"
+              LastKnownName="QSystemTrayIcon"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="400d6a6e-c0a9-47c2-b23c-08831b90865f"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87f6a17b-e92a-496b-951f-a73f4178d409"
+                  name="QSystemTrayIcon"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6c941a71-8638-4870-a696-572e583c6859"
+            isDerived="false"
+            sourceEndRoleName="Tray"
+            targetEndRoleName="AbstractCommunicator"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5c23e371-be75-4fd6-a894-ab5692671c22"
+              LastKnownName="AbstractCommunicator"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="184bd0d1-e7bf-4214-8400-c82eb7196ad8"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd7280f1-af28-4467-a003-9b425cbdc952"
+                  name="AbstractCommunicator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c53dd59d-9537-4e62-8e1f-a12e54dcd543"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3b4efff4-e275-48ef-92c3-74adb27a82c0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7f892e9-0ea2-4ced-aa02-7ed010e171f0"
+            isDerived="false"
+            sourceEndRoleName="Tray"
+            targetEndRoleName="AboutDialog"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cfe00c86-a4cb-454d-b801-d9465c9b22b4"
+              LastKnownName="AboutDialog"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2173201e-9418-4fa3-a845-c5f817e83c74"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a355359b-f047-477a-9cb4-36b3e7faec30"
+                  name="AboutDialog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cc2efdff-ff20-44a6-8afc-0c5317102636"
+            isDerived="false"
+            sourceEndRoleName="Tray"
+            targetEndRoleName="ConfigDialog"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8afcdc18-504a-4011-af67-a9e1a1078211"
+              LastKnownName="ConfigDialog"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa550aea-073c-4393-8a78-254bf136f8b0"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4acf7d9a-149a-4159-bc9d-674cd33d9017"
+                  name="ConfigDialog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="465a9a5e-412b-4d4a-9065-6c8cbbe57113"
+            name="trayMenu"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2938dedb-fcfd-4f4b-a16a-0995743902c5"
+                LastKnownName="QMenu*"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="30c20648-bfca-4de8-a84e-3fdb91a44fc2"
+            name="Activate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79e17d54-dae5-408d-8524-c7e2d7ab267b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1ceadee-a349-47e9-a9ee-9d2c80c07243"
+                  name="reason"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f9d78626-b3f0-4ee0-9f4b-d11b4133f945"
+                      LastKnownName="QSystemTrayIcon::ActivationReason"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="70a4ebbd-0e99-4744-ac56-17144ba370a8"
+            name="exitClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d98aaee-f583-431b-a81a-b665ac8e79d5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5a7c1f83-a93e-4e7c-ad6d-db9632947074"
+            name="optionsClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1445d17f-45dd-41be-b1ce-7ab1fe85e22d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="76e12335-497c-498f-8c4f-df7aae36f55b"
+            name="aboutClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="59394083-1d4c-411e-af64-92d3de5629c6"
+        name="QSystemTrayIcon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="92bc5b69-6320-4f6c-96b3-7cceb9806887"
+        name="QThread"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c23e371-be75-4fd6-a894-ab5692671c22"
+        name="AbstractCommunicator"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="029849fc-842f-4461-8927-245302add1c8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="92bc5b69-6320-4f6c-96b3-7cceb9806887"
+              LastKnownName="QThread"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="68269f46-4d81-4483-bbf5-212f2ff969ab"
+            isDerived="false"
+            sourceEndRoleName="AbstractCommunicator"
+            targetEndRoleName="ClientsView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="44558f2b-21af-4ec0-9cdd-a3060cb98b9d"
+              LastKnownName="ClientsView"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f115f583-2fdc-49f8-9e69-4d5344745434"
+                  name="AbstractCommunicator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="586d36d2-a6f0-472d-8baa-78a32a0c951c"
+                  name="ClientsView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4363e01a-595b-4f4b-89de-5bcf893f187d"
+            isDerived="false"
+            sourceEndRoleName="AbstractCommunicator"
+            targetEndRoleName="MessageWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7e4892de-5f55-474c-9adc-1c1872585602"
+              LastKnownName="MessageWindow"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="699cb34e-85f7-4303-aae6-8e0f8a7ad0fe"
+                  name="AbstractCommunicator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63a8fac3-e47e-4309-9e96-3f1b7e6fae8e"
+                  name="MessageWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="52a0a0e1-ed52-4270-98b3-828090eb9ccd"
+            name="Listen"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9873b67e-1551-40ce-b34a-5a8f01b8c3cd"
+            name="setClientsView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ab32edaa-7b02-41ff-b089-15232e42c0e6"
+                  name="c"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="383a23d5-6aa6-4243-accc-bcd787a5f8c8"
+                      LastKnownName="ClientsView *"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed7bbc93-608a-4f72-936a-909e5915a83e"
+            name="AbstractCommunicator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="452ccb5d-6059-456a-8791-d33f1330ad9f"
+            name="moveMouse"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="10c4c2fb-b047-4e03-8c5e-b09e8ac5cab3"
+                  name="x"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d20597f0-277b-4aa9-ae39-e74b26c32955"
+                  name="y"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4159907e-c71f-4d6e-97c0-978f030f9abd"
+            name="scroll"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="37ea2fbe-b433-4893-8997-d85a142b5cbf"
+                  name="orientation"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="47397ccc-1889-4ecb-815c-70798c31d5fc"
+                  name="value"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f29325e9-bc2a-48fa-89c5-83115deddbe7"
+            name="leftMouseButtonClick"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="205c6be9-ea53-4b9f-9901-e6699c50a99e"
+            name="leftMouseButtonDown"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ab7ef06b-111a-4526-8540-4fc6ca1a9157"
+            name="leftMouseButtonUp"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bb944119-2af2-4acd-94a9-667d70be8083"
+            name="rightMouseButtonClick"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="13cb126c-60fc-47cc-9594-8f0b2db395c2"
+            name="newClientInformation"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a987e4ac-ee38-4b32-9d46-e0ece803629f"
+                  name="type"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e2e2ed44-b964-4615-a1d7-43b8c82135b7"
+            name="useKeyboard"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d8bd9e9-0747-4f66-a44b-3e0aa45a30ec"
+                  name="state"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e9993f1-e08b-4f5c-a132-fdec4e51fc72"
+                  name="key"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+                      LastKnownName="char"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ec7bfb83-b05d-43f2-879e-ff2464f57e53"
+            name="addNoClient"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="06f684d9-1f8d-4155-b84b-a26ceb3b0ddd"
+            name="removeNoClient"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="85ccab7b-2025-4d43-855d-a7554ee2b71c"
+        name="NetworkCommunicator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5fe59ea5-2ef8-436a-9c74-1e2e44d2bab3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5c23e371-be75-4fd6-a894-ab5692671c22"
+              LastKnownName="AbstractCommunicator"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="21a5ac9e-45fb-4491-8a71-d6d33c43eef5"
+            name="udpSocket"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f890eac3-134e-4e59-90c3-98ac4ddb9dcc"
+                LastKnownName="QUdpSocket *"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cfabc1f0-246b-46f2-a0ec-8a0ee36e2bbc"
+            name="port"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5903208a-37af-424f-a92d-cf55abbd03e2"
+            name="tcpServer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5318db58-80f9-425c-8074-baa0f5c6496b"
+                LastKnownName="QTcpServer*"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3e7735d5-93fd-43d6-93fa-6f1cfbfdd4df"
+            name="NetworkCommunicator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="51f21e06-4bc2-4abe-8247-8c2f327ec97e"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="157118be-412f-405f-96ce-9a1798f1a987"
+                      LastKnownName="QObject*"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c51cfd0c-50f2-4f77-b71c-fa8000200bc0"
+            name="~NetworkCommunicator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b2534a0c-bafa-4f73-9513-1e747303f6d3"
+            name="Listen"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f171585e-0f41-49d9-848a-0c24b9a735c6"
+            name="addClient"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a74020d0-d336-4c12-bf79-c80bfe3d3135"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b54dc95b-2ea4-444b-a591-9f1126e37df0"
+            name="removeClient"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b6360f2-21a8-4053-89fa-b3357a278a7c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52f68ce6-25b6-45c0-969f-c54a8070baba"
+            name="processTCP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4701816e-d12b-44a7-be6b-495b28c13620"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a76d72d7-110d-4b1f-9bb3-91e734e22d18"
+            name="processUDP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83f233a2-5d29-427c-8c07-85abaed8530e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+                      LastKnownName="slot"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6aabc493-113a-4921-9b2f-ed3713819c91"
+        name="QPropertyAni"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="99c4aee3-354e-4b0e-b7f2-83dc962ba02d"
+        name="QPropertyAnimation" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="69acf78c-a8c5-4aa6-90ea-e705cbc6788e"
+        name="TaskbarData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ab4ee24d-0a71-461d-8266-ae3a31a5d0c9"
+            isDerived="false"
+            sourceEndRoleName="TaskbarData"
+            targetEndRoleName="Enumeration1"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="623be6f2-40a9-41e5-9513-d99917440392"
+              LastKnownName="Enumeration1"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="693638fc-7648-456b-aa9c-88eba663c3bc"
+                  name="TaskbarData"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77dc24f3-2907-4f67-be4f-19b75048af96"
+                  name="Enumeration1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8745df6e-ff5c-4361-8575-b7e8c5a4038a"
+            name="x1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="02254fc9-fe0d-4af8-87ec-07a65c1e0e30"
+            name="x2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cee87dcf-c9c9-4a7f-9e75-cfab56533acb"
+            name="y1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="df8c1f56-1a39-4e58-9779-954523391f8e"
+            name="y2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="623be6f2-40a9-41e5-9513-d99917440392"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="8fc0af39-7fd5-4e22-a97f-043298a5e42f"
+            name="RIGHT" />
+          <enumerationLiteral
+            Id="f33b171f-9f0b-414f-a42a-d7b09b00f9cc"
+            name="TOP" />
+          <enumerationLiteral
+            Id="70c3a78a-b01f-4401-a1a0-dccfd65a2eb3"
+            name="LEFT" />
+          <enumerationLiteral
+            Id="3f984c4b-e9ca-46d3-a93a-2cae2feae65a"
+            name="BOTTOM" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5b638015-5c98-42d1-8530-8c872e11b605"
+        name="*QWidget" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b5fa835a-a1d1-4a88-8dbe-7994c8bd13a8"
+        name="QWidget*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b6ea9c33-f354-4257-9c29-3a16df2631ed"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ab720325-4432-463f-83ac-d889d8211a07"
+        name="VBoxLaayout" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dd78ecb8-9b79-4e1f-bb44-86798ab79071"
+        name="QVBoxLaayout" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="44558f2b-21af-4ec0-9cdd-a3060cb98b9d"
+        name="ClientsView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="eb090c1f-4104-487f-aef8-75e11b8fa3ae"
+            isSubstitutable="false">
+            <classMoniker
+              Id="13805c66-55fd-4720-b5fd-1e4e49e230e5"
+              LastKnownName="QWidget"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="77940163-a078-4f5c-8cd0-b4b4a8cae1e8"
+            name="clients"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2373d8b2-dde5-41b6-9a1d-ad9180c3b2dd"
+                LastKnownName="int"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="89200084-fc44-4a52-a389-1a3de1110805"
+            name="layout"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4c087293-8736-42f7-82d4-43af076364c6"
+                LastKnownName="QHBoxLayout*"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="350e8036-1308-49d4-9989-d5db3d461618"
+            name="clientsLabel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="080bb0ed-d3b7-4463-aa3c-8e455b34b88c"
+                LastKnownName="QLabel"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eafac8fb-a6e2-4702-a495-9a823f7ce704"
+            name="ClientsNo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="080bb0ed-d3b7-4463-aa3c-8e455b34b88c"
+                LastKnownName="QLabel"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4b55dff8-53b6-434b-abbb-da2690960672"
+            name="addClient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bb6b350c-c481-4382-9057-ca02f88a5bf4"
+            name="removeClient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="eee7e618-8081-4e55-bec8-21abece771a0"
+            name="ClientsView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79246738-bbe7-4ade-aae0-9bd74b8f0874"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b5fa835a-a1d1-4a88-8dbe-7994c8bd13a8"
+                      LastKnownName="QWidget*"
+                      LastKnownLocation="PCRemoteUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e3c6af04-08ab-4f42-ad1c-468d9c31cdab"
+            name="~ClientsView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="13805c66-55fd-4720-b5fd-1e4e49e230e5"
+        name="QWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4c087293-8736-42f7-82d4-43af076364c6"
+        name="QHBoxLayout*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="080bb0ed-d3b7-4463-aa3c-8e455b34b88c"
+        name="QLabel" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e2c0ab26-b3be-4c29-bc05-e4edfd4f4004"
+        name="QLabel*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="93b52ed6-de60-43fa-a5c0-ee491bfdfe8a"
+        name="QString" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="85c1c350-5ac5-4ef9-b575-efca0b85f195"
+        name="*QMenu" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2938dedb-fcfd-4f4b-a16a-0995743902c5"
+        name="QMenu*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c1e40ec8-1470-487a-9cb8-474c85f38913"
+        name="slot" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f9d78626-b3f0-4ee0-9f4b-d11b4133f945"
+        name="QSystemTrayIcon::ActivationReason" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="383a23d5-6aa6-4243-accc-bcd787a5f8c8"
+        name="ClientsView *" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="353c0544-58ee-4e03-8aef-b96e49bf87c2"
+        name="char" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f890eac3-134e-4e59-90c3-98ac4ddb9dcc"
+        name="QUdpSocket *" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5318db58-80f9-425c-8074-baa0f5c6496b"
+        name="QTcpServer*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="157118be-412f-405f-96ce-9a1798f1a987"
+        name="QObject*" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8ee66dff-2853-4fc7-949d-2219bdaf3d80"
+        LastKnownName="PCRemote.messages"
+        LastKnownLocation="Package_0946.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="dff8ba72-bfae-400b-ab2f-d1730e8d0012"
+        LastKnownName="PCRemote.pages"
+        LastKnownLocation="Package_0955.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5e182da7-dff6-495d-b8e8-a3d8a80b7bba"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b4b4ca53-5b96-4fd4-ad9d-16cdee8f5ba4"
+        LastKnownName="PCRemote.controls"
+        LastKnownLocation="Package_1046.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="accb71de-e433-4622-b5f3-810b9bd71e7f"
+        LastKnownName="PCRemote.storage"
+        LastKnownLocation="Package_1111.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5906448b-b357-4613-93ff-bfbeee7a7431"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ee166a84-86f7-457c-8167-b162b79088ae"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="MainPage"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2c965c55-3efc-42ca-9ef1-6d622e8a1ffd"
+              LastKnownName="MainPage"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3afe00ee-4844-4ff9-89e0-d92e3c70ab1b"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="655c787b-5199-4b23-89f5-a541f7019ad5"
+                  name="MainPage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+        name="PageNavigation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c965c55-3efc-42ca-9ef1-6d622e8a1ffd"
+        name="MainPage"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1ef2fe5d-3044-4367-8153-1b0e9cd8450a">
+            <useCaseMoniker
+              Id="5e9ce7ce-c721-4eb0-80d5-db69fa3564fe"
+              LastKnownName="ServerListPage"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+          <extend
+            Id="50b67092-ab4d-4b1f-88b2-73a53ffe9936">
+            <useCaseMoniker
+              Id="31825091-ad65-4931-a01a-91b1cd694a69"
+              LastKnownName="RemotePage"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+          <extend
+            Id="64e28559-bf82-4dde-925e-a8ab29a6f3d9">
+            <useCaseMoniker
+              Id="a8cc080c-150f-42e7-a64a-bce0f194ca0b"
+              LastKnownName="ConfigPage"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+          <extend
+            Id="7d5f08e6-d51c-4e08-abe9-303a83efe61d">
+            <useCaseMoniker
+              Id="cf752ce0-7e15-493d-8524-3717030ea3ac"
+              LastKnownName="AboutPage"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a1398f5-cabd-40b2-8398-0135c12e66e2"
+        name="NewServerPage"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e9ce7ce-c721-4eb0-80d5-db69fa3564fe"
+        name="ServerListPage"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="bc1f12a2-f18b-4e35-841d-38d412c3d6c2">
+            <useCaseMoniker
+              Id="4a1398f5-cabd-40b2-8398-0135c12e66e2"
+              LastKnownName="NewServerPage"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="31825091-ad65-4931-a01a-91b1cd694a69"
+        name="RemotePage"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a8cc080c-150f-42e7-a64a-bce0f194ca0b"
+        name="ConfigPage"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf752ce0-7e15-493d-8524-3717030ea3ac"
+        name="AboutPage"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6d2885b9-05f6-4d6f-8322-8f9ae980ecf1"
+            LastKnownName="PageNavigation"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="f2e9c011-e8f6-40da-a34b-a7e83722e873"
+        name="MouseMove"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="4f08188b-a6a0-4316-90c9-77003679a0b2">
+            <body>Through event</body>
+          </comment>
+          <comment
+            Id="2a86ee3f-e667-41ff-b64a-65fd731c5abe">
+            <body>Separate thread</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="9276a2dd-fba2-4897-9a36-2eb32e20310d"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+                LastKnownName="MousePad"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="084bac65-32c6-4d8e-a58a-f3bd6388b905"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="329525ca-432b-4d11-b0a9-0e96ec93768f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9f55c631-8321-402a-8837-47be668591d0"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="078b4123-c073-4080-8c7b-25a04e3bfcae"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="329525ca-432b-4d11-b0a9-0e96ec93768f"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6b10ac2b-94c9-4b0e-b475-aa7652c0ce09"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+                LastKnownName="MousePad"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2db8eee5-5b39-4d12-be0a-818833a75e9b"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="96e7c98d-100a-4576-9987-c468c9727002"
+                LastKnownName="User"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9f55c631-8321-402a-8837-47be668591d0"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+                LastKnownName="MousePad"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="53fadd15-cf02-4881-ac6a-387d6f2bc3e5"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="af65aea2-65c6-443c-b285-fda840f50b2f"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="347c45ae-e637-4aa4-bdf4-3bfc47f8608f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c175066c-1ef8-4142-8e42-41cbfa225fe2"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7f5a3513-765d-444e-a63b-c16d1747c923"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f707e94d-f1cf-45fe-84ed-354f0a5942c2"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ef101e5d-5398-4d13-a2dd-57d6434f5ebf"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="347c45ae-e637-4aa4-bdf4-3bfc47f8608f"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0443808a-5d5a-47b9-8943-b5dd4ec241b6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="078b4123-c073-4080-8c7b-25a04e3bfcae"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+                LastKnownName="MousePad"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c175066c-1ef8-4142-8e42-41cbfa225fe2"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6eed83d9-0e65-4121-97d8-9f1b6ffc5b63"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="39338a2b-578a-4a10-a504-3bc1ccde4dcd"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1cb7e323-c9f5-4d2b-a4f3-fac6b95bce36"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f4fae0cd-56e0-4a9a-8eae-cbd45a83fc81"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="40c96f12-0a66-4963-a94a-02df58b5efff"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7701855e-d857-484f-9192-be2730d5ad5a"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3445d2cc-7edb-474e-8e2a-0b0e69f6fa8b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="977249a7-20ce-41d2-ab74-ac9245525a74"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f4fae0cd-56e0-4a9a-8eae-cbd45a83fc81"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2cd7edb2-b662-4eba-b14e-5a4ed10c030e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="40c96f12-0a66-4963-a94a-02df58b5efff"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="084bac65-32c6-4d8e-a58a-f3bd6388b905"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f773a5d5-7d63-4839-95df-27b5ffefd679"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+                LastKnownName="MousePad"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f5a3513-765d-444e-a63b-c16d1747c923"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="926c7a0f-52a1-418f-bff3-131a79e33aa8"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ef101e5d-5398-4d13-a2dd-57d6434f5ebf"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f707e94d-f1cf-45fe-84ed-354f0a5942c2"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="42597cee-87b8-40ae-bb8c-db2efcc7789e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f707e94d-f1cf-45fe-84ed-354f0a5942c2"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d9f1c8eb-d984-47dc-9e88-edc87ca026c5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="42597cee-87b8-40ae-bb8c-db2efcc7789e"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7701855e-d857-484f-9192-be2730d5ad5a"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3df2bfd6-e37f-49f8-b759-fd58f5cf1185"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="977249a7-20ce-41d2-ab74-ac9245525a74"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3445d2cc-7edb-474e-8e2a-0b0e69f6fa8b"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="52529e85-7839-43f7-a72e-d4c926fdf050"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3445d2cc-7edb-474e-8e2a-0b0e69f6fa8b"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="503489ff-7d69-4aa6-bdb0-e10f484dccbb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="52529e85-7839-43f7-a72e-d4c926fdf050"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ef101e5d-5398-4d13-a2dd-57d6434f5ebf"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="878cfb2b-2b2f-4448-8d45-dc32b19d8be5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="977249a7-20ce-41d2-ab74-ac9245525a74"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dc73ab2c-1f2f-4317-85b3-a64bc7810161"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="af65aea2-65c6-443c-b285-fda840f50b2f"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b755b509-0c42-4cc0-9ce4-4c1bc8e8708c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1cb7e323-c9f5-4d2b-a4f3-fac6b95bce36"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e05246ec-ad5c-4fdb-a8e2-c992dc6abf99"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+                LastKnownName="parent : MouseController"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="96e7c98d-100a-4576-9987-c468c9727002"
+            name="User"
+            isActor="true"
+            lifelineDisplayName="User">
+            <represents>
+              <propertyMoniker
+                Id="70521313-5b27-4e0c-9019-0dc2f5479644"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2db8eee5-5b39-4d12-be0a-818833a75e9b"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c66c068b-71c0-46c2-b889-be43c3c95e54"
+            name="MousePad"
+            isActor="false"
+            lifelineDisplayName="MousePad">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="329525ca-432b-4d11-b0a9-0e96ec93768f"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="084bac65-32c6-4d8e-a58a-f3bd6388b905"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ba28fcdf-8af9-453f-814b-e89f10992d3a"
+            name="parent : MouseController"
+            isActor="false"
+            lifelineDisplayName="parent : MouseController">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="347c45ae-e637-4aa4-bdf4-3bfc47f8608f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="af65aea2-65c6-443c-b285-fda840f50b2f"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="40ac56f9-19cc-4b1d-8f93-d0c0a045d82d"
+            name="parent : MouseController"
+            isActor="false"
+            lifelineDisplayName="parent : MouseController">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6eed83d9-0e65-4121-97d8-9f1b6ffc5b63"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f4fae0cd-56e0-4a9a-8eae-cbd45a83fc81"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1cb7e323-c9f5-4d2b-a4f3-fac6b95bce36"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="f07798f0-e046-4506-b5e1-4eb0f0819cd7"
+            name="Slides finger over control"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2db8eee5-5b39-4d12-be0a-818833a75e9b"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9f55c631-8321-402a-8837-47be668591d0"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5270efb6-bdd5-4ad2-b973-66f5a702b395"
+            name="ProcessMouseMove(x, y)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="078b4123-c073-4080-8c7b-25a04e3bfcae"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c175066c-1ef8-4142-8e42-41cbfa225fe2"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="73567a8b-eb96-4da7-9d49-82093477ff0f"
+            name="NetworkMessage = messageQueue.Dequeue()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6eed83d9-0e65-4121-97d8-9f1b6ffc5b63"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="40c96f12-0a66-4963-a94a-02df58b5efff"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ef103c12-add1-4374-98ce-9c0a5585adad"
+            name="messageQueue.Enqueue(new MouseMoveMessage(x, y))"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7f5a3513-765d-444e-a63b-c16d1747c923"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="42597cee-87b8-40ae-bb8c-db2efcc7789e"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a3d7df32-9347-462d-b73c-85649ce2db1f"
+            name="Send(NetworkMessage)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7701855e-d857-484f-9192-be2730d5ad5a"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="52529e85-7839-43f7-a72e-d4c926fdf050"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="70521313-5b27-4e0c-9019-0dc2f5479644"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="5906448b-b357-4613-93ff-bfbeee7a7431"
+                LastKnownName="User"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6b10ac2b-94c9-4b0e-b475-aa7652c0ce09"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f773a5d5-7d63-4839-95df-27b5ffefd679"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0443808a-5d5a-47b9-8943-b5dd4ec241b6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b755b509-0c42-4cc0-9ce4-4c1bc8e8708c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d9f1c8eb-d984-47dc-9e88-edc87ca026c5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="878cfb2b-2b2f-4448-8d45-dc32b19d8be5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2cd7edb2-b662-4eba-b14e-5a4ed10c030e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e05246ec-ad5c-4fdb-a8e2-c992dc6abf99"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="503489ff-7d69-4aa6-bdb0-e10f484dccbb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dc73ab2c-1f2f-4317-85b3-a64bc7810161"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4a76c2f4-198a-481f-b2d5-9999bfd55531"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="867c8381-480d-4d8c-ab91-b42d2073172b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Tray"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8576eed9-2632-43e6-9fbd-4ae7342f3056"
+              LastKnownName="Tray"
+              LastKnownLocation="PCRemoteUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="650b0e7c-3699-4691-877b-e7be67fbb116"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ea3d431-20fd-4fe0-a49f-236351e8d412"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+        name="TrayIconUsage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8576eed9-2632-43e6-9fbd-4ae7342f3056"
+        name="Tray"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b0af636d-a759-44c3-87f4-39ff58c98303">
+            <useCaseMoniker
+              Id="22cff843-c86c-4b70-9f2f-98ebfce3f0a9"
+              LastKnownName="MainWindow"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="47d856cc-862d-4c8d-aab8-61a1ac57ece8">
+            <useCaseMoniker
+              Id="e2c5f248-015c-46a2-b25c-30640252ef85"
+              LastKnownName="Menu"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="22cff843-c86c-4b70-9f2f-98ebfce3f0a9"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8b593911-89b0-4800-8402-563d07f2ee45">
+            <useCaseMoniker
+              Id="eaa3e0d0-2b6b-4b71-87b2-1f91b0e3eb37"
+              LastKnownName="ClientsView"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2c5f248-015c-46a2-b25c-30640252ef85"
+        name="Menu"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a7bc3db9-a120-4912-b05d-dd39d77094c8">
+            <useCaseMoniker
+              Id="5a2ac82a-4cd6-4b0b-aff1-729ac8713eb3"
+              LastKnownName="Configuration"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+          <extend
+            Id="c3b5ce1d-ac02-415b-b02b-bdaa446f040c">
+            <useCaseMoniker
+              Id="47043b1c-f620-453b-ba33-dfa4d283c735"
+              LastKnownName="About"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+          <extend
+            Id="34cb48c8-bace-4978-8140-504a2ae49e0b">
+            <useCaseMoniker
+              Id="97d83db7-06f8-442b-81ef-fed866279b7e"
+              LastKnownName="Exit"
+              LastKnownLocation="PCRemoteUML.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5a2ac82a-4cd6-4b0b-aff1-729ac8713eb3"
+        name="Configuration"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="97d83db7-06f8-442b-81ef-fed866279b7e"
+        name="Exit"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47043b1c-f620-453b-ba33-dfa4d283c735"
+        name="About"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eaa3e0d0-2b6b-4b71-87b2-1f91b0e3eb37"
+        name="ClientsView"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="5bb4c1e4-b382-4f1f-a201-5bbf549381f6"
+            LastKnownName="TrayIconUsage"
+            LastKnownLocation="PCRemoteUML.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="84d3b5df-c40a-4836-8ef7-9be9d0479407"
+        name="ServerMessageProcess"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="3f4096a4-5842-4e6b-90a5-90f06f11e4b5">
+            <body>Doesn't represent any class, but a separate process running probably on a different machine</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="35bfb8cc-a54b-46a0-98d5-b0eab71f5fb0"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9dfb4b9d-314c-4a44-878c-b98ab1318a54"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9c4a1898-d2a4-4d47-9710-3b420e8e60e8"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="45022161-272c-494f-bc68-29926a018aa5"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9c4a1898-d2a4-4d47-9710-3b420e8e60e8"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0a2dc100-dd7c-4acd-a5df-173eede4a2b6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b93f1308-21d9-4087-afe3-df9da00092c8"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="9326a63c-4171-466f-8419-41ee8a7fd437"
+                LastKnownName="Tray"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="45022161-272c-494f-bc68-29926a018aa5"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9dfb4b9d-314c-4a44-878c-b98ab1318a54"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="38e18fa6-3176-4546-8929-615469a0c93f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="c2769948-f3ad-4e8c-8c47-340f373d4c5a"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="d52daa6c-09f6-461b-8659-cf6f43158eda"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0405d960-1da7-44d3-a0e9-913d5d1adccd"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dbffa537-9ba6-4bb1-af55-8fed8adafbe0"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0405d960-1da7-44d3-a0e9-913d5d1adccd"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4693a172-5d57-4a81-a159-01e597e2489c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="777391bb-dcd1-4f69-8e94-00350411aa9c"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="83fd76ee-9c4d-4aff-9de6-9888e570e41b"
+                LastKnownName="Client"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dbffa537-9ba6-4bb1-af55-8fed8adafbe0"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="d52daa6c-09f6-461b-8659-cf6f43158eda"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="73772032-930f-4b6a-9ca1-1916668c10fd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ee8b654e-573b-424f-a83e-f077a73f2ac3"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5d4020ff-8014-4c39-9a59-57ac9976ffa6"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7a9489f5-f1a1-4f93-b8cc-754698e188f7"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="613d76cb-49db-4b33-aff7-c43954067fa0"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7a9489f5-f1a1-4f93-b8cc-754698e188f7"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a47c3578-5d79-4a92-a423-2a9abcad4309"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b8bb316-059e-4219-adbe-e05a6c2299b8"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="83fd76ee-9c4d-4aff-9de6-9888e570e41b"
+                LastKnownName="Client"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="613d76cb-49db-4b33-aff7-c43954067fa0"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5d4020ff-8014-4c39-9a59-57ac9976ffa6"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3eb4f037-24d4-4043-8b3f-43dbbd363d2d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PCRemoteUML.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+                LastKnownName="communicator : NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="9326a63c-4171-466f-8419-41ee8a7fd437"
+            name="Tray"
+            isActor="false"
+            lifelineDisplayName="Tray">
+            <represents>
+              <propertyMoniker
+                Id="24966ea7-20ee-4d43-9140-a342b031c347"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b93f1308-21d9-4087-afe3-df9da00092c8"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="cdda6823-a17c-4464-95d3-4ae4f36e27a1"
+            name="communicator : NetworkCommunicator"
+            isActor="false"
+            lifelineDisplayName="communicator : NetworkCommunicator">
+            <represents>
+              <propertyMoniker
+                Id="b3a5ca04-5292-44f8-a690-b71b82b903f9"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9c4a1898-d2a4-4d47-9710-3b420e8e60e8"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9dfb4b9d-314c-4a44-878c-b98ab1318a54"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0405d960-1da7-44d3-a0e9-913d5d1adccd"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d52daa6c-09f6-461b-8659-cf6f43158eda"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7a9489f5-f1a1-4f93-b8cc-754698e188f7"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5d4020ff-8014-4c39-9a59-57ac9976ffa6"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="83fd76ee-9c4d-4aff-9de6-9888e570e41b"
+            name="Client"
+            isActor="false"
+            lifelineDisplayName="Client">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="777391bb-dcd1-4f69-8e94-00350411aa9c"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6b8bb316-059e-4219-adbe-e05a6c2299b8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="a8565fb5-5394-4031-a97b-3c27c3f77497"
+            name="Listen()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b93f1308-21d9-4087-afe3-df9da00092c8"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="45022161-272c-494f-bc68-29926a018aa5"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cf0a4aa7-d2d6-48ce-b220-6c97a8bd65be"
+            name="addClient()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="777391bb-dcd1-4f69-8e94-00350411aa9c"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dbffa537-9ba6-4bb1-af55-8fed8adafbe0"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a24a1a9f-57e3-407f-a228-daa574058897"
+            name="process(message)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b8bb316-059e-4219-adbe-e05a6c2299b8"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="613d76cb-49db-4b33-aff7-c43954067fa0"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b3a5ca04-5292-44f8-a690-b71b82b903f9"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="85ccab7b-2025-4d43-855d-a7554ee2b71c"
+                LastKnownName="NetworkCommunicator"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="24966ea7-20ee-4d43-9140-a342b031c347"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="c123367f-293f-4191-b5f8-7571374f5328"
+                LastKnownName="Tray"
+                LastKnownLocation="PCRemoteUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0a2dc100-dd7c-4acd-a5df-173eede4a2b6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="38e18fa6-3176-4546-8929-615469a0c93f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4693a172-5d57-4a81-a159-01e597e2489c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="73772032-930f-4b6a-9ca1-1916668c10fd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a47c3578-5d79-4a92-a423-2a9abcad4309"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3eb4f037-24d4-4043-8b3f-43dbbd363d2d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="89756ed5-8dcd-4e0d-8e0e-90adb44ef9b7"
+        LastKnownName="pcremote.activities"
+        LastKnownLocation="Package_1840.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3e2904df-b222-461e-89b8-2b52f47af0db"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bbf62e38-5912-42b9-bdee-6cde39901958"
+        LastKnownName="pcremote.custom"
+        LastKnownLocation="Package_1901.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="353b5fbb-2600-4044-9869-7bee990b8a1b"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4a5f20e7-52c6-4244-83c9-e8db68e470c2"
+        LastKnownName="pcremote.storage"
+        LastKnownLocation="Package_1917.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

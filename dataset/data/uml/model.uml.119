@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ANMzQP4fEeSePJTjmnYBcA" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_dtIjwCCUEeWbLoxdAKQ_jg" name="Class1">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tO0wACCUEeWbLoxdAKQ_jg" name="class2" type="_ix1zwCCUEeWbLoxdAKQ_jg" association="_tOupYCCUEeWbLoxdAKQ_jg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ix1zwCCUEeWbLoxdAKQ_jg" name="Class2">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tO0wASCUEeWbLoxdAKQ_jg" name="class1" type="_dtIjwCCUEeWbLoxdAKQ_jg" association="_tOupYCCUEeWbLoxdAKQ_jg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tOupYCCUEeWbLoxdAKQ_jg" name="associationName" memberEnd="_tO0wACCUEeWbLoxdAKQ_jg _tO0wASCUEeWbLoxdAKQ_jg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tOupYSCUEeWbLoxdAKQ_jg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tOupYiCUEeWbLoxdAKQ_jg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_yuXh4CCUEeWbLoxdAKQ_jg" client="_dtIjwCCUEeWbLoxdAKQ_jg" supplier="_ix1zwCCUEeWbLoxdAKQ_jg"/>
+</uml:Model>

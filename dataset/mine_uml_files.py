@@ -23,8 +23,9 @@ with open('data/projects_with_uml.csv', 'r') as csvfile:
     # Mine .xmi and .uml UML files in projects_with_uml
     for uml_files in csv.reader(csvfile):
 
-        # Skip git eclipse HTMLs and images
-        if 'https://git.eclipse.org/' in uml_files[0] or uml_files[1].endswith('.png') or uml_files[1].endswith('.gif') or uml_files[1].endswith('.jpg') or uml_files[1].endswith('.jpeg'):
+        # Skip UML image files
+        # if 'https://git.eclipse.org/' in uml_files[0] or
+        if uml_files[1].endswith('.png') or uml_files[1].endswith('.gif') or uml_files[1].endswith('.jpg') or uml_files[1].endswith('.jpeg'):
             continue
 
         # Change to correct extention directory
@@ -35,7 +36,7 @@ with open('data/projects_with_uml.csv', 'r') as csvfile:
 
         # wget --timeout=seconds --tries=number -q --show-progress [input file]
         wget = ' '.join(
-            ['wget', '--timeout=3', '--tries=2', '-q', '--show-progress', uml_files[1]])
+            ['wget', '--timeout=3', '--tries=2', uml_files[1]])
         status = os.system(wget)
 
         # Go back to data folder

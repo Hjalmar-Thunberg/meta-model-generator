@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ADL4Eclipse="http:///schemas/ADL4Eclipse/_rk7nwOqKEeOfTcbrnCq2oQ/3" xmlns:ModuleLayer="http://OSGI/schemas/ModuleLayer/_0xHxU4DEEeKQG4TlBAn6bg/3" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:structure="http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/ADL4Eclipse/_rk7nwOqKEeOfTcbrnCq2oQ/3 pathmap://ADL4ECLIPSE_PROFILES/adl4eclipse.profile.uml#_rlFYwOqKEeOfTcbrnCq2oQ http://OSGI/schemas/ModuleLayer/_0xHxU4DEEeKQG4TlBAn6bg/3 pathmap://OSGI_PROFILES/osgi.profile.uml#_0xRiUIDEEeKQG4TlBAn6bg http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ">
+  <uml:Model xmi:id="_lNLnYMbvEeO9CYUoXDRplw" name="Canonical Diagram Views">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_gP184MofEeO3DsHezUU9Sg">
+      <body>The goal is to enable a strong synchronization between visual elements displayed in the diagram with elements contained in the model. &#xD;
+This mechanism can be added locally for each element by using CSS. &#xD;
+For example, you would like to see: &#xD;
+- synchronize compartment of enumeration literal for all enumeration. &#xD;
+- synchronize compartment of attributes and operation for all class stereotyped ….&#xD;
+This functionality is associated to the task 433206.&#xD;
+</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_lNLnYcbvEeO9CYUoXDRplw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_lNLnYsbvEeO9CYUoXDRplw" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_W7DF0MohEeO3DsHezUU9Sg" name="LocalSynchronization"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9DAe4MoiEeO3DsHezUU9Sg" name="CSSIntegration"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WWPdsMojEeO3DsHezUU9Sg" name="CustomSynchronization"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_lNLnY8bvEeO9CYUoXDRplw" name="UseCases">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_lNLnZMbvEeO9CYUoXDRplw" name="useCasesAbstraction" client="_lNLnY8bvEeO9CYUoXDRplw" supplier="_lNLnYsbvEeO9CYUoXDRplw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_lNLnZcbvEeO9CYUoXDRplw" name="Synchronization" useCase="_O8koEMcbEeOenbI5XqwJvQ _zqMFoMozEeO3DsHezUU9Sg _l5cVwMo3EeOzTpunJ7qmNw">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_O8koEMcbEeOenbI5XqwJvQ" name="Add an element in the model" subject="_lNLnZcbvEeO9CYUoXDRplw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_XBXZIMo1EeO3DsHezUU9Sg">
+            <body>When an user adds an element in the model, the synchronization mechanism try to add in the current diagram the view that correspond to the semantic element&#xD;
+The difficulty of this mechanism is to parameter the synchronization.&#xD;
+By default, the synchronizatiopn is based on ' owned element'role. When you add an element, the  graphical element that correponds to the owner try to display it in the diagram. &#xD;
+But some cases are not interesting. For example in the composite diagram, displaying parts in part correspond to part of the type, not directly part of part.</body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_zqMFoMozEeO3DsHezUU9Sg" name="Move an element" subject="_lNLnZcbvEeO9CYUoXDRplw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_a-G7gMo1EeO3DsHezUU9Sg">
+            <body>When a element is moved, the synchronization mechanism must to create graphically the element to each diagram.&#xD;
+</body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_l5cVwMo3EeOzTpunJ7qmNw" name="Set synchronization enable" subject="_lNLnZcbvEeO9CYUoXDRplw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_vxFwUMo3EeOzTpunJ7qmNw">
+            <body>The user can set enable  the synchronization for a set of graphical elements.&#xD;
+</body>
+          </ownedComment>
+        </ownedUseCase>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_QqgwkMcbEeOenbI5XqwJvQ" name="Remove an element from the model">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_bGhQoMo1EeO3DsHezUU9Sg">
+            <body>When the element is removed,  the corresponding graphical element must be removed.</body>
+          </ownedComment>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_g2Kl8MozEeO3DsHezUU9Sg" name="User"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1pkjcMozEeO3DsHezUU9Sg" memberEnd="_1pkjccozEeO3DsHezUU9Sg _1pkjdMozEeO3DsHezUU9Sg">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1pkjccozEeO3DsHezUU9Sg" name="user" type="_g2Kl8MozEeO3DsHezUU9Sg" association="_1pkjcMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1pkjcsozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1pkjc8ozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1pkjdMozEeO3DsHezUU9Sg" name="add an element in the model" type="_O8koEMcbEeOenbI5XqwJvQ" association="_1pkjcMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1pkjdcozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1pkjdsozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2PwZsMozEeO3DsHezUU9Sg" memberEnd="_2PwZscozEeO3DsHezUU9Sg _2PwZtMozEeO3DsHezUU9Sg">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2PwZscozEeO3DsHezUU9Sg" name="user" type="_g2Kl8MozEeO3DsHezUU9Sg" association="_2PwZsMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2PwZssozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2PwZs8ozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2PwZtMozEeO3DsHezUU9Sg" name="remove an element from the model" type="_QqgwkMcbEeOenbI5XqwJvQ" association="_2PwZsMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2PwZtcozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2PwZtsozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2zHlcMozEeO3DsHezUU9Sg" name="" memberEnd="_2zHlccozEeO3DsHezUU9Sg _2zHldMozEeO3DsHezUU9Sg">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2zHlccozEeO3DsHezUU9Sg" name="user" type="_g2Kl8MozEeO3DsHezUU9Sg" association="_2zHlcMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2zHlcsozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2zHlc8ozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2zHldMozEeO3DsHezUU9Sg" name="move an element" type="_zqMFoMozEeO3DsHezUU9Sg" association="_2zHlcMozEeO3DsHezUU9Sg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2zHldcozEeO3DsHezUU9Sg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2zHldsozEeO3DsHezUU9Sg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_rvVLEMo3EeOzTpunJ7qmNw" memberEnd="_rvVLEco3EeOzTpunJ7qmNw _rvVLFMo3EeOzTpunJ7qmNw">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rvVLEco3EeOzTpunJ7qmNw" name="user" type="_g2Kl8MozEeO3DsHezUU9Sg" association="_rvVLEMo3EeOzTpunJ7qmNw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rvVLEso3EeOzTpunJ7qmNw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rvVLE8o3EeOzTpunJ7qmNw" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_rvVLFMo3EeOzTpunJ7qmNw" name="set synchronization enable" type="_l5cVwMo3EeOzTpunJ7qmNw" association="_rvVLEMo3EeOzTpunJ7qmNw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rvVLFco3EeOzTpunJ7qmNw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rvVLFso3EeOzTpunJ7qmNw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_lNLnZsbvEeO9CYUoXDRplw" name="Design">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9I1OUM7pEeOVs4zXLxqLmw">
+        <body>The design consists of one plugin org.eclipse.papyrus.infra.gmfdiag.canonical.&#xD;
+It contains an edit-policy provider and an extension point</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_j3s-wM7dEeOkpJkbnruUGQ">
+        <body>The edit policy PapyrusCanonicalEditPolicy is installed by the PapyrusCanonicalEditPolicyPolicy on any NodeEditPart that is a:&#xD;
+	- DiagramEditPart (to synchronize content of diagram)&#xD;
+	- CompartmentEditPart  (to synchronize content of compartment)&#xD;
+	- IBorderedShapeEditPart  (to synchronize content of borderedElement as port....)&#xD;
+&#xD;
+This edit policy implements synchronization between graphical element and element in the model&#xD;
+It is based on GMF's CanonicalEditPolicy but it has several differences:&#xD;
+  - View Service cannot be called. To call it we need to get the identifier of the child that could be place in compartment. It is not possible to find in a generic way&#xD;
+  --> link to each Diagram Updater, and moreover some child has been created by custom code. In fact, the hierarchy of visual element must follow the hierachy of semantic element.&#xD;
+  --> this is not the case so the Diagram updater generated from the gmfgen has not the good info.&#xD;
+
+So, the drag-and-drop support (drop edit policy) of the diagram is used to effect the creation of canonical views.  To by-pass the Papyrus strategy-based
+customizable drag-and-drop implementation, the DropObjectsRequest is wrapped in a CanonicalDropObjectsRequest to pass through the customizable
+drop edit policy.
+&#xD;
+An extension point is defined that lets diagram plug-ins contribute strategies for determination of
+  - what semantic elements should be shown as child nodes or attached edges of the host node
+  - which child views and attached edges are existing views of canonical elements
+  - on which related edit-part should a semantic element be dropped to create its canonical view
+&#xD;
+When requested to refresh the visuals of its host edit-part, the canonical edit-policy iterates registered semantic-children strategies in priority order
+to determine the semantic elements that need to be visualized as children and as edges.  These are compared against views that already exist, as
+provided by registered visual-children strategies.  Any views that need to be created are created by drag-and-drop onto the target edit-part provided
+by the registered creation-target strategies.  All strategies are registered with priorities, either against a specific edit-part implementation class or
+with an XML enablement expression that matches by edit-part, notation view, or semantic element (or some combination of all three).  All strategy
+extension points also provide sensible defaults for the case where no registered strategy matches the particular scenario.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_X4kYwMr3EeOxaZrLLxAqiw">
+        <body>Remarks:&#xD;
+As in the GMF Run-time (and expected by GMF), the PapyrusCanonicalEditPolicy is governed by the presence (either explicitly in the notation
+model or via CSS) of the CanonicalStyle::canonical attribute.  In CSS, this is inferred from the 'canonical' boolean attribute via generic support
+for single-attribute styles.  However, unlike the default GMF behaviour, the default canonical state for a view that does not have the style at all
+is off, not on.
+
+The canonical style is only needed on top graphical shapes.  Compartments do not need the style; all compartments of a canonical shape in the
+diagram are populated with canonical views, including shape compartments (e.g., package contents).
+
+Canonical view creation is enabled only when the PapyrusCanonicalEditPolicy is in its fully active state.  However, the edit policy also has a
+semi-active state in which it will delete views for obsolete canonical children and edges, but not create new ones.  In GEF terms, the edit
+policy is 'active' when it is in this state.</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_lNLnZ8bvEeO9CYUoXDRplw" name="DesignAbstraction" client="_lNLnZsbvEeO9CYUoXDRplw" supplier="_lNLnY8bvEeO9CYUoXDRplw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GhiFEM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.canonical">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Gs61sM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GlxE0M7UEeOkpJkbnruUGQ" name="org.eclipse.ui" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_Glk3kM7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GmCxoM7UEeOkpJkbnruUGQ" name="org.eclipse.core.runtime" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_Gl0IIM7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GmbzMM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GmF08M7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GnFTcM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GmePcc7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GoXs4M7UEeOkpJkbnruUGQ" name="org.eclipse.gef" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GnHvsc7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Gqo9wM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GqYfEM7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GrQBwM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_Gqqy8M7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Gr9zcM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GrR28M7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GsjCQM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GsAPsM7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_GstaUM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.log" client="_GhiFEM7UEeOkpJkbnruUGQ" supplier="_GslegM7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gs3LUM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.canonical.strategy">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_ADvBkM7cEeOkpJkbnruUGQ" name="ISemanticChildrenStrategy">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_giaTYM7cEeOkpJkbnruUGQ" name="getCanonicalDependents"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_mbDhwM7cEeOkpJkbnruUGQ" name="getCanonicalSemanticChildren"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_843RcAPAEeW8nIkIujhtCA" name="getCanonicalSemanticConnections"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_G0aEIM7cEeOkpJkbnruUGQ" name="SemanticChildrenStrategyRegistration">
+            <generalization xmi:type="uml:Generalization" xmi:id="_O3Yh8APAEeW8nIkIujhtCA" general="_gMFEQAO9EeW8nIkIujhtCA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_7H_q4M7cEeOkpJkbnruUGQ" name="strategy" type="_ADvBkM7cEeOkpJkbnruUGQ" association="_7IAR8M7cEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7H_q4c7cEeOkpJkbnruUGQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7H_q4s7cEeOkpJkbnruUGQ" value="1"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LRsu0M7cEeOkpJkbnruUGQ" name="SemanticChildrenStrategyRegistry">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_HV9ckM7dEeOkpJkbnruUGQ" name="strategy" type="_gMFEQAO9EeW8nIkIujhtCA" aggregation="composite" association="_HV-qsM7dEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HV9ckc7dEeOkpJkbnruUGQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HV9cks7dEeOkpJkbnruUGQ" value="*"/>
+            </ownedAttribute>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="__iRd0M7cEeOkpJkbnruUGQ" name="getInstance" isStatic="true"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_DiGwcM7dEeOkpJkbnruUGQ" name="getSemanticChildrenStrategy">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_M0DVEAO8EeW8nIkIujhtCA" name="editPart" type="_TWJJEAO8EeW8nIkIujhtCA" effect="read"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_feMgAAO8EeW8nIkIujhtCA" type="_ADvBkM7cEeOkpJkbnruUGQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_7IAR8M7cEeOkpJkbnruUGQ" memberEnd="_7IAR8c7cEeOkpJkbnruUGQ _7H_q4M7cEeOkpJkbnruUGQ">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_7IAR8c7cEeOkpJkbnruUGQ" type="_G0aEIM7cEeOkpJkbnruUGQ" association="_7IAR8M7cEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7IAR8s7cEeOkpJkbnruUGQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7IAR887cEeOkpJkbnruUGQ" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_HV-qsM7dEeOkpJkbnruUGQ" memberEnd="_HV-qsc7dEeOkpJkbnruUGQ _HV9ckM7dEeOkpJkbnruUGQ">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_HV-qsc7dEeOkpJkbnruUGQ" name="registry" type="_LRsu0M7cEeOkpJkbnruUGQ" association="_HV-qsM7dEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HV-qss7dEeOkpJkbnruUGQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HV-qs87dEeOkpJkbnruUGQ" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_AK5mwAO9EeW8nIkIujhtCA" name="VisualChildrenStrategyRegistration">
+            <generalization xmi:type="uml:Generalization" xmi:id="_PstAYAPAEeW8nIkIujhtCA" general="_gMFEQAO9EeW8nIkIujhtCA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cgdcMAO_EeW8nIkIujhtCA" name="strategy" type="_AK6N0AO9EeW8nIkIujhtCA" association="_cgc1IAO_EeW8nIkIujhtCA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_AK6N0AO9EeW8nIkIujhtCA" name="IVisualChildrenStrategy">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_AK6N0QO9EeW8nIkIujhtCA" name="getCanonicalChildren"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_AK6N0gO9EeW8nIkIujhtCA" name="getCanonicalEdges"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_gMFEQAO9EeW8nIkIujhtCA" name="Registration">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_m_3k4APAEeW8nIkIujhtCA" name="priority">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_2WGPYAO9EeW8nIkIujhtCA" name="CreationTargetStrategyRegistration">
+            <generalization xmi:type="uml:Generalization" xmi:id="_QfP3oAPAEeW8nIkIujhtCA" general="_gMFEQAO9EeW8nIkIujhtCA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_29QrIgO_EeW8nIkIujhtCA" name="strategy" type="_2WGPZwO9EeW8nIkIujhtCA" association="_29QEEAO_EeW8nIkIujhtCA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_2WGPZwO9EeW8nIkIujhtCA" name="ICreationTargetStrategy">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_2WGPaAO9EeW8nIkIujhtCA" name="getTargetEditPart"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_cgc1IAO_EeW8nIkIujhtCA" memberEnd="_cgdcMAO_EeW8nIkIujhtCA _cgdcMQO_EeW8nIkIujhtCA">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cgc1IQO_EeW8nIkIujhtCA" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cgc1IgO_EeW8nIkIujhtCA" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_cgdcMQO_EeW8nIkIujhtCA" type="_AK5mwAO9EeW8nIkIujhtCA" association="_cgc1IAO_EeW8nIkIujhtCA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_29QEEAO_EeW8nIkIujhtCA" memberEnd="_29QrIgO_EeW8nIkIujhtCA _29RSMAO_EeW8nIkIujhtCA">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_29QrIAO_EeW8nIkIujhtCA" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_29QrIQO_EeW8nIkIujhtCA" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_29RSMAO_EeW8nIkIujhtCA" type="_2WGPYAO9EeW8nIkIujhtCA" association="_29QEEAO_EeW8nIkIujhtCA"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_Gs8q4M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders" client="_Gs61sM7UEeOkpJkbnruUGQ" supplier="_Gs8D0M7UEeOkpJkbnruUGQ"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_hGz2YM7bEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.canonical.editpolicy">
+          <packagedElement xmi:type="uml:Class" xmi:id="_0-fygM7bEeOkpJkbnruUGQ" name="PapyrusCanonicalEditPolicy">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_YbQwoM7dEeOkpJkbnruUGQ" name="getSemanticChildrenList"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_bqP1IM7dEeOkpJkbnruUGQ" name="refreshSemanticChildren"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_Q1hHQM7dEeOkpJkbnruUGQ" name="Dependency1" client="_0-fygM7bEeOkpJkbnruUGQ" supplier="_DiGwcM7dEeOkpJkbnruUGQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_i84nMM7bEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.canonical.internal.provider">
+          <packagedElement xmi:type="uml:Class" xmi:id="_7XyP0M7bEeOkpJkbnruUGQ" name="PapyrusCanonicalEditPolicyProvider">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_PaKZAM7cEeOkpJkbnruUGQ" name="canonicalEditPolicy" type="_0-fygM7bEeOkpJkbnruUGQ" association="_PaLAEM7cEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PaKZAc7cEeOkpJkbnruUGQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PaKZAs7cEeOkpJkbnruUGQ" value="1"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_PaLAEM7cEeOkpJkbnruUGQ" memberEnd="_PaLAEc7cEeOkpJkbnruUGQ _PaKZAM7cEeOkpJkbnruUGQ">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_PaLAEc7cEeOkpJkbnruUGQ" name="synchronizeEditPolicyProvider" type="_7XyP0M7bEeOkpJkbnruUGQ" association="_PaLAEM7cEeOkpJkbnruUGQ">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PaLAEs7cEeOkpJkbnruUGQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PaLAE87cEeOkpJkbnruUGQ" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UZUrEAPBEeW8nIkIujhtCA" client="_hGz2YM7bEeOkpJkbnruUGQ" supplier="_W7DF0MohEeO3DsHezUU9Sg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bZHHsAPBEeW8nIkIujhtCA" client="_Gs3LUM7UEeOkpJkbnruUGQ" supplier="_WWPdsMojEeO3DsHezUU9Sg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_Glk3kM7UEeOkpJkbnruUGQ" name="org.eclipse.ui">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GlszYM7UEeOkpJkbnruUGQ" name="org.eclipse.ui.internal"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_Gl0IIM7UEeOkpJkbnruUGQ" name="org.eclipse.core.runtime">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gl610M7UEeOkpJkbnruUGQ" name="org.eclipse.core.internal.preferences.legacy"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gl9SEM7UEeOkpJkbnruUGQ" name="org.eclipse.core.internal.runtime"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gl_uUM7UEeOkpJkbnruUGQ" name="org.eclipse.core.runtime"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GmF08M7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmMioM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmO-4M7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common.archive"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmRbIM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common.command"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmT3YM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common.notify"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmWToM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common.notify.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmYv4M7UEeOkpJkbnruUGQ" name="org.eclipse.emf.common.util"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GmePcc7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmlkMM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmoAcM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmqcsM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.plugin"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gms48M7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.resource"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmvVMM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.resource.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GmxxcM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.util"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm0NsM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.namespace"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm2p8M7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.namespace.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm5GMM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.namespace.util"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm7icM7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.type"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm9Xoc7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.type.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gm_z4c7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.type.internal"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnCQIc7UEeOkpJkbnruUGQ" name="org.eclipse.emf.ecore.xml.type.util"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GnHvsc7UEeOkpJkbnruUGQ" name="org.eclipse.gef">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnPEcM7UEeOkpJkbnruUGQ" name="org.eclipse.gef">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_TWJJEAO8EeW8nIkIujhtCA" name="EditPart"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnQ5oc7UEeOkpJkbnruUGQ" name="org.eclipse.gef.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnTV4c7UEeOkpJkbnruUGQ" name="org.eclipse.gef.dnd"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnVyIM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.editparts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnYOYM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.editpolicies"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnaqoM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.handles"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GndG4M7UEeOkpJkbnruUGQ" name="org.eclipse.gef.internal"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnfjIM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.internal.icons"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gnh_YM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.internal.ui.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnkboM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.internal.ui.palette.editparts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gnm34M7UEeOkpJkbnruUGQ" name="org.eclipse.gef.internal.ui.rulers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnpUIM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnrJUc7UEeOkpJkbnruUGQ" name="org.eclipse.gef.print"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GntlkM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.requests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GnwB0M7UEeOkpJkbnruUGQ" name="org.eclipse.gef.rulers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gnx3Ac7UEeOkpJkbnruUGQ" name="org.eclipse.gef.tools"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gn0TQM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.actions"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gn2vgM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.console"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gn4ksc7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.console.icons"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gn7A8c7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gn-EQM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.palette.customize"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoBHkM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.palette.editparts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoDj0c7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.parts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoGnIM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.properties"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoJqcM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.rulers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoMtwM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.stackview"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoPKAM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.stackview.icons"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoSNUM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.ui.views.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoUpkM7UEeOkpJkbnruUGQ" name="org.eclipse.gef.util"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GoawMc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Gs8D0M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoiE8M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GokhMc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.actions"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GonkgM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoqAwc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.dialogs.sortfilter"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GotEEM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.editparts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GowHYM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.editpolicies"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GoyjoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.figures"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Go0_4c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.handles"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Go3cIc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.image"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Go6fcM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Go9iwM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.actions"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Go__Ac7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpDCUM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.dialogs"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpGFoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.dialogs.sortfilter"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpIh4c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.editparts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpLlMM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.editpolicies"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpOogM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.figures"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpREwM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.handles"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpThAM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.l10n"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpV9QM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.pagesetup"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpYZgM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.parts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpaOsc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.properties"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gpcq8M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.requests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpfHMM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.resources"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GphjcM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.ruler"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gpj_sM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.ruler.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gpl04M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.decorator"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpnqEM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.editpart"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GppfQM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.editpolicy"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GprUcc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.layout"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GptwsM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.services.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gpvl4M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.tools"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpxbEc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.type"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GpzQQc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.internal.util"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp1sgM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.l10n"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp3hsM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.label"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp5W4c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.layout"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp7MEc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.menus"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp9oUM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.parts"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gp_dgM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.preferences"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqBSsM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.providers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqDH4M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.requests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqE9Ec7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.services.decorator"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqGyQc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.services.editpart"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqIncc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.services.editpolicy"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqKcoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.services.layout"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqMR0M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.services.palette"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqNf8c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.tools"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqPVIM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.type"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqRKUM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.util"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqSYcc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.view.factories"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqUNoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.runtime.diagram.ui.view.factories.optimal"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GqYfEM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gqd-oM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gqfz0M7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml.internal.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqhpAM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml.internal.operations"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqjeMM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml.internal.resource"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqlTYM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml.resource"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqnIkM7UEeOkpJkbnruUGQ" name="org.eclipse.uml2.uml.util"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_Gqqy8M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqwSgM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GqyHsM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.clipboard"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gqz84M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.contentoutline"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq1LAc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.editor"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq3AMM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.editorsfactory"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq41YM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.extension"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq6Dgc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.extension.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq74sM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.extension.diagrameditor"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq9t4M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.lifecycleevents"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gq-8AM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.listenerservice"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrAxMM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.markers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrB_Uc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.modelsetquery"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrD0gM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.modelsetquery.impl"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrFpsM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.multidiagram.actionbarcontributor"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrG30c7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.resource"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrItAM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.resource.additional"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrKiMc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.resource.sasheditor"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrMXYM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.services"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrOMkM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.utils"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GrR28M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrX9kM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrZLsc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.adapter"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrbA4M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.commands"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grc2EM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.commands.requests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GreEMc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.databinding.custom"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grf5YM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.decoration"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrhHgc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.editpart"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gri8sM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.editpolicies"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grkx4M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.figure.edge"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrmAAc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.figure.node"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grn1MM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.handler"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrpDUc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.helper"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grq4gM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.listener"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrstsM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.model"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grt70c7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.preferences"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GrvxAM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.providers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Grw_Ic7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.service.shape"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gry0UM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.snap"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr0Ccc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.strategy"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr13oM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.strategy.copy"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr3Fwc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.strategy.paste"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr468M7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.types"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr6JEc7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.undocontext"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Gr7-QM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.gmfdiag.common.utils"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GsAPsM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsGWUM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsHkcc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.actions"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsJZoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.directedit"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsLO0M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.directedit.locator"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsMc8c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.draw2d"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsOSIM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.draw2d.labels"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsQHUM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.edit.helpers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsRVcM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.edit.policies"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsTKoM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.edit.policies.effect"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsUYwc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.edit.policies.labels"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsWN8M7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.edit.policies.reparent"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsXcEc7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.ocl.tracker"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsZRQM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.parsers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsbGcM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.part"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GscUkM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.providers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GseJwM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.sheet"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsfX4c7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.structure"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_GshNEM7UEeOkpJkbnruUGQ" name="org.eclipse.gmf.tooling.runtime.update"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_GslegM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.log">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GsrlIM7UEeOkpJkbnruUGQ" name="org.eclipse.papyrus.infra.core.log"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Gfrq8M7UEeOkpJkbnruUGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KumCQAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KumCQQOtEeWytIRHPc2H8Q" key="Version" value="0.0.4"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KumCQgOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KumCQwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KumCRAOtEeWytIRHPc2H8Q" key="Date" value="2014-06-02"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KumCRQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GhgP4M7UEeOkpJkbnruUGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="pathmap://ADL4ECLIPSE_PROFILES/adl4eclipse.profile.uml#_rlFYwOqKEeOfTcbrnCq2oQ"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://ADL4ECLIPSE_PROFILES/adl4eclipse.profile.uml#_nE1m0Hz7EeKfO4elN3J5Fw"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_lNLnaMbvEeO9CYUoXDRplw" name="Test">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_lNLnacbvEeO9CYUoXDRplw" name="Dependency1" client="_lNLnaMbvEeO9CYUoXDRplw" supplier="_lNLnY8bvEeO9CYUoXDRplw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_lNLnasbvEeO9CYUoXDRplw" name="Dependency2" client="_lNLnaMbvEeO9CYUoXDRplw" supplier="_lNLnZsbvEeO9CYUoXDRplw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lNLna8bvEeO9CYUoXDRplw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KvDVQAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvDVQQOtEeWytIRHPc2H8Q" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvDVQgOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvDVQwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvDVRAOtEeWytIRHPc2H8Q" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvDVRQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lNLnbMbvEeO9CYUoXDRplw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rplkQXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_kWqjAMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lNLnbcbvEeO9CYUoXDRplw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KvO7cAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvO7cQOtEeWytIRHPc2H8Q" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvO7cgOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvO7cwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvO7dAOtEeWytIRHPc2H8Q" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvO7dQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lNLnbsbvEeO9CYUoXDRplw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_qCT3MMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lNLnb8bvEeO9CYUoXDRplw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KvUbAAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvUbAQOtEeWytIRHPc2H8Q" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvUbAgOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvUbAwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvUbBAOtEeWytIRHPc2H8Q" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvUbBQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lNLncMbvEeO9CYUoXDRplw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpnZcXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_2LNtQMbYEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_zqiBwMbvEeO9CYUoXDRplw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zq7DUMbvEeO9CYUoXDRplw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_FGuXIMn2EeOU_InmtzG_ow">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KvjEgAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvjEgQOtEeWytIRHPc2H8Q" key="Version" value="0.0.11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvjEggOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvjEgwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvjEhAOtEeWytIRHPc2H8Q" key="Date" value="2014-11-14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KvjEhQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FJEggMn2EeOU_InmtzG_ow" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_RQrLoWwBEeSIYu1Ih2FYyQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_D0JcUMnzEeO9CYUoXDRplw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DbpSMM7UEeOkpJkbnruUGQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LBGHgAOtEeWytIRHPc2H8Q" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBGHgQOtEeWytIRHPc2H8Q" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBGHggOtEeWytIRHPc2H8Q" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBGHgwOtEeWytIRHPc2H8Q" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBGHhAOtEeWytIRHPc2H8Q" key="Date" value="2014-06-02"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LBGHhQOtEeWytIRHPc2H8Q" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DdivoM7UEeOkpJkbnruUGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ADL4ECLIPSE_PROFILES/adl4eclipse.profile.uml#_rlFYwOqKEeOfTcbrnCq2oQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://ADL4ECLIPSE_PROFILES/adl4eclipse.profile.uml#_nE1m0Hz7EeKfO4elN3J5Fw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ddkk0M7UEeOkpJkbnruUGQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DfYisM7UEeOkpJkbnruUGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://OSGI_PROFILES/osgi.profile.uml#_0xHxUYDEEeKQG4TlBAn6bg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://OSGI_PROFILES/osgi.profile.uml#_OKU8EHtxEeKcL-wrhM9ICg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DfaX4M7UEeOkpJkbnruUGQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DhHBAM7UEeOkpJkbnruUGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://OSGI_PROFILES/osgi.profile.uml#_0xRiUIDEEeKQG4TlBAn6bg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://OSGI_PROFILES/osgi.profile.uml#_YbhfEHtxEeKcL-wrhM9ICg"/>
+    </profileApplication>
+  </uml:Model>
+  <structure:Project xmi:id="_lNODoMbvEeO9CYUoXDRplw" author="P. Tessier (CEA LIST)&#xA;Christian W. Damus" version="0.1" base_Model="_lNLnYMbvEeO9CYUoXDRplw" title="Canonical Diagram Views"/>
+  <structure:Requirements xmi:id="_lNOqsMbvEeO9CYUoXDRplw" base_Model="_lNLnYsbvEeO9CYUoXDRplw"/>
+  <structure:UseCases xmi:id="_lNOqscbvEeO9CYUoXDRplw" base_Model="_lNLnY8bvEeO9CYUoXDRplw"/>
+  <structure:Design xmi:id="_lNOqssbvEeO9CYUoXDRplw" base_Model="_lNLnZsbvEeO9CYUoXDRplw"/>
+  <structure:Tests xmi:id="_lNOqs8bvEeO9CYUoXDRplw" base_Model="_lNLnaMbvEeO9CYUoXDRplw"/>
+  <structure:UserDoc xmi:id="_uqNUsMofEeO3DsHezUU9Sg" base_Comment="_gP184MofEeO3DsHezUU9Sg"/>
+  <Requirements:Requirement xmi:id="_W7IlYMohEeO3DsHezUU9Sg" text="The synchronization shall be local for each graphical element for example: package compartment, attribute compartment..." id="Req001" base_Class="_W7DF0MohEeO3DsHezUU9Sg"/>
+  <Requirements:Requirement xmi:id="_9DBtAMoiEeO3DsHezUU9Sg" text="The synchronization shall be  parameterized by CSS, by using a keyword and a value." id="Req002" base_Class="_9DAe4MoiEeO3DsHezUU9Sg"/>
+  <Requirements:Requirement xmi:id="_WWQr0MojEeO3DsHezUU9Sg" text="For an graphical element, it shall be possible to custom the synchonization" id="Req003" base_Class="_WWPdsMojEeO3DsHezUU9Sg"/>
+  <structure:DeveloperDoc xmi:id="_aDgUcMo1EeO3DsHezUU9Sg" base_Comment="_XBXZIMo1EeO3DsHezUU9Sg"/>
+  <structure:DeveloperDoc xmi:id="_c407wMo1EeO3DsHezUU9Sg" base_Comment="_a-G7gMo1EeO3DsHezUU9Sg"/>
+  <structure:DeveloperDoc xmi:id="_d06JgMo1EeO3DsHezUU9Sg" base_Comment="_bGhQoMo1EeO3DsHezUU9Sg"/>
+  <structure:DeveloperDoc xmi:id="_ym9xQMo3EeOzTpunJ7qmNw" base_Comment="_vxFwUMo3EeOzTpunJ7qmNw"/>
+  <structure:DeveloperDoc xmi:id="_ZWAAEMr3EeOxaZrLLxAqiw" base_Comment="_X4kYwMr3EeOxaZrLLxAqiw"/>
+  <ADL4Eclipse:Plugin xmi:id="_GhlIYM7UEeOkpJkbnruUGQ" base_Component="_GhiFEM7UEeOkpJkbnruUGQ" isIncubation="true"/>
+  <ADL4Eclipse:Plugin xmi:id="_GlnT0M7UEeOkpJkbnruUGQ" base_Component="_Glk3kM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GlvPoM7UEeOkpJkbnruUGQ" base_Package="_GlszYM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ModuleLayer:BundleReference xmi:id="_GlzhEM7UEeOkpJkbnruUGQ" base_Dependency="_GlxE0M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_Gl19UM7UEeOkpJkbnruUGQ" base_Component="_Gl0IIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gl8rAM7UEeOkpJkbnruUGQ" base_Package="_Gl610M7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gl_HQM7UEeOkpJkbnruUGQ" base_Package="_Gl9SEM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmBjgM7UEeOkpJkbnruUGQ" base_Package="_Gl_uUM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GmFN4M7UEeOkpJkbnruUGQ" base_Dependency="_GmCxoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GmHqIM7UEeOkpJkbnruUGQ" base_Component="_GmF08M7UEeOkpJkbnruUGQ" lazyStart="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmOX0M7UEeOkpJkbnruUGQ" base_Package="_GmMioM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmQ0EM7UEeOkpJkbnruUGQ" base_Package="_GmO-4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmTQUM7UEeOkpJkbnruUGQ" base_Package="_GmRbIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmVskM7UEeOkpJkbnruUGQ" base_Package="_GmT3YM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmYI0M7UEeOkpJkbnruUGQ" base_Package="_GmWToM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmalEM7UEeOkpJkbnruUGQ" base_Package="_GmYv4M7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GmePcM7UEeOkpJkbnruUGQ" base_Dependency="_GmbzMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GmgrsM7UEeOkpJkbnruUGQ" base_Component="_GmePcc7UEeOkpJkbnruUGQ" lazyStart="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmnZYM7UEeOkpJkbnruUGQ" base_Package="_GmlkMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gmp1oM7UEeOkpJkbnruUGQ" base_Package="_GmoAcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmsR4M7UEeOkpJkbnruUGQ" base_Package="_GmqcsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmuuIM7UEeOkpJkbnruUGQ" base_Package="_Gms48M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmxKYM7UEeOkpJkbnruUGQ" base_Package="_GmvVMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GmzmoM7UEeOkpJkbnruUGQ" base_Package="_GmxxcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gm2C4M7UEeOkpJkbnruUGQ" base_Package="_Gm0NsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gm4fIM7UEeOkpJkbnruUGQ" base_Package="_Gm2p8M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gm67YM7UEeOkpJkbnruUGQ" base_Package="_Gm5GMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gm9XoM7UEeOkpJkbnruUGQ" base_Package="_Gm7icM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gm_z4M7UEeOkpJkbnruUGQ" base_Package="_Gm9Xoc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnCQIM7UEeOkpJkbnruUGQ" base_Package="_Gm_z4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnEFUM7UEeOkpJkbnruUGQ" base_Package="_GnCQIc7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GnHvsM7UEeOkpJkbnruUGQ" base_Dependency="_GnFTcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GnKL8M7UEeOkpJkbnruUGQ" base_Component="_GnHvsc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnQ5oM7UEeOkpJkbnruUGQ" base_Package="_GnPEcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnTV4M7UEeOkpJkbnruUGQ" base_Package="_GnQ5oc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnVLEM7UEeOkpJkbnruUGQ" base_Package="_GnTV4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnXnUM7UEeOkpJkbnruUGQ" base_Package="_GnVyIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnaDkM7UEeOkpJkbnruUGQ" base_Package="_GnYOYM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gncf0M7UEeOkpJkbnruUGQ" base_Package="_GnaqoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gne8EM7UEeOkpJkbnruUGQ" base_Package="_GndG4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnhYUM7UEeOkpJkbnruUGQ" base_Package="_GnfjIM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gnj0kM7UEeOkpJkbnruUGQ" base_Package="_Gnh_YM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnmQ0M7UEeOkpJkbnruUGQ" base_Package="_GnkboM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnotEM7UEeOkpJkbnruUGQ" base_Package="_Gnm34M7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnrJUM7UEeOkpJkbnruUGQ" base_Package="_GnpUIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gns-gM7UEeOkpJkbnruUGQ" base_Package="_GnrJUc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnvawM7UEeOkpJkbnruUGQ" base_Package="_GntlkM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gnx3AM7UEeOkpJkbnruUGQ" base_Package="_GnwB0M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GnzsMM7UEeOkpJkbnruUGQ" base_Package="_Gnx3Ac7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gn2IcM7UEeOkpJkbnruUGQ" base_Package="_Gn0TQM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gn4ksM7UEeOkpJkbnruUGQ" base_Package="_Gn2vgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gn7A8M7UEeOkpJkbnruUGQ" base_Package="_Gn4ksc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gn9dMM7UEeOkpJkbnruUGQ" base_Package="_Gn7A8c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoAggM7UEeOkpJkbnruUGQ" base_Package="_Gn-EQM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoDj0M7UEeOkpJkbnruUGQ" base_Package="_GoBHkM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoGAEM7UEeOkpJkbnruUGQ" base_Package="_GoDj0c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoJDYM7UEeOkpJkbnruUGQ" base_Package="_GoGnIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoMGsM7UEeOkpJkbnruUGQ" base_Package="_GoJqcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoOi8M7UEeOkpJkbnruUGQ" base_Package="_GoMtwM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoRmQM7UEeOkpJkbnruUGQ" base_Package="_GoPKAM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoUCgM7UEeOkpJkbnruUGQ" base_Package="_GoSNUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoXF0M7UEeOkpJkbnruUGQ" base_Package="_GoUpkM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GoawMM7UEeOkpJkbnruUGQ" base_Dependency="_GoXs4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GodMcM7UEeOkpJkbnruUGQ" base_Component="_GoawMc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GokhMM7UEeOkpJkbnruUGQ" base_Package="_GoiE8M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gom9cM7UEeOkpJkbnruUGQ" base_Package="_GokhMc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GoqAwM7UEeOkpJkbnruUGQ" base_Package="_GonkgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GosdAM7UEeOkpJkbnruUGQ" base_Package="_GoqAwc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GovgUM7UEeOkpJkbnruUGQ" base_Package="_GotEEM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gox8kM7UEeOkpJkbnruUGQ" base_Package="_GowHYM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Go0_4M7UEeOkpJkbnruUGQ" base_Package="_GoyjoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Go3cIM7UEeOkpJkbnruUGQ" base_Package="_Go0_4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Go54YM7UEeOkpJkbnruUGQ" base_Package="_Go3cIc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Go87sM7UEeOkpJkbnruUGQ" base_Package="_Go6fcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Go__AM7UEeOkpJkbnruUGQ" base_Package="_Go9iwM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpCbQM7UEeOkpJkbnruUGQ" base_Package="_Go__Ac7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpFekM7UEeOkpJkbnruUGQ" base_Package="_GpDCUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpIh4M7UEeOkpJkbnruUGQ" base_Package="_GpGFoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpK-IM7UEeOkpJkbnruUGQ" base_Package="_GpIh4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpOBcM7UEeOkpJkbnruUGQ" base_Package="_GpLlMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpQdsM7UEeOkpJkbnruUGQ" base_Package="_GpOogM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpS58M7UEeOkpJkbnruUGQ" base_Package="_GpREwM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpVWMM7UEeOkpJkbnruUGQ" base_Package="_GpThAM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpXycM7UEeOkpJkbnruUGQ" base_Package="_GpV9QM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpaOsM7UEeOkpJkbnruUGQ" base_Package="_GpYZgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpcD4M7UEeOkpJkbnruUGQ" base_Package="_GpaOsc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpegIM7UEeOkpJkbnruUGQ" base_Package="_Gpcq8M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gpg8YM7UEeOkpJkbnruUGQ" base_Package="_GpfHMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpjYoM7UEeOkpJkbnruUGQ" base_Package="_GphjcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GplN0M7UEeOkpJkbnruUGQ" base_Package="_Gpj_sM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpnDAM7UEeOkpJkbnruUGQ" base_Package="_Gpl04M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gpo4MM7UEeOkpJkbnruUGQ" base_Package="_GpnqEM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GprUcM7UEeOkpJkbnruUGQ" base_Package="_GppfQM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GptJoM7UEeOkpJkbnruUGQ" base_Package="_GprUcc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gpu-0M7UEeOkpJkbnruUGQ" base_Package="_GptwsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpxbEM7UEeOkpJkbnruUGQ" base_Package="_Gpvl4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GpzQQM7UEeOkpJkbnruUGQ" base_Package="_GpxbEc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp1FcM7UEeOkpJkbnruUGQ" base_Package="_GpzQQc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp26oM7UEeOkpJkbnruUGQ" base_Package="_Gp1sgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp5W4M7UEeOkpJkbnruUGQ" base_Package="_Gp3hsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp7MEM7UEeOkpJkbnruUGQ" base_Package="_Gp5W4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp9BQM7UEeOkpJkbnruUGQ" base_Package="_Gp7MEc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gp-2cM7UEeOkpJkbnruUGQ" base_Package="_Gp9oUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqAroM7UEeOkpJkbnruUGQ" base_Package="_Gp_dgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqCg0M7UEeOkpJkbnruUGQ" base_Package="_GqBSsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqE9EM7UEeOkpJkbnruUGQ" base_Package="_GqDH4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqGyQM7UEeOkpJkbnruUGQ" base_Package="_GqE9Ec7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqIncM7UEeOkpJkbnruUGQ" base_Package="_GqGyQc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqJ1kM7UEeOkpJkbnruUGQ" base_Package="_GqIncc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqLqwM7UEeOkpJkbnruUGQ" base_Package="_GqKcoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqNf8M7UEeOkpJkbnruUGQ" base_Package="_GqMR0M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqOuEM7UEeOkpJkbnruUGQ" base_Package="_GqNf8c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqQjQM7UEeOkpJkbnruUGQ" base_Package="_GqPVIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqSYcM7UEeOkpJkbnruUGQ" base_Package="_GqRKUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqTmkM7UEeOkpJkbnruUGQ" base_Package="_GqSYcc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqVbwM7UEeOkpJkbnruUGQ" base_Package="_GqUNoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GqZtMM7UEeOkpJkbnruUGQ" base_Component="_GqYfEM7UEeOkpJkbnruUGQ" lazyStart="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqfMwM7UEeOkpJkbnruUGQ" base_Package="_Gqd-oM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqhB8M7UEeOkpJkbnruUGQ" base_Package="_Gqfz0M7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gqi3IM7UEeOkpJkbnruUGQ" base_Package="_GqhpAM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqksUM7UEeOkpJkbnruUGQ" base_Package="_GqjeMM7UEeOkpJkbnruUGQ" isInternal="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqmhgM7UEeOkpJkbnruUGQ" base_Package="_GqlTYM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqnvoM7UEeOkpJkbnruUGQ" base_Package="_GqnIkM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GqqL4M7UEeOkpJkbnruUGQ" base_Dependency="_Gqo9wM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GqsBEM7UEeOkpJkbnruUGQ" base_Component="_Gqqy8M7UEeOkpJkbnruUGQ" isIncubation="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqxgoM7UEeOkpJkbnruUGQ" base_Package="_GqwSgM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GqzV0M7UEeOkpJkbnruUGQ" base_Package="_GqyHsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq1LAM7UEeOkpJkbnruUGQ" base_Package="_Gqz84M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq2ZIM7UEeOkpJkbnruUGQ" base_Package="_Gq1LAc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq4OUM7UEeOkpJkbnruUGQ" base_Package="_Gq3AMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq6DgM7UEeOkpJkbnruUGQ" base_Package="_Gq41YM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq7RoM7UEeOkpJkbnruUGQ" base_Package="_Gq6Dgc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq9G0M7UEeOkpJkbnruUGQ" base_Package="_Gq74sM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gq-U8M7UEeOkpJkbnruUGQ" base_Package="_Gq9t4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrAKIM7UEeOkpJkbnruUGQ" base_Package="_Gq-8AM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrB_UM7UEeOkpJkbnruUGQ" base_Package="_GrAxMM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrDNcM7UEeOkpJkbnruUGQ" base_Package="_GrB_Uc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrFCoM7UEeOkpJkbnruUGQ" base_Package="_GrD0gM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrG30M7UEeOkpJkbnruUGQ" base_Package="_GrFpsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrIF8M7UEeOkpJkbnruUGQ" base_Package="_GrG30c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrKiMM7UEeOkpJkbnruUGQ" base_Package="_GrItAM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrLwUM7UEeOkpJkbnruUGQ" base_Package="_GrKiMc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrNlgM7UEeOkpJkbnruUGQ" base_Package="_GrMXYM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrPasM7UEeOkpJkbnruUGQ" base_Package="_GrOMkM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GrRP4M7UEeOkpJkbnruUGQ" base_Dependency="_GrQBwM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GrTFEM7UEeOkpJkbnruUGQ" base_Component="_GrR28M7UEeOkpJkbnruUGQ" isIncubation="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrZLsM7UEeOkpJkbnruUGQ" base_Package="_GrX9kM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GraZ0M7UEeOkpJkbnruUGQ" base_Package="_GrZLsc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrcPAM7UEeOkpJkbnruUGQ" base_Package="_GrbA4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GreEMM7UEeOkpJkbnruUGQ" base_Package="_Grc2EM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrfSUM7UEeOkpJkbnruUGQ" base_Package="_GreEMc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrhHgM7UEeOkpJkbnruUGQ" base_Package="_Grf5YM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GriVoM7UEeOkpJkbnruUGQ" base_Package="_GrhHgc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrkK0M7UEeOkpJkbnruUGQ" base_Package="_Gri8sM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrmAAM7UEeOkpJkbnruUGQ" base_Package="_Grkx4M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrnOIM7UEeOkpJkbnruUGQ" base_Package="_GrmAAc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrpDUM7UEeOkpJkbnruUGQ" base_Package="_Grn1MM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrqRcM7UEeOkpJkbnruUGQ" base_Package="_GrpDUc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrsGoM7UEeOkpJkbnruUGQ" base_Package="_Grq4gM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Grt70M7UEeOkpJkbnruUGQ" base_Package="_GrstsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GrvJ8M7UEeOkpJkbnruUGQ" base_Package="_Grt70c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Grw_IM7UEeOkpJkbnruUGQ" base_Package="_GrvxAM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GryNQM7UEeOkpJkbnruUGQ" base_Package="_Grw_Ic7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr0CcM7UEeOkpJkbnruUGQ" base_Package="_Gry0UM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr1QkM7UEeOkpJkbnruUGQ" base_Package="_Gr0Ccc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr3FwM7UEeOkpJkbnruUGQ" base_Package="_Gr13oM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr4T4M7UEeOkpJkbnruUGQ" base_Package="_Gr3Fwc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr6JEM7UEeOkpJkbnruUGQ" base_Package="_Gr468M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr7XMM7UEeOkpJkbnruUGQ" base_Package="_Gr6JEc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gr9MYM7UEeOkpJkbnruUGQ" base_Package="_Gr7-QM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_Gr_ooM7UEeOkpJkbnruUGQ" base_Dependency="_Gr9zcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GsBd0M7UEeOkpJkbnruUGQ" base_Component="_GsAPsM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsHkcM7UEeOkpJkbnruUGQ" base_Package="_GsGWUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsIykM7UEeOkpJkbnruUGQ" base_Package="_GsHkcc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsKnwM7UEeOkpJkbnruUGQ" base_Package="_GsJZoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsMc8M7UEeOkpJkbnruUGQ" base_Package="_GsLO0M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsNrEM7UEeOkpJkbnruUGQ" base_Package="_GsMc8c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsPgQM7UEeOkpJkbnruUGQ" base_Package="_GsOSIM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsQuYM7UEeOkpJkbnruUGQ" base_Package="_GsQHUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsSjkM7UEeOkpJkbnruUGQ" base_Package="_GsRVcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsUYwM7UEeOkpJkbnruUGQ" base_Package="_GsTKoM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsVm4M7UEeOkpJkbnruUGQ" base_Package="_GsUYwc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsXcEM7UEeOkpJkbnruUGQ" base_Package="_GsWN8M7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsYqMM7UEeOkpJkbnruUGQ" base_Package="_GsXcEc7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsafYM7UEeOkpJkbnruUGQ" base_Package="_GsZRQM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsbtgM7UEeOkpJkbnruUGQ" base_Package="_GsbGcM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsdisM7UEeOkpJkbnruUGQ" base_Package="_GscUkM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsfX4M7UEeOkpJkbnruUGQ" base_Package="_GseJwM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsgmAM7UEeOkpJkbnruUGQ" base_Package="_GsfX4c7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsibMM7UEeOkpJkbnruUGQ" base_Package="_GshNEM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_Gsk3cM7UEeOkpJkbnruUGQ" base_Dependency="_GsjCQM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:Plugin xmi:id="_GsmsoM7UEeOkpJkbnruUGQ" base_Component="_GslegM7UEeOkpJkbnruUGQ" isIncubation="true"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_GsszQM7UEeOkpJkbnruUGQ" base_Package="_GsrlIM7UEeOkpJkbnruUGQ"/>
+  <ModuleLayer:BundleReference xmi:id="_GsvPgM7UEeOkpJkbnruUGQ" base_Dependency="_GstaUM7UEeOkpJkbnruUGQ"/>
+  <ADL4Eclipse:EclipseExportedPackage xmi:id="_Gs5AgM7UEeOkpJkbnruUGQ" base_Package="_Gs3LUM7UEeOkpJkbnruUGQ"/>
+  <structure:DeveloperDoc xmi:id="_SUtzsM7eEeOkpJkbnruUGQ" base_Comment="_j3s-wM7dEeOkpJkbnruUGQ"/>
+  <Requirements:Satisfy xmi:id="_vT9FgAPBEeW8nIkIujhtCA" base_Abstraction="_UZUrEAPBEeW8nIkIujhtCA"/>
+  <Requirements:Satisfy xmi:id="_wND3wAPBEeW8nIkIujhtCA" base_Abstraction="_bZHHsAPBEeW8nIkIujhtCA"/>
+</xmi:XMI>

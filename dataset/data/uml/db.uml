@@ -1,0 +1,37 @@
+@startuml
+
+object Words {
+	id
+	word
+}
+
+object Documents {
+	id
+	label
+}
+
+object Found {
+	id
+	word
+	paragraph
+	weight
+	frequency
+}
+
+object Paragraphs {
+	id
+	document
+	xpath
+}
+
+object Positions {
+	found
+	position
+}
+
+Found --* Paragraphs
+Found --* Words
+Documents *-- Paragraphs
+Positions --* Found
+
+@enduml

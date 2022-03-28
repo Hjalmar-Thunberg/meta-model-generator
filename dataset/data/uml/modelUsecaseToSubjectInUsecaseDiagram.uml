@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OQHXYP3-EeSV0evdLn_prw" name="RootElement">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_QPMTMP3-EeSV0evdLn_prw" name="UC1-UseCase-SubjectEmpty-DifferentOwner-2DnD"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RbV9QP3-EeSV0evdLn_prw" name="Class1" useCase="_R6ohUP3-EeSV0evdLn_prw _Vm0mwP4gEeSbWvVye1UiMQ _0Udx0P66EeSyDbXNqBLb-A">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_R6ohUP3-EeSV0evdLn_prw" name="UseCase-SameSubject-SameOwner-Displayed" subject="_RbV9QP3-EeSV0evdLn_prw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IiwQEP67EeSyDbXNqBLb-A" name="UC2-UseCase-SubjectEmpty-SameOwner-NotDisplayed-2DnD"/>
+    <nestedClassifier xmi:type="uml:UseCase" xmi:id="_0Udx0P66EeSyDbXNqBLb-A" name="UC3-UseCase-SameSubject-SameOwner-NotDisplayed-2DnD" subject="_RbV9QP3-EeSV0evdLn_prw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Vm0mwP4gEeSbWvVye1UiMQ" name="UC4-UseCase-SameSubject-DifferentOwner-NotDisplayed-2DnD" subject="_RbV9QP3-EeSV0evdLn_prw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZhwyUP4gEeSbWvVye1UiMQ" name="Class2" useCase="_ayEjoP4gEeSbWvVye1UiMQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ayEjoP4gEeSbWvVye1UiMQ" name="UC5-UseCase-DifferentSubject-DifferentOwner-NotDisplayed-2DnD" subject="_ZhwyUP4gEeSbWvVye1UiMQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dhhwEP67EeSyDbXNqBLb-A" name="Class3" useCase="_epbzUP67EeSyDbXNqBLb-A">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_epbzUP67EeSyDbXNqBLb-A" name="UC6-UseCase-DifferentSubject-DifferentOwner-DifferentDiagram-Displayed-2DnD" subject="_dhhwEP67EeSyDbXNqBLb-A"/>
+  </packagedElement>
+</uml:Model>

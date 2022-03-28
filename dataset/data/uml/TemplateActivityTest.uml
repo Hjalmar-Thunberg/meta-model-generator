@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_emipcO16EeSWKJSOvcFimA" name="Model">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_emlswO16EeSWKJSOvcFimA" name="A" visibility="public" node="_emlsxO16EeSWKJSOvcFimA _emlsxe16EeSWKJSOvcFimA _emlsy-16EeSWKJSOvcFimA _emlszO16EeSWKJSOvcFimA" group="_emlszO16EeSWKJSOvcFimA">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_emlsx-16EeSWKJSOvcFimA" parameter="_emlsyO16EeSWKJSOvcFimA">
+      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_emlsyO16EeSWKJSOvcFimA" parameteredElement="_emlsye16EeSWKJSOvcFimA" allowSubstitutable="false">
+        <ownedParameteredElement xmi:type="uml:DataType" xmi:id="_emlsye16EeSWKJSOvcFimA" name="T" templateParameter="_emlsyO16EeSWKJSOvcFimA" isAbstract="true"/>
+      </ownedParameter>
+    </ownedTemplateSignature>
+    <ownedParameter xmi:id="_emlswe16EeSWKJSOvcFimA" name="x" type="_emlsye16EeSWKJSOvcFimA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_emlswu16EeSWKJSOvcFimA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_emlsw-16EeSWKJSOvcFimA" value="1"/>
+    </ownedParameter>
+    <edge xmi:type="uml:ObjectFlow" xmi:id="_emlsxu16EeSWKJSOvcFimA" target="_emlsxe16EeSWKJSOvcFimA" source="_emlsxO16EeSWKJSOvcFimA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_emlsyu16EeSWKJSOvcFimA" target="_emlsy-16EeSWKJSOvcFimA" source="_emlsze16EeSWKJSOvcFimA"/>
+    <structuredNode xmi:id="_emlszO16EeSWKJSOvcFimA" name="Body(A)">
+      <node xmi:type="uml:StructuredActivityNode" xmi:id="_emlsze16EeSWKJSOvcFimA" name="1:ReturnStatement" outgoing="_emlsyu16EeSWKJSOvcFimA"/>
+    </structuredNode>
+    <node xmi:type="uml:ActivityParameterNode" xmi:id="_emlsxO16EeSWKJSOvcFimA" name="Input('x')" outgoing="_emlsxu16EeSWKJSOvcFimA" parameter="_emlswe16EeSWKJSOvcFimA"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_emlsxe16EeSWKJSOvcFimA" name="Fork('x')" incoming="_emlsxu16EeSWKJSOvcFimA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_emlsy-16EeSWKJSOvcFimA" name="FinalNode('A')" incoming="_emlsyu16EeSWKJSOvcFimA"/>
+  </packagedElement>
+  <profileApplication xmi:id="_emipce16EeSWKJSOvcFimA">
+    <eAnnotations xmi:id="_emipcu16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_emipc-16EeSWKJSOvcFimA">
+    <eAnnotations xmi:id="_emipdO16EeSWKJSOvcFimA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0" name="junk" URI="http://www.eclipse.org/Papyrus/test/uml/utils/2015/junk" metaclassReference="_l4itEArqEeWA7MLVL8ViPg">
+  <eAnnotations xmi:id="_c-l0YArrEeWA7MLVL8ViPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_c-l0YQrrEeWA7MLVL8ViPg" name="junk" nsURI="http://www.eclipse.org/Papyrus/test/uml/utils/2015/junk" nsPrefix="junk">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_c-l0YgrrEeWA7MLVL8ViPg" name="Useless">
+        <eAnnotations xmi:id="_c-l0YwrrEeWA7MLVL8ViPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_oKceQArqEeWA7MLVL8ViPg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_c-l0ZArrEeWA7MLVL8ViPg" name="base_BehavioredClassifier" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//BehavioredClassifier"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_l4itEArqEeWA7MLVL8ViPg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#BehavioredClassifier"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_oKceQArqEeWA7MLVL8ViPg" name="Useless">
+    <ownedAttribute xmi:id="_qrv9YQrqEeWA7MLVL8ViPg" name="base_BehavioredClassifier" association="_qrvWUArqEeWA7MLVL8ViPg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#BehavioredClassifier"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_qrvWUArqEeWA7MLVL8ViPg" name="BehavioredClassifier_Useless" memberEnd="_qrv9YArqEeWA7MLVL8ViPg _qrv9YQrqEeWA7MLVL8ViPg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_qrv9YArqEeWA7MLVL8ViPg" name="extension_Useless" type="_oKceQArqEeWA7MLVL8ViPg" aggregation="composite" association="_qrvWUArqEeWA7MLVL8ViPg"/>
+  </packagedElement>
+</uml:Profile>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_q8QTYIKGEeSFEt9m3bH63A" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_tTJUgLeHEeS7pqPIgMux2Q">
+      <importedPackage xmi:type="uml:Model" href="pathmap://PAPYRUS_ALF_LIBRARY/Alf.library.uml#Alf"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_rHG4gIKGEeSFEt9m3bH63A" name="AssertFalse" visibility="protected">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_rHG4iIKGEeSFEt9m3bH63A" annotatedElement="_rHG4gIKGEeSFEt9m3bH63A">
+        <body>activity AssertFalse(in label: String, in condition: Boolean[0..1]) { AssertTrue(&quot;! &quot; + label, condition == false);
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_rHG4h4KGEeSFEt9m3bH63A" alias="" visibility="private">
+        <importedElement xmi:type="uml:FunctionBehavior" href="pathmap://PAPYRUS_fUML_LIBRARY/fUML_Library.uml#PrimitiveBehaviors-BooleanFunctions-ToString"/>
+      </elementImport>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rHG4gYKGEeSFEt9m3bH63A" name="label">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rHG4goKGEeSFEt9m3bH63A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rHG4g4KGEeSFEt9m3bH63A" value="1"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rHG4hIKGEeSFEt9m3bH63A" name="condition">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rHG4hYKGEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rHG4hoKGEeSFEt9m3bH63A" value="1"/>
+      </ownedParameter>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_q8QTYYKGEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q8QTYoKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TAijYLeHEeS7pqPIgMux2Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TAjKcLeHEeS7pqPIgMux2Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_rHG4iYKGEeSFEt9m3bH63A" base_Comment="_rHG4iIKGEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML">
+  <uml:Model xmi:id="_OFsfcOLIEeSv5dwvZ9NSDw" name="org.eclipse.papyrus.sysml14.diagram.internalblock">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_OFsfceLIEeSv5dwvZ9NSDw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-AmzcFcAEeW35uAYw-w4dQ">
+      <importedPackage xmi:type="uml:Model" href="../../../org.eclipse.papyrus.sysml14/resources/doc/org.eclipse.papyrus.sysml14.uml#_Py6ZoJsTEeSu6pfLknKE4A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OFsfcuLIEeSv5dwvZ9NSDw" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_WPCg0CZCEeWtn6hjmtufug" name="Elements in the palette">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_IaVsQOgEEeSUQvXhEVQh8w" name="Actor part in IBD Palette"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_bRGvEGEzEeWJB_ZnIjFyvQ" name=" InformationItem in IBD palette"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_f4TYAGLFEeWTdanjqJgfhg" name="InformationFlow in IBD palette"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GZ8DsCCMEeWp9rJ2gmw59A" name="Actor part creation"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vRLKkFcAEeW35uAYw-w4dQ" name="Req_003: display references with dashed"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Q_iioFcBEeW35uAYw-w4dQ" client="_vRLKkFcAEeW35uAYw-w4dQ">
+        <supplier xmi:type="uml:Class" href="../../../org.eclipse.papyrus.sysml14/resources/doc/omg.sysml.uml#_66IZyTq8EeW79ofuztDyTA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yIAjIH1zEeWj1JisGMPNPg" name="BindingConnectorDisplay"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_yMXesH1zEeWj1JisGMPNPg" name="DeriveFrom_REQ-OMG-SYSML14-8.3.2.2 Binding Connector" client="_yIAjIH1zEeWj1JisGMPNPg">
+        <supplier xmi:type="uml:Class" href="../../../org.eclipse.papyrus.sysml14/resources/doc/omg.sysml.uml#_66Jn5zq8EeW79ofuztDyTA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OFsfc-LIEeSv5dwvZ9NSDw" name="UseCases">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OFsfdOLIEeSv5dwvZ9NSDw" name="useCasesAbstraction" client="_OFsfc-LIEeSv5dwvZ9NSDw" supplier="_OFsfcuLIEeSv5dwvZ9NSDw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_OFsfdeLIEeSv5dwvZ9NSDw" name="MySystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OFsfduLIEeSv5dwvZ9NSDw" name="Design">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OFsfd-LIEeSv5dwvZ9NSDw" name="DesignAbstraction" client="_OFsfduLIEeSv5dwvZ9NSDw" supplier="_OFsfc-LIEeSv5dwvZ9NSDw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_WfoccH10EeWj1JisGMPNPg" name="org.eclipse.papyrus.sysml14.diagram.common">
+        <packagedElement xmi:type="uml:Package" xmi:id="_EUKKgH10EeWj1JisGMPNPg" name="edit.parts">
+          <packagedElement xmi:type="uml:Class" xmi:id="_dZIq4H10EeWj1JisGMPNPg" name="ConnectorEditPart">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_-Ov2AH10EeWj1JisGMPNPg" annotatedElement="_eRWsUH10EeWj1JisGMPNPg">
+              <body>This editPart is a specialization of a connectorEeditpart that overload the setText about the label of AppliedStereotype</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_eRWsUH10EeWj1JisGMPNPg" name="ConnectorAppliedStereotypeEditPart">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_Y8IeoH11EeWj1JisGMPNPg" annotatedElement="_dZIq4H10EeWj1JisGMPNPg">
+              <body>This editpart has been specialized in order to replace default figure by a custom figure to change display of stereotype application.</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_LHszgH13EeWj1JisGMPNPg" client="_dZIq4H10EeWj1JisGMPNPg" supplier="_FkRAIH13EeWj1JisGMPNPg"/>
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_0CadgH13EeWj1JisGMPNPg" name="Satisfies_BindingConnector display 1" client="_dZIq4H10EeWj1JisGMPNPg" supplier="_yIAjIH1zEeWj1JisGMPNPg"/>
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_0CeH4H13EeWj1JisGMPNPg" name="Satisfies_BindingConnector display 2" client="_eRWsUH10EeWj1JisGMPNPg" supplier="_yIAjIH1zEeWj1JisGMPNPg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_gLav0H11EeWj1JisGMPNPg" name="figure">
+          <packagedElement xmi:type="uml:Class" xmi:id="_FkRAIH13EeWj1JisGMPNPg" name="ConnectorFigure">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6uxn0H13EeWj1JisGMPNPg">
+              <body>This figure is a specialization of a connector in order to overload the display of the BindingConnector display</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_0Cf9EH13EeWj1JisGMPNPg" name="Satisfies_BindingConnector display" client="_FkRAIH13EeWj1JisGMPNPg" supplier="_yIAjIH1zEeWj1JisGMPNPg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_SaK7kH13EeWj1JisGMPNPg" name="internal.factory">
+          <packagedElement xmi:type="uml:Class" xmi:id="_XCNdsH13EeWj1JisGMPNPg" name="ConnectorViewFactory"/>
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_0ChyQH13EeWj1JisGMPNPg" name="Satisfies_BindingConnector display" client="_XCNdsH13EeWj1JisGMPNPg" supplier="_yIAjIH1zEeWj1JisGMPNPg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Model" xmi:id="_-O-_MH13EeWj1JisGMPNPg" name="internalblockConfig.expansionmodel">
+          <packagedElement xmi:type="uml:Abstraction" xmi:id="_ICQ3IH14EeWj1JisGMPNPg" name="Satisfies_BindingConnector display" client="_-O-_MH13EeWj1JisGMPNPg" supplier="_yIAjIH1zEeWj1JisGMPNPg"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OFsfeOLIEeSv5dwvZ9NSDw" name="Test">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_OFsfeeLIEeSv5dwvZ9NSDw" name="Dependency1" client="_OFsfeOLIEeSv5dwvZ9NSDw" supplier="_OFsfc-LIEeSv5dwvZ9NSDw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_OFsfeuLIEeSv5dwvZ9NSDw" name="Dependency2" client="_OFsfeOLIEeSv5dwvZ9NSDw" supplier="_OFsfduLIEeSv5dwvZ9NSDw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XIXADyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XKMMDyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XLaUDyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XMBYDyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XNPgDyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XN2kDyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XOdoDyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XOdoTyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XPEsDyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XPEsTyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XPrwDyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XQS0DyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XQS0TyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XQ54DyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XQ54TyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XRg8DyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_8XRg8TyREeehi70ty50hrw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8XSIADyREeehi70ty50hrw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_IaYIgOgEEeSUQvXhEVQh8w" text="8.2.2 Internal Block Diagram&#xD;&#xA;Table 8.3 - Graphical nodes defined in Internal Block diagrams" id="Req_001.001" base_Class="_IaVsQOgEEeSUQvXhEVQh8w"/>
+  <Requirements:Requirement xmi:id="_GZ8qwCCMEeWp9rJ2gmw59A" text="The creation of an actor part should be done by a popup with 2 choices : &#xD;&#xA;  - creation of an Actor&#xD;&#xA;  - selection of an Actor" id="Req_002" base_Class="_GZ8DsCCMEeWp9rJ2gmw59A"/>
+  <Requirements:Requirement xmi:id="_WPDH4CZCEeWtn6hjmtufug" text="The IBD must have a palette with specific elements" id="Req_001" base_Class="_WPCg0CZCEeWtn6hjmtufug"/>
+  <Requirements:Requirement xmi:id="_vRU7kFcAEeW35uAYw-w4dQ" text="A reference property is shown by a dashed-outline box, consistent with UML.&#xA;" id="Req_003" base_Class="_vRLKkFcAEeW35uAYw-w4dQ"/>
+  <Requirements:DeriveReqt xmi:id="_SO-KMFcBEeW35uAYw-w4dQ" base_Abstraction="_Q_iioFcBEeW35uAYw-w4dQ"/>
+  <Requirements:Requirement xmi:id="_bRH9MGEzEeWJB_ZnIjFyvQ" text="InformationItem must be added&#xD;&#xA;see Figure 9.5 – ItemFlow Stereotype p81 of SysML norm&#xD;&#xA;see section 20.1.5 Examples of UML norm" id="Req_001.002" base_Class="_bRGvEGEzEeWJB_ZnIjFyvQ"/>
+  <Requirements:Requirement xmi:id="_f4aswGLFEeWTdanjqJgfhg" text="Information Flow must be added&#xD;&#xA;see Figure 9.5 - ItemFlow Stereotype p81 of SysML norm" id="Req_001.003" base_Class="_f4TYAGLFEeWTdanjqJgfhg"/>
+  <Requirements:Requirement xmi:id="_yMSmMH1zEeWj1JisGMPNPg" text="The binding connector must be displayed with &quot;equals&quot; and not binding connector&#xD;&#xA;Binding Connector details here https://hudson.eclipse.org/papyrus/view/Sysml/job/papyrus-sysml-website/ws/site-staging/org.eclipse.papyrus.sysml.core/norm/formal-15-06-03.pdf#page=75" id="Req_004" base_Class="_yIAjIH1zEeWj1JisGMPNPg"/>
+  <Requirements:DeriveReqt xmi:id="_yMYs0H1zEeWj1JisGMPNPg" base_Abstraction="_yMXesH1zEeWj1JisGMPNPg"/>
+  <Requirements:Satisfy xmi:id="_0CcSsH13EeWj1JisGMPNPg" base_Abstraction="_0CadgH13EeWj1JisGMPNPg"/>
+  <Requirements:Satisfy xmi:id="_0CfWAH13EeWj1JisGMPNPg" base_Abstraction="_0CeH4H13EeWj1JisGMPNPg"/>
+  <Requirements:Satisfy xmi:id="_0ChLMH13EeWj1JisGMPNPg" base_Abstraction="_0Cf9EH13EeWj1JisGMPNPg"/>
+  <Requirements:Satisfy xmi:id="_0CiZUH13EeWj1JisGMPNPg" base_Abstraction="_0ChyQH13EeWj1JisGMPNPg"/>
+  <Requirements:Satisfy xmi:id="_ICSFQH14EeWj1JisGMPNPg" base_Abstraction="_ICQ3IH14EeWj1JisGMPNPg"/>
+</xmi:XMI>

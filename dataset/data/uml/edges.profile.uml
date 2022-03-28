@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_1aEJgLhREeS255SIHoq4Gg" name="Profile" metaclassReference="_CEAFgLhSEeS255SIHoq4Gg _CEAskLhSEeS255SIHoq4Gg _CEAskbhSEeS255SIHoq4Gg _CEAskrhSEeS255SIHoq4Gg _CEBToLhSEeS255SIHoq4Gg _CEBTobhSEeS255SIHoq4Gg _CEBTorhSEeS255SIHoq4Gg" metamodelReference="_1aEJgbhREeS255SIHoq4Gg">
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEAFgLhSEeS255SIHoq4Gg" alias="Generalization">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Generalization"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEAskLhSEeS255SIHoq4Gg" alias="GeneralizationSet">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#GeneralizationSet"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEAskbhSEeS255SIHoq4Gg" alias="Transition">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Transition"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEAskrhSEeS255SIHoq4Gg" alias="ControlFlow">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ControlFlow"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEBToLhSEeS255SIHoq4Gg" alias="ObjectFlow">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ObjectFlow"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEBTobhSEeS255SIHoq4Gg" alias="Connector">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_CEBTorhSEeS255SIHoq4Gg" alias="Message">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1aEJgbhREeS255SIHoq4Gg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_1aEJgrhREeS255SIHoq4Gg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_G5AFkLhSEeS255SIHoq4Gg" name="Virtual">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PL0QULhSEeS255SIHoq4Gg" name="base_ObjectFlow" association="_PL03YLhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ObjectFlow"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QcWrILhSEeS255SIHoq4Gg" name="base_ControlFlow" association="_QcWrIbhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ControlFlow"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q7k9wLhSEeS255SIHoq4Gg" name="base_Transition" association="_Q7k9wbhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Transition"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RcU6YLhSEeS255SIHoq4Gg" name="base_Message" association="_RcU6YbhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Message"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_IL7tELhSEeS255SIHoq4Gg" name="Indirect">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Klas8LhSEeS255SIHoq4Gg" name="base_Generalization" association="_KlbUALhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Generalization"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_L49_gLhSEeS255SIHoq4Gg" name="base_GeneralizationSet" association="_L49_gbhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#GeneralizationSet"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OKrjcLhSEeS255SIHoq4Gg" name="base_Connector" association="_OKsKgLhSEeS255SIHoq4Gg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_KlbUALhSEeS255SIHoq4Gg" name="E_Indirect_Generalization1" memberEnd="_KlbUAbhSEeS255SIHoq4Gg _Klas8LhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_KlbUAbhSEeS255SIHoq4Gg" name="extension_Indirect" type="_IL7tELhSEeS255SIHoq4Gg" aggregation="composite" association="_KlbUALhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_L49_gbhSEeS255SIHoq4Gg" name="E_Indirect_GeneralizationSet1" memberEnd="_L49_grhSEeS255SIHoq4Gg _L49_gLhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_L49_grhSEeS255SIHoq4Gg" name="extension_Indirect" type="_IL7tELhSEeS255SIHoq4Gg" aggregation="composite" association="_L49_gbhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_OKsKgLhSEeS255SIHoq4Gg" name="E_Indirect_Connector1" memberEnd="_OKsKgbhSEeS255SIHoq4Gg _OKrjcLhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_OKsKgbhSEeS255SIHoq4Gg" name="extension_Indirect" type="_IL7tELhSEeS255SIHoq4Gg" aggregation="composite" association="_OKsKgLhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_PL03YLhSEeS255SIHoq4Gg" name="E_Virtual_ObjectFlow1" memberEnd="_PL03YbhSEeS255SIHoq4Gg _PL0QULhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_PL03YbhSEeS255SIHoq4Gg" name="extension_Virtual" type="_G5AFkLhSEeS255SIHoq4Gg" aggregation="composite" association="_PL03YLhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_QcWrIbhSEeS255SIHoq4Gg" name="E_Virtual_ControlFlow1" memberEnd="_QcWrIrhSEeS255SIHoq4Gg _QcWrILhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_QcWrIrhSEeS255SIHoq4Gg" name="extension_Virtual" type="_G5AFkLhSEeS255SIHoq4Gg" aggregation="composite" association="_QcWrIbhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Q7k9wbhSEeS255SIHoq4Gg" name="E_Virtual_Transition1" memberEnd="_Q7k9wrhSEeS255SIHoq4Gg _Q7k9wLhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Q7k9wrhSEeS255SIHoq4Gg" name="extension_Virtual" type="_G5AFkLhSEeS255SIHoq4Gg" aggregation="composite" association="_Q7k9wbhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_RcU6YbhSEeS255SIHoq4Gg" name="E_Virtual_Message1" memberEnd="_RcU6YrhSEeS255SIHoq4Gg _RcU6YLhSEeS255SIHoq4Gg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_RcU6YrhSEeS255SIHoq4Gg" name="extension_Virtual" type="_G5AFkLhSEeS255SIHoq4Gg" aggregation="composite" association="_RcU6YbhSEeS255SIHoq4Gg"/>
+  </packagedElement>
+</uml:Profile>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_xYhMMIKGEeSFEt9m3bH63A" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_xwPIoIKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement" classifierBehavior="_xwPv5IKGEeSFEt9m3bH63A" isActive="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv5YKGEeSFEt9m3bH63A" annotatedElement="_xwPIoIKGEeSFEt9m3bH63A">
+        <body>&#xD;
+ * Test increment and decrement expressions.&#xD;
+ *</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xwPIoYKGEeSFEt9m3bH63A" name="x" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPIooKGEeSFEt9m3bH63A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPIo4KGEeSFEt9m3bH63A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xwPIpIKGEeSFEt9m3bH63A" name="list" visibility="private" isOrdered="true" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPIpYKGEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPIpoKGEeSFEt9m3bH63A" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xwPv1YKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPv1oKGEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPv14KGEeSFEt9m3bH63A" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xwPvwoKGEeSFEt9m3bH63A" name="test$method$1" visibility="protected" specification="_xwPIp4KGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv6YKGEeSFEt9m3bH63A" annotatedElement="_xwPvwoKGEeSFEt9m3bH63A">
+          <body>activity 'test$method$1'(out s: Integer[0..*] sequence, out i: Integer, out x: Integer, out list: Integer[0..*] sequence, out j: Integer, out k: Integer) { s = new Integer [] { 1, 2 };
+i = 1;
+this.x = 2;
+this.list = s;
+++ i;
+++ i;
+j = -- i;
+++ s[i];
+++ s[i];
+-- s[i];
+++ this.x;
+++ this.x;
+-- this.x;
+++ this.list[i];
+++ this.list[i];
+-- this.list[i];
+++ i;
+k = -- i;
+++ s[i];
+-- s[i];
+++ this.x;
+-- this.x;
+++ this.list[i];
+-- this.list[i];
+x = this.x;
+list = this.list;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvw4KGEeSFEt9m3bH63A" name="s" isOrdered="true" isUnique="false" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvxIKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvxYKGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvxoKGEeSFEt9m3bH63A" name="i" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvx4KGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvyIKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvyYKGEeSFEt9m3bH63A" name="x" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvyoKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvy4KGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvzIKGEeSFEt9m3bH63A" name="list" isOrdered="true" isUnique="false" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvzYKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvzoKGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvz4KGEeSFEt9m3bH63A" name="j" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPv0IKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPv0YKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPv0oKGEeSFEt9m3bH63A" name="k" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPv04KGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPv1IKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xwPv2IKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement$initialization$1" visibility="protected" specification="_xwPv2YKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv54KGEeSFEt9m3bH63A" annotatedElement="_xwPv2IKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Increment_Decrement$initialization$1'(){
+  if (this.'Expressions_Increment_Decrement$initializationFlag$1' == null) {
+    this.'Expressions_Increment_Decrement$initializationFlag$1' = true;
+  }
+}
+</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xwPv2oKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement$method$1" specification="_xwPv3oKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv6IKGEeSFEt9m3bH63A" annotatedElement="_xwPv2oKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Increment_Decrement$method$1'(): Expressions_Increment_Decrement {
+	this.'Expressions_Increment_Decrement$initialization$1'();
+	return this;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPv24KGEeSFEt9m3bH63A" type="_xwPIoIKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPv3IKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPv3YKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xwPv4oKGEeSFEt9m3bH63A" name="destroy$method$1" specification="_xwPv44KGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv5oKGEeSFEt9m3bH63A" annotatedElement="_xwPv4oKGEeSFEt9m3bH63A">
+          <body>activity 'destroy$method$1'() { }</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_xwPv5IKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement$behavior$1" visibility="private">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_xwPv6oKGEeSFEt9m3bH63A" annotatedElement="_xwPv5IKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Increment_Decrement$behavior$1'() { this.test(s, i, x, list, j, k);
+AssertList(&quot;s&quot;, s, new Integer [] { 1, 3 });
+AssertEqual(&quot;i&quot;, i, 2);
+AssertEqual(&quot;x&quot;, x, 3);
+AssertList(&quot;list&quot;, list, new Integer [] { 1, 3 });
+AssertEqual(&quot;j&quot;, j, 3);
+AssertEqual(&quot;k&quot;, k, 2);
+WriteLine(&quot;Done&quot;);
+}</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xwPIp4KGEeSFEt9m3bH63A" name="test" visibility="public" method="_xwPvwoKGEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvsIKGEeSFEt9m3bH63A" name="s" isOrdered="true" isUnique="false" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvsYKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvsoKGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvs4KGEeSFEt9m3bH63A" name="i" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvtIKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvtYKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvtoKGEeSFEt9m3bH63A" name="x" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvt4KGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvuIKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvuYKGEeSFEt9m3bH63A" name="list" isOrdered="true" isUnique="false" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvuoKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvu4KGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvvIKGEeSFEt9m3bH63A" name="j" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvvYKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvvoKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPvv4KGEeSFEt9m3bH63A" name="k" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPvwIKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPvwYKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xwPv2YKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement$initialization$1" visibility="protected" method="_xwPv2IKGEeSFEt9m3bH63A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xwPv3oKGEeSFEt9m3bH63A" name="Expressions_Increment_Decrement" method="_xwPv2oKGEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xwPv34KGEeSFEt9m3bH63A" type="_xwPIoIKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwPv4IKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwPv4YKGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xwPv44KGEeSFEt9m3bH63A" name="destroy" method="_xwPv4oKGEeSFEt9m3bH63A"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xYhMMYKGEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xYhMMoKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_r3ZLZLeLEeS_zZpc9I-Bsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r3ZycLeLEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_xwPv64KGEeSFEt9m3bH63A" base_Comment="_xwPv5oKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_xwPv7IKGEeSFEt9m3bH63A" base_Comment="_xwPv54KGEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Create xmi:id="_xwPv7YKGEeSFEt9m3bH63A" base_BehavioralFeature="_xwPv3oKGEeSFEt9m3bH63A"/>
+  <standard:Destroy xmi:id="_xwPv7oKGEeSFEt9m3bH63A" base_BehavioralFeature="_xwPv44KGEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_xwPv74KGEeSFEt9m3bH63A" base_Comment="_xwPv6IKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_xwPv8IKGEeSFEt9m3bH63A" base_Comment="_xwPv6YKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_xwPv8YKGEeSFEt9m3bH63A" base_Comment="_xwPv6oKGEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

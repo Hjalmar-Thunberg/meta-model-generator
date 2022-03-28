@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_C4YwsMOTEeSiR-ar9ioVjA" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Dl4I0MOTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception" classifierBehavior="_Dl4v4MOTEeSiR-ar9ioVjA" isActive="true">
+      <ownedComment xmi:id="_Dl4v4cOTEeSiR-ar9ioVjA" annotatedElement="_Dl4I0MOTEeSiR-ar9ioVjA">
+        <body>
+ * Test reception invocation expressions.
+ </body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_Dl4JK8OTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JLMOTEeSiR-ar9ioVjA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JLcOTEeSiR-ar9ioVjA" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JLsOTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception$initialization$1" visibility="protected" specification="_Dl4JL8OTEeSiR-ar9ioVjA">
+        <ownedComment xmi:id="_Dl4v58OTEeSiR-ar9ioVjA" annotatedElement="_Dl4JLsOTEeSiR-ar9ioVjA">
+          <body>activity 'Expressions_Invocation_Reception$initialization$1'(){
+  if (this.'Expressions_Invocation_Reception$initializationFlag$1' == null) {
+    this.'Expressions_Invocation_Reception$initializationFlag$1' = true;
+  }
+}
+</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JMMOTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception$method$1" specification="_Dl4JNMOTEeSiR-ar9ioVjA">
+        <ownedComment xmi:id="_Dl4v68OTEeSiR-ar9ioVjA" annotatedElement="_Dl4JMMOTEeSiR-ar9ioVjA">
+          <body>activity 'Expressions_Invocation_Reception$method$1'(): Expressions_Invocation_Reception {
+	this.'Expressions_Invocation_Reception$initialization$1'();
+	return this;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_Dl4JMcOTEeSiR-ar9ioVjA" type="_Dl4I0MOTEeSiR-ar9ioVjA" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JMsOTEeSiR-ar9ioVjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JM8OTEeSiR-ar9ioVjA" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JOMOTEeSiR-ar9ioVjA" name="destroy$method$1" specification="_Dl4JOcOTEeSiR-ar9ioVjA">
+        <ownedComment xmi:id="_Dl4v6MOTEeSiR-ar9ioVjA" annotatedElement="_Dl4JOMOTEeSiR-ar9ioVjA">
+          <body>activity 'destroy$method$1'() { }</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4v4MOTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception$behavior$1" visibility="private">
+        <ownedComment xmi:id="_Dl4v4sOTEeSiR-ar9ioVjA" annotatedElement="_Dl4v4MOTEeSiR-ar9ioVjA">
+          <body>activity 'Expressions_Invocation_Reception$behavior$1'() {
+	new TestRunner().Start();
+}</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_Dl4JL8OTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception$initialization$1" visibility="protected" method="_Dl4JLsOTEeSiR-ar9ioVjA"/>
+      <ownedOperation xmi:id="_Dl4JNMOTEeSiR-ar9ioVjA" name="Expressions_Invocation_Reception" method="_Dl4JMMOTEeSiR-ar9ioVjA">
+        <ownedParameter xmi:id="_Dl4JNcOTEeSiR-ar9ioVjA" type="_Dl4I0MOTEeSiR-ar9ioVjA" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JNsOTEeSiR-ar9ioVjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JN8OTEeSiR-ar9ioVjA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Dl4JOcOTEeSiR-ar9ioVjA" name="destroy" method="_Dl4JOMOTEeSiR-ar9ioVjA"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Dl4I0cOTEeSiR-ar9ioVjA" name="Receiver" visibility="public" classifierBehavior="_Dl4JKsOTEeSiR-ar9ioVjA" isActive="true">
+        <ownedAttribute xmi:id="_Dl4I0sOTEeSiR-ar9ioVjA" name="a" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I08OTEeSiR-ar9ioVjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I1MOTEeSiR-ar9ioVjA" value="1"/>
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Dl4I1cOTEeSiR-ar9ioVjA" behavior="_Dl4I1sOTEeSiR-ar9ioVjA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Dl4I2sOTEeSiR-ar9ioVjA" name="x" visibility="public" isOrdered="true" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I28OTEeSiR-ar9ioVjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I3MOTEeSiR-ar9ioVjA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Dl4I3cOTEeSiR-ar9ioVjA" name="y" visibility="public" isOrdered="true" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I3sOTEeSiR-ar9ioVjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I38OTEeSiR-ar9ioVjA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Dl4I4MOTEeSiR-ar9ioVjA" name="tester" visibility="public" type="_Dl4I48OTEeSiR-ar9ioVjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I4cOTEeSiR-ar9ioVjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I4sOTEeSiR-ar9ioVjA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Dl4JIMOTEeSiR-ar9ioVjA" name="Receiver$initializationFlag$1" visibility="protected">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JIcOTEeSiR-ar9ioVjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JIsOTEeSiR-ar9ioVjA" value="1"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JDcOTEeSiR-ar9ioVjA" name="Receiver$method$1" visibility="protected" specification="_Dl4JBsOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v78OTEeSiR-ar9ioVjA" annotatedElement="_Dl4JDcOTEeSiR-ar9ioVjA">
+            <body>activity 'Receiver$method$1'(in tester: TestRunner): Receiver {
+if (this.'Receiver$initializationFlag$1' == null) {
+this.'Receiver$initialization$1'();
+this.tester = tester; 
+}
+return this;
+}</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_Dl4JDsOTEeSiR-ar9ioVjA" name="tester" type="_Dl4I48OTEeSiR-ar9ioVjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JD8OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JEMOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Dl4JEcOTEeSiR-ar9ioVjA" name="" type="_Dl4I0cOTEeSiR-ar9ioVjA" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JEsOTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JE8OTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4I1sOTEeSiR-ar9ioVjA" name="a$defaultValue$1">
+          <ownedComment xmi:id="_Dl4v5cOTEeSiR-ar9ioVjA" annotatedElement="_Dl4I1sOTEeSiR-ar9ioVjA">
+            <body>activity 'a$defaultValue$1'(): Integer {
+	return  0;
+}</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_Dl4I18OTEeSiR-ar9ioVjA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I2MOTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I2cOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JI8OTEeSiR-ar9ioVjA" name="Receiver$initialization$1" visibility="protected" specification="_Dl4JJMOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v7sOTEeSiR-ar9ioVjA" annotatedElement="_Dl4JI8OTEeSiR-ar9ioVjA">
+            <body>activity 'Receiver$initialization$1'(){
+  if (this.'Receiver$initializationFlag$1' == null) {
+    this.a = 'a$defaultValue$1'();
+    this.'Receiver$initializationFlag$1' = true;
+  }
+}
+</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JJcOTEeSiR-ar9ioVjA" name="destroy$method$1" specification="_Dl4JJsOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v48OTEeSiR-ar9ioVjA" annotatedElement="_Dl4JJcOTEeSiR-ar9ioVjA">
+            <body>activity 'destroy$method$1'() { }</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JKsOTEeSiR-ar9ioVjA" name="Receiver$behavior$1" visibility="private">
+          <ownedComment xmi:id="_Dl4v7cOTEeSiR-ar9ioVjA" annotatedElement="_Dl4JKsOTEeSiR-ar9ioVjA">
+            <body>activity 'Receiver$behavior$1'() {
+	do {
+		accept (A) {
+			++ this.a;
+		}
+		or accept (b: B) {
+			this.x->add(b.x);
+		}
+		or accept (c: C) {
+			this.x->add(c.x);
+			this.y->add(c.y);
+		}
+		this.tester.SignalLoop();
+	}
+	while (true);
+}</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Dl4JBsOTEeSiR-ar9ioVjA" name="Receiver" visibility="public" method="_Dl4JDcOTEeSiR-ar9ioVjA">
+          <ownedParameter xmi:id="_Dl4JB8OTEeSiR-ar9ioVjA" name="tester" type="_Dl4I48OTEeSiR-ar9ioVjA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JCMOTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JCcOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Dl4JCsOTEeSiR-ar9ioVjA" name="" type="_Dl4I0cOTEeSiR-ar9ioVjA" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JC8OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JDMOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Dl4JJMOTEeSiR-ar9ioVjA" name="Receiver$initialization$1" visibility="protected" method="_Dl4JI8OTEeSiR-ar9ioVjA"/>
+        <ownedOperation xmi:id="_Dl4JJsOTEeSiR-ar9ioVjA" name="destroy" method="_Dl4JJcOTEeSiR-ar9ioVjA"/>
+        <nestedClassifier xmi:type="uml:Signal" xmi:id="_Dl4JFMOTEeSiR-ar9ioVjA" name="A" visibility="public"/>
+        <nestedClassifier xmi:type="uml:Signal" xmi:id="_Dl4JFcOTEeSiR-ar9ioVjA" name="B" visibility="public">
+          <ownedAttribute xmi:id="_Dl4JFsOTEeSiR-ar9ioVjA" name="x" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JF8OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JGMOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Signal" xmi:id="_Dl4JGcOTEeSiR-ar9ioVjA" name="C" visibility="public">
+          <ownedAttribute xmi:id="_Dl4JGsOTEeSiR-ar9ioVjA" name="x" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JG8OTEeSiR-ar9ioVjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JHMOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Dl4JHcOTEeSiR-ar9ioVjA" name="y" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4JHsOTEeSiR-ar9ioVjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JH8OTEeSiR-ar9ioVjA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <ownedReception xmi:id="_Dl4JJ8OTEeSiR-ar9ioVjA" name="A" visibility="public" signal="_Dl4JFMOTEeSiR-ar9ioVjA"/>
+        <ownedReception xmi:id="_Dl4JKMOTEeSiR-ar9ioVjA" name="B" visibility="public" signal="_Dl4JFcOTEeSiR-ar9ioVjA"/>
+        <ownedReception xmi:id="_Dl4JKcOTEeSiR-ar9ioVjA" name="C" visibility="public" signal="_Dl4JGcOTEeSiR-ar9ioVjA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Dl4I48OTEeSiR-ar9ioVjA" name="TestRunner" visibility="public" classifierBehavior="_Dl4JBcOTEeSiR-ar9ioVjA" isActive="true">
+        <ownedAttribute xmi:id="_Dl4I9MOTEeSiR-ar9ioVjA" name="TestRunner$initializationFlag$1" visibility="protected">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I9cOTEeSiR-ar9ioVjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I9sOTEeSiR-ar9ioVjA" value="1"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4I7cOTEeSiR-ar9ioVjA" name="test$method$1" visibility="protected" specification="_Dl4I5sOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v6sOTEeSiR-ar9ioVjA" annotatedElement="_Dl4I7cOTEeSiR-ar9ioVjA">
+            <body>activity 'test$method$1'(out receiver: Receiver, out n: Integer) {
+	receiver = new Receiver(this);
+	receiver.A();
+	receiver.B(1);
+	receiver.C(2, 3);
+	receiver.C(x=>3);
+	receiver.C(y=>4);
+	n = 5;
+}</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_Dl4I7sOTEeSiR-ar9ioVjA" name="receiver" type="_Dl4I0cOTEeSiR-ar9ioVjA" direction="out">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I78OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I8MOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Dl4I8cOTEeSiR-ar9ioVjA" name="n" direction="out">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I8sOTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I88OTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4I98OTEeSiR-ar9ioVjA" name="TestRunner$initialization$1" visibility="protected" specification="_Dl4I-MOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v7MOTEeSiR-ar9ioVjA" annotatedElement="_Dl4I98OTEeSiR-ar9ioVjA">
+            <body>activity 'TestRunner$initialization$1'(){
+  if (this.'TestRunner$initializationFlag$1' == null) {
+    this.'TestRunner$initializationFlag$1' = true;
+  }
+}
+</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4I-cOTEeSiR-ar9ioVjA" name="TestRunner$method$1" specification="_Dl4I_cOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v5MOTEeSiR-ar9ioVjA" annotatedElement="_Dl4I-cOTEeSiR-ar9ioVjA">
+            <body>activity 'TestRunner$method$1'(): TestRunner {
+	this.'TestRunner$initialization$1'();
+	return this;
+}</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_Dl4I-sOTEeSiR-ar9ioVjA" type="_Dl4I48OTEeSiR-ar9ioVjA" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I-8OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I_MOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JAcOTEeSiR-ar9ioVjA" name="destroy$method$1" specification="_Dl4JAsOTEeSiR-ar9ioVjA">
+          <ownedComment xmi:id="_Dl4v5sOTEeSiR-ar9ioVjA" annotatedElement="_Dl4JAcOTEeSiR-ar9ioVjA">
+            <body>activity 'destroy$method$1'() { }</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_Dl4JBcOTEeSiR-ar9ioVjA" name="TestRunner$behavior$1" visibility="private">
+          <ownedComment xmi:id="_Dl4v6cOTEeSiR-ar9ioVjA" annotatedElement="_Dl4JBcOTEeSiR-ar9ioVjA">
+            <body>activity 'TestRunner$behavior$1'() {
+	accept (Start);
+	this.test(receiver, n);
+	for (i in 1..n) {
+		accept (SignalLoop);
+	}
+	WriteLine(&quot;Done&quot;);
+}</body>
+          </ownedComment>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_Dl4I5sOTEeSiR-ar9ioVjA" name="test" visibility="public" method="_Dl4I7cOTEeSiR-ar9ioVjA">
+          <ownedParameter xmi:id="_Dl4I58OTEeSiR-ar9ioVjA" name="receiver" type="_Dl4I0cOTEeSiR-ar9ioVjA" direction="out">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I6MOTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I6cOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Dl4I6sOTEeSiR-ar9ioVjA" name="n" direction="out">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I68OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4I7MOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Dl4I-MOTEeSiR-ar9ioVjA" name="TestRunner$initialization$1" visibility="protected" method="_Dl4I98OTEeSiR-ar9ioVjA"/>
+        <ownedOperation xmi:id="_Dl4I_cOTEeSiR-ar9ioVjA" name="TestRunner" method="_Dl4I-cOTEeSiR-ar9ioVjA">
+          <ownedParameter xmi:id="_Dl4I_sOTEeSiR-ar9ioVjA" type="_Dl4I48OTEeSiR-ar9ioVjA" direction="return">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dl4I_8OTEeSiR-ar9ioVjA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dl4JAMOTEeSiR-ar9ioVjA" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Dl4JAsOTEeSiR-ar9ioVjA" name="destroy" method="_Dl4JAcOTEeSiR-ar9ioVjA"/>
+        <nestedClassifier xmi:type="uml:Signal" xmi:id="_Dl4I5MOTEeSiR-ar9ioVjA" name="Start" visibility="public"/>
+        <nestedClassifier xmi:type="uml:Signal" xmi:id="_Dl4I5cOTEeSiR-ar9ioVjA" name="SignalLoop" visibility="public"/>
+        <ownedReception xmi:id="_Dl4JA8OTEeSiR-ar9ioVjA" name="Start" visibility="public" signal="_Dl4I5MOTEeSiR-ar9ioVjA"/>
+        <ownedReception xmi:id="_Dl4JBMOTEeSiR-ar9ioVjA" name="SignalLoop" visibility="public" signal="_Dl4I5cOTEeSiR-ar9ioVjA"/>
+      </nestedClassifier>
+    </packagedElement>
+    <profileApplication xmi:id="_C4YwscOTEeSiR-ar9ioVjA">
+      <eAnnotations xmi:id="_C4YwssOTEeSiR-ar9ioVjA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_C4Yws8OTEeSiR-ar9ioVjA">
+      <eAnnotations xmi:id="_C4YwtMOTEeSiR-ar9ioVjA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_Dl4v8MOTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4JNMOTEeSiR-ar9ioVjA"/>
+  <standard:Create xmi:id="_Dl4v8cOTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4JBsOTEeSiR-ar9ioVjA"/>
+  <standard:Destroy xmi:id="_Dl4v8sOTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4JAsOTEeSiR-ar9ioVjA"/>
+  <standard:Create xmi:id="_Dl4v88OTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4I_cOTEeSiR-ar9ioVjA"/>
+  <standard:Destroy xmi:id="_Dl4v9MOTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4JJsOTEeSiR-ar9ioVjA"/>
+  <standard:Destroy xmi:id="_Dl4v9cOTEeSiR-ar9ioVjA" base_BehavioralFeature="_Dl4JOcOTEeSiR-ar9ioVjA"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v9sOTEeSiR-ar9ioVjA" base_Comment="_Dl4v4sOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v98OTEeSiR-ar9ioVjA" base_Comment="_Dl4v48OTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v-MOTEeSiR-ar9ioVjA" base_Comment="_Dl4v5MOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v-cOTEeSiR-ar9ioVjA" base_Comment="_Dl4v5cOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v-sOTEeSiR-ar9ioVjA" base_Comment="_Dl4v5sOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v-8OTEeSiR-ar9ioVjA" base_Comment="_Dl4v58OTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v_MOTEeSiR-ar9ioVjA" base_Comment="_Dl4v6MOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v_cOTEeSiR-ar9ioVjA" base_Comment="_Dl4v6cOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v_sOTEeSiR-ar9ioVjA" base_Comment="_Dl4v6sOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4v_8OTEeSiR-ar9ioVjA" base_Comment="_Dl4v68OTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4wAMOTEeSiR-ar9ioVjA" base_Comment="_Dl4v7MOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4wAcOTEeSiR-ar9ioVjA" base_Comment="_Dl4v7cOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4wAsOTEeSiR-ar9ioVjA" base_Comment="_Dl4v7sOTEeSiR-ar9ioVjA" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dl4wA8OTEeSiR-ar9ioVjA" base_Comment="_Dl4v78OTEeSiR-ar9ioVjA" language="Alf"/>
+</xmi:XMI>

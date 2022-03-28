@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_DZSqAIKHEeSFEt9m3bH63A" name="Model">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_Dc9CAIKHEeSFEt9m3bH63A" name="Write" visibility="protected">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Dc9CBIKHEeSFEt9m3bH63A" annotatedElement="_Dc9CAIKHEeSFEt9m3bH63A">
+        <body>activity Write(in value: any) { StandardOutputChannel.allInstances ()[1].write(value);
+}</body>
+      </ownedComment>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Dc9CAYKHEeSFEt9m3bH63A" name="value">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dc9CAoKHEeSFEt9m3bH63A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dc9CA4KHEeSFEt9m3bH63A" value="1"/>
+      </ownedParameter>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DZSqAYKHEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DZSqAoKHEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nz6VkLeQEeS_zZpc9I-Bsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nz6VkbeQEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_Dc9CBYKHEeSFEt9m3bH63A" base_Comment="_Dc9CBIKHEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

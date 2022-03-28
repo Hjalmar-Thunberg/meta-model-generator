@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Document="http:///schemas/Document/_qR4REMn0EeO9CYUoXDRplw/0" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:structure="http://DeveloperProcess/schemas/structure/_VA9p4McPEeO9CYUoXDRplw/1" xmlns:trace="http://DeveloperProcess/schemas/trace/_VBAtMMcPEeO9CYUoXDRplw/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Document/_qR4REMn0EeO9CYUoXDRplw/0 pathmap://DEVELOPER_PROFILES/Document.profile.uml#_qR44IMn0EeO9CYUoXDRplw http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements http://DeveloperProcess/schemas/structure/_VA9p4McPEeO9CYUoXDRplw/1 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA-4AMcPEeO9CYUoXDRplw http://DeveloperProcess/schemas/trace/_VBAtMMcPEeO9CYUoXDRplw/1 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VBAtMccPEeO9CYUoXDRplw">
+  <uml:Model xmi:id="_mgTSENRWEeOj2b7ZAwHgmA" name="Papyrus Wizard">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_kp8NINT1EeOYNryRxL8wIQ" annotatedElement="_mgTSENRWEeOj2b7ZAwHgmA">
+      <body>The aim of this plugin is to improve the creation wizard of a new UML project or model.&#xD;
+For example a generic UML Diagram should not be stuck with a specified category &#xD;
+&#xD;
+</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mgTSEdRWEeOj2b7ZAwHgmA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mgTSEtRWEeOj2b7ZAwHgmA" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_oRxaQNRXEeOj2b7ZAwHgmA" name="Root Element Choice "/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FkAv0NRZEeOj2b7ZAwHgmA" name="Root Model Element Name"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Dbc5INRfEeOYNryRxL8wIQ" name="Sash Editor Mode"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cx1SkNRfEeOYNryRxL8wIQ" name="Template Models"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-fop8NRfEeOYNryRxL8wIQ" name="Profiled Model"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZzGuANUXEeOXn9fE7v0z7Q" name="Layout Requirement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pfTUkNUsEeOXn9fE7v0z7Q" name="Generic Model"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2fOK0NUwEeOXn9fE7v0z7Q" name="Customizable Wizard"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_i2nUoNXBEeOXn9fE7v0z7Q" name="Project creation di name"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3J3LYNXBEeOXn9fE7v0z7Q" name="Diagram Name "/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ruugoNXIEeOXn9fE7v0z7Q" name="Model Name"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3HeqINXfEeOXn9fE7v0z7Q" name="help"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mgTSE9RWEeOj2b7ZAwHgmA" name="UseCases">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_mgTSFNRWEeOj2b7ZAwHgmA" name="useCasesAbstraction" client="_mgTSE9RWEeOj2b7ZAwHgmA" supplier="_mgTSEtRWEeOj2b7ZAwHgmA"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_mgTSFdRWEeOj2b7ZAwHgmA" name="Papyrus Wizard" useCase="_NKToQNRYEeOj2b7ZAwHgmA _fsVfYNRgEeOYNryRxL8wIQ _GrEbANW4EeOXn9fE7v0z7Q">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NKToQNRYEeOj2b7ZAwHgmA" name="Create new Profiled UML Project/Model" subject="_mgTSFdRWEeOj2b7ZAwHgmA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_YMLA8NRdEeOYNryRxL8wIQ">
+            <body>A user create a new UML Project or Model with a profiled applied </body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fsVfYNRgEeOYNryRxL8wIQ" name="Create a new Generic Model" subject="_mgTSFdRWEeOj2b7ZAwHgmA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qg_70NRgEeOYNryRxL8wIQ">
+            <body>A user should be able to create an Ecore Model</body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_GrEbANW4EeOXn9fE7v0z7Q" name="Create a new UML Project/Model" subject="_mgTSFdRWEeOj2b7ZAwHgmA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-JMEENW4EeOXn9fE7v0z7Q" annotatedElement="_GrEbANW4EeOXn9fE7v0z7Q">
+            <body>A user should be able to create a standard UML Project/Model</body>
+          </ownedComment>
+        </ownedUseCase>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_ycV0ANRbEeOYNryRxL8wIQ" name="Papyrus User"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jRchsNRcEeOYNryRxL8wIQ" name="A_actor1_create new profiled uml project/model" memberEnd="_jRchsdRcEeOYNryRxL8wIQ _jRchtNRcEeOYNryRxL8wIQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jRchsdRcEeOYNryRxL8wIQ" name="actor1" type="_ycV0ANRbEeOYNryRxL8wIQ" association="_jRchsNRcEeOYNryRxL8wIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jRchstRcEeOYNryRxL8wIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jRchs9RcEeOYNryRxL8wIQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jRchtNRcEeOYNryRxL8wIQ" name="create new profiled uml project/model" type="_NKToQNRYEeOj2b7ZAwHgmA" association="_jRchsNRcEeOYNryRxL8wIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jRchtdRcEeOYNryRxL8wIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jRchttRcEeOYNryRxL8wIQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jI9XQNRgEeOYNryRxL8wIQ" name="A_papyrus user_create a new model" memberEnd="_jI9XQdRgEeOYNryRxL8wIQ _jI9XRNRgEeOYNryRxL8wIQ">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jI9XQdRgEeOYNryRxL8wIQ" name="papyrus user" type="_ycV0ANRbEeOYNryRxL8wIQ" association="_jI9XQNRgEeOYNryRxL8wIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jI9XQtRgEeOYNryRxL8wIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jI9XQ9RgEeOYNryRxL8wIQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jI9XRNRgEeOYNryRxL8wIQ" name="create a new model" type="_fsVfYNRgEeOYNryRxL8wIQ" association="_jI9XQNRgEeOYNryRxL8wIQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jI9XRdRgEeOYNryRxL8wIQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jI9XRtRgEeOYNryRxL8wIQ" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LHT80NW4EeOXn9fE7v0z7Q" name="A_papyrus user_create a bew uml project/model" memberEnd="_LHT80dW4EeOXn9fE7v0z7Q _LHT81NW4EeOXn9fE7v0z7Q">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LHT80dW4EeOXn9fE7v0z7Q" name="papyrus user" type="_ycV0ANRbEeOYNryRxL8wIQ" association="_LHT80NW4EeOXn9fE7v0z7Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LHT80tW4EeOXn9fE7v0z7Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LHT809W4EeOXn9fE7v0z7Q" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LHT81NW4EeOXn9fE7v0z7Q" name="create a bew uml project/model" type="_GrEbANW4EeOXn9fE7v0z7Q" association="_LHT80NW4EeOXn9fE7v0z7Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LHT81dW4EeOXn9fE7v0z7Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LHT81tW4EeOXn9fE7v0z7Q" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_SQDhINW4EeOXn9fE7v0z7Q" name="Creation of UML Model/Project Test"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_omILQNW4EeOXn9fE7v0z7Q" name="A_creation of uml model/project test_create a new uml project/model" memberEnd="_omILQdW4EeOXn9fE7v0z7Q _omILRNW4EeOXn9fE7v0z7Q">
+        <ownedEnd xmi:type="uml:Property" xmi:id="_omILQdW4EeOXn9fE7v0z7Q" name="creation of uml model/project test" type="_SQDhINW4EeOXn9fE7v0z7Q" association="_omILQNW4EeOXn9fE7v0z7Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_omILQtW4EeOXn9fE7v0z7Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_omILQ9W4EeOXn9fE7v0z7Q" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_omILRNW4EeOXn9fE7v0z7Q" name="create a new uml project/model" type="_GrEbANW4EeOXn9fE7v0z7Q" association="_omILQNW4EeOXn9fE7v0z7Q">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_omILRdW4EeOXn9fE7v0z7Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_omILRtW4EeOXn9fE7v0z7Q" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mgTSFtRWEeOj2b7ZAwHgmA" name="Design">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_mgTSF9RWEeOj2b7ZAwHgmA" name="DesignAbstraction" client="_mgTSFtRWEeOj2b7ZAwHgmA" supplier="_mgTSE9RWEeOj2b7ZAwHgmA"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_pv1n0NRkEeOYNryRxL8wIQ" name="org.eclipse.papyrus.diagram">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_qx_BUNRkEeOYNryRxL8wIQ" name="Port0" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_p7NRoNUlEeOXn9fE7v0z7Q" name="org.eclipse.papyrus.infra.core">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_yQgIoNUlEeOXn9fE7v0z7Q" name="org.eclipse.papyrus.uml.diagram.synchronizeview" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_KWUSENUmEeOXn9fE7v0z7Q" name="Dependency1" client="_qx_BUNRkEeOYNryRxL8wIQ" supplier="_yQgIoNUlEeOXn9fE7v0z7Q"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_AACQgN_3EeOXk88MU6upww" name="Creation of a new Papyrus Model" node="_DbviYN_3EeOXk88MU6upww _RHSsYN_3EeOXk88MU6upww _fxeB0N_3EeOXk88MU6upww _i-Fu0N_3EeOXk88MU6upww _lwAc0N_3EeOXk88MU6upww _OAKG4N_4EeOXk88MU6upww _QbjyUN_4EeOXk88MU6upww _YFXcUN_4EeOXk88MU6upww _cf34wN_4EeOXk88MU6upww _7sklUN_4EeOXk88MU6upww __s5nMN_4EeOXk88MU6upww _CSja0N_5EeOXk88MU6upww _oAeYsN_5EeOXk88MU6upww _DmYkwN_6EeOXk88MU6upww _GQqZsN_6EeOXk88MU6upww _ITDIMN_6EeOXk88MU6upww _r9AqQN_6EeOXk88MU6upww" group="_YCQBcN_5EeOXk88MU6upww">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_MnfjcN_7EeOXk88MU6upww" name="Constraint">
+          <specification xmi:type="uml:LiteralString" xmi:id="_MnsXwN_7EeOXk88MU6upww" name="constraintSpec"/>
+        </ownedRule>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_bg2PQN_5EeOXk88MU6upww" name="Activity1"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_p3Ow4N_3EeOXk88MU6upww" name="ControlFlow" target="_RHSsYN_3EeOXk88MU6upww" source="_DbviYN_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_vvT-kN_3EeOXk88MU6upww" name="ControlFlow1" target="_fxeB0N_3EeOXk88MU6upww" source="_RHSsYN_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_xTMMIN_3EeOXk88MU6upww" name="[CDO]" target="_i-Fu0N_3EeOXk88MU6upww" source="_fxeB0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_x_9ykN_3EeOXk88MU6upww" name="[Local File System]" target="_lwAc0N_3EeOXk88MU6upww" source="_fxeB0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_03-sEN_4EeOXk88MU6upww" name="ControlFlow4" target="_OAKG4N_4EeOXk88MU6upww" source="_QbjyUN_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1xTrUN_5EeOXk88MU6upww" name="ControlFlow5" target="_7sklUN_4EeOXk88MU6upww" source="_i-Fu0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_3bulwN_5EeOXk88MU6upww" name="ControlFlow6" target="_7sklUN_4EeOXk88MU6upww" source="_lwAc0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_5TexkN_5EeOXk88MU6upww" name="ControlFlow7" target="_7sklUN_4EeOXk88MU6upww" source="_lwAc0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_7F2HEN_5EeOXk88MU6upww" name="ControlFlow8" target="_QbjyUN_4EeOXk88MU6upww" source="_7sklUN_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8gVvIN_5EeOXk88MU6upww" name="ControlFlow9" target="_7sklUN_4EeOXk88MU6upww" source="_lwAc0N_3EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_J_0zEN_6EeOXk88MU6upww" name="ControlFlow10" target="_oAeYsN_5EeOXk88MU6upww" source="_OAKG4N_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_LilmUN_6EeOXk88MU6upww" name="ControlFlow11" target="_ITDIMN_6EeOXk88MU6upww" source="_oAeYsN_5EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Mh35EN_6EeOXk88MU6upww" name="ControlFlow12" target="_YFXcUN_4EeOXk88MU6upww" source="_oAeYsN_5EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Nn00gN_6EeOXk88MU6upww" name="ControlFlow13" target="_GQqZsN_6EeOXk88MU6upww" source="_oAeYsN_5EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_SbVm0N_6EeOXk88MU6upww" name="ControlFlow14" target="_GQqZsN_6EeOXk88MU6upww" source="_YFXcUN_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_VTxMgN_6EeOXk88MU6upww" name="ControlFlow15" target="_cf34wN_4EeOXk88MU6upww" source="_GQqZsN_6EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XVBSkN_6EeOXk88MU6upww" name="ControlFlow16" target="_ITDIMN_6EeOXk88MU6upww" source="_cf34wN_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ZLbakN_6EeOXk88MU6upww" name="ControlFlow17" target="_ITDIMN_6EeOXk88MU6upww" source="_YFXcUN_4EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_bKOpkN_6EeOXk88MU6upww" name="ControlFlow18" target="_DmYkwN_6EeOXk88MU6upww" source="_ITDIMN_6EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_cSX9YN_6EeOXk88MU6upww" name="ControlFlow19" target="__s5nMN_4EeOXk88MU6upww" source="_DmYkwN_6EeOXk88MU6upww"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_yxnKkN_6EeOXk88MU6upww" name="ControlFlow20" target="_lwAc0N_3EeOXk88MU6upww" source="_r9AqQN_6EeOXk88MU6upww"/>
+        <group xmi:type="uml:StructuredActivityNode" xmi:id="_YCQBcN_5EeOXk88MU6upww" name="StructuredActivityNode"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_DbviYN_3EeOXk88MU6upww" name="New Papyrus model from nothing" outgoing="_p3Ow4N_3EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RHSsYN_3EeOXk88MU6upww" name="Selection of model Storage" incoming="_p3Ow4N_3EeOXk88MU6upww" outgoing="_vvT-kN_3EeOXk88MU6upww"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_fxeB0N_3EeOXk88MU6upww" name="" incoming="_vvT-kN_3EeOXk88MU6upww" outgoing="_xTMMIN_3EeOXk88MU6upww _x_9ykN_3EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_i-Fu0N_3EeOXk88MU6upww" name="create a model with CDO Storage" incoming="_xTMMIN_3EeOXk88MU6upww" outgoing="_1xTrUN_5EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_lwAc0N_3EeOXk88MU6upww" name="Create a model in the Local File System" incoming="_x_9ykN_3EeOXk88MU6upww _yxnKkN_6EeOXk88MU6upww" outgoing="_3bulwN_5EeOXk88MU6upww _5TexkN_5EeOXk88MU6upww _8gVvIN_5EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_OAKG4N_4EeOXk88MU6upww" name="Select Diagram Kind" incoming="_03-sEN_4EeOXk88MU6upww" outgoing="_J_0zEN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_QbjyUN_4EeOXk88MU6upww" name="Select Diagram Category" incoming="_7F2HEN_5EeOXk88MU6upww" outgoing="_03-sEN_4EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_YFXcUN_4EeOXk88MU6upww" name="Apply Template" incoming="_Mh35EN_6EeOXk88MU6upww" outgoing="_SbVm0N_6EeOXk88MU6upww _ZLbakN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_cf34wN_4EeOXk88MU6upww" name="Select Root Element" incoming="_VTxMgN_6EeOXk88MU6upww" outgoing="_XVBSkN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:MergeNode" xmi:id="_7sklUN_4EeOXk88MU6upww" name="MergeNode" incoming="_1xTrUN_5EeOXk88MU6upww _3bulwN_5EeOXk88MU6upww _5TexkN_5EeOXk88MU6upww _8gVvIN_5EeOXk88MU6upww" outgoing="_7F2HEN_5EeOXk88MU6upww"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="__s5nMN_4EeOXk88MU6upww" name="ActivityFinalNode" incoming="_cSX9YN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:ForkNode" xmi:id="_CSja0N_5EeOXk88MU6upww" name="ForkNode"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_oAeYsN_5EeOXk88MU6upww" name="DecisionNode1" incoming="_J_0zEN_6EeOXk88MU6upww" outgoing="_LilmUN_6EeOXk88MU6upww _Mh35EN_6EeOXk88MU6upww _Nn00gN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_DmYkwN_6EeOXk88MU6upww" name="Model Creation" incoming="_bKOpkN_6EeOXk88MU6upww" outgoing="_cSX9YN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_GQqZsN_6EeOXk88MU6upww" name="DecisionNode2" incoming="_Nn00gN_6EeOXk88MU6upww _SbVm0N_6EeOXk88MU6upww" outgoing="_VTxMgN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_ITDIMN_6EeOXk88MU6upww" name="DecisionNode3" incoming="_LilmUN_6EeOXk88MU6upww _XVBSkN_6EeOXk88MU6upww _ZLbakN_6EeOXk88MU6upww" outgoing="_bKOpkN_6EeOXk88MU6upww"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_r9AqQN_6EeOXk88MU6upww" name="Create Papyrus Model from existing ressource" outgoing="_yxnKkN_6EeOXk88MU6upww"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mgTSGNRWEeOj2b7ZAwHgmA" name="Test">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_mgTSGdRWEeOj2b7ZAwHgmA" name="Dependency1" client="_mgTSGNRWEeOj2b7ZAwHgmA" supplier="_mgTSE9RWEeOj2b7ZAwHgmA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_mgTSGtRWEeOj2b7ZAwHgmA" name="Dependency2" client="_mgTSGNRWEeOj2b7ZAwHgmA" supplier="_mgTSFtRWEeOj2b7ZAwHgmA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OT7W4NXFEeOXn9fE7v0z7Q" name="Creation of a new Papyrus Wizard Framework">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OT_BQNXFEeOXn9fE7v0z7Q">
+        <body>The aim of this plugin is to improve the creation wizard of a new UML project or model.&#xD;
+For example a generic UML Diagram should not be stuck with a specified category &#xD;
+&#xD;
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OUCEkNXFEeOXn9fE7v0z7Q" name="Requirements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUFu8NXFEeOXn9fE7v0z7Q">
+          <body>- Root Element Choice  (id=Req001): 
+ The wizard shall allow the user to specify the root element e.g. Package or Model</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUJZUNXFEeOXn9fE7v0z7Q">
+          <body>- Root Model Element Name (id=Req002): 
+  Papyrus wizard shall enable to specify the name of the root element of the created model.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUNqwNXFEeOXn9fE7v0z7Q">
+          <body>- Sash Editor Mode (id=req003): 
+ Should be able to chose between legacy or &quot;1.0&quot; mode  to serialize the sash model.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUQHANXFEeOXn9fE7v0z7Q">
+          <body>- Template Models (id=Req004): 
+ Papyrus model creation wizard shall enable to load multiple template models. Currently, Papyrus model creation wizzard enable to load only template model even if checkboxes allow you to pick several.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUR8MNXFEeOXn9fE7v0z7Q">
+          <body>- Profiled Model (id=Req005): 
+ Papyrus model creation wizard shall select profiles to apply to the created model.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUTxYNXFEeOXn9fE7v0z7Q">
+          <body>- Layout Requirement (id=req006): 
+ The layout of wizard page when selecting the the diagram should be similar to the layout used in oep.infra.natable.comon.wizards.CreateNattableFromCatalogWizard.java</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUWNoNXFEeOXn9fE7v0z7Q">
+          <body>- Generic Model (id=req007): 
+ Papyrus model creation wizard should to create a generic Ecore model.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUYC0NXFEeOXn9fE7v0z7Q">
+          <body>- Customizable Wizard (id=req008): 
+ The wizard should be easily customizable </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUafENXFEeOXn9fE7v0z7Q">
+          <body>- Project creation di name (id=req009): 
+ the wizard shall allow to choose the name of the di/uml/notation files when we create a new project </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OUcUQNXFEeOXn9fE7v0z7Q">
+          <body>- Diagram Name  (id=req010): 
+ Diagram name should be grayed out if any diagram are not selected</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OUdiYNXFEeOXn9fE7v0z7Q" name="Use Cases">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OWlCQNXFEeOXn9fE7v0z7Q">
+          <body>UseCaseDiagram</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OWm3cNXFEeOXn9fE7v0z7Q" name="Create new Profiled UML Project/Model">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OWoFkdXFEeOXn9fE7v0z7Q">
+            <body>A user create a new UML Project or Model with a profiled applied </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OWpTsdXFEeOXn9fE7v0z7Q" name="Create a new Generic Model">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OWrI4NXFEeOXn9fE7v0z7Q">
+            <body>A user should be able to create an Ecore Model</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OWsXANXFEeOXn9fE7v0z7Q" name="Create a new UML Project/Model">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OWtlINXFEeOXn9fE7v0z7Q">
+            <body>A user should be able to create a standard UML Project/Model</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OWvaUNXFEeOXn9fE7v0z7Q" name="Creation of UML Model/Project Test"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OWwocNXFEeOXn9fE7v0z7Q" name="Design">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OXPwoNXFEeOXn9fE7v0z7Q">
+          <body>Component Diagram</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mgTSG9RWEeOj2b7ZAwHgmA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mgTSHNRWEeOj2b7ZAwHgmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA6mkMcPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_kWqjAMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mgTSHdRWEeOj2b7ZAwHgmA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mgTSHtRWEeOj2b7ZAwHgmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA-4AMcPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_qCT3MMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mgTSH9RWEeOj2b7ZAwHgmA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mgTSINRWEeOj2b7ZAwHgmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VBAtMccPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_2LNtQMbYEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mgTSIdRWEeOj2b7ZAwHgmA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mgTSItRWEeOj2b7ZAwHgmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mgTSI9RWEeOj2b7ZAwHgmA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mgTSJNRWEeOj2b7ZAwHgmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_qR44IMn0EeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_D0JcUMnzEeO9CYUoXDRplw"/>
+    </profileApplication>
+  </uml:Model>
+  <structure:Project xmi:id="_mgTSJdRWEeOj2b7ZAwHgmA" author="Thibault Le Ouay" version="0.1" base_Model="_mgTSENRWEeOj2b7ZAwHgmA" title="Creation of a new Papyrus Wizard Framework"/>
+  <structure:Requirements xmi:id="_mgTSJtRWEeOj2b7ZAwHgmA" base_Model="_mgTSEtRWEeOj2b7ZAwHgmA"/>
+  <structure:UseCases xmi:id="_mgTSJ9RWEeOj2b7ZAwHgmA" base_Model="_mgTSE9RWEeOj2b7ZAwHgmA"/>
+  <structure:Design xmi:id="_mgTSKNRWEeOj2b7ZAwHgmA" base_Model="_mgTSFtRWEeOj2b7ZAwHgmA"/>
+  <structure:Tests xmi:id="_mgTSKdRWEeOj2b7ZAwHgmA" base_Model="_mgTSGNRWEeOj2b7ZAwHgmA"/>
+  <structure:Requirements xmi:id="_0E6toNRWEeOj2b7ZAwHgmA" base_Model="_mgTSEtRWEeOj2b7ZAwHgmA"/>
+  <structure:Project xmi:id="_14_TUNRWEeOj2b7ZAwHgmA" author="Thibault Le Ouay&#xD;&#xA;" version="0.1&#xD;&#xA;" base_Model="_mgTSENRWEeOj2b7ZAwHgmA" title="Creation of a new Papyrus Model/Project creation Wizard"/>
+  <structure:UseCases xmi:id="_29k80NRWEeOj2b7ZAwHgmA" base_Model="_mgTSE9RWEeOj2b7ZAwHgmA"/>
+  <structure:Design xmi:id="_4R3PMNRWEeOj2b7ZAwHgmA" base_Model="_mgTSFtRWEeOj2b7ZAwHgmA"/>
+  <structure:Tests xmi:id="_5gDgoNRWEeOj2b7ZAwHgmA" base_Model="_mgTSGNRWEeOj2b7ZAwHgmA"/>
+  <Requirements:Requirement xmi:id="_oSPUUNRXEeOj2b7ZAwHgmA" text="The wizard shall allow the user to specify the root element e.g. Package or Model" id="Req001" base_Class="_oRxaQNRXEeOj2b7ZAwHgmA"/>
+  <Requirements:Requirement xmi:id="_FkB98NRZEeOj2b7ZAwHgmA" text=" Papyrus wizard shall enable to specify the name of the root element of the created model." id="Req002" base_Class="_FkAv0NRZEeOj2b7ZAwHgmA"/>
+  <Requirements:Requirement xmi:id="_DcDWENRfEeOYNryRxL8wIQ" text="Should be able to chose between legacy or &quot;1.0&quot; mode  to serialize the sash model." id="req003" base_Class="_Dbc5INRfEeOYNryRxL8wIQ"/>
+  <Requirements:Requirement xmi:id="_cx2gsNRfEeOYNryRxL8wIQ" text="Papyrus model creation wizard shall enable to load multiple template models. Currently, Papyrus model creation wizzard enable to load only template model even if checkboxes allow you to pick several." id="Req004" base_Class="_cx1SkNRfEeOYNryRxL8wIQ"/>
+  <Requirements:Requirement xmi:id="_-fp4ENRfEeOYNryRxL8wIQ" text="Papyrus model creation wizard shall select profiles to apply to the created model." id="Req005" base_Class="_-fop8NRfEeOYNryRxL8wIQ"/>
+  <Requirements:Requirement xmi:id="_ZzfIgNUXEeOXn9fE7v0z7Q" text="The layout of wizard page when selecting the the diagram should be similar to the layout used in oep.infra.natable.comon.wizards.CreateNattableFromCatalogWizard.java" id="req006" base_Class="_ZzGuANUXEeOXn9fE7v0z7Q"/>
+  <Requirements:Requirement xmi:id="_pfZbMNUsEeOXn9fE7v0z7Q" text="Papyrus model creation wizard should to create a generic Ecore model." id="req007" base_Class="_pfTUkNUsEeOXn9fE7v0z7Q"/>
+  <Requirements:Requirement xmi:id="_2fR1MNUwEeOXn9fE7v0z7Q" text="The wizard should be easily customizable " id="req008" base_Class="_2fOK0NUwEeOXn9fE7v0z7Q"/>
+  <trace:UseCaseTest xmi:id="_YwAAENW4EeOXn9fE7v0z7Q" base_UseCase="_SQDhINW4EeOXn9fE7v0z7Q"/>
+  <Requirements:Requirement xmi:id="_i2pJ0NXBEeOXn9fE7v0z7Q" text="the wizard shall allow to choose the name of the di/uml/notation files when we create a new project " id="req009" base_Class="_i2nUoNXBEeOXn9fE7v0z7Q"/>
+  <Requirements:Requirement xmi:id="_3J4ZgNXBEeOXn9fE7v0z7Q" text="Diagram name should be grayed out if any diagram are not selected" id="req010" base_Class="_3J3LYNXBEeOXn9fE7v0z7Q"/>
+  <Document:Document xmi:id="_OT9MENXFEeOXn9fE7v0z7Q" base_Model="_OT7W4NXFEeOXn9fE7v0z7Q" author="Thibault Le Ouay" version="0.1"/>
+  <Document:Content xmi:id="_OUAPYNXFEeOXn9fE7v0z7Q" base_Comment="_OT_BQNXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OUDSsNXFEeOXn9fE7v0z7Q" base_Package="_OUCEkNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUG9ENXFEeOXn9fE7v0z7Q" base_Comment="_OUFu8NXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OULOgNXFEeOXn9fE7v0z7Q" base_Comment="_OUJZUNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUOR0NXFEeOXn9fE7v0z7Q" base_Comment="_OUNqwNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUQuENXFEeOXn9fE7v0z7Q" base_Comment="_OUQHANXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUSjQNXFEeOXn9fE7v0z7Q" base_Comment="_OUR8MNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUU_gNXFEeOXn9fE7v0z7Q" base_Comment="_OUTxYNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUW0sNXFEeOXn9fE7v0z7Q" base_Comment="_OUWNoNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUZQ8NXFEeOXn9fE7v0z7Q" base_Comment="_OUYC0NXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUbGINXFEeOXn9fE7v0z7Q" base_Comment="_OUafENXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OUc7UNXFEeOXn9fE7v0z7Q" base_Comment="_OUcUQNXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OUewgNXFEeOXn9fE7v0z7Q" base_Package="_OUdiYNXFEeOXn9fE7v0z7Q"/>
+  <Document:ImageRef xmi:id="_OWmQYNXFEeOXn9fE7v0z7Q" base_Comment="_OWlCQNXFEeOXn9fE7v0z7Q" ref="C:/runtime-New_configuration/org.eclipse.papyrus.diagram/imgDOC/UseCaseDiagram.png"/>
+  <Document:Section xmi:id="_OWoFkNXFEeOXn9fE7v0z7Q" base_Package="_OWm3cNXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OWpTsNXFEeOXn9fE7v0z7Q" base_Comment="_OWoFkdXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OWqh0NXFEeOXn9fE7v0z7Q" base_Package="_OWpTsdXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OWrv8NXFEeOXn9fE7v0z7Q" base_Comment="_OWrI4NXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OWs-ENXFEeOXn9fE7v0z7Q" base_Package="_OWsXANXFEeOXn9fE7v0z7Q"/>
+  <Document:Content xmi:id="_OWuzQNXFEeOXn9fE7v0z7Q" base_Comment="_OWtlINXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OWwBYNXFEeOXn9fE7v0z7Q" base_Package="_OWvaUNXFEeOXn9fE7v0z7Q"/>
+  <Document:Section xmi:id="_OWxPgNXFEeOXn9fE7v0z7Q" base_Package="_OWwocNXFEeOXn9fE7v0z7Q"/>
+  <Document:ImageRef xmi:id="_OXRl0NXFEeOXn9fE7v0z7Q" base_Comment="_OXPwoNXFEeOXn9fE7v0z7Q" ref="C:/runtime-New_configuration/org.eclipse.papyrus.diagram/imgDOC/Component_Diagram.png"/>
+  <Requirements:Requirement xmi:id="_ruvHsNXIEeOXn9fE7v0z7Q" text="To hide as much as possible the 3 files (di/uml/notation) Papyrus  wizard shall ask only for the  filename without any extension " id="req011" base_Class="_ruugoNXIEeOXn9fE7v0z7Q"/>
+  <Requirements:Requirement xmi:id="_3HgfUNXfEeOXn9fE7v0z7Q" text="Papyrus wizard shall provide help to guide the user through the model/project Creation" id="req012" base_Class="_3HeqINXfEeOXn9fE7v0z7Q"/>
+</xmi:XMI>

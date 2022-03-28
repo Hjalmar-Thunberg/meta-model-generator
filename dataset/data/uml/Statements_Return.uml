@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="__ZDuwIKGEeSFEt9m3bH63A" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ABoKoIKHEeSFEt9m3bH63A" name="Statements_Return" classifierBehavior="_ABoK8oKHEeSFEt9m3bH63A" isActive="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK84KHEeSFEt9m3bH63A" annotatedElement="_ABoKoIKHEeSFEt9m3bH63A">
+        <body>&#xD;
+ * Test return statements.&#xD;
+ *</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ABoK44KHEeSFEt9m3bH63A" name="Statements_Return$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK5IKHEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK5YKHEeSFEt9m3bH63A" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ABoKzYKHEeSFEt9m3bH63A" name="test$method$1" visibility="protected" specification="_ABoKt4KHEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK-4KHEeSFEt9m3bH63A" annotatedElement="_ABoKzYKHEeSFEt9m3bH63A">
+          <body>activity 'test$method$1'(out a: Integer, out b: Integer, out c: String, out x: Integer, out y: Integer, out z: Integer, out n: Integer) { a = test1();
+b = test2();
+c = test3();
+x = 0;
+z = test4(x, y);
+n = 1;
+return;
+n = 2;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKzoKHEeSFEt9m3bH63A" name="a" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKz4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK0IKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK0YKHEeSFEt9m3bH63A" name="b" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK0oKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK04KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK1IKHEeSFEt9m3bH63A" name="c" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK1YKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK1oKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK14KHEeSFEt9m3bH63A" name="x" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK2IKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK2YKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK2oKHEeSFEt9m3bH63A" name="y" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK24KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK3IKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK3YKHEeSFEt9m3bH63A" name="z" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK3oKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK34KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK4IKHEeSFEt9m3bH63A" name="n" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK4YKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK4oKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ABoK5oKHEeSFEt9m3bH63A" name="Statements_Return$initialization$1" visibility="protected" specification="_ABoK54KHEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK-oKHEeSFEt9m3bH63A" annotatedElement="_ABoK5oKHEeSFEt9m3bH63A">
+          <body>activity 'Statements_Return$initialization$1'(){
+  if (this.'Statements_Return$initializationFlag$1' == null) {
+    this.'Statements_Return$initializationFlag$1' = true;
+  }
+}
+</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ABoK6IKHEeSFEt9m3bH63A" name="Statements_Return$method$1" specification="_ABoK7IKHEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK94KHEeSFEt9m3bH63A" annotatedElement="_ABoK6IKHEeSFEt9m3bH63A">
+          <body>activity 'Statements_Return$method$1'(): Statements_Return {
+	this.'Statements_Return$initialization$1'();
+	return this;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK6YKHEeSFEt9m3bH63A" type="_ABoKoIKHEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK6oKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK64KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ABoK8IKHEeSFEt9m3bH63A" name="destroy$method$1" specification="_ABoK8YKHEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK9oKHEeSFEt9m3bH63A" annotatedElement="_ABoK8IKHEeSFEt9m3bH63A">
+          <body>activity 'destroy$method$1'() { }</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_ABoK8oKHEeSFEt9m3bH63A" name="Statements_Return$behavior$1" visibility="private">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK-YKHEeSFEt9m3bH63A" annotatedElement="_ABoK8oKHEeSFEt9m3bH63A">
+          <body>activity 'Statements_Return$behavior$1'() { this.test(a, b, c, x, y, z, n);
+AssertEqual(&quot;a&quot;, a, 4);
+AssertEqual(&quot;b&quot;, b, 2);
+AssertEqual(&quot;c&quot;, c, &quot;xx&quot;);
+AssertEqual(&quot;x&quot;, x, 1);
+AssertEqual(&quot;y&quot;, y, 2);
+AssertEqual(&quot;z&quot;, z, 3);
+AssertEqual(&quot;n&quot;, n, 1);
+WriteLine(&quot;Done&quot;);
+}</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ABoKt4KHEeSFEt9m3bH63A" name="test" visibility="public" method="_ABoKzYKHEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKuIKHEeSFEt9m3bH63A" name="a" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKuYKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKuoKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKu4KHEeSFEt9m3bH63A" name="b" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKvIKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKvYKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKvoKHEeSFEt9m3bH63A" name="c" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKv4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKwIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKwYKHEeSFEt9m3bH63A" name="x" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKwoKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKw4KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKxIKHEeSFEt9m3bH63A" name="y" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKxYKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKxoKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKx4KHEeSFEt9m3bH63A" name="z" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKyIKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKyYKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKyoKHEeSFEt9m3bH63A" name="n" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKy4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKzIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ABoK54KHEeSFEt9m3bH63A" name="Statements_Return$initialization$1" visibility="protected" method="_ABoK5oKHEeSFEt9m3bH63A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ABoK7IKHEeSFEt9m3bH63A" name="Statements_Return" method="_ABoK6IKHEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoK7YKHEeSFEt9m3bH63A" type="_ABoKoIKHEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoK7oKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoK74KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ABoK8YKHEeSFEt9m3bH63A" name="destroy" method="_ABoK8IKHEeSFEt9m3bH63A"/>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_ABoKoYKHEeSFEt9m3bH63A" name="test1">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK_IKHEeSFEt9m3bH63A" annotatedElement="_ABoKoYKHEeSFEt9m3bH63A">
+          <body>activity test1(): Integer { item = 4;
+return item;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKooKHEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKo4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKpIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_ABoKpYKHEeSFEt9m3bH63A" name="test2">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK-IKHEeSFEt9m3bH63A" annotatedElement="_ABoKpYKHEeSFEt9m3bH63A">
+          <body>activity test2(): Integer { index = 2;
+list = new Integer [] { 1, 2, 3 };
+return list[index];
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKpoKHEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKp4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKqIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_ABoKqYKHEeSFEt9m3bH63A" name="test3">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK9YKHEeSFEt9m3bH63A" annotatedElement="_ABoKqYKHEeSFEt9m3bH63A">
+          <body>activity test3(): String { s = &quot;x&quot;;
+return s + s;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKqoKHEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKq4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKrIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Activity" xmi:id="_ABoKrYKHEeSFEt9m3bH63A" name="test4">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ABoK9IKHEeSFEt9m3bH63A" annotatedElement="_ABoKrYKHEeSFEt9m3bH63A">
+          <body>activity test4(inout x: Integer, out y: Integer): Integer { y = 2;
+if (x == 0) { x = x + 1;
+return 3;
+} }</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKroKHEeSFEt9m3bH63A" name="x" direction="inout">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKr4KHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKsIKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKsYKHEeSFEt9m3bH63A" name="y" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKsoKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKs4KHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ABoKtIKHEeSFEt9m3bH63A" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ABoKtYKHEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ABoKtoKHEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </nestedClassifier>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__ZDuwYKGEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__ZDuwoKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2I5lhLeNEeS_zZpc9I-Bsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2I6MkLeNEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoK_YKHEeSFEt9m3bH63A" base_Comment="_ABoK9oKHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoK_oKHEeSFEt9m3bH63A" base_Comment="_ABoK-oKHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoK_4KHEeSFEt9m3bH63A" base_Comment="_ABoK-4KHEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Create xmi:id="_ABoLAIKHEeSFEt9m3bH63A" base_BehavioralFeature="_ABoK7IKHEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLAYKHEeSFEt9m3bH63A" base_Comment="_ABoK9IKHEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Destroy xmi:id="_ABoLAoKHEeSFEt9m3bH63A" base_BehavioralFeature="_ABoK8YKHEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLA4KHEeSFEt9m3bH63A" base_Comment="_ABoK-YKHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLBIKHEeSFEt9m3bH63A" base_Comment="_ABoK9YKHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLBYKHEeSFEt9m3bH63A" base_Comment="_ABoK94KHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLBoKHEeSFEt9m3bH63A" base_Comment="_ABoK_IKHEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ABoLB4KHEeSFEt9m3bH63A" base_Comment="_ABoK-IKHEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

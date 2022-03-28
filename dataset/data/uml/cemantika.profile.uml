@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="___5MUHrWEd-kYqRtMf-K-Q" name="contextprofile" metaclassReference="_mPUNYHraEd-kYqRtMf-K-Q _WWS-EHsNEd-kYqRtMf-K-Q _XiqqkHsNEd-kYqRtMf-K-Q">
+  <eAnnotations xmi:id="_y-ZAsHrdEd-kYqRtMf-K-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_i-X2QIBaEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_i-XPMIBaEd-gTtsROGlwpw/23" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_i-X2QYBaEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_i-X2QoBaEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_i-X2Q4BaEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_i-X2RIBaEd-gTtsROGlwpw" key="documentation" value="let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_Actor)) in&#xA;associations->exists(association | association.getAppliedStereotype('contextprofile::executes') = contextprofile::executes )"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_i-X2RYBaEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_i-X2R4BaEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_i-X2SIBaEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_i-X2SYBaEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_i-X2SoBaEd-gTtsROGlwpw" key="documentation" value="let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_UseCase)) in&#xA;associations->exists(association | association.getAppliedStereotype('contextprofile::executes') = contextprofile::executes )"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_i-X2S4BaEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_i-X2TYBaEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_i-X2ToBaEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_i-X2T4BaEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_i-X2UIBaEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_i-X2UYBaEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_i-X2U4BaEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_G9-_kYBYEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_G9-_kIBYEd-gTtsROGlwpw/22" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_G9-_koBYEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_G9-_k4BYEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_G9-_lIBYEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_G9-_lYBYEd-gTtsROGlwpw" key="documentation" value="let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_Actor)) in&#xA;associations->exists(association | association.getAppliedStereotype('contextprofile::executes') = contextprofile::executes )"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_G9-_loBYEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_G9-_mIBYEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_G9-_mYBYEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_G9-_moBYEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_G9-_nIBYEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_G9-_nYBYEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_G9-_noBYEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_G9-_n4BYEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_G9-_oIBYEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_G9-_ooBYEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_E6CAQYBXEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_E6CAQIBXEd-gTtsROGlwpw/21" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E6CAQoBXEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_E6CAQ4BXEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_E6CARIBXEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_E6CARYBXEd-gTtsROGlwpw" key="documentation" value="let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_Actor)) in&#xA;associations->exists(association | association.getAppliedStereotype('cemantikaprofile::executes') = cemantikaprofile::executes )"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_E6CARoBXEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E6CASIBXEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_E6CASYBXEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_E6CASoBXEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_E6CATIBXEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_E6CATYBXEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_E6CAToBXEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_E6CAT4BXEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_E6CAUIBXEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_E6CAUoBXEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_yEw4IYAOEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_yEw4IIAOEd-gTtsROGlwpw/20" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_yEw4IoAOEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_yEw4I4AOEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_yEw4JIAOEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_yEw4JoAOEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_yEw4J4AOEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_yEw4KIAOEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_yEw4KoAOEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_yEw4K4AOEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_yEw4LIAOEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_yEw4LYAOEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_yEw4LoAOEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_yEw4MIAOEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_-SKiwYAGEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_-SKiwIAGEd-gTtsROGlwpw/19" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-SKiwoAGEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_-SKiw4AGEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-SKixIAGEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-SLJ0IAGEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_-SLJ0YAGEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-SLJ0oAGEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-SLJ1IAGEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_-SLJ1YAGEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_-SLJ1oAGEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_-SLJ14AGEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-SLJ2IAGEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_-SLJ2oAGEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_kaHRkYAEEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_kaHRkIAEEd-gTtsROGlwpw/18" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kaHRkoAEEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_kaHRk4AEEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kaHRlIAEEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kaHRloAEEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_kaHRl4AEEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kaHRmIAEEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kaHRmoAEEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_kaHRm4AEEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_kaHRnIAEEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_kaHRnYAEEd-gTtsROGlwpw" key="documentation" value="self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kaHRnoAEEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_kaHRoIAEEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_rflhcX_uEd-gTtsROGlwpw" name="contextprofile" nsURI="http:///schemas/contextprofile/_rflhcH_uEd-gTtsROGlwpw/17" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_rflhcn_uEd-gTtsROGlwpw" name="Agent">
+        <eAnnotations xmi:id="_rflhc3_uEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_rflhdH_uEd-gTtsROGlwpw" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_rfmIgH_uEd-gTtsROGlwpw" name="Task">
+        <eAnnotations xmi:id="_rfmIgX_uEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_rfmIgn_uEd-gTtsROGlwpw" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_rfmIhH_uEd-gTtsROGlwpw" name="executes">
+        <eAnnotations xmi:id="_rfmIhX_uEd-gTtsROGlwpw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_rfmIhn_uEd-gTtsROGlwpw" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_rfmIh3_uEd-gTtsROGlwpw" key="documentation" value="not self.behavior.oclIsUndefined() and&#xA;self.behavior &lt;> ''"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_rfmIiH_uEd-gTtsROGlwpw" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_rfmIin_uEd-gTtsROGlwpw" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_1w0okX6tEd-yJZKiqJKeww" name="contextprofile" nsURI="http:///schemas/contextprofile/_1w0okH6tEd-yJZKiqJKeww/16" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1w0okn6tEd-yJZKiqJKeww" name="Agent">
+        <eAnnotations xmi:id="_1w0ok36tEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1w0olH6tEd-yJZKiqJKeww" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1w0oln6tEd-yJZKiqJKeww" name="Task">
+        <eAnnotations xmi:id="_1w0ol36tEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1w0omH6tEd-yJZKiqJKeww" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_1w0omn6tEd-yJZKiqJKeww" name="executes">
+        <eAnnotations xmi:id="_1w0om36tEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_1w0onH6tEd-yJZKiqJKeww" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_1w0onX6tEd-yJZKiqJKeww" key="documentation" value="not self.behavior.oclIsUndefined() and&#xA;self.behavior &lt;> ''"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_1w0onn6tEd-yJZKiqJKeww" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_1w0ooH6tEd-yJZKiqJKeww" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_-IKY4H6rEd-yJZKiqJKeww" name="contextprofile" nsURI="http:///schemas/contextprofile/_-H-ysH6rEd-yJZKiqJKeww/15" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-IKY4X6rEd-yJZKiqJKeww" name="Agent">
+        <eAnnotations xmi:id="_-IKY4n6rEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-IKY436rEd-yJZKiqJKeww" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-IKY5X6rEd-yJZKiqJKeww" name="Task">
+        <eAnnotations xmi:id="_-IKY5n6rEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-IKY536rEd-yJZKiqJKeww" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_-IKY6X6rEd-yJZKiqJKeww" name="executes">
+        <eAnnotations xmi:id="_-IKY6n6rEd-yJZKiqJKeww" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_-IKY636rEd-yJZKiqJKeww" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_-IKY7H6rEd-yJZKiqJKeww" key="documentation" value="not self.behavior.oclIsUndefined() and&#xA;self.behavior &lt;> ''"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_-IKY7X6rEd-yJZKiqJKeww" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_-IKY736rEd-yJZKiqJKeww" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_xtNhQH5BEd-rye-3pLxxpA" name="contextprofile" nsURI="http:///schemas/contextprofile/_xs-QsH5BEd-rye-3pLxxpA/14" nsPrefix="contextprofile">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_xtNhQX5BEd-rye-3pLxxpA" name="Agent">
+        <eAnnotations xmi:id="_xtNhQn5BEd-rye-3pLxxpA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n9VOYHraEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xtNhQ35BEd-rye-3pLxxpA" name="base_Actor" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Actor"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_xtNhRX5BEd-rye-3pLxxpA" name="Task">
+        <eAnnotations xmi:id="_xtNhRn5BEd-rye-3pLxxpA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_cOHtEHsNEd-kYqRtMf-K-Q"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xtNhR35BEd-rye-3pLxxpA" name="base_UseCase" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_xtNhSX5BEd-rye-3pLxxpA" name="executes">
+        <eAnnotations xmi:id="_xtNhSn5BEd-rye-3pLxxpA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_fimVkHsNEd-kYqRtMf-K-Q"/>
+        <eAnnotations xmi:id="_xtNhS35BEd-rye-3pLxxpA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_xtNhTH5BEd-rye-3pLxxpA" key="documentation" value="false"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xtNhTX5BEd-rye-3pLxxpA" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_xtNhT35BEd-rye-3pLxxpA" name="behavior" ordered="false" lowerBound="1" defaultValueLiteral="">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_AAwvAHrXEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_AAwvAXrXEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_AAwvAnrXEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_AAwvA3rXEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_mPUNYHraEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+  </elementImport>
+  <elementImport xmi:id="_WWS-EHsNEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+  </elementImport>
+  <elementImport xmi:id="_XiqqkHsNEd-kYqRtMf-K-Q">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_n9VOYHraEd-kYqRtMf-K-Q" name="Agent">
+    <ownedRule xmi:id="_u5RJsIBUEd-gTtsROGlwpw" name="agent_constraint">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_u5S-4IBUEd-gTtsROGlwpw" name="">
+        <language>OCL</language>
+        <body>let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_Actor)) in&#xA;associations->exists(association | association.getAppliedStereotype('contextprofile::executes') = contextprofile::executes )</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:id="_pm_T0XraEd-kYqRtMf-K-Q" name="base_Actor" association="_pm-FsHraEd-kYqRtMf-K-Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Actor"/>
+    </ownedAttribute>
+    <icon xmi:id="_0Jvg4HraEd-kYqRtMf-K-Q" location="icons/agent.gif"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pm-FsHraEd-kYqRtMf-K-Q" name="Actor_Agent" memberEnd="_pm_T0HraEd-kYqRtMf-K-Q _pm_T0XraEd-kYqRtMf-K-Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pm_T0HraEd-kYqRtMf-K-Q" name="extension_Agent" type="_n9VOYHraEd-kYqRtMf-K-Q" aggregation="composite" association="_pm-FsHraEd-kYqRtMf-K-Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_cOHtEHsNEd-kYqRtMf-K-Q" name="Task">
+    <ownedRule xmi:id="_T6K3QIBaEd-gTtsROGlwpw" name="task_constraint">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T6MFYIBaEd-gTtsROGlwpw">
+        <language>OCL</language>
+        <body>let associations : Set(Association) = Association.allInstances()->select(p | p.endType->exists(ends | ends = self.base_UseCase)) in&#xA;associations->exists(association | association.getAppliedStereotype('contextprofile::executes') = contextprofile::executes )</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:id="_dxkc0XsNEd-kYqRtMf-K-Q" name="base_UseCase" association="_dxj1wHsNEd-kYqRtMf-K-Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#UseCase"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_dxj1wHsNEd-kYqRtMf-K-Q" name="UseCase_Task" memberEnd="_dxkc0HsNEd-kYqRtMf-K-Q _dxkc0XsNEd-kYqRtMf-K-Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_dxkc0HsNEd-kYqRtMf-K-Q" name="extension_Task" type="_cOHtEHsNEd-kYqRtMf-K-Q" aggregation="composite" association="_dxj1wHsNEd-kYqRtMf-K-Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_fimVkHsNEd-kYqRtMf-K-Q" name="executes">
+    <ownedRule xmi:id="_aYM4AH2kEd-ZyKD18fFXag" name="executes_constraint">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aYOtMH2kEd-ZyKD18fFXag" name="">
+        <language>OCL</language>
+        <body>self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Agent') = contextprofile::Agent) and self.base_Association.endType->exists(p | p.getAppliedStereotype('contextprofile::Task') = contextprofile::Task)</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:id="_hmT5wnsNEd-kYqRtMf-K-Q" name="base_Association" association="_hmT5wHsNEd-kYqRtMf-K-Q">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_g8N8sHz2Ed-5K-xtx9WnCg" name="behavior">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_nNgUkHz2Ed-5K-xtx9WnCg" value=""/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_hmT5wHsNEd-kYqRtMf-K-Q" name="Association_executes" memberEnd="_hmT5wXsNEd-kYqRtMf-K-Q _hmT5wnsNEd-kYqRtMf-K-Q">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_hmT5wXsNEd-kYqRtMf-K-Q" name="extension_executes" type="_fimVkHsNEd-kYqRtMf-K-Q" aggregation="composite" association="_hmT5wHsNEd-kYqRtMf-K-Q"/>
+  </packagedElement>
+</uml:Profile>

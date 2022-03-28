@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IXDeQBf8EeSLM5AVoLTKwA" name="Model">
+  <packageImport xmi:id="_IXEFUBf8EeSLM5AVoLTKwA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JOhRwBf8EeSLM5AVoLTKwA" name="Container">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_LkcAQBf8EeSLM5AVoLTKwA" name="RedefinableTemplateSignature1" parameter="_T3jF8Bf8EeSLM5AVoLTKwA">
+      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_T3jF8Bf8EeSLM5AVoLTKwA" parameteredElement="_WiCWQBf8EeSLM5AVoLTKwA">
+        <ownedParameteredElement xmi:type="uml:Class" xmi:id="_WiCWQBf8EeSLM5AVoLTKwA" name="T" templateParameter="_T3jF8Bf8EeSLM5AVoLTKwA"/>
+      </ownedParameter>
+    </ownedTemplateSignature>
+    <ownedAttribute xmi:id="_dG048Bf8EeSLM5AVoLTKwA" name="size" isReadOnly="true" isDerived="true">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_qsvVABf8EeSLM5AVoLTKwA" name="add">
+      <ownedParameter xmi:id="_29UV0Bf8EeSLM5AVoLTKwA" name="element" type="_WiCWQBf8EeSLM5AVoLTKwA" effect="read"/>
+    </ownedOperation>
+  </packagedElement>
+</uml:Model>

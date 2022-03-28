@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Document="http:///schemas/Document/_RQrLoGwBEeSIYu1Ih2FYyQ/10" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:structure="http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Document/_RQrLoGwBEeSIYu1Ih2FYyQ/10 pathmap://DEVELOPER_PROFILES/Document.profile.uml#_RQrLoWwBEeSIYu1Ih2FYyQ http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ">
+  <uml:Model xmi:id="_eDyOwAOAEeWYRrYFctZWYw" name="Uml.Diagram.UseCase">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_eDyOwQOAEeWYRrYFctZWYw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_eDyOwgOAEeWYRrYFctZWYw" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_rcvM4AOAEeWYRrYFctZWYw" name="DnD of usesecase into a subject of a usecase diagram">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HR-1cAOBEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_yM6qwAOBEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_CDLY0AOCEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RPJzwAOCEeWYRrYFctZWYw" name="Propose to keep or switch the subject and/or the owner"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_eDyOwwOAEeWYRrYFctZWYw" name="UseCases">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_eDyOxAOAEeWYRrYFctZWYw" name="useCasesAbstraction" client="_eDyOwwOAEeWYRrYFctZWYw" supplier="_eDyOwgOAEeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_eDyOxQOAEeWYRrYFctZWYw" name="DnD System" useCase="_Eoq-8AODEeWYRrYFctZWYw _Z4nugAODEeWYRrYFctZWYw _aMiwEAODEeWYRrYFctZWYw">
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Eoq-8AODEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject" subject="_eDyOxQOAEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_IAFp4AOHEeWYRrYFctZWYw">
+            <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is empty</body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Z4nugAODEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject" subject="_eDyOxQOAEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Y9_8gAOHEeWYRrYFctZWYw">
+            <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is different from the one of the target subject</body>
+          </ownedComment>
+        </ownedUseCase>
+        <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aMiwEAODEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject" subject="_eDyOxQOAEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_dpxIEAOHEeWYRrYFctZWYw">
+            <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is identical to the target subject</body>
+          </ownedComment>
+        </ownedUseCase>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RgvdkAODEeWYRrYFctZWYw" name="A_dnd of usecase from root without any predefined subject into a target subject_genericpapyrususer" memberEnd="_RgwrsAODEeWYRrYFctZWYw _RgxSwAODEeWYRrYFctZWYw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RgwEoAODEeWYRrYFctZWYw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RgwEoQODEeWYRrYFctZWYw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RgwrsAODEeWYRrYFctZWYw" name="dnd of usecase from root without any predefined subject into a target subject" type="_Eoq-8AODEeWYRrYFctZWYw" association="_RgvdkAODEeWYRrYFctZWYw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RgxSwAODEeWYRrYFctZWYw" name="genericpapyrususer" association="_RgvdkAODEeWYRrYFctZWYw">
+          <type xmi:type="uml:Actor" href="../../org.eclipse.papyrus.infra.core/doc/papyrus.uml#_5fEUoAN_EeWYRrYFctZWYw"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_hRcWMAODEeWYRrYFctZWYw" name="A_dnd of usecase from root with an identical subject into a target subject_genericpapyrususer" memberEnd="_hRcWMwODEeWYRrYFctZWYw _hRc9QAODEeWYRrYFctZWYw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hRcWMQODEeWYRrYFctZWYw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hRcWMgODEeWYRrYFctZWYw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hRcWMwODEeWYRrYFctZWYw" name="dnd of usecase from root with an identical subject into a target subject" type="_aMiwEAODEeWYRrYFctZWYw" association="_hRcWMAODEeWYRrYFctZWYw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hRc9QAODEeWYRrYFctZWYw" name="genericpapyrususer" association="_hRcWMAODEeWYRrYFctZWYw">
+          <type xmi:type="uml:Actor" href="../../org.eclipse.papyrus.infra.core/doc/papyrus.uml#_5fEUoAN_EeWYRrYFctZWYw"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h7LPsAODEeWYRrYFctZWYw" name="A_dnd of usecase from root with a different subject into a target subject_genericpapyrususer" memberEnd="_h7L2wAODEeWYRrYFctZWYw _h7L2wQODEeWYRrYFctZWYw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h7LPsQODEeWYRrYFctZWYw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h7LPsgODEeWYRrYFctZWYw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_h7L2wAODEeWYRrYFctZWYw" name="dnd of usecase from root with a different subject into a target subject" type="_Z4nugAODEeWYRrYFctZWYw" association="_h7LPsAODEeWYRrYFctZWYw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_h7L2wQODEeWYRrYFctZWYw" name="genericpapyrususer" association="_h7LPsAODEeWYRrYFctZWYw">
+          <type xmi:type="uml:Actor" href="../../org.eclipse.papyrus.infra.core/doc/papyrus.uml#_5fEUoAN_EeWYRrYFctZWYw"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_x8j9wAOFEeWYRrYFctZWYw" client="_Eoq-8AODEeWYRrYFctZWYw" supplier="_HR-1cAOBEeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GylKYAOGEeWYRrYFctZWYw" client="_Z4nugAODEeWYRrYFctZWYw" supplier="_yM6qwAOBEeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MKLhMAOGEeWYRrYFctZWYw" client="_aMiwEAODEeWYRrYFctZWYw" supplier="_CDLY0AOCEeWYRrYFctZWYw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_eDyOxgOAEeWYRrYFctZWYw" name="Design">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_eDyOxwOAEeWYRrYFctZWYw" name="DesignAbstraction" client="_eDyOxgOAEeWYRrYFctZWYw" supplier="_eDyOwwOAEeWYRrYFctZWYw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_eDyOyAOAEeWYRrYFctZWYw" name="Test">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_eDyOyQOAEeWYRrYFctZWYw" name="Dependency1" client="_eDyOyAOAEeWYRrYFctZWYw" supplier="_eDyOwwOAEeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_eDyOygOAEeWYRrYFctZWYw" name="Dependency2" client="_eDyOyAOAEeWYRrYFctZWYw" supplier="_eDyOxgOAEeWYRrYFctZWYw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_OKKxEAOIEeWYRrYFctZWYw" name="Uml UseCase Specification">
+      <packagedElement xmi:type="uml:Package" xmi:id="_OKL_MQOIEeWYRrYFctZWYw" name="Table of Contents">
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLmUdAOIEeWYRrYFctZWYw" name="Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLnikAOIEeWYRrYFctZWYw" name="Use Cases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_OLoJoQOIEeWYRrYFctZWYw" name="DnD System">
+            <packagedElement xmi:type="uml:Package" xmi:id="_OLowsQOIEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_OLp-0AOIEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_OLql4QOIEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLrM8QOIEeWYRrYFctZWYw" name="Design"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLsbEAOIEeWYRrYFctZWYw" name="Tests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLtCIQOIEeWYRrYFctZWYw" name="Requirements Coverage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OKNNUQOIEeWYRrYFctZWYw" name="Requirements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OKN0YQOIEeWYRrYFctZWYw">
+          <body>- DnD of usesecase into a subject of a usecase diagram (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010): 
+ allows to drag and drop a usecase from model explorer into a subject of a usecase diagram</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OKPCgQOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root without any predefined subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.1): 
+ null</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OKPpkQOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with an identical subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.2): 
+ null</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OKQ3sQOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with a different subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.3): 
+ null</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OKRewQOIEeWYRrYFctZWYw">
+          <body>- Propose to keep or switch the subject and/or the owner (id=org.eclipse.papyrus.uml.diagram.usecase.Req_030): 
+ The DnD action should open a dialog box to allow user to select if it keep or switch the subject and/or the owner</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OKSs4QOIEeWYRrYFctZWYw" name="Use Cases">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OLLdsAOIEeWYRrYFctZWYw">
+          <body>DnDMain-UseCaseDiagram</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OLMr0QOIEeWYRrYFctZWYw" name="DnD System">
+          <packagedElement xmi:type="uml:Package" xmi:id="_OLNS4QOIEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLPIEAOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_HR-1cAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root without any predefined subject into a target subject|DnD of usecase from root without any predefined subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLQWMAOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is empty</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_OLQ9QQOIEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLSLYAOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_yM6qwAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root with an identical subject into a target subject|DnD of usecase from root with an identical subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLSycQOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is different from the one of the target subject</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_OLUAkQOIEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLUnoQOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_CDLY0AOCEeWYRrYFctZWYw|Requirement DnD of usecase from root with a different subject into a target subject|DnD of usecase from root with a different subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLV1wQOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is identical to the target subject</body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OLWc0QOIEeWYRrYFctZWYw" name="Design"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OLXq8QOIEeWYRrYFctZWYw" name="Tests"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_OLY5EAOIEeWYRrYFctZWYw" name="Requirements Coverage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OLZgIQOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLb8YAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLcjcQOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLcjcwOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLcjdQOIEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLdKggOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLeYoAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLe_sAOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLe_sgOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLe_tAOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLfmwAOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root without any predefined subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLfmwgOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.1 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLg04AOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLhb8QOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLhb8wOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLhb9QOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLiDAAOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with a different subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLiDAgOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.2 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLjRIAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLjRIgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLjRJAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLj4MQOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLj4MwOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with an identical subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLj4NQOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.3 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLlGUAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLlGUgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_OLltYAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLltYgOIEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_OLmUcAOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_030 as id</body>
+          </ownedComment>
+          <body>Requirements Coverage Table</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OLZgIgOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLdKgAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLltZAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unsatisfied requirements (2 out of 5) : </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_OLaHMQOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLdxkAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLfmxAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLiDBAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLkfQAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_OLmUcgOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unverified requirements (5 out of 5) : </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_mzDLUAOIEeWYRrYFctZWYw" name="Uml UseCase Specification">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzFAgAOIEeWYRrYFctZWYw" name="Table of Contents">
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0gj4AOIEeWYRrYFctZWYw" name="Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0hK8QOIEeWYRrYFctZWYw" name="Use Cases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_m0iZEQOIEeWYRrYFctZWYw" name="DnD System">
+            <packagedElement xmi:type="uml:Package" xmi:id="_m0jnMQOIEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_m0lcYQOIEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_m0mqgQOIEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0n4oQOIEeWYRrYFctZWYw" name="Design"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0pt0AOIEeWYRrYFctZWYw" name="Tests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0q78QOIEeWYRrYFctZWYw" name="Requirements Coverage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzFnkQOIEeWYRrYFctZWYw" name="Requirements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mzGOoQOIEeWYRrYFctZWYw">
+          <body>- DnD of usesecase into a subject of a usecase diagram (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010): 
+ allows to drag and drop a usecase from model explorer into a subject of a usecase diagram</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mzHcwAOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root without any predefined subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.1): 
+ allows to drag and drop a usecase with an empty subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mzID0QOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with an identical subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.2): 
+ allows to drag and drop a usecase with an identical subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mzIq4QOIEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with a different subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.3): 
+ allows to drag and drop a usecase with a different subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_mzJ5AAOIEeWYRrYFctZWYw">
+          <body>- Propose to keep or switch the subject and/or the owner (id=org.eclipse.papyrus.uml.diagram.usecase.Req_030): 
+ The DnD action should open a dialog box to allow user to select if it keep or switch the subject and/or the owner</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mzKgEQOIEeWYRrYFctZWYw" name="Use Cases">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m0ANkAOIEeWYRrYFctZWYw">
+          <body>DnDMain-UseCaseDiagram</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_m0A0oQOIEeWYRrYFctZWYw" name="DnD System">
+          <packagedElement xmi:type="uml:Package" xmi:id="_m0CCwQOIEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0Cp0QOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_HR-1cAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root without any predefined subject into a target subject|DnD of usecase from root without any predefined subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0DQ4QOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is empty</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_m0D38QOIEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0FGEQOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_yM6qwAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root with an identical subject into a target subject|DnD of usecase from root with an identical subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0FtIQOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is different from the one of the target subject</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_m0G7QQOIEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0IJYQOIEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_CDLY0AOCEeWYRrYFctZWYw|Requirement DnD of usecase from root with a different subject into a target subject|DnD of usecase from root with a different subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0JXgQOIEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is identical to the target subject</body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_m0KloQOIEeWYRrYFctZWYw" name="Design"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_m0LzwQOIEeWYRrYFctZWYw" name="Tests"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_m0NB4QOIEeWYRrYFctZWYw" name="Requirements Coverage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m0OQAQOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0R6YAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0R6YgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0R6ZAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0ShcQOIEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0TIgQOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0U9sAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0U9sgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0VkwAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0VkwgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0WL0AOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root without any predefined subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0WL0gOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.1 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0YBAAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0YBAgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0YBBAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0YoEQOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0YoEwOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with a different subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0ZPIQOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.2 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0bEUAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0bEUgOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0bEVAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0brYQOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0brYwOIEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with an identical subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0cScQOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.3 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0eHoAOIEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0eHogOIEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_m0eHpAOIEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0eusQOIEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_m0fVwgOIEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_030 as id</body>
+          </ownedComment>
+          <body>Requirements Coverage Table</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m0OQAgOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0ShcwOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0fVwAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unsatisfied requirements (2 out of 5) : </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_m0PeIQOIEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0TvkAOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0Wy4AOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0ZPIwOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0cScwOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_m0f80QOIEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unverified requirements (5 out of 5) : </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_cpXwIAOJEeWYRrYFctZWYw" name="Uml UseCase Specification">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cpY-QQOJEeWYRrYFctZWYw" name="Table of Contents">
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqrXsgOJEeWYRrYFctZWYw" name="Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqr-wQOJEeWYRrYFctZWYw" name="Use Cases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_cqsl0QOJEeWYRrYFctZWYw" name="DnD System">
+            <packagedElement xmi:type="uml:Package" xmi:id="_cqtM4QOJEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_cqubAAOJEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_cqvCEQOJEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqvpIQOJEeWYRrYFctZWYw" name="Design"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqwQMQOJEeWYRrYFctZWYw" name="Tests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqw3QQOJEeWYRrYFctZWYw" name="Requirements Coverage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cpZlUQOJEeWYRrYFctZWYw" name="Requirements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cpazcAOJEeWYRrYFctZWYw">
+          <body>- DnD of usesecase into a subject of a usecase diagram (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010): 
+ allows to drag and drop a usecase from model explorer into a subject of a usecase diagram</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cpbagAOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root without any predefined subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.1): 
+ allows to drag and drop a usecase with an empty subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cpcBkQOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with an identical subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.2): 
+ allows to drag and drop a usecase with an identical subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cpcooQOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with a different subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.3): 
+ allows to drag and drop a usecase with a different subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cpd2wAOJEeWYRrYFctZWYw">
+          <body>- Propose to keep or switch the subject and/or the owner (id=org.eclipse.papyrus.uml.diagram.usecase.Req_030): 
+ The DnD action should open a dialog box to allow user to select if it keep or switch the subject and/or the owner</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cped0QOJEeWYRrYFctZWYw" name="Use Cases">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cqUyYAOJEeWYRrYFctZWYw">
+          <body>DnDMain-UseCaseDiagram</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cqWAgQOJEeWYRrYFctZWYw" name="DnD System">
+          <packagedElement xmi:type="uml:Package" xmi:id="_cqWnkQOJEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqXOoQOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_HR-1cAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root without any predefined subject into a target subject|DnD of usecase from root without any predefined subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqX1sQOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is empty</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_cqYcwQOJEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqZq4AOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_yM6qwAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root with an identical subject into a target subject|DnD of usecase from root with an identical subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqaR8QOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is different from the one of the target subject</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_cqa5AQOJEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqbgEQOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_CDLY0AOCEeWYRrYFctZWYw|Requirement DnD of usecase from root with a different subject into a target subject|DnD of usecase from root with a different subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqcHIQOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is identical to the target subject</body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cqcuMQOJEeWYRrYFctZWYw" name="Design"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cqdVQQOJEeWYRrYFctZWYw" name="Tests"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cqd8UQOJEeWYRrYFctZWYw" name="Requirements Coverage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cqejYQOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqhmsAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqhmsgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqhmtAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqiNwQOJEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqi00QOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqkqAAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqkqAgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqkqBAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqkqBgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqlREQOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root without any predefined subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqlREwOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.1 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqmfMAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqmfMgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqmfNAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqmfNgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqnGQAOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with a different subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqnGQgOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.2 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqoUYAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqoUYgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqoUZAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqoUZgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqo7cAOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with an identical subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqo7cgOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.3 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqqJkAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqqJkgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqqJlAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqqwoAOJEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqqwpAOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_030 as id</body>
+          </ownedComment>
+          <body>Requirements Coverage Table</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cqejYgOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqiNwwOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqqwogOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unsatisfied requirements (2 out of 5) : </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cqfKcQOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqi00wOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqlRFQOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqnGRAOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqo7dAOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cqrXsAOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unverified requirements (5 out of 5) : </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_fbkK8AOJEeWYRrYFctZWYw" name="Uml UseCase Specification">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fblZEAOJEeWYRrYFctZWYw" name="Table of Contents">
+        <packagedElement xmi:type="uml:Package" xmi:id="_fdBjhAOJEeWYRrYFctZWYw" name="Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fdCxoAOJEeWYRrYFctZWYw" name="Use Cases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fdDYsQOJEeWYRrYFctZWYw" name="DnD System">
+            <packagedElement xmi:type="uml:Package" xmi:id="_fdD_wQOJEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_fdEm0QOJEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_fdFN4QOJEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fdF08QOJEeWYRrYFctZWYw" name="Design"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fdHDEAOJEeWYRrYFctZWYw" name="Tests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fdHqIQOJEeWYRrYFctZWYw" name="Requirements Coverage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fbmAIQOJEeWYRrYFctZWYw" name="Requirements">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fbmnMQOJEeWYRrYFctZWYw">
+          <body>- DnD of usesecase into a subject of a usecase diagram (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010): 
+ allows to drag and drop a usecase from model explorer into a subject of a usecase diagram</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fbnOQQOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root without any predefined subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.1): 
+ allows to drag and drop a usecase with an empty subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fbn1UQOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with an identical subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.2): 
+ allows to drag and drop a usecase with an identical subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fbocYQOJEeWYRrYFctZWYw">
+          <body>- DnD of usecase from root with a different subject into a target subject (id=org.eclipse.papyrus.uml.diagram.usecase.Req_010.3): 
+ allows to drag and drop a usecase with a different subject from the root model element into a target subject of a usecase diagram.</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fbpqgAOJEeWYRrYFctZWYw">
+          <body>- Propose to keep or switch the subject and/or the owner (id=org.eclipse.papyrus.uml.diagram.usecase.Req_030): 
+ The DnD action should open a dialog box to allow user to select if it keep or switch the subject and/or the owner</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fbqRkAOJEeWYRrYFctZWYw" name="Use Cases">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fcq-MAOJEeWYRrYFctZWYw">
+          <body>DnDMain-UseCaseDiagram</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fcsMUAOJEeWYRrYFctZWYw" name="DnD System">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fcszYAOJEeWYRrYFctZWYw" name="DnD of usecase from root without any predefined subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fctacQOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_HR-1cAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root without any predefined subject into a target subject|DnD of usecase from root without any predefined subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fcuBgQOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is empty</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_fcuokQOJEeWYRrYFctZWYw" name="DnD of usecase from root with a different subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fcvPoQOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_yM6qwAOBEeWYRrYFctZWYw|Requirement DnD of usecase from root with an identical subject into a target subject|DnD of usecase from root with an identical subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fcv2sQOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is different from the one of the target subject</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_fcwdwQOJEeWYRrYFctZWYw" name="DnD of usecase from root with an identical subject into a target subject">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fcxr4AOJEeWYRrYFctZWYw">
+              <body>  - traces to ${link:_CDLY0AOCEeWYRrYFctZWYw|Requirement DnD of usecase from root with a different subject into a target subject|DnD of usecase from root with a different subject into a target subject}</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fcyS8QOJEeWYRrYFctZWYw">
+              <body>A user can drag and drop a source usecase from model explorer into a target subject in a usecase diagram where 
+- the source usecase belongs to the the root model element, that is a different owner from the target subject
+- the subject of the source usecase is identical to the target subject</body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fcy6AQOJEeWYRrYFctZWYw" name="Design"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fczhEQOJEeWYRrYFctZWYw" name="Tests"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fc0vMAOJEeWYRrYFctZWYw" name="Requirements Coverage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fc1WQQOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc3LcAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc3ygAOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc3yggOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc3yhAOJEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc4ZkgOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc6OwAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc6OwgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc6OxAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc610AOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc610gOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root without any predefined subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc611AOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.1 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc8D8AOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc8D8gOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc8rAQOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc8rAwOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc8rBQOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with a different subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc9SEAOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.2 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc95IAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc-gMQOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc-gMwOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc-gNQOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fc_HQAOJEeWYRrYFctZWYw">
+                <body>DnD of usecase from root with an identical subject into a target subject</body>
+              </ownedComment>
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fc_HQgOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_010.3 as id</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fdAVYAOJEeWYRrYFctZWYw">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fdAVYgOJEeWYRrYFctZWYw">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_fdAVZAOJEeWYRrYFctZWYw">
+                <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+              </ownedComment>
+              <body>Requirement ID</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fdA8cQOJEeWYRrYFctZWYw">
+              <body>Satisfied elements</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_fdBjgAOJEeWYRrYFctZWYw">
+              <body>Verified elements</body>
+            </ownedComment>
+            <body>Line for the requirement with org.eclipse.papyrus.uml.diagram.usecase.Req_030 as id</body>
+          </ownedComment>
+          <body>Requirements Coverage Table</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fc1WQgOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc4ZkAOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fdA8cwOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unsatisfied requirements (2 out of 5) : </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fc19UQOJEeWYRrYFctZWYw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc5AoQOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc7c4AOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.1</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc9SEgOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.2</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fc_HRAOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_010.3</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_fdBjggOJEeWYRrYFctZWYw">
+            <body>org.eclipse.papyrus.uml.diagram.usecase.Req_030</body>
+          </ownedComment>
+          <body>Unverified requirements (5 out of 5) : </body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eDyOywOAEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy10AOAEeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy10QOAEeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy10gOAEeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy10wOAEeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy11AOAEeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy11QOAEeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy11gOAEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rplkQXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_kWqjAMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eDy11wOAEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy12AOAEeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy12QOAEeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy12gOAEeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy12wOAEeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy13AOAEeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy13QOAEeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy13gOAEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_qCT3MMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eDy13wOAEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy14AOAEeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy14QOAEeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy14gOAEeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy14wOAEeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy15AOAEeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy15QOAEeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy15gOAEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpnZcXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_2LNtQMbYEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eDy15wOAEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy16AOAEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eDy16QOAEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy16gOAEeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy16wOAEeWYRrYFctZWYw" key="Version" value="0.0.11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy17AOAEeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy17QOAEeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy17gOAEeWYRrYFctZWYw" key="Date" value="2014-11-14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eDy17wOAEeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eDy18AOAEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_RQrLoWwBEeSIYu1Ih2FYyQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_D0JcUMnzEeO9CYUoXDRplw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_inppQAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_inppQQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_TZ_nULU5EduiKqCzJMWbGw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_inqQUAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_inq3YAOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_Gx8MgLX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_inrecAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_inrecQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_fSw28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_insFgAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_insFgQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_rpx28LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_insskAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_insskQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//constraints"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_5WYJ0LX7EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_intToAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_int6sAOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_C2zXMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_inuhwAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_inuhwQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_NxdG4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_in1PcAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_in1PcQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//interactions"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_meOioLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_in12gAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_in12gQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//statemachines"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_nAF5kLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_in2dkAOFEeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_in2dkQOFEeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//usecases"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+  </uml:Model>
+  <structure:Project xmi:id="_eDy18QOAEeWYRrYFctZWYw" author="CEA" version="0.1" base_Model="_eDyOwAOAEeWYRrYFctZWYw" title="Uml UseCase Specification"/>
+  <structure:Requirements xmi:id="_eDy18gOAEeWYRrYFctZWYw" base_Model="_eDyOwgOAEeWYRrYFctZWYw"/>
+  <structure:UseCases xmi:id="_eDy18wOAEeWYRrYFctZWYw" base_Model="_eDyOwwOAEeWYRrYFctZWYw"/>
+  <structure:Design xmi:id="_eDy19AOAEeWYRrYFctZWYw" base_Model="_eDyOxgOAEeWYRrYFctZWYw"/>
+  <structure:Tests xmi:id="_eDy19QOAEeWYRrYFctZWYw" base_Model="_eDyOyAOAEeWYRrYFctZWYw"/>
+  <Requirements:Requirement xmi:id="_rcwbAAOAEeWYRrYFctZWYw" text="allows to drag and drop a usecase from model explorer into a subject of a usecase diagram" id="org.eclipse.papyrus.uml.diagram.usecase.Req_010" base_Class="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Requirements:Requirement xmi:id="_HR-1cQOBEeWYRrYFctZWYw" text="allows to drag and drop a usecase with an empty subject from the root model element into a target subject of a usecase diagram." id="org.eclipse.papyrus.uml.diagram.usecase.Req_010.1" base_Class="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Requirements:Requirement xmi:id="_7SrVYAOBEeWYRrYFctZWYw" text="allows to drag and drop a usecase with an identical subject from the root model element into a target subject of a usecase diagram." id="org.eclipse.papyrus.uml.diagram.usecase.Req_010.2" base_Class="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Requirements:Requirement xmi:id="_NI364AOCEeWYRrYFctZWYw" text="allows to drag and drop a usecase with a different subject from the root model element into a target subject of a usecase diagram." id="org.eclipse.papyrus.uml.diagram.usecase.Req_010.3" base_Class="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Requirements:Requirement xmi:id="_RPJzwQOCEeWYRrYFctZWYw" text="The DnD action should open a dialog box to allow user to select if it keep or switch the subject and/or the owner" id="org.eclipse.papyrus.uml.diagram.usecase.Req_030" base_Class="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Requirements:Satisfy xmi:id="_z_1dEAOFEeWYRrYFctZWYw" base_Abstraction="_x8j9wAOFEeWYRrYFctZWYw"/>
+  <Requirements:Satisfy xmi:id="_GzfwYAOGEeWYRrYFctZWYw" base_Abstraction="_GylKYAOGEeWYRrYFctZWYw"/>
+  <Requirements:Satisfy xmi:id="_MLJxkAOGEeWYRrYFctZWYw" base_Abstraction="_MKLhMAOGEeWYRrYFctZWYw"/>
+  <Document:Document xmi:id="_OKL_MAOIEeWYRrYFctZWYw" base_Model="_OKKxEAOIEeWYRrYFctZWYw" author="CEA" version="0.1"/>
+  <Document:TableOfContent xmi:id="_OKNNUAOIEeWYRrYFctZWYw" base_Package="_OKL_MQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OKN0YAOIEeWYRrYFctZWYw" base_Package="_OKNNUQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OKPCgAOIEeWYRrYFctZWYw" base_Comment="_OKN0YQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OKPpkAOIEeWYRrYFctZWYw" base_Comment="_OKPCgQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OKQ3sAOIEeWYRrYFctZWYw" base_Comment="_OKPpkQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OKRewAOIEeWYRrYFctZWYw" base_Comment="_OKQ3sQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OKSs4AOIEeWYRrYFctZWYw" base_Comment="_OKRewQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OKTT8AOIEeWYRrYFctZWYw" base_Package="_OKSs4QOIEeWYRrYFctZWYw"/>
+  <Document:ImageRef xmi:id="_OLMr0AOIEeWYRrYFctZWYw" base_Comment="_OLLdsAOIEeWYRrYFctZWYw" ref="/export/home/flefevre/git/org.eclipse.papyrus/plugins/uml/diagram/org.eclipse.papyrus.uml.diagram.usecase/doc/imgDOC/DnDMain-UseCaseDiagram.png"/>
+  <Document:Section xmi:id="_OLNS4AOIEeWYRrYFctZWYw" base_Package="_OLMr0QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLOhAAOIEeWYRrYFctZWYw" base_Package="_OLNS4QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLPvIAOIEeWYRrYFctZWYw" base_Comment="_OLPIEAOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLQ9QAOIEeWYRrYFctZWYw" base_Comment="_OLQWMAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLRkUAOIEeWYRrYFctZWYw" base_Package="_OLQ9QQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLSycAOIEeWYRrYFctZWYw" base_Comment="_OLSLYAOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLUAkAOIEeWYRrYFctZWYw" base_Comment="_OLSycQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLUnoAOIEeWYRrYFctZWYw" base_Package="_OLUAkQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLV1wAOIEeWYRrYFctZWYw" base_Comment="_OLUnoQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLWc0AOIEeWYRrYFctZWYw" base_Comment="_OLV1wQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLXq8AOIEeWYRrYFctZWYw" base_Package="_OLWc0QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLYSAAOIEeWYRrYFctZWYw" base_Package="_OLXq8QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLZgIAOIEeWYRrYFctZWYw" base_Package="_OLY5EAOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLaHMAOIEeWYRrYFctZWYw" base_Comment="_OLZgIgOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_OLauQAOIEeWYRrYFctZWYw" base_Comment="_OLaHMQOIEeWYRrYFctZWYw"/>
+  <Document:Table xmi:id="_OLbVUAOIEeWYRrYFctZWYw" caption="RequirementsCoverageTable" base_Comment="_OLZgIQOIEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_OLcjcAOIEeWYRrYFctZWYw" base_Comment="_OLb8YAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLcjcgOIEeWYRrYFctZWYw" base_Comment="_OLcjcQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLcjdAOIEeWYRrYFctZWYw" base_Comment="_OLcjcwOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLcjdgOIEeWYRrYFctZWYw" base_Comment="_OLcjdQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLdKgQOIEeWYRrYFctZWYw" base_Comment="_OLdKgAOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLdKgwOIEeWYRrYFctZWYw" base_Comment="_OLdKggOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLdxkQOIEeWYRrYFctZWYw" base_Comment="_OLdxkAOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_OLeYoQOIEeWYRrYFctZWYw" base_Comment="_OLeYoAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLe_sQOIEeWYRrYFctZWYw" base_Comment="_OLe_sAOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLe_swOIEeWYRrYFctZWYw" base_Comment="_OLe_sgOIEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLe_tQOIEeWYRrYFctZWYw" base_Comment="_OLe_tAOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLfmwQOIEeWYRrYFctZWYw" base_Comment="_OLfmwAOIEeWYRrYFctZWYw" ref="_Eoq-8AODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLfmwwOIEeWYRrYFctZWYw" base_Comment="_OLfmwgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLfmxQOIEeWYRrYFctZWYw" base_Comment="_OLfmxAOIEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_OLhb8AOIEeWYRrYFctZWYw" base_Comment="_OLg04AOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLhb8gOIEeWYRrYFctZWYw" base_Comment="_OLhb8QOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLhb9AOIEeWYRrYFctZWYw" base_Comment="_OLhb8wOIEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLhb9gOIEeWYRrYFctZWYw" base_Comment="_OLhb9QOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLiDAQOIEeWYRrYFctZWYw" base_Comment="_OLiDAAOIEeWYRrYFctZWYw" ref="_Z4nugAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLiDAwOIEeWYRrYFctZWYw" base_Comment="_OLiDAgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLiqEAOIEeWYRrYFctZWYw" base_Comment="_OLiDBAOIEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_OLjRIQOIEeWYRrYFctZWYw" base_Comment="_OLjRIAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLjRIwOIEeWYRrYFctZWYw" base_Comment="_OLjRIgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLj4MAOIEeWYRrYFctZWYw" base_Comment="_OLjRJAOIEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLj4MgOIEeWYRrYFctZWYw" base_Comment="_OLj4MQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLj4NAOIEeWYRrYFctZWYw" base_Comment="_OLj4MwOIEeWYRrYFctZWYw" ref="_aMiwEAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLj4NgOIEeWYRrYFctZWYw" base_Comment="_OLj4NQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLkfQQOIEeWYRrYFctZWYw" base_Comment="_OLkfQAOIEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_OLlGUQOIEeWYRrYFctZWYw" base_Comment="_OLlGUAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLlGUwOIEeWYRrYFctZWYw" base_Comment="_OLlGUgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLltYQOIEeWYRrYFctZWYw" base_Comment="_OLltYAOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLltYwOIEeWYRrYFctZWYw" base_Comment="_OLltYgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLltZQOIEeWYRrYFctZWYw" base_Comment="_OLltZAOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_OLmUcQOIEeWYRrYFctZWYw" base_Comment="_OLmUcAOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_OLmUcwOIEeWYRrYFctZWYw" base_Comment="_OLmUcgOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLm7gAOIEeWYRrYFctZWYw" base_Package="_OLmUdAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLoJoAOIEeWYRrYFctZWYw" base_Package="_OLnikAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLowsAOIEeWYRrYFctZWYw" base_Package="_OLoJoQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLpXwAOIEeWYRrYFctZWYw" base_Package="_OLowsQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLql4AOIEeWYRrYFctZWYw" base_Package="_OLp-0AOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLrM8AOIEeWYRrYFctZWYw" base_Package="_OLql4QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLr0AAOIEeWYRrYFctZWYw" base_Package="_OLrM8QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLtCIAOIEeWYRrYFctZWYw" base_Package="_OLsbEAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_OLtpMAOIEeWYRrYFctZWYw" base_Package="_OLtCIQOIEeWYRrYFctZWYw"/>
+  <Document:Document xmi:id="_mzEZcAOIEeWYRrYFctZWYw" base_Model="_mzDLUAOIEeWYRrYFctZWYw" author="CEA" version="0.1"/>
+  <Document:TableOfContent xmi:id="_mzFnkAOIEeWYRrYFctZWYw" base_Package="_mzFAgAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_mzGOoAOIEeWYRrYFctZWYw" base_Package="_mzFnkQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_mzG1sAOIEeWYRrYFctZWYw" base_Comment="_mzGOoQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_mzID0AOIEeWYRrYFctZWYw" base_Comment="_mzHcwAOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_mzIq4AOIEeWYRrYFctZWYw" base_Comment="_mzID0QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_mzJR8AOIEeWYRrYFctZWYw" base_Comment="_mzIq4QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_mzKgEAOIEeWYRrYFctZWYw" base_Comment="_mzJ5AAOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_mzLHIAOIEeWYRrYFctZWYw" base_Package="_mzKgEQOIEeWYRrYFctZWYw"/>
+  <Document:ImageRef xmi:id="_m0A0oAOIEeWYRrYFctZWYw" base_Comment="_m0ANkAOIEeWYRrYFctZWYw" ref="/export/home/flefevre/git/org.eclipse.papyrus/plugins/uml/diagram/org.eclipse.papyrus.uml.diagram.usecase/doc/imgDOC/DnDMain-UseCaseDiagram.png"/>
+  <Document:Section xmi:id="_m0CCwAOIEeWYRrYFctZWYw" base_Package="_m0A0oQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0Cp0AOIEeWYRrYFctZWYw" base_Package="_m0CCwQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0DQ4AOIEeWYRrYFctZWYw" base_Comment="_m0Cp0QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0D38AOIEeWYRrYFctZWYw" base_Comment="_m0DQ4QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0FGEAOIEeWYRrYFctZWYw" base_Package="_m0D38QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0FtIAOIEeWYRrYFctZWYw" base_Comment="_m0FGEQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0G7QAOIEeWYRrYFctZWYw" base_Comment="_m0FtIQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0IJYAOIEeWYRrYFctZWYw" base_Package="_m0G7QQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0JXgAOIEeWYRrYFctZWYw" base_Comment="_m0IJYQOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0KloAOIEeWYRrYFctZWYw" base_Comment="_m0JXgQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0LzwAOIEeWYRrYFctZWYw" base_Package="_m0KloQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0NB4AOIEeWYRrYFctZWYw" base_Package="_m0LzwQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0OQAAOIEeWYRrYFctZWYw" base_Package="_m0NB4QOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0PeIAOIEeWYRrYFctZWYw" base_Comment="_m0OQAgOIEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_m0PeIgOIEeWYRrYFctZWYw" base_Comment="_m0PeIQOIEeWYRrYFctZWYw"/>
+  <Document:Table xmi:id="_m0QsQAOIEeWYRrYFctZWYw" caption="RequirementsCoverageTable" base_Comment="_m0OQAQOIEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_m0R6YQOIEeWYRrYFctZWYw" base_Comment="_m0R6YAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0R6YwOIEeWYRrYFctZWYw" base_Comment="_m0R6YgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0ShcAOIEeWYRrYFctZWYw" base_Comment="_m0R6ZAOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0ShcgOIEeWYRrYFctZWYw" base_Comment="_m0ShcQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0TIgAOIEeWYRrYFctZWYw" base_Comment="_m0ShcwOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0TIggOIEeWYRrYFctZWYw" base_Comment="_m0TIgQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0TvkQOIEeWYRrYFctZWYw" base_Comment="_m0TvkAOIEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_m0U9sQOIEeWYRrYFctZWYw" base_Comment="_m0U9sAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0U9swOIEeWYRrYFctZWYw" base_Comment="_m0U9sgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0VkwQOIEeWYRrYFctZWYw" base_Comment="_m0VkwAOIEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0VkwwOIEeWYRrYFctZWYw" base_Comment="_m0VkwgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0WL0QOIEeWYRrYFctZWYw" base_Comment="_m0WL0AOIEeWYRrYFctZWYw" ref="_Eoq-8AODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0WL0wOIEeWYRrYFctZWYw" base_Comment="_m0WL0gOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0Wy4QOIEeWYRrYFctZWYw" base_Comment="_m0Wy4AOIEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_m0YBAQOIEeWYRrYFctZWYw" base_Comment="_m0YBAAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0YBAwOIEeWYRrYFctZWYw" base_Comment="_m0YBAgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0YoEAOIEeWYRrYFctZWYw" base_Comment="_m0YBBAOIEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0YoEgOIEeWYRrYFctZWYw" base_Comment="_m0YoEQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0ZPIAOIEeWYRrYFctZWYw" base_Comment="_m0YoEwOIEeWYRrYFctZWYw" ref="_Z4nugAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0ZPIgOIEeWYRrYFctZWYw" base_Comment="_m0ZPIQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0Z2MAOIEeWYRrYFctZWYw" base_Comment="_m0ZPIwOIEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_m0bEUQOIEeWYRrYFctZWYw" base_Comment="_m0bEUAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0bEUwOIEeWYRrYFctZWYw" base_Comment="_m0bEUgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0brYAOIEeWYRrYFctZWYw" base_Comment="_m0bEVAOIEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0brYgOIEeWYRrYFctZWYw" base_Comment="_m0brYQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0cScAOIEeWYRrYFctZWYw" base_Comment="_m0brYwOIEeWYRrYFctZWYw" ref="_aMiwEAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0cScgOIEeWYRrYFctZWYw" base_Comment="_m0cScQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0c5gAOIEeWYRrYFctZWYw" base_Comment="_m0cScwOIEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_m0eHoQOIEeWYRrYFctZWYw" base_Comment="_m0eHoAOIEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0eHowOIEeWYRrYFctZWYw" base_Comment="_m0eHogOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0eusAOIEeWYRrYFctZWYw" base_Comment="_m0eHpAOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0eusgOIEeWYRrYFctZWYw" base_Comment="_m0eusQOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0fVwQOIEeWYRrYFctZWYw" base_Comment="_m0fVwAOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_m0f80AOIEeWYRrYFctZWYw" base_Comment="_m0fVwgOIEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_m0f80gOIEeWYRrYFctZWYw" base_Comment="_m0f80QOIEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0hK8AOIEeWYRrYFctZWYw" base_Package="_m0gj4AOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0iZEAOIEeWYRrYFctZWYw" base_Package="_m0hK8QOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0jnMAOIEeWYRrYFctZWYw" base_Package="_m0iZEQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0lcYAOIEeWYRrYFctZWYw" base_Package="_m0jnMQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0mqgAOIEeWYRrYFctZWYw" base_Package="_m0lcYQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0n4oAOIEeWYRrYFctZWYw" base_Package="_m0mqgQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0pGwAOIEeWYRrYFctZWYw" base_Package="_m0n4oQOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0q78AOIEeWYRrYFctZWYw" base_Package="_m0pt0AOIEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_m0sKEAOIEeWYRrYFctZWYw" base_Package="_m0q78QOIEeWYRrYFctZWYw"/>
+  <Document:Document xmi:id="_cpY-QAOJEeWYRrYFctZWYw" base_Model="_cpXwIAOJEeWYRrYFctZWYw" author="CEA" version="0.1"/>
+  <Document:TableOfContent xmi:id="_cpZlUAOJEeWYRrYFctZWYw" base_Package="_cpY-QQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cpaMYAOJEeWYRrYFctZWYw" base_Package="_cpZlUQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cpazcQOJEeWYRrYFctZWYw" base_Comment="_cpazcAOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cpcBkAOJEeWYRrYFctZWYw" base_Comment="_cpbagAOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cpcooAOJEeWYRrYFctZWYw" base_Comment="_cpcBkQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cpdPsAOJEeWYRrYFctZWYw" base_Comment="_cpcooQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cped0AOJEeWYRrYFctZWYw" base_Comment="_cpd2wAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cpfE4AOJEeWYRrYFctZWYw" base_Package="_cped0QOJEeWYRrYFctZWYw"/>
+  <Document:ImageRef xmi:id="_cqWAgAOJEeWYRrYFctZWYw" base_Comment="_cqUyYAOJEeWYRrYFctZWYw" ref="/export/home/flefevre/git/org.eclipse.papyrus/plugins/uml/diagram/org.eclipse.papyrus.uml.diagram.usecase/doc/imgDOC/DnDMain-UseCaseDiagram.png"/>
+  <Document:Section xmi:id="_cqWnkAOJEeWYRrYFctZWYw" base_Package="_cqWAgQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqXOoAOJEeWYRrYFctZWYw" base_Package="_cqWnkQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqX1sAOJEeWYRrYFctZWYw" base_Comment="_cqXOoQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqYcwAOJEeWYRrYFctZWYw" base_Comment="_cqX1sQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqZD0AOJEeWYRrYFctZWYw" base_Package="_cqYcwQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqaR8AOJEeWYRrYFctZWYw" base_Comment="_cqZq4AOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqa5AAOJEeWYRrYFctZWYw" base_Comment="_cqaR8QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqbgEAOJEeWYRrYFctZWYw" base_Package="_cqa5AQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqcHIAOJEeWYRrYFctZWYw" base_Comment="_cqbgEQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqcuMAOJEeWYRrYFctZWYw" base_Comment="_cqcHIQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqdVQAOJEeWYRrYFctZWYw" base_Package="_cqcuMQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqd8UAOJEeWYRrYFctZWYw" base_Package="_cqdVQQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqejYAOJEeWYRrYFctZWYw" base_Package="_cqd8UQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqfKcAOJEeWYRrYFctZWYw" base_Comment="_cqejYgOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_cqfKcgOJEeWYRrYFctZWYw" base_Comment="_cqfKcQOJEeWYRrYFctZWYw"/>
+  <Document:Table xmi:id="_cqgYkAOJEeWYRrYFctZWYw" caption="RequirementsCoverageTable" base_Comment="_cqejYQOJEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_cqhmsQOJEeWYRrYFctZWYw" base_Comment="_cqhmsAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqhmswOJEeWYRrYFctZWYw" base_Comment="_cqhmsgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqiNwAOJEeWYRrYFctZWYw" base_Comment="_cqhmtAOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqiNwgOJEeWYRrYFctZWYw" base_Comment="_cqiNwQOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqi00AOJEeWYRrYFctZWYw" base_Comment="_cqiNwwOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqi00gOJEeWYRrYFctZWYw" base_Comment="_cqi00QOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqjb4AOJEeWYRrYFctZWYw" base_Comment="_cqi00wOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_cqkqAQOJEeWYRrYFctZWYw" base_Comment="_cqkqAAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqkqAwOJEeWYRrYFctZWYw" base_Comment="_cqkqAgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqkqBQOJEeWYRrYFctZWYw" base_Comment="_cqkqBAOJEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqlREAOJEeWYRrYFctZWYw" base_Comment="_cqkqBgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqlREgOJEeWYRrYFctZWYw" base_Comment="_cqlREQOJEeWYRrYFctZWYw" ref="_Eoq-8AODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqlRFAOJEeWYRrYFctZWYw" base_Comment="_cqlREwOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqlRFgOJEeWYRrYFctZWYw" base_Comment="_cqlRFQOJEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_cqmfMQOJEeWYRrYFctZWYw" base_Comment="_cqmfMAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqmfMwOJEeWYRrYFctZWYw" base_Comment="_cqmfMgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqmfNQOJEeWYRrYFctZWYw" base_Comment="_cqmfNAOJEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqmfNwOJEeWYRrYFctZWYw" base_Comment="_cqmfNgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqnGQQOJEeWYRrYFctZWYw" base_Comment="_cqnGQAOJEeWYRrYFctZWYw" ref="_Z4nugAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqnGQwOJEeWYRrYFctZWYw" base_Comment="_cqnGQgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqnGRQOJEeWYRrYFctZWYw" base_Comment="_cqnGRAOJEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_cqoUYQOJEeWYRrYFctZWYw" base_Comment="_cqoUYAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqoUYwOJEeWYRrYFctZWYw" base_Comment="_cqoUYgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqoUZQOJEeWYRrYFctZWYw" base_Comment="_cqoUZAOJEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqoUZwOJEeWYRrYFctZWYw" base_Comment="_cqoUZgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqo7cQOJEeWYRrYFctZWYw" base_Comment="_cqo7cAOJEeWYRrYFctZWYw" ref="_aMiwEAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqo7cwOJEeWYRrYFctZWYw" base_Comment="_cqo7cgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqo7dQOJEeWYRrYFctZWYw" base_Comment="_cqo7dAOJEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_cqqJkQOJEeWYRrYFctZWYw" base_Comment="_cqqJkAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqqJkwOJEeWYRrYFctZWYw" base_Comment="_cqqJkgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqqJlQOJEeWYRrYFctZWYw" base_Comment="_cqqJlAOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqqwoQOJEeWYRrYFctZWYw" base_Comment="_cqqwoAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqqwowOJEeWYRrYFctZWYw" base_Comment="_cqqwogOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_cqqwpQOJEeWYRrYFctZWYw" base_Comment="_cqqwpAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_cqrXsQOJEeWYRrYFctZWYw" base_Comment="_cqrXsAOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqr-wAOJEeWYRrYFctZWYw" base_Package="_cqrXsgOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqsl0AOJEeWYRrYFctZWYw" base_Package="_cqr-wQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqtM4AOJEeWYRrYFctZWYw" base_Package="_cqsl0QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqtz8AOJEeWYRrYFctZWYw" base_Package="_cqtM4QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqvCEAOJEeWYRrYFctZWYw" base_Package="_cqubAAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqvpIAOJEeWYRrYFctZWYw" base_Package="_cqvCEQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqwQMAOJEeWYRrYFctZWYw" base_Package="_cqvpIQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqw3QAOJEeWYRrYFctZWYw" base_Package="_cqwQMQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_cqxeUAOJEeWYRrYFctZWYw" base_Package="_cqw3QQOJEeWYRrYFctZWYw"/>
+  <Document:Document xmi:id="_fbkyAAOJEeWYRrYFctZWYw" base_Model="_fbkK8AOJEeWYRrYFctZWYw" author="CEA" version="0.1"/>
+  <Document:TableOfContent xmi:id="_fbmAIAOJEeWYRrYFctZWYw" base_Package="_fblZEAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fbmnMAOJEeWYRrYFctZWYw" base_Package="_fbmAIQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fbnOQAOJEeWYRrYFctZWYw" base_Comment="_fbmnMQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fbn1UAOJEeWYRrYFctZWYw" base_Comment="_fbnOQQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fbocYAOJEeWYRrYFctZWYw" base_Comment="_fbn1UQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fbpDcAOJEeWYRrYFctZWYw" base_Comment="_fbocYQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fbpqgQOJEeWYRrYFctZWYw" base_Comment="_fbpqgAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fbqRkQOJEeWYRrYFctZWYw" base_Package="_fbqRkAOJEeWYRrYFctZWYw"/>
+  <Document:ImageRef xmi:id="_fcrlQAOJEeWYRrYFctZWYw" base_Comment="_fcq-MAOJEeWYRrYFctZWYw" ref="/export/home/flefevre/git/org.eclipse.papyrus/plugins/uml/diagram/org.eclipse.papyrus.uml.diagram.usecase/doc/imgDOC/DnDMain-UseCaseDiagram.png"/>
+  <Document:Section xmi:id="_fcsMUQOJEeWYRrYFctZWYw" base_Package="_fcsMUAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fctacAOJEeWYRrYFctZWYw" base_Package="_fcszYAOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcuBgAOJEeWYRrYFctZWYw" base_Comment="_fctacQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcuokAOJEeWYRrYFctZWYw" base_Comment="_fcuBgQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fcvPoAOJEeWYRrYFctZWYw" base_Package="_fcuokQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcv2sAOJEeWYRrYFctZWYw" base_Comment="_fcvPoQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcwdwAOJEeWYRrYFctZWYw" base_Comment="_fcv2sQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fcxE0AOJEeWYRrYFctZWYw" base_Package="_fcwdwQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcyS8AOJEeWYRrYFctZWYw" base_Comment="_fcxr4AOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fcy6AAOJEeWYRrYFctZWYw" base_Comment="_fcyS8QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fczhEAOJEeWYRrYFctZWYw" base_Package="_fcy6AQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fc0IIAOJEeWYRrYFctZWYw" base_Package="_fczhEQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fc1WQAOJEeWYRrYFctZWYw" base_Package="_fc0vMAOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fc19UAOJEeWYRrYFctZWYw" base_Comment="_fc1WQgOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_fc19UgOJEeWYRrYFctZWYw" base_Comment="_fc19UQOJEeWYRrYFctZWYw"/>
+  <Document:Table xmi:id="_fc2kYAOJEeWYRrYFctZWYw" caption="RequirementsCoverageTable" base_Comment="_fc1WQQOJEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_fc3LcQOJEeWYRrYFctZWYw" base_Comment="_fc3LcAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc3ygQOJEeWYRrYFctZWYw" base_Comment="_fc3ygAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc3ygwOJEeWYRrYFctZWYw" base_Comment="_fc3yggOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc3yhQOJEeWYRrYFctZWYw" base_Comment="_fc3yhAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc4ZkQOJEeWYRrYFctZWYw" base_Comment="_fc4ZkAOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc5AoAOJEeWYRrYFctZWYw" base_Comment="_fc4ZkgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc5AogOJEeWYRrYFctZWYw" base_Comment="_fc5AoQOJEeWYRrYFctZWYw" ref="_rcvM4AOAEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_fc6OwQOJEeWYRrYFctZWYw" base_Comment="_fc6OwAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc6OwwOJEeWYRrYFctZWYw" base_Comment="_fc6OwgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc6OxQOJEeWYRrYFctZWYw" base_Comment="_fc6OxAOJEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc610QOJEeWYRrYFctZWYw" base_Comment="_fc610AOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc610wOJEeWYRrYFctZWYw" base_Comment="_fc610gOJEeWYRrYFctZWYw" ref="_Eoq-8AODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc611QOJEeWYRrYFctZWYw" base_Comment="_fc611AOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc7c4QOJEeWYRrYFctZWYw" base_Comment="_fc7c4AOJEeWYRrYFctZWYw" ref="_HR-1cAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_fc8D8QOJEeWYRrYFctZWYw" base_Comment="_fc8D8AOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc8rAAOJEeWYRrYFctZWYw" base_Comment="_fc8D8gOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc8rAgOJEeWYRrYFctZWYw" base_Comment="_fc8rAQOJEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc8rBAOJEeWYRrYFctZWYw" base_Comment="_fc8rAwOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc8rBgOJEeWYRrYFctZWYw" base_Comment="_fc8rBQOJEeWYRrYFctZWYw" ref="_Z4nugAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc9SEQOJEeWYRrYFctZWYw" base_Comment="_fc9SEAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc9SEwOJEeWYRrYFctZWYw" base_Comment="_fc9SEgOJEeWYRrYFctZWYw" ref="_yM6qwAOBEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_fc-gMAOJEeWYRrYFctZWYw" base_Comment="_fc95IAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc-gMgOJEeWYRrYFctZWYw" base_Comment="_fc-gMQOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc-gNAOJEeWYRrYFctZWYw" base_Comment="_fc-gMwOJEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc-gNgOJEeWYRrYFctZWYw" base_Comment="_fc-gNQOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc_HQQOJEeWYRrYFctZWYw" base_Comment="_fc_HQAOJEeWYRrYFctZWYw" ref="_aMiwEAODEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fc_HQwOJEeWYRrYFctZWYw" base_Comment="_fc_HQgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fc_uUAOJEeWYRrYFctZWYw" base_Comment="_fc_HRAOJEeWYRrYFctZWYw" ref="_CDLY0AOCEeWYRrYFctZWYw"/>
+  <Document:Line xmi:id="_fdAVYQOJEeWYRrYFctZWYw" base_Comment="_fdAVYAOJEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fdAVYwOJEeWYRrYFctZWYw" base_Comment="_fdAVYgOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fdA8cAOJEeWYRrYFctZWYw" base_Comment="_fdAVZAOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fdA8cgOJEeWYRrYFctZWYw" base_Comment="_fdA8cQOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fdA8dAOJEeWYRrYFctZWYw" base_Comment="_fdA8cwOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Cell xmi:id="_fdBjgQOJEeWYRrYFctZWYw" base_Comment="_fdBjgAOJEeWYRrYFctZWYw"/>
+  <Document:RefContent xmi:id="_fdBjgwOJEeWYRrYFctZWYw" base_Comment="_fdBjggOJEeWYRrYFctZWYw" ref="_RPJzwAOCEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdCKkAOJEeWYRrYFctZWYw" base_Package="_fdBjhAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdDYsAOJEeWYRrYFctZWYw" base_Package="_fdCxoAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdD_wAOJEeWYRrYFctZWYw" base_Package="_fdDYsQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdEm0AOJEeWYRrYFctZWYw" base_Package="_fdD_wQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdFN4AOJEeWYRrYFctZWYw" base_Package="_fdEm0QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdF08AOJEeWYRrYFctZWYw" base_Package="_fdFN4QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdGcAAOJEeWYRrYFctZWYw" base_Package="_fdF08QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdHqIAOJEeWYRrYFctZWYw" base_Package="_fdHDEAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_fdIRMAOJEeWYRrYFctZWYw" base_Package="_fdHqIQOJEeWYRrYFctZWYw"/>
+</xmi:XMI>

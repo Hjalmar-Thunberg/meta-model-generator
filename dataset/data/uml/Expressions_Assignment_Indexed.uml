@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_s1u9gIKGEeSFEt9m3bH63A" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_tKYX0IKGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed" classifierBehavior="_tKYX7oKGEeSFEt9m3bH63A" isActive="true">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX74KGEeSFEt9m3bH63A" annotatedElement="_tKYX0IKGEeSFEt9m3bH63A">
+        <body>&#xD;
+ * Test indexed assignment expressions.&#xD;
+ *</body>
+      </ownedComment>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_tKYX34KGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed$initializationFlag$1" visibility="protected">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX4IKGEeSFEt9m3bH63A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX4YKGEeSFEt9m3bH63A" value="1"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tKYX2IKGEeSFEt9m3bH63A" name="test$method$1" visibility="protected" specification="_tKYX0YKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX9IKGEeSFEt9m3bH63A" annotatedElement="_tKYX2IKGEeSFEt9m3bH63A">
+          <body>activity 'test$method$1'(out i: Integer[0..*], out a: Integer[0..*]) { i = new Integer [] { 1..4 };
+i[1] = 0;
+i[2] += i[3];
+a = i;
+a[3] = 5;
+test::a[3] = 5;
+test.a[3] = 5;
+a[4] += 1;
+test::a[4] += 1;
+test.a[4] += 1;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX2YKGEeSFEt9m3bH63A" name="i" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX2oKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX24KGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX3IKGEeSFEt9m3bH63A" name="a" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX3YKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX3oKGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tKYX4oKGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed$initialization$1" visibility="protected" specification="_tKYX44KGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX84KGEeSFEt9m3bH63A" annotatedElement="_tKYX4oKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Assignment_Indexed$initialization$1'(){
+  if (this.'Expressions_Assignment_Indexed$initializationFlag$1' == null) {
+    this.'Expressions_Assignment_Indexed$initializationFlag$1' = true;
+  }
+}
+</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tKYX5IKGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed$method$1" specification="_tKYX6IKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX8YKGEeSFEt9m3bH63A" annotatedElement="_tKYX5IKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Assignment_Indexed$method$1'(): Expressions_Assignment_Indexed {
+	this.'Expressions_Assignment_Indexed$initialization$1'();
+	return this;
+}</body>
+        </ownedComment>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX5YKGEeSFEt9m3bH63A" type="_tKYX0IKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX5oKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX54KGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tKYX7IKGEeSFEt9m3bH63A" name="destroy$method$1" specification="_tKYX7YKGEeSFEt9m3bH63A">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX8oKGEeSFEt9m3bH63A" annotatedElement="_tKYX7IKGEeSFEt9m3bH63A">
+          <body>activity 'destroy$method$1'() { }</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tKYX7oKGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed$behavior$1" visibility="private">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tKYX8IKGEeSFEt9m3bH63A" annotatedElement="_tKYX7oKGEeSFEt9m3bH63A">
+          <body>activity 'Expressions_Assignment_Indexed$behavior$1'() { this.test(i, a);
+AssertEqual(&quot;i[1]&quot;, i[1], 0);
+AssertEqual(&quot;i[2]&quot;, i[2], 5);
+AssertEqual(&quot;i[3]&quot;, i[3], 3);
+AssertEqual(&quot;i[4]&quot;, i[4], 4);
+AssertEqual(&quot;a[1]&quot;, a[1], 0);
+AssertEqual(&quot;a[2]&quot;, a[2], 5);
+AssertEqual(&quot;a[3]&quot;, a[3], 5);
+AssertEqual(&quot;a[4]&quot;, a[4], 7);
+WriteLine(&quot;Done&quot;);
+}</body>
+        </ownedComment>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tKYX0YKGEeSFEt9m3bH63A" name="test" visibility="public" method="_tKYX2IKGEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX0oKGEeSFEt9m3bH63A" name="i" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX04KGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX1IKGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX1YKGEeSFEt9m3bH63A" name="a" direction="out">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX1oKGEeSFEt9m3bH63A"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX14KGEeSFEt9m3bH63A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tKYX44KGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed$initialization$1" visibility="protected" method="_tKYX4oKGEeSFEt9m3bH63A"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tKYX6IKGEeSFEt9m3bH63A" name="Expressions_Assignment_Indexed" method="_tKYX5IKGEeSFEt9m3bH63A">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tKYX6YKGEeSFEt9m3bH63A" type="_tKYX0IKGEeSFEt9m3bH63A" direction="return">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKYX6oKGEeSFEt9m3bH63A" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tKYX64KGEeSFEt9m3bH63A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tKYX7YKGEeSFEt9m3bH63A" name="destroy" method="_tKYX7IKGEeSFEt9m3bH63A"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_s1u9gYKGEeSFEt9m3bH63A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s1u9goKGEeSFEt9m3bH63A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_QqvM0LeLEeS_zZpc9I-Bsg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QqvM0beLEeS_zZpc9I-Bsg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_tKYX9YKGEeSFEt9m3bH63A" base_Comment="_tKYX84KGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_tKYX9oKGEeSFEt9m3bH63A" base_Comment="_tKYX8IKGEeSFEt9m3bH63A" language="Alf"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_tKYX94KGEeSFEt9m3bH63A" base_Comment="_tKYX8oKGEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Destroy xmi:id="_tKYX-IKGEeSFEt9m3bH63A" base_BehavioralFeature="_tKYX7YKGEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_tKYX-YKGEeSFEt9m3bH63A" base_Comment="_tKYX9IKGEeSFEt9m3bH63A" language="Alf"/>
+  <standard:Create xmi:id="_tKYX-oKGEeSFEt9m3bH63A" base_BehavioralFeature="_tKYX6IKGEeSFEt9m3bH63A"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_tKYX-4KGEeSFEt9m3bH63A" base_Comment="_tKYX8YKGEeSFEt9m3bH63A" language="Alf"/>
+</xmi:XMI>

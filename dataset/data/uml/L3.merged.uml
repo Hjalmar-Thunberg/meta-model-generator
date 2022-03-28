@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Profile xmi:id="_bcyzQMIyEeCDwPTas6MRfw" name="L3" metamodelReference="_8MCx8AsTEeGTNJLAYqz1mw">
+    <packageImport xmi:id="_8MCx8AsTEeGTNJLAYqz1mw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_8MCx8QsTEeGTNJLAYqz1mw" name="Component_BuildComponent" memberEnd="_8MCx8gsTEeGTNJLAYqz1mw _8MDZCAsTEeGTNJLAYqz1mw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8MCx8gsTEeGTNJLAYqz1mw" name="extension_BuildComponent" visibility="public" type="_8MDZBgsTEeGTNJLAYqz1mw" aggregation="composite" association="_8MCx8QsTEeGTNJLAYqz1mw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MCx8wsTEeGTNJLAYqz1mw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_8MDZAAsTEeGTNJLAYqz1mw" name="Model_Metamodel" memberEnd="_8MDZAQsTEeGTNJLAYqz1mw _8MEAEgsTEeGTNJLAYqz1mw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8MDZAQsTEeGTNJLAYqz1mw" name="extension_Metamodel" visibility="public" type="_8MEAEAsTEeGTNJLAYqz1mw" aggregation="composite" association="_8MDZAAsTEeGTNJLAYqz1mw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MDZAgsTEeGTNJLAYqz1mw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Extension" xmi:id="_8MDZAwsTEeGTNJLAYqz1mw" name="Model_SystemModel" memberEnd="_8MDZBAsTEeGTNJLAYqz1mw _8MEAFQsTEeGTNJLAYqz1mw">
+      <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_8MDZBAsTEeGTNJLAYqz1mw" name="extension_SystemModel" visibility="public" type="_8MEAEwsTEeGTNJLAYqz1mw" aggregation="composite" association="_8MDZAwsTEeGTNJLAYqz1mw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8MDZBQsTEeGTNJLAYqz1mw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8MDZBgsTEeGTNJLAYqz1mw" name="BuildComponent">
+      <ownedComment xmi:id="_8MDZBwsTEeGTNJLAYqz1mw" annotatedElement="_8MDZBgsTEeGTNJLAYqz1mw">
+        <body>A collection of elements defined for the purpose of system level decelopment activities, such as compilation and versioning.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_8MDZCAsTEeGTNJLAYqz1mw" name="base_Component" visibility="public" association="_8MCx8QsTEeGTNJLAYqz1mw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Component"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8MEAEAsTEeGTNJLAYqz1mw" name="Metamodel">
+      <ownedComment xmi:id="_8MEAEQsTEeGTNJLAYqz1mw" annotatedElement="_8MEAEAsTEeGTNJLAYqz1mw">
+        <body>A model that specifies the modeling concepts of some modeling language (e.g., a MOF model). See >.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_8MEAEgsTEeGTNJLAYqz1mw" name="base_Model" visibility="public" association="_8MDZAAsTEeGTNJLAYqz1mw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Model"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_8MEAEwsTEeGTNJLAYqz1mw" name="SystemModel">
+      <ownedComment xmi:id="_8MEAFAsTEeGTNJLAYqz1mw" annotatedElement="_8MEAEwsTEeGTNJLAYqz1mw">
+        <body>A SystemModel is a stereotyped model that contains a collection of models of the same system. A systemModel also contains all relationships and constraints between model elements contained in different models.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_8MEAFQsTEeGTNJLAYqz1mw" name="base_Model" visibility="public" association="_8MDZAwsTEeGTNJLAYqz1mw">
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Model"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:id="_or21kMIyEeCDwPTas6MRfw">
+      <eAnnotations xmi:id="_or88MMIyEeCDwPTas6MRfw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Profile>
+  <Ecore:EPackage xmi:id="_pyGE4MIyEeCDwPTas6MRfw" base_Package="_bcyzQMIyEeCDwPTas6MRfw" packageName="l3" nsPrefix="l3" nsURI="http://www.eclipse.org/uml2/4.0.0/UML/Profile/L3" basePackage="org.eclipse.uml2.uml.profile" prefix="L3"/>
+</xmi:XMI>

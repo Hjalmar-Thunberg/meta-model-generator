@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cdb5e76f-ed80-4448-b68a-270e9490bced"
+  name="Core" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="56761595-a137-4c2a-9efe-22170cc82117">
+      <body>开发环境net framework 的Configuration</body>
+      <annotatedElements>
+        <interfaceMoniker
+          Id="b54c0c86-80dc-43d3-bdd2-7ecb5fec6576"
+          LastKnownName="System.Configuration.IConfigurationSectionHandler"
+          LastKnownLocation="Package_1721.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f07d1592-6f2f-4b08-b378-8c6bd9162325">
+      <body>配置类:每项任务需要包含一个配置类并继承至Base.ServiceConfig。抽象属性必须在子类中实现，如果任务中包含更多的自定义配置，也可在此扩展。
+之所以使用配置类，是希望把配置数据加载进内存，以避免Windows服务程序频繁对配置文件进行读取，减少IO性能消耗。</body>
+      <annotatedElements>
+        <classMoniker
+          Id="a564b97d-fdc2-4496-93a2-dbe03c528f88"
+          LastKnownName="ServiceConfig"
+          LastKnownLocation="Package_1721.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="451352c9-db0a-4e63-b835-57836f841482">
+      <body>每项任务必须包含一个工作类并继承至Base.ServiceJob。抽像方法Start()与Stop()必须在子类中实现。</body>
+      <annotatedElements>
+        <classMoniker
+          Id="6df95247-c78e-4d90-a2bd-732e38485065"
+          LastKnownName="ServiceJob"
+          LastKnownLocation="Package_1721.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="f3231951-c683-4332-b6e0-8aafaf7d65c0">
+      <body>工具类实现了IConfigurationSectionHandler接口，封装了对app.config的读取、日志生成等静态方法。</body>
+      <annotatedElements>
+        <classMoniker
+          Id="48d73036-c676-441f-980d-d85cd2cc246e"
+          LastKnownName="ServiceTools"
+          LastKnownLocation="Package_1721.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a564b97d-fdc2-4496-93a2-dbe03c528f88"
+        name="ServiceConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f26f6525-87bb-4dfa-927b-abbd09ab9cb1"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b74002c3-b345-4665-b913-6016bc0b7503"
+            name="Enabled"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a36920f7-fe03-4cb4-babe-c9fc24634a63"
+            name="Assembly"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="315ab726-761d-46e9-9dfc-e36b9ea2b77e"
+            name="Interval"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6df95247-c78e-4d90-a2bd-732e38485065"
+        name="ServiceJob"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="645c466c-5db8-4725-874c-18b2dfdfeefd"
+            name="ConfigObject"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="be255c71-5d9e-4273-943d-8b49788641e4"
+            name="StartJob"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2e1059a0-0356-4cb1-a3ec-5f43a652e53d"
+            name="StopJob"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a66d1fad-a96f-4a91-bf2a-0a0d5a3343a2"
+            name="Start"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8775fe7c-776f-44c6-9474-2f96b7ce5039"
+            name="Stop"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="48d73036-c676-441f-980d-d85cd2cc246e"
+        name="ServiceTools"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="544fae20-9e40-478c-b4c6-96b96b3dc6f3">
+            <interfaceMoniker
+              Id="b54c0c86-80dc-43d3-bdd2-7ecb5fec6576"
+              LastKnownName="System.Configuration.IConfigurationSectionHandler"
+              LastKnownLocation="Package_1721.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fdd1c570-26b9-4c1a-83da-d0cc9e477dc7"
+            name="GetAppSetting"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="804ba7c6-0b17-4e2e-9bd2-32233aa3eef6"
+            name="GetConfigSections"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6e6e82ea-9489-4c6b-8467-8607f590e808"
+            name="GetSection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6e382208-51cb-4f42-a0f0-ed574a883762"
+            name="WriteLog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="37576c83-fb64-47b6-840f-eae43ead0a42"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b54c0c86-80dc-43d3-bdd2-7ecb5fec6576"
+        name="System.Configuration.IConfigurationSectionHandler"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

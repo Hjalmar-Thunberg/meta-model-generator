@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0wU2kOhBEeSqZs7o0maBIQ" name="test" metaclassReference="_Bh4dgOhCEeSqZs7o0maBIQ _Bh5EkOhCEeSqZs7o0maBIQ" metamodelReference="_0wU2kehBEeSqZs7o0maBIQ">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dzhuMOhCEeSqZs7o0maBIQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_kpqfkOhCEeSqZs7o0maBIQ" name="test" nsURI="http:///schemas/test/_kpp4gOhCEeSqZs7o0maBIQ/0" nsPrefix="test">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kpsUwehCEeSqZs7o0maBIQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kpsUwuhCEeSqZs7o0maBIQ" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kpsUw-hCEeSqZs7o0maBIQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kpsUxOhCEeSqZs7o0maBIQ" key="Copyright" value="Copyright (c) 2015 Christian W. Damus and others.&#xA;&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License 2.0&#xA;which accompanies this distribution, and is available at&#xA;https://www.eclipse.org/legal/epl-2.0/&#xA;&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Christian W. Damus - Initial API and implementation"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kpsUxehCEeSqZs7o0maBIQ" key="Date" value="2015-04-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kpsUxuhCEeSqZs7o0maBIQ" key="Author" value="Christian W. Damus"/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kpqfkehCEeSqZs7o0maBIQ" name="Bean">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kpqfkuhCEeSqZs7o0maBIQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DFm6EOhCEeSqZs7o0maBIQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kpqfk-hCEeSqZs7o0maBIQ" name="base_Classifier" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Classifier"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kpqflehCEeSqZs7o0maBIQ" name="Proxy">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kpqfluhCEeSqZs7o0maBIQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_K4tC8OhCEeSqZs7o0maBIQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kpqfl-hCEeSqZs7o0maBIQ" name="base_Dependency" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Dependency"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_Bh4dgOhCEeSqZs7o0maBIQ" alias="Dependency">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_Bh5EkOhCEeSqZs7o0maBIQ" alias="Classifier">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_0wU2kehBEeSqZs7o0maBIQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_0wU2kuhBEeSqZs7o0maBIQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_DFm6EOhCEeSqZs7o0maBIQ" name="Bean">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aMhLQOhCEeSqZs7o0maBIQ" name="base_Classifier" association="_aMhyUOhCEeSqZs7o0maBIQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_K4tC8OhCEeSqZs7o0maBIQ" name="Proxy">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_a1z_4OhCEeSqZs7o0maBIQ" name="base_Dependency" association="_a1z_4ehCEeSqZs7o0maBIQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Dependency"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_aMhyUOhCEeSqZs7o0maBIQ" name="E_Bean_Classifier1" memberEnd="_aMhyUehCEeSqZs7o0maBIQ _aMhLQOhCEeSqZs7o0maBIQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_aMhyUehCEeSqZs7o0maBIQ" name="extension_Bean" type="_DFm6EOhCEeSqZs7o0maBIQ" aggregation="composite" association="_aMhyUOhCEeSqZs7o0maBIQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_a1z_4ehCEeSqZs7o0maBIQ" name="E_Proxy_Dependency1" memberEnd="_a1z_4uhCEeSqZs7o0maBIQ _a1z_4OhCEeSqZs7o0maBIQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_a1z_4uhCEeSqZs7o0maBIQ" name="extension_Proxy" type="_K4tC8OhCEeSqZs7o0maBIQ" aggregation="composite" association="_a1z_4ehCEeSqZs7o0maBIQ"/>
+  </packagedElement>
+</uml:Profile>

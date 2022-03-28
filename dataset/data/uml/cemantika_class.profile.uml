@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_C_k1gIQXEd-lb5eO5RIlaQ" name="cemantika_class" metaclassReference="_G7M9kIQXEd-lb5eO5RIlaQ _HioxAIQXEd-lb5eO5RIlaQ _I7D8gIQXEd-lb5eO5RIlaQ">
+  <eAnnotations xmi:id="_kN1KIIQXEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_LD3T4YRKEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_LD3T4IRKEd-lb5eO5RIlaQ/13" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_LD3T4oRKEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_LD3T44RKEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_LD3T5IRKEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_LD3T5YRKEd-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null) or&#xA;let associations : Set(Association) = Association.allInstances()->select(assoc | assoc.endType->exists(ends | ends = self.base_Class)) in&#xA;associations->exists(association | association.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LD3T5oRKEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_LD3T6IRKEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_LD3T6YRKEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_LD3T6oRKEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_LD3T64RKEd-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none&#xA;self.base_Association &lt;> null implies self.base_Association.endType->exists(p | p.getAppliedStereotype('cemantika_class::ContextualEntity') &lt;> null)&#xA;self.base_Property &lt;> null implies self.base_Property.owner.getAppliedStereotype('cemantika_class::ContextualEntity') &lt;> null "/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LD3T7IRKEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LD3T7oRKEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_LD3T8IRKEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_LD3T8oRKEd-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_LD3T8oRKEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_LD3T84RKEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_LD3T9IRKEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_LD3T9YRKEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_LD3T9oRKEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_LD3T94RKEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_LD3T-IRKEd-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_LD3T-YRKEd-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_02uH0YQ_Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_02uH0IQ_Ed-lb5eO5RIlaQ/12" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_02uH0oQ_Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_02uu4IQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_02uu4YQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_02uu4oQ_Ed-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null) or&#xA;let associations : Set(Association) = Association.allInstances()->select(assoc | assoc.endType->exists(ends | ends = self.base_Class)) in&#xA;associations->exists(association | association.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_02uu44Q_Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_02uu5YQ_Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_02uu5oQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_02uu54Q_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_02uu6IQ_Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_02uu6YQ_Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_02uu64Q_Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_02uu7YQ_Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_02uu74Q_Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_02uu74Q_Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_02uu8IQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_02uu8YQ_Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_02uu8oQ_Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_02uu84Q_Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_02uu9IQ_Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_02uu9YQ_Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_02uu9oQ_Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_Ymt14IQ_Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_YmtO0IQ_Ed-lb5eO5RIlaQ/11" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Ymt14YQ_Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_Ymt14oQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_Ymt144Q_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_Ymt15IQ_Ed-lb5eO5RIlaQ" key="documentation" value="self.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null) or&#xA;let associations : Set(Association) = Association.allInstances()->select(assoc | assoc.endType->exists(ends | ends = self)) in&#xA;associations->exists(association | association.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ymt15YQ_Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_Ymt154Q_Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_Ymt16IQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_Ymt16YQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_Ymt16oQ_Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ymt164Q_Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_Ymt17YQ_Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_Ymt174Q_Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_Ymt18YQ_Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_Ymt18YQ_Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_Ymt18oQ_Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_Ymt184Q_Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_Ymt19IQ_Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_Ymt19YQ_Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_Ymt19oQ_Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_Ymt194Q_Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_Ymt1-IQ_Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_ChFtcYQ9Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_ChFtcIQ9Ed-lb5eO5RIlaQ/10" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_ChFtcoQ9Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_ChFtc4Q9Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_ChFtdIQ9Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_ChFtdYQ9Ed-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null) or self.base_Class.getRelationships()->exists(assoc | assoc.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ChFtdoQ9Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_ChFteIQ9Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_ChFteYQ9Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_ChFteoQ9Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_ChFte4Q9Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ChFtfIQ9Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ChFtfoQ9Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChFtgIQ9Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_ChFtgoQ9Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_ChFtgoQ9Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_ChFtg4Q9Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_ChFthIQ9Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_ChFthYQ9Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_ChFthoQ9Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_ChFth4Q9Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_ChFtiIQ9Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_ChFtiYQ9Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_hkSAEYQ6Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_hkSAEIQ6Ed-lb5eO5RIlaQ/9" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hkSAEoQ6Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_hkSAE4Q6Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_hkSAFIQ6Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_hkSAFYQ6Ed-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hkSAFoQ6Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hkSAGIQ6Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_hkSAGYQ6Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_hkSAGoQ6Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_hkSAG4Q6Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hkSAHIQ6Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hkSAHoQ6Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_hkSAIIQ6Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_hkSAIoQ6Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_hkSAIoQ6Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_hkSAI4Q6Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_hkSAJIQ6Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_hkSAJYQ6Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_hkSAJoQ6Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_hkSAJ4Q6Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_hkSAKIQ6Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_hkSAKYQ6Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_8FaK0YQ5Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_8FaK0IQ5Ed-lb5eO5RIlaQ/8" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8FaK0oQ5Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_8FaK04Q5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_8FaK1IQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_8FaK1YQ5Ed-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)  or self.base_Class.getAssociations()->exists(assoc | assoc.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8FaK1oQ5Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_8FaK2IQ5Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_8FaK2YQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_8FaK2oQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_8FaK24Q5Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8FaK3IQ5Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_8FaK3oQ5Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_8FaK4IQ5Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_8FaK4oQ5Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_8FaK4oQ5Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_8FaK44Q5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_8FaK5IQ5Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_8FaK5YQ5Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_8FaK5oQ5Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_8FaK54Q5Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_8FaK6IQ5Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_8FaK6YQ5Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_p0uBsIQ5Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_p0taoIQ5Ed-lb5eO5RIlaQ/7" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_p0uBsYQ5Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_p0uBsoQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_p0uBs4Q5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_p0uBtIQ5Ed-lb5eO5RIlaQ" key="documentation" value="self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)  or self.base_Class.getAssociations()->exists(assoc | assoc.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p0uBtYQ5Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_p0uBt4Q5Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_p0uBuIQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_p0uBuYQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_p0uBuoQ5Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p0uBu4Q5Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_p0uBvYQ5Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_p0uBv4Q5Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_p0uBwYQ5Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_p0uBwYQ5Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_p0uBwoQ5Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_p0uBw4Q5Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_p0uBxIQ5Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_p0uBxYQ5Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_p0uBxoQ5Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_p0uBx4Q5Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_p0uByIQ5Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_6WGtMIQ1Ed-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_6WGGIIQ1Ed-lb5eO5RIlaQ/6" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6WGtMYQ1Ed-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_6WGtMoQ1Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6WGtM4Q1Ed-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_6WGtNYQ1Ed-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_6WGtNoQ1Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_6WGtN4Q1Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_6WGtOIQ1Ed-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6WGtOYQ1Ed-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_6WGtO4Q1Ed-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_6WGtPYQ1Ed-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_6WGtP4Q1Ed-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_6WGtP4Q1Ed-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_6WGtQIQ1Ed-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_6WGtQYQ1Ed-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_6WGtQoQ1Ed-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_6WGtQ4Q1Ed-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_6WGtRIQ1Ed-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_6WGtRYQ1Ed-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_6WGtRoQ1Ed-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_PK6yMIQxEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_PK6LIIQxEd-lb5eO5RIlaQ/5" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_PK6yMYQxEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_PK6yMoQxEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PK6yM4QxEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_PK6yNYQxEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_PK6yNoQxEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_PK6yN4QxEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_PK6yOIQxEd-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PK6yOYQxEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_PK6yO4QxEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_PK6yPYQxEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_PK6yP4QxEd-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_PK6yP4QxEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_PK6yQIQxEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_PK6yQYQxEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_PK6yQoQxEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_PK6yQ4QxEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_PK6yRIQxEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_PK6yRYQxEd-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_PK6yRoQxEd-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_dWr0sYQuEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_dWr0sIQuEd-lb5eO5RIlaQ/4" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dWr0soQuEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_dWr0s4QuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dWr0tIQuEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_dWr0toQuEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_dWr0t4QuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_dWr0uIQuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_dWr0uYQuEd-lb5eO5RIlaQ" key="documentation" value="not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextualElement::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dWr0uoQuEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_dWr0vIQuEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_dWr0voQuEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_dWsbwYQuEd-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_dWsbwYQuEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_dWsbwoQuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_dWsbw4QuEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_dWsbxIQuEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_dWsbxYQuEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_dWsbxoQuEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_dWsbx4QuEd-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_dWsbyIQuEd-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_GQCCMIQuEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_GQBbIIQuEd-lb5eO5RIlaQ/3" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GQCCMYQuEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_GQCCMoQuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GQCCM4QuEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_GQCCNYQuEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_GQCCNoQuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_GQCCN4QuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_GQCCOIQuEd-lb5eO5RIlaQ" key="documentation" value="not st.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextualElement::none"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GQCCOYQuEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_GQCCO4QuEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_GQCCPYQuEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_GQCCP4QuEd-lb5eO5RIlaQ" defaultValueLiteral="none"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_GQCCP4QuEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_GQCCQIQuEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_GQCCQYQuEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_GQCCQoQuEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_GQCCQ4QuEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_GQCCRIQuEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_GQCCRYQuEd-lb5eO5RIlaQ" name="why" value="4"/>
+        <eLiterals xmi:id="_GQCCRoQuEd-lb5eO5RIlaQ" name="none" value="5"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_LQx1sYQiEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_LQx1sIQiEd-lb5eO5RIlaQ/2" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_LQx1soQiEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_LQx1s4QiEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LQx1tIQiEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_LQx1toQiEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_LQx1t4QiEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_LQx1uIQiEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_LQx1uYQiEd-lb5eO5RIlaQ" key="documentation" value="let st : Stereotype = self.getAppliedStereotype('cemantika_class::ContextualElement') in&#xA;st &lt;> null implies (not st.type.oclIsUndefined() and st.type &lt;> '')"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LQx1uoQiEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_LQx1vIQiEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_LQx1voQiEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_LQx1wIQiEd-lb5eO5RIlaQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_LQx1wIQiEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_LQx1wYQiEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_LQx1woQiEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_LQx1w4QiEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_LQx1xIQiEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_LQx1xYQiEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_LQx1xoQiEd-lb5eO5RIlaQ" name="why" value="4"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_xJTWgIQhEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_xJSvcIQhEd-lb5eO5RIlaQ/1" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_xJTWgYQhEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_xJTWgoQhEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xJTWg4QhEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_xJTWhYQhEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_xJTWhoQhEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eAnnotations xmi:id="_xJTWh4QhEd-lb5eO5RIlaQ" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_xJTWiIQhEd-lb5eO5RIlaQ" key="documentation" value="let st : Stereotype = self.getAppliedStereotype('cemantika_class::ContextualElement') in&#xA;st &lt;> null implies (not st.type.oclIsUndefined() and st.type &lt;> '')"/>
+        </eAnnotations>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xJTWiYQhEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_xJTWi4QhEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_xJTWjYQhEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_xJTWj4QhEd-lb5eO5RIlaQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_xJTWj4QhEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_xJTWkIQhEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_xJTWkYQhEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_xJTWkoQhEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_xJTWk4QhEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_xJTWlIQhEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_xJTWlYQhEd-lb5eO5RIlaQ" name="why" value="4"/>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_kN2YQIQXEd-lb5eO5RIlaQ" name="cemantika_class" nsURI="http:///schemas/cemantika_class/_kN0jEIQXEd-lb5eO5RIlaQ/0" nsPrefix="cemantika_class">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kN2YQYQXEd-lb5eO5RIlaQ" name="ContextualEntity">
+        <eAnnotations xmi:id="_kN2YQoQXEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_MMVgAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kN2YQ4QXEd-lb5eO5RIlaQ" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_kN2YRYQXEd-lb5eO5RIlaQ" name="ContextualElement">
+        <eAnnotations xmi:id="_kN2YRoQXEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_NZ2cAIQXEd-lb5eO5RIlaQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kN2YR4QXEd-lb5eO5RIlaQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_kN2YSYQXEd-lb5eO5RIlaQ" name="base_Association" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Association"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_kN2YS4QXEd-lb5eO5RIlaQ" name="type" ordered="false" lowerBound="1" eType="_kN2YTYQXEd-lb5eO5RIlaQ"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_kN2YTYQXEd-lb5eO5RIlaQ" name="ContextType">
+        <eAnnotations xmi:id="_kN2YToQXEd-lb5eO5RIlaQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Pj8VAIQXEd-lb5eO5RIlaQ"/>
+        <eLiterals xmi:id="_kN2YT4QXEd-lb5eO5RIlaQ" name="who"/>
+        <eLiterals xmi:id="_kN2YUIQXEd-lb5eO5RIlaQ" name="what" value="1"/>
+        <eLiterals xmi:id="_kN2YUYQXEd-lb5eO5RIlaQ" name="where" value="2"/>
+        <eLiterals xmi:id="_kN2YUoQXEd-lb5eO5RIlaQ" name="when" value="3"/>
+        <eLiterals xmi:id="_kN2_UIQXEd-lb5eO5RIlaQ" name="why" value="4"/>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_DALScIQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_DALScYQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_DALScoQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_DALSc4QXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_G7M9kIQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <elementImport xmi:id="_HioxAIQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <elementImport xmi:id="_I7D8gIQXEd-lb5eO5RIlaQ">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_MMVgAIQXEd-lb5eO5RIlaQ" name="ContextualEntity">
+    <ownedRule xmi:id="_NZpIMIQ5Ed-lb5eO5RIlaQ" name="entity_has_elements">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_NZpvQIQ5Ed-lb5eO5RIlaQ">
+        <language>OCL</language>
+        <body>self.base_Class.member->exists(p | p.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null) or&#xA;let associations : Set(Association) = Association.allInstances()->select(assoc | assoc.endType->exists(ends | ends = self.base_Class)) in&#xA;associations->exists(association | association.getAppliedStereotype('cemantika_class::ContextualElement') &lt;> null)</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:id="_X0a9cIQXEd-lb5eO5RIlaQ" name="base_Class" association="_X0YhMIQXEd-lb5eO5RIlaQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_NZ2cAIQXEd-lb5eO5RIlaQ" name="ContextualElement">
+    <ownedRule xmi:id="_3E7zAIQXEd-lb5eO5RIlaQ" name="element_type_defined">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3E9BIIQXEd-lb5eO5RIlaQ" name="">
+        <language>OCL</language>
+        <body>not self.type.oclIsUndefined() implies self.type &lt;> cemantika_class::ContextType::none</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_p7GjQIRJEd-lb5eO5RIlaQ" name="ce_belongs_to_entity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_p7HxYIRJEd-lb5eO5RIlaQ">
+        <language>OCL</language>
+        <body>self.base_Association &lt;> null implies self.base_Association.endType->exists(p | p.getAppliedStereotype('cemantika_class::ContextualEntity') &lt;> null)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_0Q4EQIRJEd-lb5eO5RIlaQ" name="ce_belongs_to_entity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0Q4rUIRJEd-lb5eO5RIlaQ">
+        <language>OCL</language>
+        <body>self.base_Property &lt;> null implies self.base_Property.owner.getAppliedStereotype('cemantika_class::ContextualEntity') &lt;> null </body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:id="_Y6QkIoQXEd-lb5eO5RIlaQ" name="base_Property" association="_Y6QkIIQXEd-lb5eO5RIlaQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZqZnooQXEd-lb5eO5RIlaQ" name="base_Association" association="_ZqZnoIQXEd-lb5eO5RIlaQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Association"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_a3eewIQXEd-lb5eO5RIlaQ" name="type" type="_Pj8VAIQXEd-lb5eO5RIlaQ">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1hH14IQiEd-lb5eO5RIlaQ" value="none"/>
+    </ownedAttribute>
+    <icon xmi:id="_1bnJIIQ1Ed-lb5eO5RIlaQ" location="icons/ce.gif"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pj8VAIQXEd-lb5eO5RIlaQ" name="ContextType">
+    <ownedLiteral xmi:id="_SKMlkIQXEd-lb5eO5RIlaQ" name="who"/>
+    <ownedLiteral xmi:id="_WXnBMIQXEd-lb5eO5RIlaQ" name="what"/>
+    <ownedLiteral xmi:id="_gA4BgIQXEd-lb5eO5RIlaQ" name="where"/>
+    <ownedLiteral xmi:id="_gdLjAIQXEd-lb5eO5RIlaQ" name="when"/>
+    <ownedLiteral xmi:id="_hlgdAIQXEd-lb5eO5RIlaQ" name="why"/>
+    <ownedLiteral xmi:id="_8EsQkIQiEd-lb5eO5RIlaQ" name="none"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_X0YhMIQXEd-lb5eO5RIlaQ" name="Class_ContextualEntity" memberEnd="_X0aWYIQXEd-lb5eO5RIlaQ _X0a9cIQXEd-lb5eO5RIlaQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_X0aWYIQXEd-lb5eO5RIlaQ" name="extension_ContextualEntity" type="_MMVgAIQXEd-lb5eO5RIlaQ" aggregation="composite" association="_X0YhMIQXEd-lb5eO5RIlaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_Y6QkIIQXEd-lb5eO5RIlaQ" name="Property_ContextualElement" memberEnd="_Y6QkIYQXEd-lb5eO5RIlaQ _Y6QkIoQXEd-lb5eO5RIlaQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_Y6QkIYQXEd-lb5eO5RIlaQ" name="extension_ContextualElement" type="_NZ2cAIQXEd-lb5eO5RIlaQ" aggregation="composite" association="_Y6QkIIQXEd-lb5eO5RIlaQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ZqZnoIQXEd-lb5eO5RIlaQ" name="Association_ContextualElement" memberEnd="_ZqZnoYQXEd-lb5eO5RIlaQ _ZqZnooQXEd-lb5eO5RIlaQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ZqZnoYQXEd-lb5eO5RIlaQ" name="extension_ContextualElement" type="_NZ2cAIQXEd-lb5eO5RIlaQ" aggregation="composite" association="_ZqZnoIQXEd-lb5eO5RIlaQ"/>
+  </packagedElement>
+</uml:Profile>

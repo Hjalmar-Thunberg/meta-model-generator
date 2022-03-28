@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:RootElement="http:///schemas/RootElement/_alHcoBszEeWmZqNpZmvgyw/8" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/RootElement/_alHcoBszEeWmZqNpZmvgyw/8 UnsetValueProfile.profile.uml#_alIDsBszEeWmZqNpZmvgyw">
+  <uml:Model xmi:id="_wmq6MBsxEeWmZqNpZmvgyw" name="RootElement">
+    <packagedElement xmi:type="uml:Class" xmi:id="_hKXHwBsyEeWmZqNpZmvgyw" name="Class1" visibility="protected">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kQUMEBsyEeWmZqNpZmvgyw" name="Attribute1"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_k2xIEBsyEeWmZqNpZmvgyw" name="Attribute2" visibility="public"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_goOhsBtLEeWOb9eSi4A3CA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gouQ8BtLEeWOb9eSi4A3CA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gouQ8RtLEeWOb9eSi4A3CA" key="Version" value="0.0.9"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gouQ8htLEeWOb9eSi4A3CA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gouQ8xtLEeWOb9eSi4A3CA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gouQ9BtLEeWOb9eSi4A3CA" key="Date" value="2015-06-25"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gouQ9RtLEeWOb9eSi4A3CA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_goQ98BtLEeWOb9eSi4A3CA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="UnsetValueProfile.profile.uml#_alIDsBszEeWmZqNpZmvgyw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="UnsetValueProfile.profile.uml#_Ol7QYBp7EeWlKbHIvpASUA"/>
+    </profileApplication>
+  </uml:Model>
+  <RootElement:Stereotype1 xmi:id="_iXpQ4BtLEeWOb9eSi4A3CA" base_Element="_hKXHwBsyEeWmZqNpZmvgyw" p="low" singleStringProp="aValue" singleIntValue="12"/>
+</xmi:XMI>

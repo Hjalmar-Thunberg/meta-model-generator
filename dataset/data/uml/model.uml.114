@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:j2ee="http:///schemas/j2ee/_uRcrUHcGEeSigYPDkthHwg/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/j2ee/_uRcrUHcGEeSigYPDkthHwg/4 platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.assistant.tests/resources/j2ee.profile.uml#_uRfuoHcGEeSigYPDkthHwg">
+  <uml:Model xmi:id="_O9xvkHEdEeS_DJfE0yCnLQ" name="Model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_O9xvkXEdEeS_DJfE0yCnLQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PrS84HEdEeS_DJfE0yCnLQ" name="Bean1">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZCl4gHW0EeSkkId3wIdLLg" name="Finder1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_RYL8gHEdEeS_DJfE0yCnLQ" name="DataType1"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8EGRYHGsEeSTCIbHjn6Y4g" name="Package1"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WWuAsHZ7EeSQBcYaEPMraQ" name="WebScenario1"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_FVAQ8Jq-EeS98bfQ1nTVcg" name="User1"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ot30sHWrEeSkkId3wIdLLg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xE-i4HcGEeSigYPDkthHwg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xE-i4XcGEeSigYPDkthHwg" key="Version" value="0.0.5"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xE-i4ncGEeSigYPDkthHwg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xE-i43cGEeSigYPDkthHwg" key="Copyright" value="Copyright © 2014 Christian W. Damus.  All rights reserved."/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xE-i5HcGEeSigYPDkthHwg" key="Date" value="2014-11-28"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xE-i5XcGEeSigYPDkthHwg" key="Author" value="Christian W. Damus"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ouk_UHWrEeSkkId3wIdLLg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.assistant.tests/resources/j2ee.profile.uml#_uRfuoHcGEeSigYPDkthHwg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/org.eclipse.papyrus.infra.gmfdiag.assistant.tests/resources/j2ee.profile.uml#_raLqoEigEeSRp-p9nf2EsA"/>
+    </profileApplication>
+  </uml:Model>
+  <j2ee:Bean xmi:id="_p1m40HWrEeSkkId3wIdLLg" base_Class="_PrS84HEdEeS_DJfE0yCnLQ"/>
+  <j2ee:Finder xmi:id="_ZCvCcHW0EeSkkId3wIdLLg" base_Operation="_ZCl4gHW0EeSkkId3wIdLLg"/>
+  <j2ee:WebScenario xmi:id="_znnewHcGEeSigYPDkthHwg" base_UseCase="_WWuAsHZ7EeSQBcYaEPMraQ"/>
+  <j2ee:Web xmi:id="_CksBoIeHEeSopIz8OXrJIg"/>
+  <j2ee:Web xmi:id="_EYWXoYeHEeSopIz8OXrJIg"/>
+  <j2ee:Web xmi:id="_Fx16IIeHEeSopIz8OXrJIg"/>
+  <j2ee:User xmi:id="_FcLP8Jq-EeS98bfQ1nTVcg" base_Actor="_FVAQ8Jq-EeS98bfQ1nTVcg"/>
+</xmi:XMI>
