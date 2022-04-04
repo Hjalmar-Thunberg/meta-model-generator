@@ -1,0 +1,11 @@
+
+class Notification {
+    many2one to_user : User, required
+    selection type : required
+    char title : required
+    text body
+    many2one related_module : Module
+    many2one related_module_branch : ModuleBranch
+}
+
+

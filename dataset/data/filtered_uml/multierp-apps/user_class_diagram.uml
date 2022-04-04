@@ -1,0 +1,12 @@
+
+class User {
+    char name : required
+    char company
+    one2many mantained_modules : Module
+    one2many mantained_module_branches : ModuleBranch
+    one2many inbox_notifications : Notification
+    one2many module_server_branch_compatibility_reports : ModuleServerBranchCompatibility
+
+}
+
+

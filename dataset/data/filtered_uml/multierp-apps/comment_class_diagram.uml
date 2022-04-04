@@ -1,0 +1,10 @@
+
+class Comment {
+    many2one author : User, required
+    char title : required
+    text body
+    many2one related_module : Module, required
+    many2one related_module_branch : ModuleBranch
+}
+
+

@@ -1,0 +1,9 @@
+
+class ServerVersion {
+    selection type : [openerp, tryton], required
+    char version : required
+    one2many branches : ServerBranch
+    --
+    restriction unique : type, selection
+}
+

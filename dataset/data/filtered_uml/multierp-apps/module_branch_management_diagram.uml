@@ -1,0 +1,23 @@
+@startuml module_branch_management_diagram.png
+title MultiERP-Apps : Module and Branch Management
+
+!include classes/branch_class_diagram.uml
+!include classes/serverversion_class_diagram.uml
+!include classes/serverbranch_class_diagram.uml
+!include classes/module_class_diagram.uml
+!include classes/modulebranch_class_diagram.uml
+!include classes/user_class_diagram.uml
+
+
+ServerBranch "*" -up-o "1" ServerVersion
+
+Module "*" -left-> "1" ServerVersion : server_version >
+Module "*" <--> "1" User : mantainer >
+Module "1" o-down- "*" ModuleBranch
+Module "*" -down-> "0..1" ModuleBranch : default_branch >
+
+ModuleBranch "*" <-right-> "1" User : mantainer >
+ModuleBranch "*" -left-> "0..1" ServerBranch : default_server_branch >
+
+@enduml
+

@@ -1,0 +1,28 @@
+@startuml social_functions_diagram.png
+title MultiERP-Apps : Social Functionalities
+
+!include classes/user_class_diagram.uml
+!include classes/branch_class_diagram.uml
+!include classes/serverbranch_class_diagram.uml
+!include classes/module_class_diagram.uml
+!include classes/modulebranch_class_diagram.uml
+!include classes/comment_class_diagram.uml
+!include classes/compatibility_class_diagram.uml
+
+
+Module "*" <--> "1" User : mantainer >
+Module "1" o-left- "*" ModuleBranch
+Module "0..1" o-down- "*" Comment : comments >
+
+ModuleBranch "*" <--> "1" User : mantainer >
+ModuleBranch "0..1" o-down- "*" Comment : comments >
+
+Comment "*" -left-> "1" User : author >
+
+ModuleServerBranchCompatibility "*" <--> "1" User : author >
+ModuleServerBranchCompatibility "*" -left-> "1" ServerBranch : server_branch >
+ModuleServerBranchCompatibility "*" -right-> "1" ModuleBranch : module_branch >
+
+
+@enduml
+
