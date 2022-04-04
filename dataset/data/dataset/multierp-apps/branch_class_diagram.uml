@@ -1,0 +1,7 @@
+
+abstract class Branch {
+    char version : required
+    selection source_type : [egg, zip, bzr, git, svn]
+    char source_url
+}
+

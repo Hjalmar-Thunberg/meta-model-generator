@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="89b416d3-ead0-484a-88db-d6f4199405bb"
+  name="CloudUri.Core.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="697adfc6-3f72-4690-88cc-2e807eba47aa"
+        name="IDbWrapper"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="ccd61848-7979-461e-857c-fa9d9c1af1d2"
+            name="StoredProcedureExecuteScalar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3ccbe35b-3cea-4ef8-a3ee-17a6a174b6af"
+            name="StoredProcedureExecuteReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="12ed872c-ddce-41bf-a8b7-9b713e721664"
+            name="StoredProcedureExecuteNonQuery"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="441d491d-610b-416e-928e-e1a87d38fbbd"
+        name="DbWrapper"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bb53687c-c54b-4357-b19c-b3975d4b89ef">
+            <interfaceMoniker
+              Id="697adfc6-3f72-4690-88cc-2e807eba47aa"
+              LastKnownName="IDbWrapper"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="58633b7a-d55c-403d-bb3d-0f3c897fcb6f"
+            name="StoredProcedureExecuteScalar"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="10eebbfe-fedf-4faf-8416-ac565872f037"
+            name="StoredProcedureExecuteReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fce4244e-846c-4539-9a4c-6dfb573b16e1"
+            name="StoredProcedureExecuteNonQuery"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="16eedd8a-77c7-4394-80e9-e708213bf945"
+        name="IRepository&lt;EntityType&gt; : where EntityType is IEntity "
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="bdaa1a0a-28a0-4283-9c4f-55f7d1464f6a">
+            <interfaceMoniker
+              Id="aa3f7df4-2082-4a71-b22c-2032ae1da3ea"
+              LastKnownName="IEntity"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation
+            Id="b1f520b4-ecb4-408c-a81c-6879412043d8"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c86b544f-1783-4a29-a62b-02cb2a16c060"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="52c47abb-b13e-4f5c-9045-6581099140e4"
+            name="GetById"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f86662b9-56dd-41b8-ac00-6877f714455b"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e1b36bea-1f10-46ee-bd74-af1260c52c67"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6ad580af-ef61-43ad-86d0-dc1524a109c1"
+        name="RepositoryBase&lt;EntityType&gt; : where EntityType is IEntity "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="173645b3-220e-4e06-9e67-e4da8ffaa22b">
+            <interfaceMoniker
+              Id="16eedd8a-77c7-4394-80e9-e708213bf945"
+              LastKnownName="IRepository&lt;EntityType&gt; : where EntityType is IEntity "
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="243a3eb8-6969-4d1b-9d09-28bdd88a973e">
+            <interfaceMoniker
+              Id="697adfc6-3f72-4690-88cc-2e807eba47aa"
+              LastKnownName="IDbWrapper"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8f3bb359-e608-46e2-af6d-076a8a73608c"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8f96aa60-3bc6-41e1-bd63-35039a4f528c"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7a67d9e9-04e4-4780-8020-e68753442678"
+            name="GetById"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ed40aff3-517c-4fcf-9e6e-159dda145306"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="298938ba-ae18-481c-a4b0-bef449d2f541"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="aa3f7df4-2082-4a71-b22c-2032ae1da3ea"
+        name="IEntity"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="a8f091bf-eb7d-444d-b6d7-45c5a5710fe8"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="56cb4eb4-18dd-4e85-8944-10fb33fe3a70"
+        name="ConcreteEntity1"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="5871a0e3-d20a-4165-875e-2b1ae0995c27"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="aa3f7df4-2082-4a71-b22c-2032ae1da3ea"
+              LastKnownName="IEntity"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="7462a581-2936-4a5d-9c16-db112765a138"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4b5c5038-f1be-43ac-9676-40b93e451d9b"
+        name="IConcreteRepository1"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2113e106-0b0b-43a1-9f08-14f8b88c024f">
+            <interfaceMoniker
+              Id="56cb4eb4-18dd-4e85-8944-10fb33fe3a70"
+              LastKnownName="ConcreteEntity1"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="f9b838ad-ae03-45f0-9d6a-c47b95f7a3ce"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="16eedd8a-77c7-4394-80e9-e708213bf945"
+              LastKnownName="IRepository&lt;EntityType&gt; : where EntityType is IEntity "
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="628505c3-601d-4dd9-9d48-dfa267133159"
+        name="ConcreteRepository1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b712ca99-d346-49a9-be89-a96d787924f0">
+            <interfaceMoniker
+              Id="4b5c5038-f1be-43ac-9676-40b93e451d9b"
+              LastKnownName="IConcreteRepository1"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="57c60667-08b4-41df-98ed-ccbf7e355c31"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6ad580af-ef61-43ad-86d0-dc1524a109c1"
+              LastKnownName="RepositoryBase&lt;EntityType&gt; : where EntityType is IEntity "
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0fbae99b-e6fd-4874-88ae-11d7536c1668"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c45c9044-0196-44ba-ba19-6a0c667fe9af"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="076579c4-0c62-469e-a8f9-5729ffba8c2d"
+            name="GetById"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b9052f46-23f9-43dc-848a-f39d2e4fe98d"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9d550904-0062-4a33-95fd-63f42277e92d"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3fecd689-1ca8-42b9-844a-810669ae16a2"
+        name="ConcreteEntity2"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="6149296c-c10b-49f2-96d9-f382143f03db"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="aa3f7df4-2082-4a71-b22c-2032ae1da3ea"
+              LastKnownName="IEntity"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7d4b4848-07ba-4b76-9391-8d7a23d0d71a"
+        name="IConcreteRepository2"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="db5bccc8-e58f-4464-aa57-6f4f47ec12bf">
+            <interfaceMoniker
+              Id="3fecd689-1ca8-42b9-844a-810669ae16a2"
+              LastKnownName="ConcreteEntity2"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="ed3cabf6-b4d1-4105-86a9-492184020623"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="16eedd8a-77c7-4394-80e9-e708213bf945"
+              LastKnownName="IRepository&lt;EntityType&gt; : where EntityType is IEntity "
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e948d405-1e16-4741-a27b-0ea3f990747d"
+        name="ConcreteRepository2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d1e0b542-2c4f-4101-970b-3b68f8131813">
+            <interfaceMoniker
+              Id="7d4b4848-07ba-4b76-9391-8d7a23d0d71a"
+              LastKnownName="IConcreteRepository2"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="2d11a9f2-0d2a-40af-b4c1-0104b664388e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6ad580af-ef61-43ad-86d0-dc1524a109c1"
+              LastKnownName="RepositoryBase&lt;EntityType&gt; : where EntityType is IEntity "
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e822e212-fef6-4db0-9ec1-7c711f6684c7"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e9802351-a323-402d-8247-ec89bd0a197f"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9cb8ee6f-4438-4885-a752-9f26d12cf3b7"
+            name="GetById"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3c0feffe-9f7c-4965-99b0-1451b0889cfb"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3d700df2-83d3-4f4b-bd42-2005b2a56a5b"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3d4e7205-a110-4303-bd4e-85cc2719df37"
+        name="IDALContext"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="91ab678a-9882-44e1-ab97-dfe4df76992b"
+            isDerived="false"
+            sourceEndRoleName="IDALContext"
+            targetEndRoleName="IConcreteRepository2"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="7d4b4848-07ba-4b76-9391-8d7a23d0d71a"
+              LastKnownName="IConcreteRepository2"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bcbb960-3a06-4e47-8d31-e5a1d1b879c2"
+                  name="IDALContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="41149802-b7e5-443f-9544-30dde46c1f10"
+                  name="IConcreteRepository2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7a777bda-fcd5-403f-baeb-ba720600fbd6"
+            isDerived="false"
+            sourceEndRoleName="IDALContext"
+            targetEndRoleName="IConcreteRepository1"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="4b5c5038-f1be-43ac-9676-40b93e451d9b"
+              LastKnownName="IConcreteRepository1"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e458492f-6ac6-400c-be0e-596cb59c4697"
+                  name="IDALContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="814e07f2-a7f3-48e5-a1a5-6ffd9189ae4d"
+                  name="IConcreteRepository1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="56608f95-8556-4538-bc7c-a3dce07fd817"
+            name="IConcreteRepository1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="90431726-65ef-4d8d-9140-8b07b9afaf0e"
+            name="IConcreteRepository2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e5cfce78-3889-4b76-bd7d-6c0a97132074"
+        name="DALContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="913243c8-2f5d-4c6d-ab5f-7304ec5dd45e">
+            <interfaceMoniker
+              Id="3d4e7205-a110-4303-bd4e-85cc2719df37"
+              LastKnownName="IDALContext"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2959d097-68a8-494d-9796-2568363270e4"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bfed61f7-7367-4d6b-8703-52487eb281bd"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0f43b276-b501-4e23-a954-f93fa25cd1df"
+              LastKnownName="Register"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fddedec-3c3c-4f54-8213-0e8087bfc2d4"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7c3de37-ab9c-44ec-8bb3-04faed9131c6"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3436d12a-a9ae-4b8c-8a09-847222aee3ca"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4c544015-72c5-4438-bca3-22d785709c25"
+              LastKnownName="Log in"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab18cd8e-c47b-4b53-8266-b4ad230ab330"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b87411b0-8463-41ef-a290-28babc166056"
+                  name="Log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="be4c3380-88dc-44f2-b30e-125fa8a7f6eb"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Reset password"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="826eaf28-9921-4800-8b9a-05d399b57845"
+              LastKnownName="Reset password"
+              LastKnownLocation="CloudUri.Core.Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7037d29-6f24-4189-afed-3bebeafd45a3"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4c52a0f-e068-4baf-bd44-6cc4bbb21841"
+                  name="Reset password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6b43459a-036a-473d-b11a-84a60d03724c"
+        name="Authorisation module"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f43b276-b501-4e23-a954-f93fa25cd1df"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6b43459a-036a-473d-b11a-84a60d03724c"
+            LastKnownName="Authorisation module"
+            LastKnownLocation="CloudUri.Core.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c544015-72c5-4438-bca3-22d785709c25"
+        name="Log in"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6b43459a-036a-473d-b11a-84a60d03724c"
+            LastKnownName="Authorisation module"
+            LastKnownLocation="CloudUri.Core.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="826eaf28-9921-4800-8b9a-05d399b57845"
+        name="Reset password"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="6b43459a-036a-473d-b11a-84a60d03724c"
+            LastKnownName="Authorisation module"
+            LastKnownLocation="CloudUri.Core.Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

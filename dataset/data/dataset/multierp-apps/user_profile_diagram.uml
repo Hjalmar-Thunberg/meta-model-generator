@@ -1,0 +1,19 @@
+@startuml user_profile_diagram.png
+title MultiERP-Apps : User Profile
+
+!include classes/user_class_diagram.uml
+!include classes/module_class_diagram.uml
+!include classes/modulebranch_class_diagram.uml
+!include classes/notification_class_diagram.uml
+
+
+User "1" o-right- "*" Module : mantained_modules >
+User "1" o-- "*" ModuleBranch : mantained_module_branches >
+User "1" o-- "*" Notification : inbox_notification >
+
+Notification "*" --> "0..1" Module : related_module >
+Notification "*" -right-> "0..1" ModuleBranch : related_module_branch >
+
+
+@enduml
+

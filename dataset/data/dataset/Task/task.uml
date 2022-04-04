@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.vladiev.model.Generator</OriginalElement>
+  <nodes>
+    <node x="559.0" y="108.0">ru.vladiev.io.DataSource</node>
+    <node x="69.54999999999995" y="266.0">ru.vladiev.io.SimpleDataDestination</node>
+    <node x="661.05" y="246.0">ru.vladiev.io.SimpleDataSource</node>
+    <node x="373.0" y="266.0">ru.vladiev.model.Generator</node>
+    <node x="187.0" y="128.0">ru.vladiev.io.DataDestination</node>
+  </nodes>
+  <notes>
+    <note x="527.0" y="8.0">
+      <node>ru.vladiev.io.DataSource</node>
+      <value>Интерфейс предостовлляющий \nдоступ к входным данным</value>
+      <edge>
+        <point x="0.0" y="-44.0" />
+        <point x="0.0" y="21.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="131.0">
+      <node>ru.vladiev.io.SimpleDataDestination</node>
+      <value>Реализация DataDestination. \nЗаписывает данные в поток.</value>
+      <edge>
+        <point x="-41.0" y="-24.0" />
+        <point x="110.54999999999995" y="221.0" />
+        <point x="83.5" y="221.0" />
+        <point x="0.0" y="21.0" />
+      </edge>
+    </note>
+    <note x="705.0" y="131.0">
+      <node>ru.vladiev.io.SimpleDataSource</node>
+      <value>Простая реализация DataSource.\n Берет исходные данные из потока.</value>
+      <edge>
+        <point x="34.5" y="-44.0" />
+        <point x="764.55" y="221.0" />
+        <point x="806.5" y="221.0" />
+        <point x="0.0" y="21.0" />
+      </edge>
+    </note>
+    <note x="143.0" y="0.0">
+      <node>ru.vladiev.io.DataDestination</node>
+      <value>Интерфейс принимающий \nвыходные данные (сгенерированные \nпрограммой)</value>
+      <edge>
+        <point x="0.0" y="-24.0" />
+        <point x="0.0" y="29.0" />
+      </edge>
+    </note>
+    <note x="337.0" y="131.0">
+      <node>ru.vladiev.model.Generator</node>
+      <value>Класс отвечающий за\n генерирование тестовых наборов.</value>
+      <edge>
+        <point x="0.0" y="-24.0" />
+        <point x="0.0" y="21.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="ru.vladiev.model.Generator" target="ru.vladiev.io.DataDestination">
+      <point x="-43.33333333333337" y="-24.0" />
+      <point x="394.66666666666663" y="221.0" />
+      <point x="284.5" y="221.0" />
+      <point x="32.5" y="24.0" />
+    </edge>
+    <edge source="ru.vladiev.io.SimpleDataSource" target="ru.vladiev.io.DataSource">
+      <point x="-34.5" y="-44.0" />
+      <point x="695.55" y="221.0" />
+      <point x="653.5" y="221.0" />
+      <point x="31.5" y="44.0" />
+    </edge>
+    <edge source="ru.vladiev.io.SimpleDataDestination" target="ru.vladiev.io.DataDestination">
+      <point x="41.0" y="-24.0" />
+      <point x="192.54999999999995" y="221.0" />
+      <point x="219.49999999999997" y="221.0" />
+      <point x="-32.5" y="24.0" />
+    </edge>
+    <edge source="ru.vladiev.model.Generator" target="ru.vladiev.io.DataSource">
+      <point x="43.333333333333314" y="-24.0" />
+      <point x="481.33333333333326" y="221.0" />
+      <point x="590.5" y="221.0" />
+      <point x="-31.5" y="44.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="454.5" y="187.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Auction">
+  <packagedElement xmi:type="uml:Class" xmi:id="_qUWXkNGYEeGFdKNDjN4tvg" name="Auction">
+    <ownedAttribute xmi:id="_d3iNYtGfEeGxeIhqHGq2Cw" name="roundNo" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3gtOsNGZEeGFdKNDjN4tvg" name="Participant">
+    <ownedAttribute xmi:id="_VaSwwNGeEeGxeIhqHGq2Cw" name="identifier" visibility="private"/>
+    <ownedAttribute xmi:id="_kDbkYtGeEeGxeIhqHGq2Cw" name="name" visibility="private"/>
+    <ownedAttribute xmi:id="_pEPy4tGeEeGxeIhqHGq2Cw" name="studentId" visibility="private"/>
+    <ownedAttribute xmi:id="_rY9ngtGeEeGxeIhqHGq2Cw" name="labNo" visibility="private"/>
+    <ownedOperation xmi:id="_w_o8ItGeEeGxeIhqHGq2Cw" name="generateIdentifier">
+      <ownedParameter xmi:id="_0uzVgNGeEeGxeIhqHGq2Cw" name="return" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JkVWwNGbEeGFdKNDjN4tvg" name="AuctionBid">
+    <ownedAttribute xmi:id="_-zRrINGeEeGxeIhqHGq2Cw" name="auction" type="_qUWXkNGYEeGFdKNDjN4tvg"/>
+    <ownedAttribute xmi:id="_IVVQMtGfEeGxeIhqHGq2Cw" name="participant" type="_3gtOsNGZEeGFdKNDjN4tvg"/>
+    <ownedAttribute xmi:id="_NUNlAtGfEeGxeIhqHGq2Cw" name="bidPrice"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W7zuMNGbEeGFdKNDjN4tvg" name="A_&lt;auction>_&lt;auctionBid>" memberEnd="_W7zuMdGbEeGFdKNDjN4tvg _W7zuNNGbEeGFdKNDjN4tvg">
+    <ownedEnd xmi:id="_W7zuMdGbEeGFdKNDjN4tvg" name="auction" type="_qUWXkNGYEeGFdKNDjN4tvg" association="_W7zuMNGbEeGFdKNDjN4tvg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W7zuMtGbEeGFdKNDjN4tvg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W7zuM9GbEeGFdKNDjN4tvg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_W7zuNNGbEeGFdKNDjN4tvg" name="auctionBid" type="_JkVWwNGbEeGFdKNDjN4tvg" association="_W7zuMNGbEeGFdKNDjN4tvg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W7zuNdGbEeGFdKNDjN4tvg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W7zuNtGbEeGFdKNDjN4tvg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_a0lWmdGbEeGFdKNDjN4tvg" name="A_&lt;participent>_&lt;auctionBid>" memberEnd="_a0lWmtGbEeGFdKNDjN4tvg _a0lWndGbEeGFdKNDjN4tvg">
+    <ownedEnd xmi:id="_a0lWmtGbEeGFdKNDjN4tvg" name="participent" type="_3gtOsNGZEeGFdKNDjN4tvg" association="_a0lWmdGbEeGFdKNDjN4tvg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0lWm9GbEeGFdKNDjN4tvg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0lWnNGbEeGFdKNDjN4tvg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_a0lWndGbEeGFdKNDjN4tvg" name="auctionBid" type="_JkVWwNGbEeGFdKNDjN4tvg" association="_a0lWmdGbEeGFdKNDjN4tvg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a0lWntGbEeGFdKNDjN4tvg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a0lWn9GbEeGFdKNDjN4tvg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

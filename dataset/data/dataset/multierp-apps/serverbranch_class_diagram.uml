@@ -1,0 +1,7 @@
+
+Branch <|-- ServerBranch
+class ServerBranch {
+    many2one server_version : ServerVersion, required
+}
+
+

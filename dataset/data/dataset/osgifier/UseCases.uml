@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_YcZkkNY4EeGFdIWo_KZQpQ" name="model">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_aaQ_cNY4EeGFdIWo_KZQpQ" clientDependency="_UwrHcNY9EeGOm8D_wqCD_g" name="create Fat-Bundle from Project"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vQ8d8NY5EeGFdIWo_KZQpQ" clientDependency="_WXBaMNY9EeGOm8D_wqCD_g" name="create Fat-Bundle from Artifact">
+    <include xmi:id="_mrrUcNY9EeGOm8D_wqCD_g" addition="__zh_INY8EeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_z1xUANY5EeGFdIWo_KZQpQ" name="generate MANIFEST.MF"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_21WqkNY5EeGFdIWo_KZQpQ" clientDependency="_a6rS8NY6EeGFdIWo_KZQpQ" name="osgify project">
+    <include xmi:id="_WCYuUNY6EeGFdIWo_KZQpQ" name="" addition="_z1xUANY5EeGFdIWo_KZQpQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_C2pSMNY6EeGFdIWo_KZQpQ" name="prepare project">
+    <include xmi:id="_fuxpMNY8EeGOm8D_wqCD_g" addition="_zKKo4NZSEeGOm8D_wqCD_g"/>
+    <include xmi:id="_xf13ENY8EeGOm8D_wqCD_g" addition="_oRMWMNY8EeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_a6rS8NY6EeGFdIWo_KZQpQ" name="precedes" client="_21WqkNY5EeGFdIWo_KZQpQ" supplier="_C2pSMNY6EeGFdIWo_KZQpQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Q8CDENY7EeGOm8D_wqCD_g" name="re-package non-bundle artifact"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3GAq0NY7EeGOm8D_wqCD_g" name="osgify artifact">
+    <include xmi:id="_WDGDgNY7EeGOm8D_wqCD_g" addition="_Q8CDENY7EeGOm8D_wqCD_g"/>
+    <include xmi:id="_plj9kNY7EeGOm8D_wqCD_g" addition="_z1xUANY5EeGFdIWo_KZQpQ"/>
+    <include xmi:id="_bo5jgNY9EeGOm8D_wqCD_g" addition="__zh_INY8EeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oRMWMNY8EeGOm8D_wqCD_g" name="adjust POM"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="__zh_INY8EeGOm8D_wqCD_g" name="resolve artifact dependencies"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Q0iCANY9EeGOm8D_wqCD_g" name="create Fat-Bundle" isAbstract="true">
+    <include xmi:id="_uDndQNY7EeGOm8D_wqCD_g" addition="_z1xUANY5EeGFdIWo_KZQpQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_UwrHcNY9EeGOm8D_wqCD_g" name="" client="_aaQ_cNY4EeGFdIWo_KZQpQ" supplier="_Q0iCANY9EeGOm8D_wqCD_g"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_WXBaMNY9EeGOm8D_wqCD_g" name="" client="_vQ8d8NY5EeGFdIWo_KZQpQ" supplier="_Q0iCANY9EeGOm8D_wqCD_g"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_txGfANY9EeGOm8D_wqCD_g" name="Actor"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u5ki8NY9EeGOm8D_wqCD_g" name="" memberEnd="_u5ki8dY9EeGOm8D_wqCD_g _u5ki9NY9EeGOm8D_wqCD_g">
+    <ownedEnd xmi:id="_u5ki8dY9EeGOm8D_wqCD_g" name="actor" type="_txGfANY9EeGOm8D_wqCD_g" association="_u5ki8NY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5ki8tY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u5ki89Y9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_u5ki9NY9EeGOm8D_wqCD_g" name="create fat-bundle" type="_Q0iCANY9EeGOm8D_wqCD_g" association="_u5ki8NY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5ki9dY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u5ki9tY9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_wvLZsNY9EeGOm8D_wqCD_g" name="" memberEnd="_wvLZsdY9EeGOm8D_wqCD_g _wvLZtNY9EeGOm8D_wqCD_g">
+    <ownedEnd xmi:id="_wvLZsdY9EeGOm8D_wqCD_g" name="actor" type="_txGfANY9EeGOm8D_wqCD_g" association="_wvLZsNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvLZstY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvLZs9Y9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_wvLZtNY9EeGOm8D_wqCD_g" name="generate manifest.mf for project" type="_21WqkNY5EeGFdIWo_KZQpQ" association="_wvLZsNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvLZtdY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvLZttY9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zR08oNY9EeGOm8D_wqCD_g" name="" memberEnd="_zR08odY9EeGOm8D_wqCD_g _zR08pNY9EeGOm8D_wqCD_g">
+    <ownedEnd xmi:id="_zR08odY9EeGOm8D_wqCD_g" name="actor" type="_txGfANY9EeGOm8D_wqCD_g" association="_zR08oNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zR08otY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zR08o9Y9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_zR08pNY9EeGOm8D_wqCD_g" name="prepare project dependencies" type="_C2pSMNY6EeGFdIWo_KZQpQ" association="_zR08oNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zR08pdY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zR08ptY9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-I1icNY9EeGOm8D_wqCD_g" name="" memberEnd="_-I1icdY9EeGOm8D_wqCD_g _-I1idNY9EeGOm8D_wqCD_g">
+    <ownedEnd xmi:id="_-I1icdY9EeGOm8D_wqCD_g" name="actor" type="_txGfANY9EeGOm8D_wqCD_g" association="_-I1icNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-I1ictY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-I1ic9Y9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_-I1idNY9EeGOm8D_wqCD_g" name="osgify artifact" type="_zKKo4NZSEeGOm8D_wqCD_g" association="_-I1icNY9EeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-I1iddY9EeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-I1idtY9EeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ppNFcNZREeGOm8D_wqCD_g" name="create UpdateSite" isAbstract="true">
+    <include xmi:id="_Vz5ScNZSEeGOm8D_wqCD_g" addition="_3GAq0NY7EeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tTEvINZREeGOm8D_wqCD_g" name="create UpdateSite from Project">
+    <generalization xmi:id="_0HS08NZREeGOm8D_wqCD_g" general="_ppNFcNZREeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vcU6oNZREeGOm8D_wqCD_g" name="create UpdateSite from Artifacts">
+    <generalization xmi:id="_0iI94NZREeGOm8D_wqCD_g" general="_ppNFcNZREeGOm8D_wqCD_g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1fk2gNZREeGOm8D_wqCD_g" name="" memberEnd="_1fk2gdZREeGOm8D_wqCD_g _1fk2hNZREeGOm8D_wqCD_g">
+    <ownedEnd xmi:id="_1fk2gdZREeGOm8D_wqCD_g" name="actor" type="_txGfANY9EeGOm8D_wqCD_g" association="_1fk2gNZREeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1fk2gtZREeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1fk2g9ZREeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_1fk2hNZREeGOm8D_wqCD_g" name="create updatesite" type="_ppNFcNZREeGOm8D_wqCD_g" association="_1fk2gNZREeGOm8D_wqCD_g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1fk2hdZREeGOm8D_wqCD_g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1fk2htZREeGOm8D_wqCD_g" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zKKo4NZSEeGOm8D_wqCD_g" name="deploy artifact as Bundle">
+    <include xmi:id="_4DhkgNZSEeGOm8D_wqCD_g" addition="_3GAq0NY7EeGOm8D_wqCD_g"/>
+  </packagedElement>
+</uml:Model>

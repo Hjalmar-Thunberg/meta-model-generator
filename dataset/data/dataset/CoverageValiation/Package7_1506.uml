@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a49a1716-233f-4f37-b2a7-5d3f5ad995ea"
+  name="UnitTesting"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c87659c5-b86b-4f89-a45b-e5bac3ee6022"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Microsoft.VisualStudio.TestTools.UnitTesting"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="508627fd-2b1a-4c88-92cb-f524c7546928">
+      <profileInstance
+        Id="e0089a71-3189-44d9-9b3c-38d24fae5612"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="eb7c45d0-f7a5-499b-ac5c-c0ced6a2d992"
+        name="TestContext"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f09b268b-f22c-49df-a8ce-19dd448149af"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Program Files (x86)/Microsoft Visual Studio 10.0/Common7/IDE/PublicAssemblies/Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll&quot; Namespace=Microsoft.VisualStudio.TestTools.UnitTesting Type=TestContext"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2f2f2228-d63e-465e-8294-059adfe2d3d2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12fa3e03-2bfc-41f0-80ee-b803c3e8893c">
+                <propertyInstance
+                  Id="67b5be18-893b-457c-b862-4d3b7771a675"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="50aaa6d5-e244-4175-8d26-07595991ada0">
+                <propertyInstance
+                  Id="329222b7-33f5-4f50-a1a9-effedf1df7c6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="228fa766-e0f0-4d4b-826f-f1ad1c1ea09d">
+                <propertyInstance
+                  Id="4c373643-2467-44a8-bfc7-c95e068e43c2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fab85ac2-5fc4-4931-b63c-cde5355012fb">
+                <propertyInstance
+                  Id="326b3994-a0d9-468f-bf19-97a988332264"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fed5675e-bfcf-4ee1-b0be-2932081ca27d">
+                <propertyInstance
+                  Id="1f0a14c7-3518-44cf-8a34-abe589a59266"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

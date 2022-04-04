@@ -1,0 +1,2080 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="b02a7e6c-58be-4c35-b7a7-da85ffd47209"
+  name="CoverageValidation.Design" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="d1c0104e-3855-4189-b47c-45dd9e9ecfdb">
+      <profileInstance
+        Id="3e3b91b7-e5f8-4b59-84eb-9e480d579e94"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c1328160-67ba-4539-8adf-07765b657b36"
+        LastKnownName="CoverageValiation"
+        LastKnownLocation="Package_1506.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="eebc0175-17dc-43a9-b1fa-333829837c79"
+        LastKnownName="CoverageValidation"
+        LastKnownLocation="Package2_1506.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="97c773ee-b114-413b-abae-a1cc776194da"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package4_1506.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f910443f-af22-4024-a06c-d6c4d5f44544"
+        LastKnownName="System"
+        LastKnownLocation="Package9_1506.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="88e82bff-e7f4-4824-8717-60e29bb0eb19"
+        name="RuleBase"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="168daefd-dd47-4d78-94f7-efd41e6f378a"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="217bf09a-eb5c-4491-a9b2-7d0c8af83d53"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6abe4ad1-5432-4725-8705-757fd8f007c7">
+                <propertyInstance
+                  Id="04128258-fcd8-46f5-ad5f-7a2da47c903e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="516ff043-f197-47a0-8624-2832c7f0ff67">
+                <propertyInstance
+                  Id="27b94199-7c78-4e9d-b29f-d8195e69b78a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="009c792a-52ef-43f4-9c3a-5c0b7442fc4e">
+                <propertyInstance
+                  Id="8b069002-8ba2-4a7a-a572-6d694bc7106c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="32b31263-e36c-475f-ac5a-cd412d3d655f">
+                <propertyInstance
+                  Id="d2df8bc8-0857-4d34-ad19-0f0708fe2625"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="984ee137-27e4-476b-a6f0-c9e33951bf0f">
+                <propertyInstance
+                  Id="4318d9e2-ac36-4145-a4be-5f6f76cc4e5b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="56b72dcc-e455-4fbf-8461-00a49aafa41e"
+            name="IsValid"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dbcbdeeb-834e-41f4-8fa0-1592643a516d"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=IsValid"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a92d0c69-1c24-4bed-a464-caf3224a8a01"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="916c30b1-ef82-44f6-b959-65f1649495ef">
+                    <propertyInstance
+                      Id="2268a6bf-d55a-4b8a-a7be-1be5136be8ca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cb0f66c-47cf-4602-918d-afdb9a7334b1">
+                    <propertyInstance
+                      Id="ea4bb8c8-c959-46e5-9082-82dfc6689762"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82ae68ce-5185-412b-8da5-e66e6582a413">
+                    <propertyInstance
+                      Id="a65f05af-7628-476d-9461-da6803d63c4a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec47f302-e97c-4c8c-8ca6-a6ad31f92b6e">
+                    <propertyInstance
+                      Id="865b6d6e-7211-493e-8810-e988d7653ed0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef8f1ad5-0b96-46f8-bfd2-b3e8a35af46c">
+                    <propertyInstance
+                      Id="d6cd1d27-4d36-44d8-8543-98eb2be3cb3b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0eed542-3f9a-49c6-a54a-71190056b7d2">
+                    <propertyInstance
+                      Id="8a3e006c-c69b-4149-bda3-aeba0f41df71"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CoverageValidation.Design.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e24f36e5-b6d8-4234-915e-8b8cb4c95a21"
+            name="Message"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="878a5ac9-5039-480d-8390-d6c4cd169e0d"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=Message"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9862218-3594-4516-90ca-c9efefd10b0a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="264b6f6c-6bc6-410a-b615-4f321b41366b">
+                    <propertyInstance
+                      Id="5ff6eeb8-8e0e-462b-9164-e4c92da97b4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be67706d-e05a-4062-ae2e-f3d1cfa404ac">
+                    <propertyInstance
+                      Id="f1390175-82d2-4335-8937-2fcf7697e3d1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44c570ed-6692-4a70-88f9-60bff2aec850">
+                    <propertyInstance
+                      Id="f772274c-7860-4f6f-a2ee-e2c01aa72a97"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37fa2e5d-73ed-4ea5-b41a-9a3ded5cf429">
+                    <propertyInstance
+                      Id="abe1cdaa-322d-4099-9b10-6acea822f271"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50a1673d-a5ac-4b01-82ea-a8b566f89400">
+                    <propertyInstance
+                      Id="cdd2e7a8-6512-471c-9b65-87f9b2675700"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="771d7b9c-530c-4134-9e00-6b0fefc3999e">
+                    <propertyInstance
+                      Id="9da623c5-704b-4e13-af6e-8c0ea89ec624"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CoverageValidation.Design.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="abe0f374-d47d-4491-9e6a-f4c71bbd666a"
+            name="IncludedStates"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="54ef4946-98ad-4853-88e8-5a977f6a58cd"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=IncludedStates"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d8999da9-ec14-4f11-8780-f51e7e2dc15b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="906ed69e-c1ae-4302-b6e0-9437bd72bec6">
+                    <propertyInstance
+                      Id="4e466cfa-64d8-4773-a267-56a12f3a569a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47662096-1ea4-4eac-b23d-e1d0573a5ed3">
+                    <propertyInstance
+                      Id="deefdf3b-fccb-4c14-92e5-b9531a1187a4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="985646bc-06b9-4b39-af95-c8080e9246b9">
+                    <propertyInstance
+                      Id="41876b75-00ee-4c67-be60-021071894b52"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f59a754b-f381-4133-a1bf-9d5fc78c0759">
+                    <propertyInstance
+                      Id="c08a8f99-deca-4140-811d-b7e0b9cebff6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15aa5362-fbe7-411d-8557-11dee6c125b5">
+                    <propertyInstance
+                      Id="531bdeae-7532-475b-9882-d1a303c97bb0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a209a2cd-24fe-4579-a988-fd491174b825"
+                LastKnownName="List&lt;String&gt;"
+                LastKnownLocation="Package11_1506.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="50102e94-2160-4798-b2f7-e20d1e61b582"
+            name="ExcludedStates"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="935d373b-666c-49f0-974d-e5c8e6f56df3"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=ExcludedStates"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6be5b0b-46a3-48f8-9f52-cb26b1423520"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841ad1b4-84e8-4ad6-81e2-d41b58a39cc6">
+                    <propertyInstance
+                      Id="ec9e213e-8482-4a8f-bfd0-fd10103cbafa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64f3c9c1-7141-4008-b248-2ad158d29e66">
+                    <propertyInstance
+                      Id="34cef980-683b-4d15-8e88-b0b17c12fafc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5de93d56-796a-4b15-8fb6-f4002e75d748">
+                    <propertyInstance
+                      Id="ac74b9f6-e071-4801-b3c3-c44f0bcaf5cf"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28c6486b-294e-49a8-a5ad-eac1cae93913">
+                    <propertyInstance
+                      Id="f8ec8032-b97d-446e-96f4-e9c9c1b88a84"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89895b90-d1f4-4115-b2c0-1fb921ca55cc">
+                    <propertyInstance
+                      Id="dbf12f45-10c7-43b2-ba34-8ab65c84d348"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="a209a2cd-24fe-4579-a988-fd491174b825"
+                LastKnownName="List&lt;String&gt;"
+                LastKnownLocation="Package11_1506.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3ae8cc47-2ebf-41c5-8246-9c603410fdfe"
+            name="GetCoverage"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a4d353af-bf70-49c7-8cba-2078f5242251"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=GetCoverage OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0104003b-5c79-4e6f-b05e-b67556192f72"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="598fca30-898d-4b9e-844c-5a40dea58d33">
+                    <propertyInstance
+                      Id="6b74d5ac-de0d-405a-96d9-fa75d9b01e51"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2e90e64-12b9-4a1c-9d03-992b5ccf141a">
+                    <propertyInstance
+                      Id="1456e628-a067-4379-9996-ccb2b798141e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="205b0455-6dfe-4876-a004-03a5fd7d7a91">
+                    <propertyInstance
+                      Id="b7f8f3a6-5ea2-4ef2-8a98-f6e49191b555"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b55f176a-aaf6-4ce5-958b-c2b5d5b01fc5">
+                    <propertyInstance
+                      Id="2b2f40fb-d325-4e26-aa88-dea4552c5263"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d47bcbe-7e78-41ab-8d21-bb3274e9c141">
+                    <propertyInstance
+                      Id="12d3f514-b607-4d85-85d9-43a2a9358e2c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d6fae98f-82e4-4558-b518-18955b9f28f7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="567e48de-6267-4fbc-bd42-b022e9afbfca"
+                      LastKnownName="CoverageLevelFact"
+                      LastKnownLocation="Package3_1506.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da56b969-f0cf-4013-a1cd-f7fb821ba151"
+                  name="request"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a24ec6e6-f903-4fb6-a317-6c8ddd98d0e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=GetCoverage OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=request"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e42d0a0-7996-4565-b640-5ec5e1d36cab"
+                      LastKnownName="CoverageValidationRequest"
+                      LastKnownLocation="Package3_1506.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5f6e2a08-63b6-4a35-9091-bde49ece5ae9"
+                  name="mnemonic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c78785be-42c8-4056-bfbe-8d47e774e8cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=GetCoverage OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=mnemonic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="31ff13f0-daaf-463d-b24a-ef0068b0f267"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6dc10a21-0e1b-49f0-abca-ddfd0241747d"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=Execute"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="02418afa-8974-4980-b164-4e06c3716ec8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21f3add7-6ca0-4ea3-9d45-1e5b7d37d206">
+                    <propertyInstance
+                      Id="21652aac-1bd2-4969-b2c2-09c20781108a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b36a7d27-6374-464d-a038-3cc67688351b">
+                    <propertyInstance
+                      Id="7eb7a0a1-adc7-4d24-899d-9d47783fe84e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2ef1e7f-ddfd-48d7-b339-366886d4b318">
+                    <propertyInstance
+                      Id="ecc1fc4a-11b2-4e23-ae2b-fb5b97e4f42c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9180ba0-b8e0-49ac-b210-c8182de04a9f">
+                    <propertyInstance
+                      Id="0ac9a053-beae-47e1-b18c-e0283fd4c1f6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1a48675-ade2-4002-b480-1a495f9c5854">
+                    <propertyInstance
+                      Id="bc689f51-41c9-4427-93a5-1ff0bbe09a71"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73cd4b33-24cf-46f5-8f79-3109ab1cde3e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e3d3be62-c4dd-411d-9901-29649e4f6692"
+            name="Build"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8baabf96-7451-44ae-a31a-9c6311184ec7"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=Build OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f42e7d0e-4997-42d9-902c-8b2f877c34ea"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6d24ede-fecc-48bd-adf3-f0d106615c0e">
+                    <propertyInstance
+                      Id="2dd62cba-d97b-45c2-819a-9652832aec1d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b864ca42-50dc-477c-987d-6f7cbb0b7111">
+                    <propertyInstance
+                      Id="e4e8af95-65f4-4d94-9791-f509eff6e6fc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="985e15f1-a69a-4d04-853b-a67ec670a2e8">
+                    <propertyInstance
+                      Id="c7dbc463-ed3d-4799-8dc0-224335bc4b97"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31eb62cb-6185-4ae9-8589-02337e87fbf7">
+                    <propertyInstance
+                      Id="8259ea50-a8fd-4ba2-96b2-d565614e3afe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a6b573f-14da-4ba0-bc1e-71589306dd00">
+                    <propertyInstance
+                      Id="c72673ec-d65d-467c-8e46-5e720aa77e56"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a92c386-2ea5-436d-b298-e4c6ec3deb2a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="054e4354-ed25-46f9-b9f9-cc0f952837cd"
+                  name="request"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b711d5a7-9989-42ac-9fc3-c2235e65ddc7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=Build OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest)]) ParameterIdentifier=request"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e42d0a0-7996-4565-b640-5ec5e1d36cab"
+                      LastKnownName="CoverageValidationRequest"
+                      LastKnownLocation="Package3_1506.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="016f8d6c-d83e-496b-96ae-e638e8aaba1c"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5b123239-1a69-41bc-bdcd-6bc3d7db5879"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=ToString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="399d505d-3c71-42ff-954e-a7b6b2174b33"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b4fe7a1-79dd-4593-9297-16befc8f5ba0">
+                    <propertyInstance
+                      Id="308272b3-ece2-4931-bd8f-83911767ae97"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42ba45ba-c187-4a9c-bd2c-7d29d92d55a6">
+                    <propertyInstance
+                      Id="31c54499-7558-4794-9f81-cd818e85f3d1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d99bc68-981c-4afd-9781-58b819f79330">
+                    <propertyInstance
+                      Id="529bd2e2-22a6-453a-be68-b3424e8a66e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faefaa77-c1f0-4d60-8617-32ab0eef62af">
+                    <propertyInstance
+                      Id="fbdb9b06-d114-4732-8bc3-ea955d5edb3d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7afecbc-b152-4580-8f63-47e48e0abefc">
+                    <propertyInstance
+                      Id="23c1c8a6-af4a-414b-97bd-fb832a70a4cf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6838586f-00be-4bb8-9835-4573d60aa112"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="09633550-b61b-41b1-a89c-f4d9f94a00ab"
+            name="ExcludeStates"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f14f40d9-9e4e-48ad-915b-19a32956550b"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=ExcludeStates OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="313595f7-548a-4b52-a31a-f84739cf216c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fa0ec26-2f10-4220-b27e-b3dddfeba9b7">
+                    <propertyInstance
+                      Id="27e742de-080e-4749-8465-40eca8ed137b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9856bb21-132e-4d7f-b9ee-5f7e10f6d933">
+                    <propertyInstance
+                      Id="e442804c-35d2-4d63-8a82-f426c4cbad65"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1def9ef-f797-4d80-894b-e3f0675f8f56">
+                    <propertyInstance
+                      Id="97deab8c-4cf7-42ae-bba7-b057d5dc4174"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ed7432b-fec4-403a-b488-85f4e2ed4e20">
+                    <propertyInstance
+                      Id="2c0d5f39-9ed2-4ef9-9796-5b91aeec550c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fa282a4-f70f-497f-9fcd-f676a4c99136">
+                    <propertyInstance
+                      Id="52ffa408-c97f-4f2e-9dea-4cdda8503f73"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6afae92b-8c81-464a-9abf-f6407515dcaf"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34951298-d823-4e4f-951d-1ad13feaae2c"
+                  name="states"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b794ddd9-8dbc-4317-8bc6-14b60b37bab9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=ExcludeStates OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]) ParameterIdentifier=states"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="92157d9c-22fd-4501-9efb-facdbe7377c9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="65148c38-d4f7-4ca9-9037-52a9c31ea307"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3835d743-afcc-499c-9885-dba9031a9bcf"
+            name="IncludeStates"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5c84271e-6d7f-40fd-8b51-983a8548493f"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=IncludeStates OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6ec10c8e-e7f4-4ec4-a5fd-2897528abf4f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8168d22b-8591-4acc-836f-caf23940c4e6">
+                    <propertyInstance
+                      Id="5c9f05e0-2d01-45f8-a6eb-d05d156f9010"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73fd6638-df98-4dc3-a3cf-c9e95b59cdeb">
+                    <propertyInstance
+                      Id="6819b622-460c-4fbd-8836-76a0d54ffe75"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b015a4e-efbb-4231-8722-9ffa1dc8c0cd">
+                    <propertyInstance
+                      Id="c8c0d355-8ab8-44ab-8d64-6c4c52524683"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5038e0b4-7d43-4e1a-aec9-eabf38ad9d84">
+                    <propertyInstance
+                      Id="67ecc1bc-1662-4ecc-a671-0ba95bd87d10"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c5daa8b-dc5f-44d0-8fed-04a4dc00b8a8">
+                    <propertyInstance
+                      Id="2f48b028-77af-445e-9bb9-37625a51b131"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7dac1108-ec9c-4574-9eca-7fa0b8dd3c2f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9d617943-93b4-45d8-9ecc-a41adcd6cf4c"
+                  name="states"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="1edde0c8-663e-4a27-8a87-829e323f9cc8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=(Name=IncludeStates OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=(Name=String ArrayRank=1 ParentType=String))]) ParameterIdentifier=states"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2036a98c-1c52-425e-9a32-d48e36b6c2ca"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="195302e4-2734-409e-9830-a06fc4cea5c8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d67dc39c-45ac-47ea-ab1a-a740dd04b19b"
+            name="RuleBase"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="89fc2c9d-6b27-4359-ad3d-b22bec30051d"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules Type=RuleBase Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b21cdeef-de0e-4dda-b8a8-a60faeae5c0e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9035fb11-1789-439d-b9cf-02759404958c">
+                    <propertyInstance
+                      Id="463816b3-c11e-457e-9a6a-f794b5d69e25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2af96749-0bf3-4973-a46c-ba9b8d0fd435">
+                    <propertyInstance
+                      Id="48026cf9-5be1-436f-bea2-abc91241c8fc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64ca3440-9b73-43e4-b0a6-7ee485e72a79">
+                    <propertyInstance
+                      Id="a3b246c2-ec7d-4690-95bc-35bc1cdc510f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acedb31c-5271-47f6-ba26-315ad711ff78">
+                    <propertyInstance
+                      Id="46ebbbca-c3ce-40eb-8fdf-8777a33be5b0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c887204-3e1b-4619-a043-6156490a00d8">
+                    <propertyInstance
+                      Id="83a7c46d-5d7c-43ee-9b56-1d72a61d1403"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="10abf957-b699-4af2-8e46-f5d792d3ca87"
+        name="CompareRuleBase"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="060fe5f3-cc10-4158-8a9d-67cfa5ae1501"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6f5691f5-33b6-42cb-821a-07b8e8117c1d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5846f04-d810-4c31-876f-5b072c8335dd">
+                <propertyInstance
+                  Id="316bb2a9-e79a-463c-9d1e-7fc97eea727f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78fcaa7c-52a5-42f7-b1b4-e0c9479f9889">
+                <propertyInstance
+                  Id="2d47675b-4d56-4ddd-aed6-f632dd3d0b86"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a81c8f58-c2fc-43cd-937b-4b4d1f1cc476">
+                <propertyInstance
+                  Id="f2b31dd2-a827-431e-87d2-b5667bb8d6d8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a148e9bd-fee5-4ae9-b527-c4f5423d00b4">
+                <propertyInstance
+                  Id="256d2c55-aa8e-4f9e-928c-5959191b6112"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2b3377a-c7a2-4e22-bd9d-b4f1e5d7b2c7">
+                <propertyInstance
+                  Id="bc8d06d9-63f8-4487-bfd5-fcc9c1629467"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="820e9423-c786-42df-91ca-8d3d8b62b580"
+            isSubstitutable="false">
+            <classMoniker
+              Id="88e82bff-e7f4-4824-8717-60e29bb0eb19"
+              LastKnownName="RuleBase"
+              LastKnownLocation="CoverageValidation.Design.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cfb5eabf-0567-4130-9390-ef87a0c59cca"
+            name="CoverageAFact"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a95347a0-f1d7-48e1-994f-5164a99650ea"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=CoverageAFact"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aceaf4e8-ef9f-4d05-8328-aead62b049a0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f32b619e-c499-40a0-a890-fb0c747edb33">
+                    <propertyInstance
+                      Id="f772f3ba-a1c2-4f41-ad8a-4e5c65aa9dc5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01ca1581-aad3-47b7-9945-56130847628c">
+                    <propertyInstance
+                      Id="31eff7c7-7a23-4131-a179-da20c7dc0f10"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32a313f0-f4ef-4eb9-93a3-331f2a8555cc">
+                    <propertyInstance
+                      Id="7703ddd1-8a0f-45f1-8cf4-9421c898e84e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c24e3491-3614-4261-836c-1c367cb2b26b">
+                    <propertyInstance
+                      Id="39681612-1a2c-4ab2-861f-c150bd23f3bc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cb4537d-1241-4e07-a7af-db6b7caeaaf9">
+                    <propertyInstance
+                      Id="61ae36d5-5a52-4a6f-a6b4-d0c20ed9166e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="567e48de-6267-4fbc-bd42-b022e9afbfca"
+                LastKnownName="CoverageLevelFact"
+                LastKnownLocation="Package3_1506.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f833a616-2f8d-411a-8c45-5bd0dd43637f"
+            name="CoverageAMnemonic"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="be35988d-1a6c-4043-9c1d-461e9ba26fff"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=CoverageAMnemonic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4d326ac-1eb5-4fdc-9f14-45455e435d94"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="151e28bf-93c2-4e24-925d-cd9918f6a11c">
+                    <propertyInstance
+                      Id="841b0231-b776-4911-8c95-6d7823df9ce1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ec5ee45-9e04-4e04-b805-81d93f0f11c7">
+                    <propertyInstance
+                      Id="38323a86-a4e3-43c9-abe5-bf43d1eb72dc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c340c996-e716-401f-b6bd-f83fe9d9ba09">
+                    <propertyInstance
+                      Id="90af7afc-581b-4f1a-ba62-0185f5e0bee1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c523e33c-9572-43c4-8d7b-dd59d3105df8">
+                    <propertyInstance
+                      Id="af0adaef-ec45-4d38-8646-99a5450d15cb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e97209f4-a1c8-4300-945d-0556b1549b40">
+                    <propertyInstance
+                      Id="52970e0e-9658-4a68-8601-d331cb11cffa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CoverageValidation.Design.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ebe77493-6f09-4241-9ec7-84d1d7e70b2c"
+            name="CoverageBFact"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="37ceb1f9-1052-42fc-9667-c3f15d136f51"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=CoverageBFact"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c5c088f-ea50-40c5-8a28-a64beb2d2932"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af91e3d9-7473-4b74-a074-2e578a035eee">
+                    <propertyInstance
+                      Id="ab09ceb3-27cb-4bd5-9e8a-dfb3c522eda7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eb95a15-8560-4d0e-85c4-95b14e688898">
+                    <propertyInstance
+                      Id="670a08d1-0690-48df-b5f9-c843b6eea85c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4265d41e-6ddf-4aea-8c12-6424ca003d62">
+                    <propertyInstance
+                      Id="83b8b88e-e343-441d-8e18-548da180a88c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bc0d548-44a8-48c5-a5fa-fe09acb36b60">
+                    <propertyInstance
+                      Id="4e91c1c0-a00e-4664-ab72-4663ce172e37"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46c911df-d546-496a-89cd-9932ffbea350">
+                    <propertyInstance
+                      Id="9b9b591b-7a64-406e-a767-82e7540f5980"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="567e48de-6267-4fbc-bd42-b022e9afbfca"
+                LastKnownName="CoverageLevelFact"
+                LastKnownLocation="Package3_1506.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="556a3066-fc27-4fd7-8657-4aae783092de"
+            name="CoverageBMnemonic"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="15494172-1e65-4e9b-ad39-27b4570438dc"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=CoverageBMnemonic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ba059e9-9202-4273-9de1-dcdb621fb84c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82bf13c5-fc20-4a7f-bbdd-20e8395c2f2a">
+                    <propertyInstance
+                      Id="db9a4970-60cd-4c54-adb9-d710590da4e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="658e4f7e-7975-4ca6-a7a0-decfde5a56a0">
+                    <propertyInstance
+                      Id="18b6b66a-a27e-4af4-9be4-05a70907c146"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd3f50c2-a364-44e4-b9af-8513e01db1ca">
+                    <propertyInstance
+                      Id="9c7c995f-2b9b-4209-b1fb-976b74cef9bd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e4b1da-3322-44d0-914b-d75c0a7777c3">
+                    <propertyInstance
+                      Id="54961ffc-17c2-4cc6-a9ef-5a575f588d6e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="863cfb5a-5c8a-4b31-bd83-6a38f2a3aac1">
+                    <propertyInstance
+                      Id="23ec8540-5a57-4576-a17d-0ff09b37cc77"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="CoverageValidation.Design.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4f5f7882-a18b-4df2-b8a3-d0020856f0ad"
+            name="comparer"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2307e2c7-5aea-46da-9aa3-5446fde845bc"
+                handle="viewcode://./CodeSchema_Field?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=comparer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="546e18c0-33c7-4846-928d-6b2aabf14c96"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e571be47-4b03-4dd3-a181-619dba5260ce">
+                    <propertyInstance
+                      Id="4b109a3c-018b-46ce-b67a-c06b60011863"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0baae0ec-2acb-4ef0-bbee-22be413867c4">
+                    <propertyInstance
+                      Id="1031a630-a8b1-40d7-bf0a-94ae1dde27c2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aec1f39-ffbb-4f2e-a161-ea4f8c86881f">
+                    <propertyInstance
+                      Id="1299b88c-47e6-49a1-bc49-f8aae788e310"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27b00e17-a610-4780-a7e6-bc26bf0b975a">
+                    <propertyInstance
+                      Id="12d0e98f-20de-407b-b34b-382b36561631"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="933b6628-f5bb-4eb4-b0af-dd3cf91e34a0">
+                    <propertyInstance
+                      Id="3a8e7243-8df3-44c4-b84b-0779396c253c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="72e3ab4f-ef5a-4539-94bd-38b93215b1d8"
+                LastKnownName="Func&lt;CoverageLevelFact,CoverageLevelFact,Boolean&gt;"
+                LastKnownLocation="Package9_1506.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a05fecf1-1836-4125-b7eb-f188a76f9bf2"
+            name="Build"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fe575f2f-6ea6-4745-bb93-fc27a40723b8"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=Build OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="63e4e340-d2db-46ba-b720-986ee03d36e3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aafd60f4-419b-4b6e-bdac-bb13cd2b147d">
+                    <propertyInstance
+                      Id="11072534-1be7-4457-9334-d1825bb1a316"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b40092b9-76e4-47a0-9e78-c030243fec05">
+                    <propertyInstance
+                      Id="4bcba097-640a-4a77-8637-57208ea1e0ca"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0b2b409-a1e3-4460-9f59-08bc8d32c447">
+                    <propertyInstance
+                      Id="07972024-9e59-4534-8d48-f22fa6383b19"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5466325-ff22-4bda-a160-6d2de4482dd2">
+                    <propertyInstance
+                      Id="c0c55bb3-d054-4cde-beac-80a289abb13d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49b060f2-96bb-496e-ad9d-18d2f60532b3">
+                    <propertyInstance
+                      Id="546e7d57-bf5d-4932-aa7f-8ca5588b6429"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="095880d0-ad83-400a-b2d2-c31210e9e8a1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bec7a500-589b-4257-95a6-2117f48c0905"
+                  name="request"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="76e1a40f-e6e4-4231-8595-65445f0ed48e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=Build OverloadingParameters=[(Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest)]) ParameterIdentifier=request"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e42d0a0-7996-4565-b640-5ec5e1d36cab"
+                      LastKnownName="CoverageValidationRequest"
+                      LastKnownLocation="Package3_1506.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6f9197b7-a6f5-486f-b6c1-c79536c08a14"
+            name="SetCoverageA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ff026d66-23d7-4b48-9164-709a3982ce55"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=SetCoverageA OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="435bc5f4-c6ec-40fc-bfc9-97f12c6cc7a3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc03876a-a21d-425b-aff7-8f3510e7f548">
+                    <propertyInstance
+                      Id="e8d3aeed-f4f3-43a2-9d81-2f31364a9ebb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e731d0b4-66fa-4eb2-98f8-270faee96ad6">
+                    <propertyInstance
+                      Id="efb6fb33-fe5f-43c5-aee6-dc908971146c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2feb84af-33f9-445b-922b-ba574696b05c">
+                    <propertyInstance
+                      Id="2d814140-1197-4f9c-bd68-0eb0b8928e99"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="729df3b2-0fc9-4977-a006-73f1315447ba">
+                    <propertyInstance
+                      Id="c8a07535-90e4-4560-86d5-5d4347f5e631"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9fe0ddb-7d59-4fb1-90ae-ade33689b325">
+                    <propertyInstance
+                      Id="2450d47c-6027-4672-a9a3-c65b3c39b658"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2421c318-861f-4008-980d-6dbb594e988e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="89a4d5cb-4b97-45ce-b8e0-d182c9d5bfe8"
+                      LastKnownName="CompareRuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08e60057-cff1-4a60-81c9-7e28903f724f"
+                  name="coverageAMnemonic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d56d3aa6-b093-49ea-b9ab-6281fdcf4160"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=SetCoverageA OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=coverageAMnemonic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9a9de4d0-903c-476e-8fe5-162ecb2c876c"
+            name="SetCoverageB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca503057-3798-40c7-98a9-3d9d6cff3f0e"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=SetCoverageB OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e967dacd-6504-4112-90b9-ba1fae8e467a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="974e686d-57cf-467a-acb9-c76e9425dfa9">
+                    <propertyInstance
+                      Id="6a2f79fb-3a1e-4e8c-9583-5316ad7939f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdf90c2f-5b8e-42f1-a111-50efce69ed9a">
+                    <propertyInstance
+                      Id="faa3e2cf-bdd4-4429-9bd3-7b7918ecb87a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2f49cf0-f558-47dc-aed1-e4f96c7b68e3">
+                    <propertyInstance
+                      Id="8cd14db8-f3d6-4a2a-96e4-5f85c42825db"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d09fb58-bdd7-4ba4-b979-ed8625afaced">
+                    <propertyInstance
+                      Id="74d7cb07-f0d1-4436-8748-d49422d24e88"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="574a639c-4ff5-45e7-ac25-ffcbb16c3714">
+                    <propertyInstance
+                      Id="efae393d-38a2-49ad-9662-4da11ebeaa2c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e06a769-6adc-4418-a844-b9b799dc20e4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="89a4d5cb-4b97-45ce-b8e0-d182c9d5bfe8"
+                      LastKnownName="CompareRuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1856fa53-92cb-43ee-abd8-c88d500ef1d6"
+                  name="coverageAMnemonic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="523472bc-b079-4e72-93d8-fc5261c8cceb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=(Name=SetCoverageB OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=String)]) ParameterIdentifier=coverageAMnemonic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e501490b-d73e-4c3f-abeb-f94f9e7fecb1"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="56a63eef-e8d3-489c-ae7a-84608261d4ac"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=Execute"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="08b02a3a-ff7b-41ce-b57b-7a9b79731313"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f98acef-ad7d-4ff8-865e-87b5278ad480">
+                    <propertyInstance
+                      Id="3744baf8-2e68-40bd-8d87-08a19c58a1dc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ea5d23b-ec77-4e2f-9fcb-a731a0838407">
+                    <propertyInstance
+                      Id="c8f9eb0f-65b4-45d4-bb43-d34d421dc1a7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="623c0fa0-b4bd-4d38-9af4-34efaf232240">
+                    <propertyInstance
+                      Id="3cf655a4-279b-4b8b-b3fd-5c80cea9e66a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ea87f3-e814-4fea-8907-0791cfdefbca">
+                    <propertyInstance
+                      Id="adb51b0f-6b4e-4690-afa0-a4069ca1d633"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cbce72e-8fb4-4b0c-8764-7c54068f9e91">
+                    <propertyInstance
+                      Id="ad821d58-ed35-438c-b998-26caf4384bed"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5fa1206-c549-4162-934c-aa436d776eac"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ef8555f6-8d5d-437b-818b-d0d44fc81ec6"
+                      LastKnownName="RuleBase"
+                      LastKnownLocation="Package_0709.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2e3fd927-1002-4dcb-89ed-7e37b174b211"
+            name="CompareRuleBase"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1e8abca5-d7ed-4182-9e9e-26c3ea16ac2e"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CompareRuleBase Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1246496f-508e-4899-adae-af9a2a5e77c3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="250032e2-50a2-4a47-bf36-380414ff4187">
+                    <propertyInstance
+                      Id="bfdd6eb3-c95f-44cc-9804-8663e3e3bb9c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8d2cdd4-6617-4498-b22b-8afa3813dbf2">
+                    <propertyInstance
+                      Id="cc5ea6f5-2578-4e59-8b37-985d542bd6d9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dee50e6e-7859-47a7-b192-3accea7ad7ba">
+                    <propertyInstance
+                      Id="e0c9671e-9833-4926-a940-e40168bba2bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cd8581f-1943-49ca-8fb4-1c2c58e851a6">
+                    <propertyInstance
+                      Id="f60efbdd-a05a-4cd3-b96e-90346b56ef30"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39af839a-e46e-40e5-8900-ad5d4a74bb10">
+                    <propertyInstance
+                      Id="6922943e-c2f5-4251-9579-bad92de13fda"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2330d5de-1177-45ed-b7cf-0d760f400ba9"
+        name="CoverageMustBeGreaterThanCoverageB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1e947f31-cbc2-4854-9d4b-2dade4bb1855"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CoverageMustBeGreaterThanCoverageB"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9b1c3139-51c4-4255-97d2-a5da477b25c8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c68d360e-930c-4a72-ba6e-5339f0614807">
+                <propertyInstance
+                  Id="0295364b-d41f-4d2d-b91d-42a214910d31"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17898e6f-7a3f-41d4-82af-d5e6dc06da31">
+                <propertyInstance
+                  Id="3e6c3bb1-e067-4634-9f45-f2b4be8a6072"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62da6889-dfd0-495e-9844-ddfe3f30b41f">
+                <propertyInstance
+                  Id="9a8d9103-beea-4ce7-9460-3f51ed584f69"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f24cbcc-1370-4859-8413-90feaaaebbe5">
+                <propertyInstance
+                  Id="b41776d7-37d5-4ba9-954c-9c447a2cd9ec"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2b9b016-5125-48d7-99cf-36d1b3e5760c">
+                <propertyInstance
+                  Id="43f7fe0c-4b23-4780-851a-78002318086f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0878ffae-cfca-467a-b004-b57049756869"
+            isSubstitutable="false">
+            <classMoniker
+              Id="10abf957-b699-4af2-8e46-f5d792d3ca87"
+              LastKnownName="CompareRuleBase"
+              LastKnownLocation="CoverageValidation.Design.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="398a59c2-09b2-48d3-8341-0ab406d89972"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1fbd2130-0bf2-4c82-bfb8-59c3b40b9cb7"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CoverageMustBeGreaterThanCoverageB Member=ToString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="817ecc83-49fc-4421-9ddf-a18ddbf63169"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f2d3d52-989a-4598-a062-fba8d95d1fde">
+                    <propertyInstance
+                      Id="7217ad61-65d5-41a5-a9d4-8eb8fc72cb15"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c22b8234-5cb9-4795-a723-ba6b28a2ed41">
+                    <propertyInstance
+                      Id="174bda82-f225-4e83-962e-4a74fffc46e7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2ce13c8-dbce-4768-ae2c-1b9fec164165">
+                    <propertyInstance
+                      Id="51674d93-63d0-4c93-9c6c-5d6dfd789cd6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19249ad1-20b8-49d3-a37e-b40d0043e2be">
+                    <propertyInstance
+                      Id="03e181e6-3ec8-4ff8-8f09-fbef415305f9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ed7f7b5-c7a9-4bcb-a852-b663e2fc4c86">
+                    <propertyInstance
+                      Id="6360fa0f-5f85-4cf5-8e5a-5ec0e8a7e86d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3361bbb6-14e1-4a59-abb2-521616ef99b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="CoverageValidation.Design.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6f68045f-c89f-4b15-a41b-9ef0fffdca54"
+            name="CoverageMustBeGreaterThanCoverageB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4a70199e-e39e-4dc5-85e5-8f3f8687b016"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Rules/bin/Debug/CoverageValidation.Rules.dll&quot; Namespace=CoverageValidation.Rules.CompareRules Type=CoverageMustBeGreaterThanCoverageB Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a7be231-2f5b-4dca-b0ea-416edde9be00"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98820037-1dd2-482e-a66b-9eb3350559d1">
+                    <propertyInstance
+                      Id="c49d8514-b7aa-418c-8f17-3da1a0c249a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e1248e0-8443-419f-9e79-4cebb703dd1c">
+                    <propertyInstance
+                      Id="24cf3f80-080a-4224-ae35-1f9d3c11ae32"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f03b3a1c-adb6-4aaf-834b-d5561a3d2fd2">
+                    <propertyInstance
+                      Id="25163c38-fc31-41aa-b292-00bbcf7de468"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ac48575-5597-458c-b19a-f3910b1a782e">
+                    <propertyInstance
+                      Id="ebca7ff0-ec0a-4f26-b3b3-944062cec279"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e29d4f9-88f1-4500-986f-5d303bee99db">
+                    <propertyInstance
+                      Id="271151f4-cd78-4c00-8c22-9b598f49bf87"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="adfb2080-40af-4f8d-a1cf-712a09a7a89b"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1317e47c-c4a9-4e2f-a23e-c205eaeb4f66"
+        LastKnownName="ESModel"
+        LastKnownLocation="Package_1154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="80527610-51c6-43e7-9d14-56ac4538c819"
+        LastKnownName="CoverageValidation.Model.Resource.Validation"
+        LastKnownLocation="Package1_1154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0664d2d1-4d12-4b3a-b86f-f709dc8cc0c3"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="b29e5663-d9da-4e5b-87b4-b1229136bb79"
+            name="Initial1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="30dcd352-43c1-4355-947d-f694a1c2bcb3"
+            name="Claims is entered via website"
+            isLeaf="false" />
+          <opaqueAction
+            Id="815acf1c-a964-4abe-936b-93dd38c6f9da"
+            name="Document"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

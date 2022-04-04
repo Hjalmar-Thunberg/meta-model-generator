@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="microEmpresa">
+  <packagedElement xmi:type="uml:Class" xmi:id="_jChW4BMOEeK73c2S85j4rA" name="Agentes" isAbstract="true">
+    <ownedAttribute xmi:id="_EpXKoBMPEeK73c2S85j4rA" name="Endereço" visibility="private"/>
+    <ownedAttribute xmi:id="_3Ru0oBMuEeK6UdnY0FovRw" name="Nome" visibility="private"/>
+    <ownedAttribute xmi:id="_GutGgBMPEeK73c2S85j4rA" name="CEP" visibility="private"/>
+    <ownedAttribute xmi:id="_HDaLMBMPEeK73c2S85j4rA" name="Cidade" visibility="private"/>
+    <ownedAttribute xmi:id="_Hl2J4BMPEeK73c2S85j4rA" name="Estado" visibility="private"/>
+    <ownedAttribute xmi:id="_Hu5YMBMPEeK73c2S85j4rA" name="Telefone" visibility="private"/>
+    <ownedAttribute xmi:id="_ZtUFkBMPEeK73c2S85j4rA" name="Status" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l7ddcBMPEeK73c2S85j4rA" name="Clientes" isAbstract="true">
+    <generalization xmi:id="_71oLsxMwEeK6UdnY0FovRw" general="_jChW4BMOEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_nPyMEBMPEeK73c2S85j4rA" name="Total Clientes" visibility="private" isStatic="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wJbGQBMPEeK73c2S85j4rA" name="Pessoa Fisica" isAbstract="true">
+    <generalization xmi:id="_3cu40xMwEeK6UdnY0FovRw" general="_l7ddcBMPEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_2iaBkBMPEeK73c2S85j4rA" name="Quantidade PF" visibility="private" isStatic="true"/>
+    <ownedAttribute xmi:id="_kk7pMBMsEeK6UdnY0FovRw" name="CPF" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8alV4BMPEeK73c2S85j4rA" name="Pessoa Juridica" isAbstract="true">
+    <generalization xmi:id="_6oRnwxMwEeK6UdnY0FovRw" general="_l7ddcBMPEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_9yargBMPEeK73c2S85j4rA" name="Quantidade PJ" visibility="private" isStatic="true"/>
+    <ownedAttribute xmi:id="_Z9d7QBMsEeK6UdnY0FovRw" name="Razão Social" visibility="private"/>
+    <ownedAttribute xmi:id="_oXFsMBMsEeK6UdnY0FovRw" name="CNPJ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_A8KDoBMQEeK73c2S85j4rA" name="ONG" isAbstract="true">
+    <generalization xmi:id="_7KC4EBMwEeK6UdnY0FovRw" general="_l7ddcBMPEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_CA43EBMQEeK73c2S85j4rA" name="Quantidade ONG" visibility="private" isStatic="true"/>
+    <ownedAttribute xmi:id="_ffQI0BMsEeK6UdnY0FovRw" name="Razão Social" visibility="private"/>
+    <ownedAttribute xmi:id="_uiO_0BMsEeK6UdnY0FovRw" name="CNPJ" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_L1kdMBMQEeK73c2S85j4rA" name="Padrao">
+    <generalization xmi:id="_96niQxMwEeK6UdnY0FovRw" general="_wJbGQBMPEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_Ny_MIBMQEeK73c2S85j4rA" name="Possui Ticket" visibility="private"/>
+    <ownedAttribute xmi:id="_QgD2YBMQEeK73c2S85j4rA" name="Tipo Ticket" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Uo8-YBMQEeK73c2S85j4rA" name="Empreendedor">
+    <generalization xmi:id="_-hNoMxMwEeK6UdnY0FovRw" general="_wJbGQBMPEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_Wz-EcBMQEeK73c2S85j4rA" name="Numero Registro" visibility="private"/>
+    <ownedAttribute xmi:id="_Z1vzYBMQEeK73c2S85j4rA" name="Ramo de Atividade" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_b1WToBMQEeK73c2S85j4rA" name="Empresa">
+    <generalization xmi:id="__ABEEBMwEeK6UdnY0FovRw" general="_8alV4BMPEeK73c2S85j4rA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ebR0EBMQEeK73c2S85j4rA" name="Cooperativas">
+    <generalization xmi:id="__g7YwxMwEeK6UdnY0FovRw" general="_A8KDoBMQEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_gHca8BMQEeK73c2S85j4rA" name="Area de Atuação" visibility="private"/>
+    <ownedAttribute xmi:id="_itepEBMQEeK73c2S85j4rA" name="Numero de Participantes" visibility="private"/>
+    <ownedAttribute xmi:id="_lmVskBMQEeK73c2S85j4rA" name="Data de Fundação" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_posuwBMQEeK73c2S85j4rA" name="Fundações">
+    <generalization xmi:id="_ADD1cxMxEeK6UdnY0FovRw" general="_A8KDoBMQEeK73c2S85j4rA"/>
+    <ownedAttribute xmi:id="_rIpekBMQEeK73c2S85j4rA" name="Data Constituição" visibility="private"/>
+    <ownedAttribute xmi:id="_thKOEBMQEeK73c2S85j4rA" name="Área de Atuação" visibility="private"/>
+    <ownedAttribute xmi:id="_vmm3oBMQEeK73c2S85j4rA" name="Possui Fins Lucrativos" visibility="private"/>
+  </packagedElement>
+</uml:Model>

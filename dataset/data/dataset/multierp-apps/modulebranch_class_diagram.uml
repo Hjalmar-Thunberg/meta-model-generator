@@ -1,0 +1,16 @@
+
+Branch <|-- ModuleBranch
+class ModuleBranch {
+    many2one module : Module, required
+    many2one /server_version : ServerVersion
+    char module_title
+    text module_description
+    many2one default_server_branch : ServerBranch, domain=[(server_version,=,module.server_version)]
+    selection state : [in_production, warning, deprecated]
+    ..
+    one2many comments : Comment
+    --
+    restriction unique : module, version
+}
+
+
