@@ -22,9 +22,9 @@ with open('data/projects_with_uml.csv', 'r') as csvfile:
 
     # Create dataset directory and save path
     os.chdir('data')
-    if not os.path.exists('dataset'):
-        os.makedirs('dataset')
-    os.chdir('dataset')
+    if not os.path.exists('unfiltered_uml'):
+        os.makedirs('unfiltered_uml')
+    os.chdir('unfiltered_uml')
     dataset_dir = os.getcwd()
 
     # Create new/ clear existing error log
