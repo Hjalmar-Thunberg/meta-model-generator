@@ -64,6 +64,6 @@ with open('data/projects_with_uml.csv', 'r') as csvfile:
                     f.write('\n')
 
     # Remove empty folders
-    for entry in os.scandir(dataset_dir):
-        if len(os.listdir(entry)) == 0:
-            os.rmdir(entry)
+    for dirpath, dirnames, filenames in os.walk(dataset_dir, topdown=False):
+        if not dirnames and not filenames:
+            os.rmdir(dirpath)
