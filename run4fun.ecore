@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nsPrefix="run4fun" nsURI="http://www.example.org/run4fun" name="run4fun" xmi:version="2.0">
+  <eClassifiers xsi:type="ecore:EDataType" name="datetime"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Course">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="description"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="length"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="#//datetime" name="created_at"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Message" upperBound="-1" lowerBound="1" name="message"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Message">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" name="text"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="#//datetime" name="created_at"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Course" upperBound="-1" lowerBound="1" name="course"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Course" upperBound="-1" lowerBound="1" name="course"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//User" upperBound="-1" lowerBound="1" name="user"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Subscription">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="#//datetime" name="created_at"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Course" upperBound="-1" lowerBound="1" name="course"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//User" upperBound="-1" lowerBound="1" name="user"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="email"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="phone_number"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="aim"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="#//datetime" name="created_at"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Level" upperBound="-1" lowerBound="1" name="level"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Address" upperBound="-1" lowerBound="1" name="address"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Level">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Address">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="address"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="zip_code"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="city"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="country"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="lat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar" name="long"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Map">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="id"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" name="order"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Address" upperBound="-1" lowerBound="1" name="address"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" containment="true" eType="#//Course" upperBound="-1" lowerBound="1" name="course"/>
+  </eClassifiers>
+</ecore:EPackage>
