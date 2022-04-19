@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="default" nsURI="eme.TestProject2/default" nsPrefix="default">
+  <eClassifiers xsi:type="ecore:EClass" name="root">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedElements" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="defaultPackageClass"/>
+  <eSubpackages name="datatypes" nsURI="eme.TestProject2/default.datatypes" nsPrefix="datatypes">
+    <eClassifiers xsi:type="ecore:EDataType" name="charArray" instanceClassName="char[]"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="charArray2D" instanceClassName="char[][]"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="doubleArray3D" instanceClassName="double[][][]"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="intArray" instanceClassName="int[]"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="intArray2D" instanceClassName="int[][]"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="T" instanceTypeName="T"/>
+    <eSubpackages name="eme" nsURI="eme.TestProject2/default.datatypes.eme" nsPrefix="eme">
+      <eSubpackages name="utility" nsURI="eme.TestProject2/default.datatypes.eme.utility" nsPrefix="utility">
+        <eClassifiers xsi:type="ecore:EDataType" name="CustomException" instanceClassName="eme.utility.CustomException"/>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="java" nsURI="eme.TestProject2/default.datatypes.java" nsPrefix="java">
+      <eSubpackages name="lang" nsURI="eme.TestProject2/default.datatypes.java.lang" nsPrefix="lang">
+        <eClassifiers xsi:type="ecore:EDataType" name="Error" instanceClassName="java.lang.Error"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="Exception" instanceClassName="java.lang.Exception"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="IllegalArgumentException" instanceClassName="java.lang.IllegalArgumentException"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="IllegalStateException" instanceClassName="java.lang.IllegalStateException"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="StringArray3D" instanceClassName="java.lang.String[][][]"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="Throwable" instanceClassName="java.lang.Throwable"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="UnsupportedOperationException" instanceClassName="java.lang.UnsupportedOperationException"/>
+      </eSubpackages>
+      <eSubpackages name="util" nsURI="eme.TestProject2/default.datatypes.java.util" nsPrefix="util">
+        <eClassifiers xsi:type="ecore:EDataType" name="Date" instanceClassName="java.util.Date"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="DateArray" instanceClassName="java.util.Date[]"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="List" instanceClassName="java.util.List">
+          <eTypeParameters name="E"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Map" instanceClassName="java.util.Map">
+          <eTypeParameters name="K"/>
+          <eTypeParameters name="V"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Set" instanceClassName="java.util.Set">
+          <eTypeParameters name="E"/>
+        </eClassifiers>
+        <eSubpackages name="concurrent" nsURI="eme.TestProject2/default.datatypes.java.util.concurrent" nsPrefix="concurrent">
+          <eClassifiers xsi:type="ecore:EDataType" name="Exchanger" instanceClassName="java.util.concurrent.Exchanger">
+            <eTypeParameters name="V"/>
+          </eClassifiers>
+        </eSubpackages>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="eme" nsURI="eme.TestProject2/default.eme" nsPrefix="eme">
+    <eSubpackages name="fields" nsURI="eme.TestProject2/default.eme.fields" nsPrefix="fields">
+      <eClassifiers xsi:type="ecore:EClass" name="Fields">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="number">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="text">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="intObject">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="someCharacterWithAVeryLongNameWhichIsAbsolutlyRidiculous">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EChar"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="intArray" eType="//datatypes/intArray"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="charArray2D" eType="//datatypes/charArray2D"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringArray3D" eType="//datatypes/java/lang/StringArray3D"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateArray" eType="//datatypes/java/util/DateArray"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="someList" upperBound="-1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="someMap">
+          <eGenericType eClassifier="//datatypes/java/util/Map">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+            </eTypeArguments>
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="someClassList" upperBound="-1" eType="//eme/types/SomeClass"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="bigBadSet">
+          <eGenericType eClassifier="//datatypes/java/util/Set">
+            <eTypeArguments eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eTypeArguments>
+              <eTypeArguments eClassifier="//datatypes/java/util/List">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+              </eTypeArguments>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="someWeirdExternalDataType">
+          <eGenericType eClassifier="//datatypes/java/util/concurrent/Exchanger">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="listOfExternal" upperBound="-1">
+          <eGenericType eClassifier="//datatypes/java/util/concurrent/Exchanger">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="someClass" eType="//eme/types/SomeClass"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="someInterface" eType="//eme/types/SomeInterface"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="complexReference">
+          <eGenericType eClassifier="//eme/utility/CustomGenericClass">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+            <eTypeArguments eClassifier="//eme/types/SomeClass"/>
+          </eGenericType>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="generics" nsURI="eme.TestProject2/default.eme.generics" nsPrefix="generics">
+      <eClassifiers xsi:type="ecore:EClass" name="GenericClass">
+        <eTypeParameters name="T"/>
+        <eTypeParameters name="S">
+          <eBounds eClassifier="//datatypes/java/util/List">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eBounds>
+        </eTypeParameters>
+        <eTypeParameters name="R">
+          <eBounds eClassifier="//datatypes/java/lang/Throwable"/>
+          <eBounds eClassifier="//eme/types/SomeInterface"/>
+        </eTypeParameters>
+        <eOperations name="mapMethod">
+          <eGenericType eClassifier="//datatypes/java/util/Map">
+            <eTypeArguments eTypeParameter="//eme/generics/GenericClass/T"/>
+            <eTypeArguments eTypeParameter="//eme/generics/GenericClass/S"/>
+          </eGenericType>
+          <eParameters name="mapA">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments eTypeParameter="//eme/generics/GenericClass/T"/>
+              <eTypeArguments eTypeParameter="//eme/generics/GenericClass/S"/>
+            </eGenericType>
+          </eParameters>
+          <eParameters name="mapB">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments eTypeParameter="//eme/generics/GenericClass/T"/>
+              <eTypeArguments eTypeParameter="//eme/generics/GenericClass/S"/>
+            </eGenericType>
+          </eParameters>
+          <eGenericExceptions eTypeParameter="//eme/generics/GenericClass/R"/>
+        </eOperations>
+        <eOperations name="someMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericClass/R"/>
+          <eParameters name="myT">
+            <eGenericType eTypeParameter="//eme/generics/GenericClass/T"/>
+          </eParameters>
+          <eParameters name="myS">
+            <eGenericType eTypeParameter="//eme/generics/GenericClass/S"/>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="GenericMethods">
+        <eTypeParameters name="E"/>
+        <eOperations name="genericMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericMethods/genericMethod/M"/>
+          <eTypeParameters name="M"/>
+        </eOperations>
+        <eOperations name="genericMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericMethods/genericMethod.1/M"/>
+          <eTypeParameters name="M">
+            <eBounds eTypeParameter="//eme/generics/GenericMethods/E"/>
+          </eTypeParameters>
+          <eParameters name="myE">
+            <eGenericType eTypeParameter="//eme/generics/GenericMethods/E"/>
+          </eParameters>
+        </eOperations>
+        <eOperations name="genericMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericMethods/genericMethod.2/S"/>
+          <eTypeParameters name="S">
+            <eBounds eClassifier="//datatypes/java/util/List">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eBounds>
+          </eTypeParameters>
+          <eTypeParameters name="R">
+            <eBounds eClassifier="//datatypes/java/lang/Throwable"/>
+            <eBounds eClassifier="//eme/types/SomeInterface"/>
+          </eTypeParameters>
+          <eParameters name="myS">
+            <eGenericType eTypeParameter="//eme/generics/GenericMethods/genericMethod.2/S"/>
+          </eParameters>
+          <eGenericExceptions eTypeParameter="//eme/generics/GenericMethods/genericMethod.2/R"/>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="GenericSubClass">
+        <eTypeParameters name="T">
+          <eBounds eClassifier="//eme/types/SomeClass"/>
+        </eTypeParameters>
+        <eGenericSuperTypes eClassifier="//eme/utility/CustomGenericClass">
+          <eTypeArguments>
+            <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eTypeArguments>
+          <eTypeArguments eClassifier="//datatypes/T"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="OuterClass">
+        <eOperations name="doSomething"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="intCapsule">
+          <eGenericType eClassifier="//eme/generics/OuterClassInnerTypes/InnerClass">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="stringCapsule">
+          <eGenericType eClassifier="//eme/generics/OuterClassInnerTypes/InnerClass">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="TypeParameterOrder">
+        <eTypeParameters name="A">
+          <eBounds eTypeParameter="//eme/generics/TypeParameterOrder/C"/>
+        </eTypeParameters>
+        <eTypeParameters name="B"/>
+        <eTypeParameters name="C">
+          <eBounds eTypeParameter="//eme/generics/TypeParameterOrder/B"/>
+        </eTypeParameters>
+        <eOperations name="genericMethod">
+          <eGenericType eTypeParameter="//eme/generics/TypeParameterOrder/genericMethod/X"/>
+          <eTypeParameters name="X">
+            <eBounds eTypeParameter="//eme/generics/TypeParameterOrder/genericMethod/Y"/>
+          </eTypeParameters>
+          <eTypeParameters name="Y">
+            <eBounds eTypeParameter="//eme/generics/TypeParameterOrder/genericMethod/Z"/>
+          </eTypeParameters>
+          <eTypeParameters name="Z">
+            <eBounds eClassifier="//datatypes/java/util/Date"/>
+          </eTypeParameters>
+          <eParameters name="myY">
+            <eGenericType eTypeParameter="//eme/generics/TypeParameterOrder/genericMethod/Y"/>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="WildcardClass">
+        <eOperations name="wildcardMethod">
+          <eParameters name="list">
+            <eGenericType eClassifier="//datatypes/java/util/List">
+              <eTypeArguments/>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eOperations name="wildcardMethodLower">
+          <eParameters name="list">
+            <eGenericType eClassifier="//datatypes/java/util/List">
+              <eTypeArguments>
+                <eLowerBound>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eLowerBound>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eOperations name="wildcardMethodUpper">
+          <eParameters name="list">
+            <eGenericType eClassifier="//datatypes/java/util/List">
+              <eTypeArguments>
+                <eUpperBound>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eUpperBound>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="WildcardClass2">
+        <eTypeParameters name="T"/>
+        <eOperations name="wildcardMethod">
+          <eParameters name="list">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments>
+                <eUpperBound>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eUpperBound>
+              </eTypeArguments>
+              <eTypeArguments>
+                <eLowerBound eTypeParameter="//eme/generics/WildcardClass2/T"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="WildcardClass3">
+        <eTypeParameters name="T"/>
+        <eOperations name="wildcardMethod">
+          <eTypeParameters name="S"/>
+          <eParameters name="list">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments>
+                <eUpperBound eTypeParameter="//eme/generics/WildcardClass3/wildcardMethod/S"/>
+              </eTypeArguments>
+              <eTypeArguments>
+                <eLowerBound eTypeParameter="//eme/generics/WildcardClass3/T"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="list">
+          <eGenericType eClassifier="//datatypes/java/util/List">
+            <eTypeArguments>
+              <eUpperBound eTypeParameter="//eme/generics/WildcardClass3/T"/>
+            </eTypeArguments>
+          </eGenericType>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="GenericInterface" abstract="true" interface="true">
+        <eTypeParameters name="T"/>
+        <eTypeParameters name="S">
+          <eBounds eClassifier="//eme/types/SomeClass"/>
+        </eTypeParameters>
+        <eTypeParameters name="R">
+          <eBounds eClassifier="//datatypes/java/lang/Throwable"/>
+          <eBounds eClassifier="//eme/types/SomeInterface"/>
+        </eTypeParameters>
+        <eOperations name="mapMethod">
+          <eGenericType eClassifier="//datatypes/java/util/Map">
+            <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/T"/>
+            <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/S"/>
+          </eGenericType>
+          <eParameters name="mapA">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/T"/>
+              <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/S"/>
+            </eGenericType>
+          </eParameters>
+          <eParameters name="mapB">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/T"/>
+              <eTypeArguments eTypeParameter="//eme/generics/GenericInterface/S"/>
+            </eGenericType>
+          </eParameters>
+          <eGenericExceptions eTypeParameter="//eme/generics/GenericInterface/R"/>
+        </eOperations>
+        <eOperations name="someMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericInterface/R"/>
+          <eParameters name="myT">
+            <eGenericType eTypeParameter="//eme/generics/GenericInterface/T"/>
+          </eParameters>
+          <eParameters name="myS">
+            <eGenericType eTypeParameter="//eme/generics/GenericInterface/S"/>
+          </eParameters>
+        </eOperations>
+        <eOperations name="genericMethod">
+          <eGenericType eTypeParameter="//eme/generics/GenericInterface/genericMethod/M"/>
+          <eTypeParameters name="M"/>
+        </eOperations>
+      </eClassifiers>
+      <eSubpackages name="OuterClassInnerTypes" nsURI="eme.TestProject2/default.eme.generics.OuterClassInnerTypes" nsPrefix="OuterClassInnerTypes">
+        <eClassifiers xsi:type="ecore:EClass" name="InnerClass">
+          <eTypeParameters name="T"/>
+          <eOperations name="add">
+            <eParameters name="element">
+              <eGenericType eTypeParameter="//eme/generics/OuterClassInnerTypes/InnerClass/T"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="print"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="methods" nsURI="eme.TestProject2/default.eme.methods" nsPrefix="methods">
+      <eClassifiers xsi:type="ecore:EClass" name="AccessMethods">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="active">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="serialNumber">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Methods">
+        <eOperations name="arrayMethod" eType="//datatypes/charArray">
+          <eParameters name="intArray2D" eType="//datatypes/intArray2D"/>
+          <eParameters name="doubleArray3D" eType="//datatypes/doubleArray3D"/>
+        </eOperations>
+        <eOperations name="customClassMethod" eType="//eme/types/SomeClass">
+          <eParameters name="someInterface" eType="//eme/types/SomeInterface"/>
+          <eParameters name="someEnum" eType="//eme/types/SomeEnum"/>
+        </eOperations>
+        <eOperations name="listMethod" upperBound="-1">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          <eParameters name="listA" upperBound="-1">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eParameters>
+          <eParameters name="listB" upperBound="-1">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eParameters>
+        </eOperations>
+        <eOperations name="mapMethod">
+          <eGenericType eClassifier="//datatypes/java/util/Map">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+            </eTypeArguments>
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+          <eParameters name="mapA">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+              </eTypeArguments>
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+          <eParameters name="mapB">
+            <eGenericType eClassifier="//datatypes/java/util/Map">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+              </eTypeArguments>
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+        <eOperations name="methodWithWeirdExternalDataTypes">
+          <eGenericType eClassifier="//datatypes/java/util/concurrent/Exchanger">
+            <eTypeArguments>
+              <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eTypeArguments>
+          </eGenericType>
+          <eParameters name="someWeirdExternalDataType">
+            <eGenericType eClassifier="//datatypes/java/util/concurrent/Exchanger">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="ThrowsDeclarations">
+        <eOperations name="customException" eExceptions="//datatypes/eme/utility/CustomException"/>
+        <eOperations name="noException" eExceptions="//datatypes/java/lang/Exception"/>
+        <eOperations name="oneException" eExceptions="//datatypes/java/lang/IllegalArgumentException"/>
+        <eOperations name="threeExceptions" eExceptions="//datatypes/java/lang/UnsupportedOperationException //datatypes/java/lang/IllegalStateException //datatypes/java/lang/Error"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="modifiers" nsURI="eme.TestProject2/default.eme.modifiers" nsPrefix="modifiers">
+      <eClassifiers xsi:type="ecore:EEnum" name="EnumALM">
+        <eLiterals name="AA"/>
+        <eLiterals name="BB" value="1"/>
+        <eLiterals name="CC" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="AbstractClassALM" abstract="true">
+        <eOperations name="abstractMethod"/>
+        <eOperations name="publicMethod"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="privateAttribute">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="protectedAttribute">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="ClassALM">
+        <eOperations name="publicMethod"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="privateAttribute">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="protectedAttribute">
+          <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="InterfaceALM" abstract="true" interface="true">
+        <eOperations name="abstractMethod"/>
+        <eOperations name="defaultMethod"/>
+        <eOperations name="publicMethod"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="nestedTypes" nsURI="eme.TestProject2/default.eme.nestedTypes" nsPrefix="nestedTypes">
+      <eClassifiers xsi:type="ecore:EClass" name="InnerTypeAttributes"/>
+      <eClassifiers xsi:type="ecore:EClass" name="OuterClass"/>
+      <eSubpackages name="OuterClassInnerTypes" nsURI="eme.TestProject2/default.eme.nestedTypes.OuterClassInnerTypes" nsPrefix="OuterClassInnerTypes">
+        <eClassifiers xsi:type="ecore:EEnum" name="InnerEnum">
+          <eLiterals name="ONE"/>
+          <eLiterals name="TWO" value="1"/>
+          <eLiterals name="THREE" value="2"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="InnerClass"/>
+        <eClassifiers xsi:type="ecore:EClass" name="InnerInterface" abstract="true" interface="true"/>
+        <eSubpackages name="InnerEnumInnerTypes" nsURI="eme.TestProject2/default.eme.nestedTypes.OuterClassInnerTypes.InnerEnumInnerTypes" nsPrefix="InnerEnumInnerTypes">
+          <eClassifiers xsi:type="ecore:EEnum" name="InnerInnerEnum">
+            <eLiterals name="BIR"/>
+            <eLiterals name="IKI" value="1"/>
+            <eLiterals name="&#xc3;&#x153;C" value="2"/>
+          </eClassifiers>
+        </eSubpackages>
+        <eSubpackages name="InnerClassInnerTypes" nsURI="eme.TestProject2/default.eme.nestedTypes.OuterClassInnerTypes.InnerClassInnerTypes" nsPrefix="InnerClassInnerTypes">
+          <eClassifiers xsi:type="ecore:EClass" name="InnerInnerClass"/>
+        </eSubpackages>
+        <eSubpackages name="InnerInterfaceInnerTypes" nsURI="eme.TestProject2/default.eme.nestedTypes.OuterClassInnerTypes.InnerInterfaceInnerTypes" nsPrefix="InnerInterfaceInnerTypes">
+          <eClassifiers xsi:type="ecore:EClass" name="InnerInnerInterface" abstract="true" interface="true"/>
+        </eSubpackages>
+      </eSubpackages>
+      <eSubpackages name="InnerTypeAttributesInnerTypes" nsURI="eme.TestProject2/default.eme.nestedTypes.InnerTypeAttributesInnerTypes" nsPrefix="InnerTypeAttributesInnerTypes">
+        <eClassifiers xsi:type="ecore:EClass" name="LocalInnerClass"/>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="realizationRelations" nsURI="eme.TestProject2/default.eme.realizationRelations" nsPrefix="realizationRelations">
+      <eClassifiers xsi:type="ecore:EClass" name="TwoInterfaces" eSuperTypes="//eme/realizationRelations/SubInterface //eme/realizationRelations/BasicInterface"/>
+      <eClassifiers xsi:type="ecore:EClass" name="BasicInterface" abstract="true" interface="true"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SubInterface" abstract="true" interface="true" eSuperTypes="//eme/realizationRelations/SuperInterface"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SuperInterface" abstract="true" interface="true"/>
+    </eSubpackages>
+    <eSubpackages name="specializationRelations" nsURI="eme.TestProject2/default.eme.specializationRelations" nsPrefix="specializationRelations">
+      <eClassifiers xsi:type="ecore:EClass" name="SubClass" eSuperTypes="//eme/specializationRelations/SuperClass"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SuperClass" eSuperTypes="//eme/specializationRelations/SuperSuperClass //eme/realizationRelations/BasicInterface"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SuperSuperClass"/>
+    </eSubpackages>
+    <eSubpackages name="types" nsURI="eme.TestProject2/default.eme.types" nsPrefix="types">
+      <eClassifiers xsi:type="ecore:EEnum" name="SomeEnum">
+        <eLiterals name="BLUE"/>
+        <eLiterals name="GREEN" value="1"/>
+        <eLiterals name="RED" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="SomeAbstractClass" abstract="true"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SomeClass"/>
+      <eClassifiers xsi:type="ecore:EClass" name="SomeInterface" abstract="true" interface="true"/>
+    </eSubpackages>
+    <eSubpackages name="utility" nsURI="eme.TestProject2/default.eme.utility" nsPrefix="utility">
+      <eClassifiers xsi:type="ecore:EClass" name="CustomGenericClass">
+        <eTypeParameters name="A"/>
+        <eTypeParameters name="B"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>
