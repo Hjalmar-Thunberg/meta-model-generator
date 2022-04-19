@@ -52,6 +52,8 @@ def compare_dictionary(dictionary, attribute):
         if attribute.attrib['type'] in key:
             return dictionary.get(key)
 
+# TODO: add more types
+
 
 def translate_datatype(datatype):
     '''
@@ -125,21 +127,33 @@ def create_meta_classes(classes, attributes, associations, dict1=None, dict2=Non
             meta_class.eStructuralFeatures.append(
                 EAttribute(attribute.attrib['name'], datatype))
 
-        # # find all class references
-        # for references in root.findall(associations):
-        #     for reference in references.findall(associations + 'End'):
-
-        #         if reference.attrib['aggregation'] == 'aggregate' and reference.attrib['type'] == '':
-        #             meta_class = compare_dictionary(dict2, reference)
-        #             EReference(meta_class, EClass(meta_class),
-        #                     upper=-1, containment=True)
-
         # avoid adding datatypes as class
         if uml_class.attrib['name'] not in datatypes:
             # add class with attributes to the meta-model
             model.append(meta_class)
 
+    for uml_class in root.findall(classes):
+        for start in model:
+            if start.eGet('name') == uml_class.attrib['name']:
+                # find all class references
+                for references in root.findall(associations):
+
+                    if references.find(associations + 'End[1]').attrib['type'] == uml_class.attrib['xmi.id']:
+
+                        for reference in root.findall(classes):
+                            if reference.attrib['xmi.id'] == references.find(associations + 'End[2]').attrib['type']:
+                                reference_name = reference.attrib['name']
+                                for end in model:
+                                    if end.eGet('name') == reference_name:
+                                        start.eStructuralFeatures.append(EReference(
+                                            reference.attrib['name'].lower(), end, upper=-1, lower=1, containment=True))
+
+    print('\nmodel: ' + str(model) + '\n')
     return model
+
+
+def create_functions(functions):
+    return None
 
 
 def create_meta_model(model):
@@ -154,7 +168,7 @@ def create_meta_model(model):
     # we add the EPackage instance in the resource
     resource.append(ecore_schema)
     resource.save()  # we then serialize it
-    print('Created metamodel ' + file_name + '.ecore')
+    print('saved metamodel as ' + file_name + '.ecore')
 
 
 # check if a filepath argument is included
@@ -164,40 +178,40 @@ file_path = sys.argv[1]
 file_name = os.path.basename(file_path).rsplit('.', 1)[0]
 
 # try parsing the file
-# try:
-tree = ET.parse(file_path)
-root = tree.getroot()
+try:
+    tree = ET.parse(file_path)
+    root = tree.getroot()
 
-#  namespace of http://schema.omg.org/spec/UML/1.3.
-if root.tag == 'XMI':
-    print('parsing ' + file_path + ' of type OMG')
+    #  namespace of http://schema.omg.org/spec/UML/1.3.
+    if root.tag == 'XMI':
+        print('parsing ' + file_path + ' of type OMG')
 
-    # find and store all datatypes and custom datatypes(classes) in dictionaries ({'xmi.id': ''name'...})
-    datatypes = search_file(
-        './/{http://schema.omg.org/spec/UML/1.3}DataType')
-    c_datatypes = search_file(
-        './/{http://schema.omg.org/spec/UML/1.3}Class')
+        # find and store all datatypes and custom datatypes(classes) in dictionaries ({'xmi.id': ''name'...})
+        datatypes = search_file(
+            './/{http://schema.omg.org/spec/UML/1.3}DataType')
+        c_datatypes = search_file(
+            './/{http://schema.omg.org/spec/UML/1.3}Class')
 
-    # create metaclasses with attributes and references, use given dictionaries to feed a correct datatype
-    model = create_meta_classes('.//{http://schema.omg.org/spec/UML/1.3}Class',
-                                './/{http://schema.omg.org/spec/UML/1.3}Attribute',
-                                './/{http://schema.omg.org/spec/UML/1.3}Association',
-                                datatypes, c_datatypes)
+        # create metaclasses with attributes and references, use given dictionaries to feed a correct datatype
+        model = create_meta_classes('.//{http://schema.omg.org/spec/UML/1.3}Class',
+                                    './/{http://schema.omg.org/spec/UML/1.3}Attribute',
+                                    './/{http://schema.omg.org/spec/UML/1.3}Association',
+                                    datatypes, c_datatypes)
 
-# namespace of http://www.staruml.com.
-elif root.tag == '{http://www.staruml.com}PROJECT':
-    print('parsing ' + file_path + ' of type StarUML')
+    # namespace of http://www.staruml.com.
+    elif root.tag == '{http://www.staruml.com}PROJECT':
+        print('parsing ' + file_path + ' of type StarUML')
 
-# namespace of http://schemas.microsoft.com/dsltools/ModelStore
-elif root.tag == '{http://schemas.microsoft.com/dsltools/ModelStore}modelStoreModel':
-    print('parsing ' + file_path + ' of type Microsoft')
+    # namespace of http://schemas.microsoft.com/dsltools/ModelStore
+    elif root.tag == '{http://schemas.microsoft.com/dsltools/ModelStore}modelStoreModel':
+        print('parsing ' + file_path + ' of type Microsoft')
 
-# unsupported namespaces
-else:
-    print(root.tag + ' is not supported')
+    # unsupported namespaces
+    else:
+        print(root.tag + ' is not supported')
 
-# create Ecore meta-model
-create_meta_model(model)
+    # create Ecore meta-model
+    create_meta_model(model)
 
-# except:
-# print('error when parsing file')
+except:
+    print('error when parsing file')
