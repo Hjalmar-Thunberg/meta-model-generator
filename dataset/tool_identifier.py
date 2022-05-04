@@ -32,6 +32,7 @@ stats = {}
 ns = None
 
 for subdir, dirs, files in os.walk(directory):
+    ns = None
     for file in files:
         if '.xmi' in file or '.uml' in file:
             try:
@@ -40,11 +41,18 @@ for subdir, dirs, files in os.walk(directory):
                 
                 ns = list(dict([node for _, node in ET.iterparse(
                       path, events=['start-ns'])]).values())[0]
+                for tool in root.iter():
+                    if tool.tag == "XMI.exporter" and tool.text == "convertMondrianToCwm":
+                        print(path)
+                        stats[tool.text] = stats.get(tool.text, 0) + 1
+                        #stats[tool.text] = ns
 
+                #if ns == "org.omg/standards/UML":
+                #    print(path)
             except:
                 break
 
-    if ns:
-        stats[ns] = stats.get(ns, 0) + 1
+#    if ns:
+#        stats[ns] = stats.get(ns, 0) + 1
 
 print(json.dumps(stats, indent=4, sort_keys=True))
