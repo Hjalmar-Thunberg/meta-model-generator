@@ -29,6 +29,7 @@ Return: None.
 
 directory = 'data/unfiltered_uml'
 stats = {}
+ns = None
 
 for subdir, dirs, files in os.walk(directory):
     for file in files:
@@ -39,10 +40,11 @@ for subdir, dirs, files in os.walk(directory):
                 
                 ns = list(dict([node for _, node in ET.iterparse(
                       path, events=['start-ns'])]).values())[0]
-                
-                stats[ns] = stats.get(ns, 0) + 1
-
 
             except:
                 break
+
+    if ns:
+        stats[ns] = stats.get(ns, 0) + 1
+
 print(json.dumps(stats, indent=4, sort_keys=True))
